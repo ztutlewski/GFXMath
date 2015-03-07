@@ -1,22 +1,7 @@
-<style>
-var.vector {
-  font-style : normal;
-  margin-right: 0.7em;
-}
-var.vector span {
-  margin-left: -.7em;   /* shift the arrow back over the letter */
-  vertical-align : .2em; /* tune the arrow vertical position */
-}
-
-h4 {
-  padding-left: 1em;
-}
-</style>
-
 # GFXMath
 ## Introduction
 
-The (G&#8728;F)(<var class="vector">X<span>&#8407;</span></var>) Math library (abbreviated GFXMath) is a lightweight, but powerful, data-oriented math library focused on the development of graphics-oriented applications in C++.
+The (G&#8728;F)(X) Math library (abbreviated GFXMath) is a lightweight, but powerful, data-oriented math library focused on the development of graphics-oriented applications in C++.
 
 ## Design
 ---
