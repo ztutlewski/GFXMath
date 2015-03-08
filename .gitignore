@@ -161,7 +161,7 @@ $RECYCLE.BIN/
 
 # Binary directories
 lib
-**/Linux x86_64
+
 **/Windows x86
 **/Windows x86_64
 
