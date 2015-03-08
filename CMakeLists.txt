@@ -16,11 +16,11 @@ if(WIN32)
 	
 		if(MINGW)
 		
-			set(ARCH_DIR "MinGW-w64")
+			set(ARCH_DIR "MinGW_w64")
 			
 		elseif(MSVC)
 		
-			set(ARCH_DIR "VC++ 2013 x86_64")
+			set(ARCH_DIR "MSVCPP 2013 x86_64")
 			
 		endif(MINGW)
 		
@@ -34,7 +34,7 @@ if(WIN32)
 			
 		elseif(MSVC)
 		
-			set(ARCH_DIR "VC++ 2013 x86")
+			set(ARCH_DIR "MSVCPP 2013 x86")
 			
 		endif(MINGW)
 		
