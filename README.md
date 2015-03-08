@@ -3,6 +3,10 @@
 
 The (G&#8728;F)(X) Math library (abbreviated GoFXMath) is a lightweight, but powerful, data-oriented math library focused on the development of graphics-oriented applications in C++.
 
+## Binaries
+
+Compiler-specific binaries can be found at the [GoFXMath Sourceforge page.](https://sourceforge.net/projects/gofx/files/lib/)
+
 ## Design
 Given that the GoFXMath library is designed with data in mind, much of its functionality is overloaded between two major sections: SISD code and SIMD code.
 #### SISD
@@ -21,8 +25,6 @@ The GoFXMath library doesn't have any particular dependencies attached to it.  I
 The GoFXMath library does make use of some C++11 features, so any compiler that should have any hope of building or using it would need to be up to at least the same level of C++11 standards as Visual C++ 12.
 
 Additionally, as mentioned in the **SIMD** section, the GoFXMath library makes heavy use of intel&reg; SSE functions.  While most of this functionality is defined in earlier forms of the SSE intrinsics, some require SSE-4.1.  However, most currently used, standard, consumer-grade CPUs should be able to accommodate this requirement, as it has had fairly wide support for quite some time.
-
-Compiler-specific binaries can be found at the [GoFXMath Sourceforge page.](https://sourceforge.net/projects/gofx/files/lib/)
 
 ## Tests and Demo Projects
 The prepackaged distribution files, in addition to the binaries and documentation, also contain the compiled test projects and a demo project written for OpenGL (using [GLEW](http://glew.sourceforge.net/) and [GLFW](http://www.glfw.org/)).
