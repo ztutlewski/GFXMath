@@ -1,4 +1,4 @@
-#include "shader.h"
+﻿#include "shader.h"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -9,6 +9,32 @@ using namespace std;
 
 namespace gofxengine
 {
+	const char const* DEFAULT_VERT_SHADER = 
+		"#version 420									\
+														\
+		layout(location = 0) in vec3 vertex_position;	\
+		layout(location = 1) in vec3 vertex_color;		\
+														\
+		out vec3 color;									\
+														\
+		uniform mat4 MVP;								\
+														\
+		void main() {									\
+			color = vertex_color;						\
+			vec4 pos = vec4(vertex_position, 1.0);		\
+			gl_Position = MVP * pos;					\
+		}";
+
+	const char const* DEFAULT_FRAG_SHADER =
+		"#version 420									\
+														\
+		in vec3 color;									\
+		out vec4 frag_color;							\
+														\
+		void main() {									\
+			frag_color = vec4(color, 1.0);				\
+		}";
+
 	string GL_type_to_string(GLenum type)
 	{
 		switch (type)
@@ -164,18 +190,38 @@ namespace gofxengine
 		if (!shaderStream.is_open())
 		{
 			std::cout << "Unable to open shader file: " << fileName << std::endl;
-			return shader;
-		}
 
-		while (std::getline(shaderStream, line))
+			switch (shaderType)
+			{
+			case GL_FRAGMENT_SHADER:
+				cout << "Loading default fragment shader." << endl;
+				shaderText = DEFAULT_FRAG_SHADER;
+				break;
+			case GL_VERTEX_SHADER:
+				cout << "Loading default vertex shader." << endl;
+				shaderText = DEFAULT_VERT_SHADER;
+				break;
+			case GL_GEOMETRY_SHADER:
+				cout << "No default geometry shader defined." << endl;
+				return shader;
+			case GL_COMPUTE_SHADER:
+				cout << "No default compute shader defined." << endl;
+				return shader;
+			default:
+				cout << "Cannot load default shader for unrecognized shader type " << shaderType << endl;
+				return shader;
+			}
+		}
+		else
 		{
-			cout << line << endl;
-			shaderText += line + "\n";
+			while (std::getline(shaderStream, line))
+			{
+				cout << line << endl;
+				shaderText += line + "\n";
+			}
+			cout << endl;
+			shaderStream.close();
 		}
-
-		cout << endl;
-
-		shaderStream.close();
 
 		const GLchar* const shaderSource = shaderText.c_str();
 
