@@ -1,0 +1,351 @@
+\hypertarget{group___s_i_s_d_scalar_math}{}\section{S\+I\+S\+D Scalar Math}
+\label{group___s_i_s_d_scalar_math}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{group___s_i_s_d_scalar_math_ga9ae15ff8e8601f2ed5381a5bce08d289}{gfxmath\+::\+Normalize\+Angle} (float angle)
+\begin{DoxyCompactList}\small\item\em Normalize the angle to the range of \mbox{[}-\/\+P\+I,P\+I). \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_gafb36256c1573aa72d03c3567f955bd83}{gfxmath\+::\+Fast\+Sin\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast sine approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_ga5c9038d14fbd579ef9860351b41fbf95}{gfxmath\+::\+Fast\+Cos\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast cosine approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_gae63b81e8a10d131334205c50b9b2166d}{gfxmath\+::\+Fast\+Tan\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast tangent approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_gab16e2d48a3790c9f448feefe7192dbe1}{gfxmath\+::\+Fast\+Cot\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast cotangent approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_gacf3bf50cb40374d40ffd25e382ca53c8}{gfxmath\+::\+Sin\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Sine Approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_ga4c7f22bb5c746703d834991b074e2721}{gfxmath\+::\+Cos\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Cosine approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_gac117306c04c7d0b931c3b2b4eb4fd6ae}{gfxmath\+::\+Tan\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Tangent approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_ga6914719e1538a2c1d58828197bc76041}{gfxmath\+::\+Cot\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Cotangent Approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_scalar_math_ga384f6df082ace9bc432bac8fac5b6686}{gfxmath\+::\+Approx\+Equal} (float left, float right)
+\begin{DoxyCompactList}\small\item\em Check for approximate equality of two floating point numbers. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_scalar_math_ga894ca122cd6d482ed5608f3410bc2bb4}{gfxmath\+::\+Is\+Na\+N} (float val)
+\begin{DoxyCompactList}\small\item\em Check if the given float value is Na\+N. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_scalar_math_ga29ffc432e0aaaa5201bfca15247fa648}{gfxmath\+::\+Is\+Infinity} (float val)
+\begin{DoxyCompactList}\small\item\em Check if the given float value is positive or negative infinity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___s_i_s_d_scalar_math_ga384f6df082ace9bc432bac8fac5b6686}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Approx\+Equal@{Approx\+Equal}}
+\index{Approx\+Equal@{Approx\+Equal}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool gfxmath\+::\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{float}]{left, }
+\item[{float}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga384f6df082ace9bc432bac8fac5b6686}
+
+
+Check for approximate equality of two floating point numbers. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & The precision level to use for the approximation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left float. \\
+\hline
+{\em right} & The right float.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two floats are within the given precision epsilon of one another, otherwise false.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{Float\+Precision} 
+\end{DoxySeeAlso}
+\hypertarget{group___s_i_s_d_scalar_math_ga4c7f22bb5c746703d834991b074e2721}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Cos\+Approx@{Cos\+Approx}}
+\index{Cos\+Approx@{Cos\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Cos\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ float gfxmath\+::\+Cos\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga4c7f22bb5c746703d834991b074e2721}
+
+
+Cosine approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision\+Level} & The precision level to use for the approximation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the cosine.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The approximation of the cosine of the given angle.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{Float\+Precision} 
+\end{DoxySeeAlso}
+\hypertarget{group___s_i_s_d_scalar_math_ga6914719e1538a2c1d58828197bc76041}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Cot\+Approx@{Cot\+Approx}}
+\index{Cot\+Approx@{Cot\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Cot\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ float gfxmath\+::\+Cot\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga6914719e1538a2c1d58828197bc76041}
+
+
+Cotangent Approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision\+Level} & The precision level to use for the approximation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the cotangent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The approximation of the cotangent of the given angle.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{Float\+Precision} 
+\end{DoxySeeAlso}
+\hypertarget{group___s_i_s_d_scalar_math_ga5c9038d14fbd579ef9860351b41fbf95}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Fast\+Cos\+Approx@{Fast\+Cos\+Approx}}
+\index{Fast\+Cos\+Approx@{Fast\+Cos\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Fast\+Cos\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Fast\+Cos\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga5c9038d14fbd579ef9860351b41fbf95}
+
+
+Fast cosine approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the cosine.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An approximation of the cosine of the given angle. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_scalar_math_gab16e2d48a3790c9f448feefe7192dbe1}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Fast\+Cot\+Approx@{Fast\+Cot\+Approx}}
+\index{Fast\+Cot\+Approx@{Fast\+Cot\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Fast\+Cot\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Fast\+Cot\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_gab16e2d48a3790c9f448feefe7192dbe1}
+
+
+Fast cotangent approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle to calculate the cotangent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An approximation of the cotangent of the given angle. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_scalar_math_gafb36256c1573aa72d03c3567f955bd83}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Fast\+Sin\+Approx@{Fast\+Sin\+Approx}}
+\index{Fast\+Sin\+Approx@{Fast\+Sin\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Fast\+Sin\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Fast\+Sin\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_gafb36256c1573aa72d03c3567f955bd83}
+
+
+Fast sine approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle to approximate the sine for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An approximation of the sine of the given angle. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_scalar_math_gae63b81e8a10d131334205c50b9b2166d}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Fast\+Tan\+Approx@{Fast\+Tan\+Approx}}
+\index{Fast\+Tan\+Approx@{Fast\+Tan\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Fast\+Tan\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Fast\+Tan\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_gae63b81e8a10d131334205c50b9b2166d}
+
+
+Fast tangent approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the tangent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An approximation of the tangent of the given angle. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_scalar_math_ga29ffc432e0aaaa5201bfca15247fa648}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Is\+Infinity@{Is\+Infinity}}
+\index{Is\+Infinity@{Is\+Infinity}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Is\+Infinity}]{\setlength{\rightskip}{0pt plus 5cm}bool gfxmath\+::\+Is\+Infinity (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga29ffc432e0aaaa5201bfca15247fa648}
+
+
+Check if the given float value is positive or negative infinity. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The float value to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given float value is positive or negative infinity, otherwise false.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Uses the definition of infinity where the number is equal to itself, but when subtracted by itself, does not produce zero. 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_scalar_math_ga894ca122cd6d482ed5608f3410bc2bb4}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Is\+Na\+N@{Is\+Na\+N}}
+\index{Is\+Na\+N@{Is\+Na\+N}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Is\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool gfxmath\+::\+Is\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga894ca122cd6d482ed5608f3410bc2bb4}
+
+
+Check if the given float value is Na\+N. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The float value to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given float value is designated as \char`\"{}not a number,\char`\"{} otherwise false.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Uses the definition of Na\+N such that the number is not equal to itself. 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_scalar_math_ga9ae15ff8e8601f2ed5381a5bce08d289}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Normalize\+Angle@{Normalize\+Angle}}
+\index{Normalize\+Angle@{Normalize\+Angle}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Normalize\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Normalize\+Angle (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_ga9ae15ff8e8601f2ed5381a5bce08d289}
+
+
+Normalize the angle to the range of \mbox{[}-\/\+P\+I,P\+I). 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle representing the same rotation as the originally passed angle, but contained in the range \%\%\mbox{[}-\/\textbackslash{}pi,\textbackslash{}pi)\%\%
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Uses additive range reduction by \%\%2\textbackslash{}pi\%\% to replace the value within the proper range. 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_scalar_math_gacf3bf50cb40374d40ffd25e382ca53c8}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Sin\+Approx@{Sin\+Approx}}
+\index{Sin\+Approx@{Sin\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Sin\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ float gfxmath\+::\+Sin\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_gacf3bf50cb40374d40ffd25e382ca53c8}
+
+
+Sine Approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision\+Level} & The precision level to use for the approximation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the sine.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The approximation of the sine of the given angle.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{Float\+Precision} 
+\end{DoxySeeAlso}
+\hypertarget{group___s_i_s_d_scalar_math_gac117306c04c7d0b931c3b2b4eb4fd6ae}{}\index{S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}!Tan\+Approx@{Tan\+Approx}}
+\index{Tan\+Approx@{Tan\+Approx}!S\+I\+S\+D Scalar Math@{S\+I\+S\+D Scalar Math}}
+\subsubsection[{Tan\+Approx}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ float gfxmath\+::\+Tan\+Approx (
+\begin{DoxyParamCaption}
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_scalar_math_gac117306c04c7d0b931c3b2b4eb4fd6ae}
+
+
+Tangent approximation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision\+Level} & The precision level to use for the approximation. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle for which to approximate the tangent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The approximation of the tangent of the given angle.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{Float\+Precision} 
+\end{DoxySeeAlso}

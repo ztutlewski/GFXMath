@@ -1,0 +1,65 @@
+The \%\%(G\textbackslash{}circ F)(\textbackslash{}vec\{X\})\%\% Math library (abbreviated G\+F\+X\+Math) is a lightweight, but powerful, data-\/oriented math library focused on the development of graphics-\/oriented applications in C++.
+
+\subsection*{Design}
+
+
+
+
+
+Given that the G\+F\+X\+Math library is designed with data in mind, much of its functionality is overloaded between two major sections\+: S\+I\+S\+D code and S\+I\+M\+D code.
+
+\paragraph*{S\+I\+S\+D}
+
+
+
+
+
+The S\+I\+S\+D code is all standard C++, and generally does not leverage the hardware or compiler for optimizations more than is absolutely necessary, keeping the code relatively fast without sacrificing too much readability. Given that the compiler will typically optimize standard C++ operations far better than most programmers ever could anyway, this doesn\textquotesingle{}t affect the performance of the S\+I\+S\+D code much.
+
+\paragraph*{S\+I\+M\+D}
+
+
+
+
+
+The S\+I\+M\+D side, on the other hand, almost exclusively utilizes intel\textregistered{} S\+S\+E intrinsics, and frequently makes use of some {\itshape very} low-\/level techniques. However, while these will somewhat reduce readability, many of the more common operations (such as absolute value, negation, etc.) have been written into helper functions. Additionally, the many of the intel\textregistered{} S\+S\+E functions have been given wrapper functions to improve their readability. For example, {\ttfamily \+\_\+mm\+\_\+mul\+\_\+ps(\+\_\+\+\_\+m128)} is wrapped in {\ttfamily Vec\+Mul(\+Sse\+Vec)}. It should be noted that almost all the functions in the S\+I\+M\+D portions are marked as {\ttfamily inline}, including the wrapper functions, and are fully defined in the header files. As well, G\+F\+X\+Math library does not make use of .inl files, or split header files for {\ttfamily inline} functions; the declarations and definitions are fully contained in the same files.
+
+It should be noted that the defined functions and constants for the G\+F\+X\+Math library rely on big-\/endian logic for the S\+S\+E registers. That is to say that the logic incorporated positions the values in \char`\"{}reverse\char`\"{} order in the register from what the built-\/in sse functions use. The reason for this is to improve readability of complex S\+S\+E logic, and to prevent extra loading/unloading overhead when switching between the standard registers and the S\+S\+E registers. What this means is that when loading a {\ttfamily Vec4} into or out from an S\+S\+E register, its values will not need to be reversed on each transfer, and can simply be loaded and unloaded in-\/order. Similarly, when calling one of the {\ttfamily Set\+Sse\+Vec} functions, the arguments passed are to be used in the same logical order for the desired vector (e.\+g. {\ttfamily Set\+Sse\+Vec3(x,y,z)} loads the S\+S\+E register with the values like this\+: {\ttfamily $<$1.\+0f, z, y, x$>$} where the {\ttfamily 1.\+0f} is used with calculations involving transformation matrices.
+
+\subsection*{Requirements}
+
+
+
+
+
+The G\+F\+X\+Math library doesn\textquotesingle{}t have any particular dependencies attached to it. It has been built and tested with Visual C++ 2013 (32 and 64-\/bit versions, on Windows 7 64-\/bit), Min\+G\+W g++4.8.\+1 (32-\/bit version Windows 7 64-\/bit), Min\+G\+W w64 g++4.9.\+2 (64-\/bit version on Windows 7 64-\/bit), and G\+N\+U g++4.8.\+2 (Ubuntu 14.\+04.\+2 L\+T\+S 64-\/bit). As of yet, it has not been tested on an Apple machine, though the standard X\+Code C++ compiler should yield similarly successful results.
+
+The G\+F\+X\+Math library does make use of some C++11 features, so any compiler that should have any hope of building or using it would need to be up to at least the same level of C++11 standards as Visual C++ 12.
+
+Additionally, as mentioned in the {\bfseries S\+I\+M\+D} section, the G\+F\+X\+Math library makes heavy use of intel\textregistered{} S\+S\+E functions. While most of this functionality is defined in earlier forms of the S\+S\+E intrinsics, some require S\+S\+E-\/4.\+1. However, most currently used, standard, consumer-\/grade C\+P\+Us should be able to accommodate this requirement, as it has had fairly wide support for quite some time.
+
+\subsection*{Tests and Demo Projects}
+
+
+
+
+
+The prepackaged distribution files, in addition to the binaries and documentation, also contain the compiled test projects and a demo project written for Open\+G\+L (using \href{http://glew.sourceforge.net/}{\tt G\+L\+E\+W} and \href{http://www.glfw.org/}{\tt G\+L\+F\+W}).
+
+\paragraph*{Tests}
+
+
+
+
+
+The tests should build and run on any Windows 7 or higher machine, as well as any Linux distribution capable of running g++4.8.\+2 compiled libraries. The tests have been built with the \href{https://github.com/philsquared/Catch}{\tt Catch Testing Framework}. Note that there are (sometimes significantly) more than one assertion-\/per-\/test, in many, if not most, of the test cases. The tests are written this way due to the fact that the catch framework offers a method of posing an assert while not forcing a halt on a specific test case, and all the tests have been written with this method in mind. There are also numerous fringe-\/cases when working with matrices and vectors (especially S\+S\+E vectors) that must be accounted for to maintain the expected mathematical behavior.
+
+More information on how to run (or even add to) the tests can be found on the \href{https://github.com/philsquared/Catch}{\tt Catch Testing Framework github page}.
+
+\paragraph*{Demo}
+
+
+
+
+
+There are included windows and linux executables for the demo project. Naturally, the source code is included alongside the executable. As mentioned in the beginning of this section, the demo project uses \href{http://glew.sourceforge.net/}{\tt G\+L\+E\+W} and \href{http://www.glfw.org/}{\tt G\+L\+F\+W}, and will require both to be properly linked before it can be built. 

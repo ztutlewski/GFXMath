@@ -1,0 +1,805 @@
+\hypertarget{classgfxmath_1_1_vec4}{}\section{gfxmath\+:\+:Vec4 Class Reference}
+\label{classgfxmath_1_1_vec4}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+
+
+A mathematical vector with 4 components.  
+
+
+
+
+{\ttfamily \#include $<$vec4.\+h$>$}
+
+Inheritance diagram for gfxmath\+:\+:Vec4\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgfxmath_1_1_vec4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_vec4_a86e3b18e88af7f0d85629b01da04f2e9}{Vec4} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgfxmath_1_1_vec4}{Vec4} with all four components being initialized to 0.\+0f. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a6ab39b817f6eeac365ee31ddf76635f9}{Vec4} (float xyzw)
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float argument that will be copied into all four component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a77430bab02f56509bb3455863972ad8a}{Vec4} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, float \hyperlink{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}, float \hyperlink{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking four separate component values to use for the respective coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a426ca21da0ff954f7aded1982166f549}{Vec4} (const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&xy, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&zw)
+\begin{DoxyCompactList}\small\item\em Constructor that takes two \hyperlink{classgfxmath_1_1_vec2}{Vec2} arguments and copies their values into the first and second pair of components, respectively. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_af296766fa56d041e2478646f1ee9b081}{Vec4} (const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&xy, float \hyperlink{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the x and y-\/component values, then two separate floats for the z and w-\/coordinate component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a8211b449c2b1bbd084a7afb023525a03}{Vec4} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&yz, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float for the x-\/coordinate component, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the y and z-\/coordinate component values, then another floats for the w-\/coordinate component. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a1565b9d0e01810e9b9cbe4fc2c82055c}{Vec4} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, float \hyperlink{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&zw)
+\begin{DoxyCompactList}\small\item\em Constructor taking two float values for the x and y-\/coordinate component values, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the z and w-\/coordinate component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a115b5e4a0a51582b23f058ad225843b1}{Vec4} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&xyz, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values, followed by a single float for the w-\/coordinate component value. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a43924f8c2f48fc84c10bba432921d6cc}{Vec4} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&yzw)
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float for the w-\/coordinate component value, followed by a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_ad62fa2df15d4caf6e62b1a1374dc6ea7}{operator Vec2} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_a451f6c531cdd3615faaf9c2fc014e4c5}{operator Vec3} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4_aaf08e3ea9dc716a152e096276d89f429}{operator Quaternion} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgfxmath_1_1_vec4_ab33520d34d2602f623c11594f5ed2f7d}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_ab33520d34d2602f623c11594f5ed2f7d}{E0} ()\label{classgfxmath_1_1_vec4_ab33520d34d2602f623c11594f5ed2f7d}
+
+\begin{DoxyCompactList}\small\item\em The elementary vector with components $<$1 0 0 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a8b088082a24053becfc32a669bba4e93}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a8b088082a24053becfc32a669bba4e93}{E1} ()\label{classgfxmath_1_1_vec4_a8b088082a24053becfc32a669bba4e93}
+
+\begin{DoxyCompactList}\small\item\em The elementary vector with components $<$0 1 0 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a729213a952a975ba9c41538d136ec3f2}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a729213a952a975ba9c41538d136ec3f2}{E2} ()\label{classgfxmath_1_1_vec4_a729213a952a975ba9c41538d136ec3f2}
+
+\begin{DoxyCompactList}\small\item\em The elementary vector with components $<$0 0 1 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_aed404d6e82c29c918b47bb9f39b29ae2}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_aed404d6e82c29c918b47bb9f39b29ae2}{E3} ()\label{classgfxmath_1_1_vec4_aed404d6e82c29c918b47bb9f39b29ae2}
+
+\begin{DoxyCompactList}\small\item\em The elementary vector with components $<$0 0 0 1$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_ad821eb6978366575d602aaa0bbe54c3c}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_ad821eb6978366575d602aaa0bbe54c3c}{E} (int i)\label{classgfxmath_1_1_vec4_ad821eb6978366575d602aaa0bbe54c3c}
+
+\begin{DoxyCompactList}\small\item\em The array of elementary 4-\/component vectors. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_ae7e679c76f77752af8278adbc3000184}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_ae7e679c76f77752af8278adbc3000184}{Neg\+E0} ()\label{classgfxmath_1_1_vec4_ae7e679c76f77752af8278adbc3000184}
+
+\begin{DoxyCompactList}\small\item\em The negative form of the first elementary vector (takes the form $<$-\/1 0 0 0$>$) \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a2621b87b8c36463449af56ab020de208}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a2621b87b8c36463449af56ab020de208}{Neg\+E1} ()\label{classgfxmath_1_1_vec4_a2621b87b8c36463449af56ab020de208}
+
+\begin{DoxyCompactList}\small\item\em The negative form of the second elementary vector (takes the form $<$0 -\/1 0 0$>$) \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_ad27cfa3be5c0d7a531631cd7736d14c2}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_ad27cfa3be5c0d7a531631cd7736d14c2}{Neg\+E2} ()\label{classgfxmath_1_1_vec4_ad27cfa3be5c0d7a531631cd7736d14c2}
+
+\begin{DoxyCompactList}\small\item\em The negative form of the third elementary vector (takes the form $<$ 0 0 -\/1 0$>$) \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_aba48145b1201b7e438bcdf84cd81620f}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_aba48145b1201b7e438bcdf84cd81620f}{Neg\+E3} ()\label{classgfxmath_1_1_vec4_aba48145b1201b7e438bcdf84cd81620f}
+
+\begin{DoxyCompactList}\small\item\em The negative form of the fourth elementary vector (takes the form $<$0 0 0 -\/1$>$) \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a8b1d7c4394f167b788391351c981d79b}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a8b1d7c4394f167b788391351c981d79b}{Neg\+E} (int i)\label{classgfxmath_1_1_vec4_a8b1d7c4394f167b788391351c981d79b}
+
+\begin{DoxyCompactList}\small\item\em The array of negated elementary 4-\/component vectors. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a533973443903b6fdc0e194e1f6c9b5ae}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a533973443903b6fdc0e194e1f6c9b5ae}{One} ()\label{classgfxmath_1_1_vec4_a533973443903b6fdc0e194e1f6c9b5ae}
+
+\begin{DoxyCompactList}\small\item\em The 4-\/component vector containing the values $<$1 1 1 1$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_a5c21fa07daf7054e189820c05bc2e0ee}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a5c21fa07daf7054e189820c05bc2e0ee}{Neg\+One} ()\label{classgfxmath_1_1_vec4_a5c21fa07daf7054e189820c05bc2e0ee}
+
+\begin{DoxyCompactList}\small\item\em The 4-\/component vector containing the values $<$-\/1 -\/1 -\/1 -\/1$>$ \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_vec4_aaacd0ad4911f4a53f82cc6979082b5c8}{}static \hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_aaacd0ad4911f4a53f82cc6979082b5c8}{Zero} ()\label{classgfxmath_1_1_vec4_aaacd0ad4911f4a53f82cc6979082b5c8}
+
+\begin{DoxyCompactList}\small\item\em The 4-\/component zero vector (takes the form $<$0 0 0 0$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classgfxmath_1_1_vec4_aa668d284af0138ed1d09663fb0bd3d6f}{vals} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em The 4 components of the \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}
+\begin{DoxyCompactList}\small\item\em The x-\/coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}
+\begin{DoxyCompactList}\small\item\em The y-\/coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}
+\begin{DoxyCompactList}\small\item\em The z-\/coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w}
+\begin{DoxyCompactList}\small\item\em The w-\/coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classgfxmath_1_1_vec4_a31c794bedecdf686aae40b9261ea38c5}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that writes the given 4\+D vector to the given output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{classgfxmath_1_1_vec4_ab5d34a5bf6bb543ab690436fc45c7319}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that reads in the a 4\+D vector from the given input stream. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_vec4_a75ec0a4eb1bdb2abb83280b62f2e94d3}{operator==} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&left, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&right)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_vec4_a8ddc017b9087be64efa4fc76f1f63a12}{operator!=} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&left, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&right)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) {\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a8812efd4565ada77e6dab63828ad715b}{Vec4\+Add} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec4s. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a01968b83532d01613a8f89659d4a52dc}{Vec4\+Sub} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec4s. \end{DoxyCompactList}\item 
+float \hyperlink{classgfxmath_1_1_vec4_a2deb01c8dd6f1a06c0a0cfc2e96e9c1e}{Vec4\+Dot} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgfxmath_1_1_vec4}{Vec4} dot product. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a70441f2888f0df752fe0624a5a7b362d}{Vec4\+Mul\+Scalar} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a670f1f6ebdadeaa2f656f153218fdee8}{Vec4\+Div\+Scalar} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_af1fa3fbf9843a509f3b8a476aa18361b}{Vec4\+Normalize} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_vec4_a9ba6951d54c6a4d9d513580f5bf3b928}{Vec4\+Negate} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{classgfxmath_1_1_vec4_a819b8c958e12f0838288c641af7e1ab6}{Vec4\+Approx\+Equal} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec4s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_vec4_ab82fdfebe73934664b56e9ba1174f37f}{Vec4\+Has\+Na\+N} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_vec4_a29cd467d514b701c3a796cb75234be0b}{Vec4\+Has\+Infinite} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has an infinite value component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+A mathematical vector with 4 components. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgfxmath_1_1_vec4_a86e3b18e88af7f0d85629b01da04f2e9}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a86e3b18e88af7f0d85629b01da04f2e9}
+
+
+Constructs a \hyperlink{classgfxmath_1_1_vec4}{Vec4} with all four components being initialized to 0.\+0f. 
+
+\begin{DoxyDate}{Date}
+2/22/2015 
+\end{DoxyDate}
+\hypertarget{classgfxmath_1_1_vec4_a6ab39b817f6eeac365ee31ddf76635f9}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{xyzw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a6ab39b817f6eeac365ee31ddf76635f9}
+
+
+Constructor taking a single float argument that will be copied into all four component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyzw} & The value that will be copied into the x, y, z, and w components. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a77430bab02f56509bb3455863972ad8a}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a77430bab02f56509bb3455863972ad8a}
+
+
+Constructor taking four separate component values to use for the respective coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em y} & The y-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em z} & The z-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a426ca21da0ff954f7aded1982166f549}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{const {\bf Vec2} \&}]{zw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a426ca21da0ff954f7aded1982166f549}
+
+
+Constructor that takes two \hyperlink{classgfxmath_1_1_vec2}{Vec2} arguments and copies their values into the first and second pair of components, respectively. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the x and y-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em zw} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_af296766fa56d041e2478646f1ee9b081}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_af296766fa56d041e2478646f1ee9b081}
+
+
+Constructor taking a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the x and y-\/component values, then two separate floats for the z and w-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the x and y-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em z} & The z-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a8211b449c2b1bbd084a7afb023525a03}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec2} \&}]{yz, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a8211b449c2b1bbd084a7afb023525a03}
+
+
+Constructor taking a single float for the x-\/coordinate component, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the y and z-\/coordinate component values, then another floats for the w-\/coordinate component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em yz} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the y and z-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a1565b9d0e01810e9b9cbe4fc2c82055c}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{const {\bf Vec2} \&}]{zw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a1565b9d0e01810e9b9cbe4fc2c82055c}
+
+
+Constructor taking two float values for the x and y-\/coordinate component values, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the z and w-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em y} & The y-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em zw} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a115b5e4a0a51582b23f058ad225843b1}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{xyz, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a115b5e4a0a51582b23f058ad225843b1}
+
+
+Constructor taking a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values, followed by a single float for the w-\/coordinate component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyz} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} that will contribute its components to the x, y and z-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_vec4_a43924f8c2f48fc84c10bba432921d6cc}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4@{Vec4}}
+\index{Vec4@{Vec4}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec3} \&}]{yzw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_vec4_a43924f8c2f48fc84c10bba432921d6cc}
+
+
+Constructor taking a single float for the w-\/coordinate component value, followed by a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+{\em yzw} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} that will contribute its components to the y, z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgfxmath_1_1_vec4_aaf08e3ea9dc716a152e096276d89f429}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator Quaternion@{operator Quaternion}}
+\index{operator Quaternion@{operator Quaternion}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::operator {\bf Quaternion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{classgfxmath_1_1_vec4_aaf08e3ea9dc716a152e096276d89f429}
+
+
+Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_ad62fa2df15d4caf6e62b1a1374dc6ea7}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator Vec2@{operator Vec2}}
+\index{operator Vec2@{operator Vec2}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator Vec2}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::operator {\bf Vec2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{classgfxmath_1_1_vec4_ad62fa2df15d4caf6e62b1a1374dc6ea7}
+
+
+Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a451f6c531cdd3615faaf9c2fc014e4c5}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator Vec3@{operator Vec3}}
+\index{operator Vec3@{operator Vec3}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec4\+::operator {\bf Vec3} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{classgfxmath_1_1_vec4_a451f6c531cdd3615faaf9c2fc014e4c5}
+
+
+Explicit cast that converts the given to a \hyperlink{classgfxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgfxmath_1_1_vec4_a8ddc017b9087be64efa4fc76f1f63a12}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{left, }
+\item[{const {\bf Vec4} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_vec4_a8ddc017b9087be64efa4fc76f1f63a12}
+
+
+Inequality operator. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a31c794bedecdf686aae40b9261ea38c5}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_vec4_a31c794bedecdf686aae40b9261ea38c5}
+
+
+A function that writes the given 4\+D vector to the given output stream. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The output stream to be written to. \\
+\hline
+ & {\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to write to the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Writes the value of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} to the given output stream. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a75ec0a4eb1bdb2abb83280b62f2e94d3}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator==@{operator==}}
+\index{operator==@{operator==}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{left, }
+\item[{const {\bf Vec4} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_vec4_a75ec0a4eb1bdb2abb83280b62f2e94d3}
+
+
+Equality operator. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_ab5d34a5bf6bb543ab690436fc45c7319}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_vec4_ab5d34a5bf6bb543ab690436fc45c7319}
+
+
+A function that reads in the a 4\+D vector from the given input stream. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The input stream to be read from. \\
+\hline
+\mbox{\tt in,out}  & {\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to read values into from the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reads the value of the given input stream to the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a8812efd4565ada77e6dab63828ad715b}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Add@{Vec4\+Add}}
+\index{Vec4\+Add@{Vec4\+Add}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a8812efd4565ada77e6dab63828ad715b}
+
+
+Add the two given Vec4s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} representing the sum of the two given Vec4s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a819b8c958e12f0838288c641af7e1ab6}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Approx\+Equal@{Vec4\+Approx\+Equal}}
+\index{Vec4\+Approx\+Equal@{Vec4\+Approx\+Equal}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec4\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a819b8c958e12f0838288c641af7e1ab6}
+
+
+Determines whether the two Vec4s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x, y, z and w components of the two given Vec4s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a670f1f6ebdadeaa2f656f153218fdee8}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Div\+Scalar@{Vec4\+Div\+Scalar}}
+\index{Vec4\+Div\+Scalar@{Vec4\+Div\+Scalar}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a670f1f6ebdadeaa2f656f153218fdee8}
+
+
+Divide the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec4}{Vec4} 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a2deb01c8dd6f1a06c0a0cfc2e96e9c1e}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Dot@{Vec4\+Dot}}
+\index{Vec4\+Dot@{Vec4\+Dot}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec4\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a2deb01c8dd6f1a06c0a0cfc2e96e9c1e}
+
+
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec4s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a29cd467d514b701c3a796cb75234be0b}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Has\+Infinite@{Vec4\+Has\+Infinite}}
+\index{Vec4\+Has\+Infinite@{Vec4\+Has\+Infinite}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec4\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a29cd467d514b701c3a796cb75234be0b}
+
+
+Determines whether or not the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgfxmath_1_1_vec4}{Vec4} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_ab82fdfebe73934664b56e9ba1174f37f}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Has\+Na\+N@{Vec4\+Has\+Na\+N}}
+\index{Vec4\+Has\+Na\+N@{Vec4\+Has\+Na\+N}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec4\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_ab82fdfebe73934664b56e9ba1174f37f}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a70441f2888f0df752fe0624a5a7b362d}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Mul\+Scalar@{Vec4\+Mul\+Scalar}}
+\index{Vec4\+Mul\+Scalar@{Vec4\+Mul\+Scalar}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a70441f2888f0df752fe0624a5a7b362d}
+
+
+Multiply the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_a9ba6951d54c6a4d9d513580f5bf3b928}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Negate@{Vec4\+Negate}}
+\index{Vec4\+Negate@{Vec4\+Negate}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a9ba6951d54c6a4d9d513580f5bf3b928}
+
+
+Negate the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} with components that are of opposite sign of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_vec4_af1fa3fbf9843a509f3b8a476aa18361b}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Normalize@{Vec4\+Normalize}}
+\index{Vec4\+Normalize@{Vec4\+Normalize}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_af1fa3fbf9843a509f3b8a476aa18361b}
+
+
+Normalize the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_vec4}{Vec4} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{classgfxmath_1_1_vec4_a01968b83532d01613a8f89659d4a52dc}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!Vec4\+Sub@{Vec4\+Sub}}
+\index{Vec4\+Sub@{Vec4\+Sub}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{Vec4\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} Vec4\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_vec4_a01968b83532d01613a8f89659d4a52dc}
+
+
+Subtract the two given Vec4s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} representing the difference of the two given Vec4s\textquotesingle{} coponents. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgfxmath_1_1_vec4_aa668d284af0138ed1d09663fb0bd3d6f}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!vals@{vals}}
+\index{vals@{vals}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{vals}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec4\+::vals\mbox{[}4\mbox{]}}\label{classgfxmath_1_1_vec4_aa668d284af0138ed1d09663fb0bd3d6f}
+
+
+The 4 components of the \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyRemark}{Remarks}
+Points to the same values as the x, y, z, and w components (at indices 0, 1, 2, and 3, respectively). 
+\end{DoxyRemark}
+\hypertarget{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!w@{w}}
+\index{w@{w}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec4\+::w}\label{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}
+
+
+The w-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to vals\mbox{[}3\mbox{]}. 
+\end{DoxyRemark}
+\hypertarget{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!x@{x}}
+\index{x@{x}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec4\+::x}\label{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}
+
+
+The x-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to vals\mbox{[}0\mbox{]}. 
+\end{DoxyRemark}
+\hypertarget{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!y@{y}}
+\index{y@{y}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec4\+::y}\label{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}
+
+
+The y-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to vals\mbox{[}1\mbox{]}. 
+\end{DoxyRemark}
+\hypertarget{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{}\index{gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}!z@{z}}
+\index{z@{z}!gfxmath\+::\+Vec4@{gfxmath\+::\+Vec4}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec4\+::z}\label{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}
+
+
+The z-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to vals\mbox{[}2\mbox{]}. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{vec4_8h}{vec4.\+h}\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{vecmath_8h}{vecmath.\+h}\end{DoxyCompactItemize}

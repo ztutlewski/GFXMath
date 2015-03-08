@@ -1,0 +1,466 @@
+\hypertarget{classgfxmath_1_1_mat44}{}\section{gfxmath\+:\+:Mat44 Class Reference}
+\label{classgfxmath_1_1_mat44}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+
+
+4x4 Column Matrix.  
+
+
+
+
+{\ttfamily \#include $<$mat44.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_mat44_a5aa0634a6c95cfae7b4680777c625294}{Mat44} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to 0 vectors. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44_a1e96437c9bcc0cc851bf55d25e9f1bc3}{Mat44} (const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&c0, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&c1, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&c2, const \hyperlink{classgfxmath_1_1_vec4}{Vec4} \&c3, \hyperlink{group___s_i_s_d_mat_math_ga6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{classgfxmath_1_1_mat44_a523cda94e6f5b2df5276d821b3471605}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to the given 4\+D vectors and (optionally) the matrix\+Type\+Val with the given Matrix\+Type value. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44_a72333b57344418b1a2e2563134bc2b52}{Mat44} (float m00, float m10, float m20, float m30, float m01, float m11, float m21, float m31, float m02, float m12, float m22, float m32, float m03, float m13, float m23, float m33, \hyperlink{group___s_i_s_d_mat_math_ga6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{classgfxmath_1_1_mat44_a523cda94e6f5b2df5276d821b3471605}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all 4 column vectors being initialized to the given scalar values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44_a8fafc4c0ac33fb5a3589c43466d1b0c7}{Mat44} (const \hyperlink{classgfxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Copies the values from the given matrix\textquotesingle{}s columns into the respective columns of this matrix, sets this instance\textquotesingle{}s matrix\+Type\+Val to the matrix\+Type\+Val given by the converted matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44_abcebf9e54a3a7954d4f870d1e076517a}{Mat44} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} const \& \hyperlink{classgfxmath_1_1_mat44_afa2fba80f3d058c256de19aa52106b75}{operator\mbox{[}$\,$\mbox{]}} (int arg) const 
+\begin{DoxyCompactList}\small\item\em Const accessor for the \hyperlink{classgfxmath_1_1_vec4}{Vec4} columns that make up this matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} \& \hyperlink{classgfxmath_1_1_mat44_afca7649a550e6f60443710a586b59cb5}{operator\mbox{[}$\,$\mbox{]}} (int arg)
+\begin{DoxyCompactList}\small\item\em Assignable accessor for the \hyperlink{classgfxmath_1_1_vec4}{Vec4} columns that make up this matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{classgfxmath_1_1_mat44_affaa1c0f2a0746b7d15d02a970590764}{Identity} ()
+\begin{DoxyCompactList}\small\item\em The 4x4 identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgfxmath_1_1_mat44_a14a9f934c2487a5dd9e4702a0b539cb4}{}\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_mat44_a14a9f934c2487a5dd9e4702a0b539cb4}{col0}\label{classgfxmath_1_1_mat44_a14a9f934c2487a5dd9e4702a0b539cb4}
+
+\begin{DoxyCompactList}\small\item\em The first column in the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_mat44_a9ac4cf40ac05a9ad94964d247d8256e1}{}\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_mat44_a9ac4cf40ac05a9ad94964d247d8256e1}{col1}\label{classgfxmath_1_1_mat44_a9ac4cf40ac05a9ad94964d247d8256e1}
+
+\begin{DoxyCompactList}\small\item\em The second column in the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_mat44_aa810627c4b5df8432b36befdd4649763}{}\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_mat44_aa810627c4b5df8432b36befdd4649763}{col2}\label{classgfxmath_1_1_mat44_aa810627c4b5df8432b36befdd4649763}
+
+\begin{DoxyCompactList}\small\item\em The third column in the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_mat44_a09c1b1363d41cee3b241cf8843d02289}{}\hyperlink{classgfxmath_1_1_vec4}{Vec4} \hyperlink{classgfxmath_1_1_mat44_a09c1b1363d41cee3b241cf8843d02289}{col3}\label{classgfxmath_1_1_mat44_a09c1b1363d41cee3b241cf8843d02289}
+
+\begin{DoxyCompactList}\small\item\em The fourth column in the matrix. \end{DoxyCompactList}\item 
+\hypertarget{classgfxmath_1_1_mat44_a523cda94e6f5b2df5276d821b3471605}{}\hyperlink{group___s_i_s_d_mat_math_ga6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{classgfxmath_1_1_mat44_a523cda94e6f5b2df5276d821b3471605}{matrix\+Type\+Val}\label{classgfxmath_1_1_mat44_a523cda94e6f5b2df5276d821b3471605}
+
+\begin{DoxyCompactList}\small\item\em The matrix type value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classgfxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Stream insertion operator. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{classgfxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Stream extraction operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}{operator==} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&left, const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&right)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgfxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}{operator!=} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&left, const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&right)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+void \hyperlink{classgfxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}{Print} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Prints the given matrix\textquotesingle{}s values. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classgfxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}{To\+Console\+Debug\+String} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Converts a mat to a console debug string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) {\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga4439d3f4590c372ada775196d1576f81}{Matrix\+Multiply} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&first, const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&second)
+\begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_mat_math_ga285829d964b38ad14730e85c325e775c}{Matrix\+Determinant} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga38c661c8ad19528520d36fabca7d555f}{Matrix\+Inverse} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga626e52b58fb763a90ba6e9d46966ee75}{Matrix\+Transpose} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_gad7198c521a4d93e82694f39f0be736c9}{Rotation\+Matrix\+From\+Quaternion} (const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga206e53fa5ea77b54765946af3d04ca0e}{Rotation\+Matrix\+From\+Euler} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga2d82d58bdc14d1f1644b05a7419ea05e}{Translation\+Matrix\+From\+Vec3} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga8ec877a1635b6a682a15195b47e1f21d}{Scale\+Matrix\+From\+Vec3} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_i_s_d_mat_math_ga8aa599fb24b0a8ce16acf8092ee29478}{Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect, \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&result)
+\begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_ga1d0cf66e3877d2be1e104bbacec0c917}{Look\+Dir} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&dir, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_mat44}{Mat44} \hyperlink{group___s_i_s_d_mat_math_gac420c9cd578ebe0b21c9db7757bc4c2d}{Look\+At} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&target, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_mat_math_ga503b30792d41234b29089176be81cf6c}{Transform\+Vec3} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_mat_math_ga285829d964b38ad14730e85c325e775c}{Matrix\+Determinant} (const \hyperlink{classgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given \hyperlink{classgfxmath_1_1_mat44}{Mat44}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+4x4 Column Matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgfxmath_1_1_mat44_a5aa0634a6c95cfae7b4680777c625294}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_mat44_a5aa0634a6c95cfae7b4680777c625294}
+
+
+Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to 0 vectors. 
+
+\begin{DoxyDate}{Date}
+2/21/2015 
+\end{DoxyDate}
+\hypertarget{classgfxmath_1_1_mat44_a1e96437c9bcc0cc851bf55d25e9f1bc3}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{c0, }
+\item[{const {\bf Vec4} \&}]{c1, }
+\item[{const {\bf Vec4} \&}]{c2, }
+\item[{const {\bf Vec4} \&}]{c3, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_mat44_a1e96437c9bcc0cc851bf55d25e9f1bc3}
+
+
+Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to the given 4\+D vectors and (optionally) the matrix\+Type\+Val with the given Matrix\+Type value. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em c0} & The first column. \\
+\hline
+{\em c1} & The second column. \\
+\hline
+{\em c2} & The third column. \\
+\hline
+{\em c3} & The fourth column. \\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_mat44_a72333b57344418b1a2e2563134bc2b52}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{float}]{m00, }
+\item[{float}]{m10, }
+\item[{float}]{m20, }
+\item[{float}]{m30, }
+\item[{float}]{m01, }
+\item[{float}]{m11, }
+\item[{float}]{m21, }
+\item[{float}]{m31, }
+\item[{float}]{m02, }
+\item[{float}]{m12, }
+\item[{float}]{m22, }
+\item[{float}]{m32, }
+\item[{float}]{m03, }
+\item[{float}]{m13, }
+\item[{float}]{m23, }
+\item[{float}]{m33, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_mat44_a72333b57344418b1a2e2563134bc2b52}
+
+
+Constructs a \hyperlink{classgfxmath_1_1_mat44}{Mat44} with all 4 column vectors being initialized to the given scalar values. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em m00} & Row 0 Col 0 Value. \\
+\hline
+{\em m10} & Row 1 Col 0 Value. \\
+\hline
+{\em m20} & Row 2 Col 0 Value. \\
+\hline
+{\em m30} & Row 3 Col 0 Value.\\
+\hline
+{\em m01} & Row 0 Col 1 Value. \\
+\hline
+{\em m11} & Row 1 Col 1 Value. \\
+\hline
+{\em m21} & Row 2 Col 1 Value. \\
+\hline
+{\em m31} & Row 3 Col 1 Value.\\
+\hline
+{\em m02} & Row 0 Col 2 Value. \\
+\hline
+{\em m12} & Row 1 Col 2 Value. \\
+\hline
+{\em m22} & Row 2 Col 2 Value. \\
+\hline
+{\em m32} & Row 3 Col 2 Value.\\
+\hline
+{\em m03} & Row 0 Col 3 Value. \\
+\hline
+{\em m13} & Row 1 Col 3 Value. \\
+\hline
+{\em m23} & Row 2 Col 3 Value. \\
+\hline
+{\em m33} & Row 3 Col 3 Value.\\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_mat44_a8fafc4c0ac33fb5a3589c43466d1b0c7}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_mat44_a8fafc4c0ac33fb5a3589c43466d1b0c7}
+
+
+Copies the values from the given matrix\textquotesingle{}s columns into the respective columns of this matrix, sets this instance\textquotesingle{}s matrix\+Type\+Val to the matrix\+Type\+Val given by the converted matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to convert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_mat44_abcebf9e54a3a7954d4f870d1e076517a}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_mat44_abcebf9e54a3a7954d4f870d1e076517a}
+
+
+Copy constructor. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgfxmath_1_1_mat44_affaa1c0f2a0746b7d15d02a970590764}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Identity@{Identity}}
+\index{Identity@{Identity}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Mat44} gfxmath\+::\+Mat44\+::\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classgfxmath_1_1_mat44_affaa1c0f2a0746b7d15d02a970590764}
+
+
+The 4x4 identity matrix. 
+
+\hypertarget{classgfxmath_1_1_mat44_afa2fba80f3d058c256de19aa52106b75}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} const\& gfxmath\+::\+Mat44\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{arg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classgfxmath_1_1_mat44_afa2fba80f3d058c256de19aa52106b75}
+
+
+Const accessor for the \hyperlink{classgfxmath_1_1_vec4}{Vec4} columns that make up this matrix. 
+
+\begin{DoxyDate}{Date}
+3/7/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & The \char`\"{}index\char`\"{} of the column to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The indicated column. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_mat44_afca7649a550e6f60443710a586b59cb5}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4}\& gfxmath\+::\+Mat44\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int}]{arg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classgfxmath_1_1_mat44_afca7649a550e6f60443710a586b59cb5}
+
+
+Assignable accessor for the \hyperlink{classgfxmath_1_1_vec4}{Vec4} columns that make up this matrix. 
+
+\begin{DoxyDate}{Date}
+3/7/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & The \char`\"{}index\char`\"{} of the column to get.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The indicated column. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgfxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{left, }
+\item[{const {\bf Mat44} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}
+
+
+Inequality operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}
+
+
+Stream insertion operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The stream. \\
+\hline
+ & {\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The shifted result. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator==@{operator==}}
+\index{operator==@{operator==}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{left, }
+\item[{const {\bf Mat44} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}
+
+
+Equality operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}
+
+
+Stream extraction operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The stream. \\
+\hline
+\mbox{\tt in,out}  & {\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The shifted result. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!Print@{Print}}
+\index{Print@{Print}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{Print}]{\setlength{\rightskip}{0pt plus 5cm}void Print (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}
+
+
+Prints the given matrix\textquotesingle{}s values. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}{}\index{gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}!To\+Console\+Debug\+String@{To\+Console\+Debug\+String}}
+\index{To\+Console\+Debug\+String@{To\+Console\+Debug\+String}!gfxmath\+::\+Mat44@{gfxmath\+::\+Mat44}}
+\subsubsection[{To\+Console\+Debug\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string To\+Console\+Debug\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgfxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}
+
+
+Converts a mat to a console debug string. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mat as a std\+::string. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{mat44_8h}{mat44.\+h}\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{matmath_8h}{matmath.\+h}\end{DoxyCompactItemize}

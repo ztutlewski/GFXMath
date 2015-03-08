@@ -1,0 +1,188 @@
+\hypertarget{group___scalar_math_consts}{}\section{Scalar Math Definitions}
+\label{group___scalar_math_consts}\index{Scalar Math Definitions@{Scalar Math Definitions}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_gad991473bd51363f9743013730e68751a}{}typedef unsigned int \hyperlink{group___scalar_math_consts_gad991473bd51363f9743013730e68751a}{gfxmath\+::\+Mask\+Val}\label{group___scalar_math_consts_gad991473bd51363f9743013730e68751a}
+
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the mask value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{gfxmath\+::\+Float\+Precision} \{ \\*
+\hyperlink{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fad850adf6415a0ab37b1c9fe6d3a50592}{gfxmath\+::\+H\+I\+G\+H} = 0, 
+\hyperlink{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faafc62be75ff50981d67b4fe3601020b3}{gfxmath\+::\+M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H} = 1, 
+\hyperlink{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faae1748fe897ef72c65a32afb59edd9e9}{gfxmath\+::\+M\+E\+D\+I\+U\+M} = 2, 
+\hyperlink{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fab09c406decb8599d2aef4f9a60b7d46b}{gfxmath\+::\+M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W} = 3, 
+\\*
+\hyperlink{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fa373b1e7676b2164a2da51003b901df10}{gfxmath\+::\+L\+O\+W} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent float precisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_gafaec804c6b9d6173f5c1fc07ae7fda13}{}float \hyperlink{group___scalar_math_consts_gafaec804c6b9d6173f5c1fc07ae7fda13}{gfxmath\+::\+Epsilon} ()\label{group___scalar_math_consts_gafaec804c6b9d6173f5c1fc07ae7fda13}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}epsilon\%\% (epsilon) is the smallest single-\/precision floating point value such that \%\%1.\+0\%f\%\% + \textbackslash{}epsilon \textbackslash{}not= 1.\+0\%f \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaf3d71b863bc7ac057d0928590246578e}{}float \hyperlink{group___scalar_math_consts_gaf3d71b863bc7ac057d0928590246578e}{gfxmath\+::\+Infinity} ()\label{group___scalar_math_consts_gaf3d71b863bc7ac057d0928590246578e}
+
+\begin{DoxyCompactList}\small\item\em Single-\/precision floating point representation of \%\%\textbackslash{}infty\%\%. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga992fb71755b0697662cf03672daf4b1f}{}float \hyperlink{group___scalar_math_consts_ga992fb71755b0697662cf03672daf4b1f}{gfxmath\+::\+Float\+Max} ()\label{group___scalar_math_consts_ga992fb71755b0697662cf03672daf4b1f}
+
+\begin{DoxyCompactList}\small\item\em Maximum possible value for a single-\/precision floating point number such that the number is not \%\%\textbackslash{}infty\%\%. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga84de592aedd66fb57593a14b25555f2f}{}float \hyperlink{group___scalar_math_consts_ga84de592aedd66fb57593a14b25555f2f}{gfxmath\+::\+Sin\+Coef} (int i)\label{group___scalar_math_consts_ga84de592aedd66fb57593a14b25555f2f}
+
+\begin{DoxyCompactList}\small\item\em Returns the (i+1)th coefficient for the taylor approximation of sine. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaa3c80693c5730cf478e5d98f73e6a72c}{}float \hyperlink{group___scalar_math_consts_gaa3c80693c5730cf478e5d98f73e6a72c}{gfxmath\+::\+Cos\+Coef} (int i)\label{group___scalar_math_consts_gaa3c80693c5730cf478e5d98f73e6a72c}
+
+\begin{DoxyCompactList}\small\item\em The (i+1)th coefficient for the taylor approximation of cosine. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Val$>$ }\\float \hyperlink{group___scalar_math_consts_ga7b99abd3f4b8efa174dfb553c47801f7}{gfxmath\+::\+Float\+Precision\+Value} ()
+\begin{DoxyCompactList}\small\item\em Returns the ith single-\/precision floating point precision limit used for checking approximate equality of two single-\/precision floating point values. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga762c25f568696ef816d06c6084820049}{}{\footnotesize template$<$Float\+Precision precision\+Val$>$ }\\int \hyperlink{group___scalar_math_consts_ga762c25f568696ef816d06c6084820049}{gfxmath\+::\+Trig\+Precision\+Value} ()\label{group___scalar_math_consts_ga762c25f568696ef816d06c6084820049}
+
+\begin{DoxyCompactList}\small\item\em Returns the ith trig function precision value used to determine how many iterations of a taylor approximation are needed to reach a given accuracy standard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_ga775ec2b017832b9f00808716a8a5678d}{}const float \hyperlink{group___scalar_math_consts_ga775ec2b017832b9f00808716a8a5678d}{gfxmath\+::\+D\+E\+G\+\_\+\+T\+O\+\_\+\+R\+A\+D} = 0.\+01745329251994329576923690768489f\label{group___scalar_math_consts_ga775ec2b017832b9f00808716a8a5678d}
+
+\begin{DoxyCompactList}\small\item\em Degrees to radians conversion factor (\%\%\textbackslash{}frac\{\textbackslash{}pi\}\{180\}\%\%) \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga25da08d770169dc837f7e766a4af50c7}{}const float \hyperlink{group___scalar_math_consts_ga25da08d770169dc837f7e766a4af50c7}{gfxmath\+::\+F\+\_\+\+P\+I\+\_\+4} = 0.\+78539816339744830961566084581988f\label{group___scalar_math_consts_ga25da08d770169dc837f7e766a4af50c7}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{4\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga55f78cc108bc6d4c3338b9a5605ea23e}{}const float \hyperlink{group___scalar_math_consts_ga55f78cc108bc6d4c3338b9a5605ea23e}{gfxmath\+::\+F\+\_\+\+P\+I\+\_\+3} = 1.\+0471975511965977461542144610932f\label{group___scalar_math_consts_ga55f78cc108bc6d4c3338b9a5605ea23e}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga0c8bf8cc8172c063476b12e41af90fdd}{}const float \hyperlink{group___scalar_math_consts_ga0c8bf8cc8172c063476b12e41af90fdd}{gfxmath\+::\+F\+\_\+\+P\+I\+\_\+2} = 1.\+5707963267948966192313216916398f\label{group___scalar_math_consts_ga0c8bf8cc8172c063476b12e41af90fdd}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaf3d6bddb166a005a45bc10c5a28439db}{}const float \hyperlink{group___scalar_math_consts_gaf3d6bddb166a005a45bc10c5a28439db}{gfxmath\+::\+F\+\_\+2\+P\+I\+\_\+3} = 2.\+0943951023931954923084289221863f\label{group___scalar_math_consts_gaf3d6bddb166a005a45bc10c5a28439db}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{2\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gadf574e6f68c342910912fe6689bcec97}{}const float \hyperlink{group___scalar_math_consts_gadf574e6f68c342910912fe6689bcec97}{gfxmath\+::\+F\+\_\+3\+P\+I\+\_\+4} = 2.\+3561944901923449288469825374596f\label{group___scalar_math_consts_gadf574e6f68c342910912fe6689bcec97}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{3\textbackslash{}pi\}\{4\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga2c19b1c00458d0f6bd454617b337d468}{}const float \hyperlink{group___scalar_math_consts_ga2c19b1c00458d0f6bd454617b337d468}{gfxmath\+::\+F\+\_\+\+P\+I} = 3.\+1415926535897932384626433832795f\label{group___scalar_math_consts_ga2c19b1c00458d0f6bd454617b337d468}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}pi\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga4102d0514ecc68aeb12772a49c507288}{}const float \hyperlink{group___scalar_math_consts_ga4102d0514ecc68aeb12772a49c507288}{gfxmath\+::\+F\+\_\+\+P\+I2} = 9.\+8696044010893586188344909998762f\label{group___scalar_math_consts_ga4102d0514ecc68aeb12772a49c507288}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}pi$^\wedge$2\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga557a3cd249de463476b850a3e726f370}{}const float \hyperlink{group___scalar_math_consts_ga557a3cd249de463476b850a3e726f370}{gfxmath\+::\+F\+\_\+4\+P\+I\+\_\+3} = 4.\+1887902047863909846168578443727f\label{group___scalar_math_consts_ga557a3cd249de463476b850a3e726f370}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga868af3e091584d5352e3b00e1503a650}{}const float \hyperlink{group___scalar_math_consts_ga868af3e091584d5352e3b00e1503a650}{gfxmath\+::\+F\+\_\+3\+P\+I\+\_\+2} = 4.\+7123889803846898576939650749193f\label{group___scalar_math_consts_ga868af3e091584d5352e3b00e1503a650}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{3\textbackslash{}pi\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gac6cbd226e329cad09f1bab1504203fec}{}const float \hyperlink{group___scalar_math_consts_gac6cbd226e329cad09f1bab1504203fec}{gfxmath\+::\+F\+\_\+2\+P\+I} = 6.\+283185307179586476925286766559f\label{group___scalar_math_consts_gac6cbd226e329cad09f1bab1504203fec}
+
+\begin{DoxyCompactList}\small\item\em \%\%2\textbackslash{}pi\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga325608134effda0b7b34f7088c419db0}{}const float \hyperlink{group___scalar_math_consts_ga325608134effda0b7b34f7088c419db0}{gfxmath\+::\+F\+\_\+1\+\_\+2\+P\+I} = 0.\+15915494309189533576888376337251f\label{group___scalar_math_consts_ga325608134effda0b7b34f7088c419db0}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{2\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga7d7b856fb17ca616495a547e582ca817}{}const float \hyperlink{group___scalar_math_consts_ga7d7b856fb17ca616495a547e582ca817}{gfxmath\+::\+F\+\_\+2\+\_\+\+P\+I} = 0.\+63661977236758134307553505349006f\label{group___scalar_math_consts_ga7d7b856fb17ca616495a547e582ca817}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{2\}\{\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga3cd60bb81423c63766d16736f113da50}{}const float \hyperlink{group___scalar_math_consts_ga3cd60bb81423c63766d16736f113da50}{gfxmath\+::\+F\+\_\+4\+\_\+\+P\+I} = 1.\+2732395447351626861510701069801f\label{group___scalar_math_consts_ga3cd60bb81423c63766d16736f113da50}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\}\{\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga0eddee00e29a22722352a3d22728d807}{}const float \hyperlink{group___scalar_math_consts_ga0eddee00e29a22722352a3d22728d807}{gfxmath\+::\+F\+\_\+4\+\_\+\+P\+I2} = 0.\+40528473456935108577551785283891f\label{group___scalar_math_consts_ga0eddee00e29a22722352a3d22728d807}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\}\{\textbackslash{}pi$^\wedge$2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga197e5a6509678e965eefa2f9dbc395c6}{}const float \hyperlink{group___scalar_math_consts_ga197e5a6509678e965eefa2f9dbc395c6}{gfxmath\+::\+F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2} = -\/0.\+40528473456935108577551785283891f\label{group___scalar_math_consts_ga197e5a6509678e965eefa2f9dbc395c6}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga43677e4b78975d594a04bc8dadedbc60}{}const float \hyperlink{group___scalar_math_consts_ga43677e4b78975d594a04bc8dadedbc60}{gfxmath\+::\+F\+\_\+\+S\+Q\+R\+T2} = 1.\+4142135623730950488016887242097f\label{group___scalar_math_consts_ga43677e4b78975d594a04bc8dadedbc60}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}sqrt\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga068bdf7e4cc23958b4a0ff5807e830b9}{}const float \hyperlink{group___scalar_math_consts_ga068bdf7e4cc23958b4a0ff5807e830b9}{gfxmath\+::\+F\+\_\+1\+\_\+\+S\+Q\+R\+T2} = 0.\+70710678118654752440084436210485f\label{group___scalar_math_consts_ga068bdf7e4cc23958b4a0ff5807e830b9}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{2\}\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gad8ae4d5759b4629d01fb9f58a4b4b331}{}const float \hyperlink{group___scalar_math_consts_gad8ae4d5759b4629d01fb9f58a4b4b331}{gfxmath\+::\+F\+\_\+1\+\_\+\+S\+Q\+R\+T3} = 0.\+57735026918962576450914878050196f\label{group___scalar_math_consts_gad8ae4d5759b4629d01fb9f58a4b4b331}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{3\}\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga3fef44c3a45acdde18067f03eb073098}{}const float \hyperlink{group___scalar_math_consts_ga3fef44c3a45acdde18067f03eb073098}{gfxmath\+::\+F\+\_\+\+S\+Q\+R\+T3\+\_\+2} = 0.\+86602540378443864676372317075294f\label{group___scalar_math_consts_ga3fef44c3a45acdde18067f03eb073098}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}sqrt\{3\}\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga1e7def1903a3d92805ba4ed841ee1bbf}{}const float \hyperlink{group___scalar_math_consts_ga1e7def1903a3d92805ba4ed841ee1bbf}{gfxmath\+::\+F\+\_\+\+S\+Q\+R\+T3} = 1.\+7320508075688772935274463415059f\label{group___scalar_math_consts_ga1e7def1903a3d92805ba4ed841ee1bbf}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}sqrt\{3\}\%\% \end{DoxyCompactList}\item 
+const Mask\+Val \hyperlink{group___scalar_math_consts_gad2489c06f986e5af29bfb5c2eaca185f}{gfxmath\+::\+F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T} = 0x80000000
+\begin{DoxyCompactList}\small\item\em Mask for the sign bit for standard floating point numbers. \end{DoxyCompactList}\item 
+const size\+\_\+t \hyperlink{group___scalar_math_consts_ga090f5a34fbed01148a6f72dc1abb00e9}{gfxmath\+::\+N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S} = 16
+\begin{DoxyCompactList}\small\item\em Maximum number of trig coefficients supported by I\+E\+E\+E 754 single-\/precision floating point numbers -\/ assuming a taylor approximation. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga2b78b41d32d14485b997dada705037bb}{}const size\+\_\+t \hyperlink{group___scalar_math_consts_ga2b78b41d32d14485b997dada705037bb}{gfxmath\+::\+N\+U\+M\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+V\+A\+L\+S} = 5\label{group___scalar_math_consts_ga2b78b41d32d14485b997dada705037bb}
+
+\begin{DoxyCompactList}\small\item\em Number of precision values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}{}\index{Scalar Math Definitions@{Scalar Math Definitions}!Float\+Precision@{Float\+Precision}}
+\index{Float\+Precision@{Float\+Precision}!Scalar Math Definitions@{Scalar Math Definitions}}
+\subsubsection[{Float\+Precision}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf gfxmath\+::\+Float\+Precision}}\label{group___scalar_math_consts_gae1c17f54b4cd35725ae7e4d54d5e8b8f}
+
+
+Values that represent float precisions. 
+
+\begin{DoxyRemark}{Remarks}
+Used as template arguments for various functions to determine approximation accuracies in floating point comparisons, and taylor approximations. Specifically used with F\+L\+O\+A\+T\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+V\+A\+L\+U\+E\+S and T\+R\+I\+G\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+V\+A\+L\+U\+E\+S. 
+\end{DoxyRemark}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{H\+I\+G\+H@{H\+I\+G\+H}!Scalar Math Definitions@{Scalar Math Definitions}}\index{Scalar Math Definitions@{Scalar Math Definitions}!H\+I\+G\+H@{H\+I\+G\+H}}\item[{\em 
+\hypertarget{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fad850adf6415a0ab37b1c9fe6d3a50592}{}H\+I\+G\+H\label{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fad850adf6415a0ab37b1c9fe6d3a50592}
+}]The high precision option. \index{M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H@{M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H}!Scalar Math Definitions@{Scalar Math Definitions}}\index{Scalar Math Definitions@{Scalar Math Definitions}!M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H@{M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H}}\item[{\em 
+\hypertarget{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faafc62be75ff50981d67b4fe3601020b3}{}M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H\label{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faafc62be75ff50981d67b4fe3601020b3}
+}]The medium-\/high precision option. \index{M\+E\+D\+I\+U\+M@{M\+E\+D\+I\+U\+M}!Scalar Math Definitions@{Scalar Math Definitions}}\index{Scalar Math Definitions@{Scalar Math Definitions}!M\+E\+D\+I\+U\+M@{M\+E\+D\+I\+U\+M}}\item[{\em 
+\hypertarget{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faae1748fe897ef72c65a32afb59edd9e9}{}M\+E\+D\+I\+U\+M\label{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8faae1748fe897ef72c65a32afb59edd9e9}
+}]The medium precision option. \index{M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W@{M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W}!Scalar Math Definitions@{Scalar Math Definitions}}\index{Scalar Math Definitions@{Scalar Math Definitions}!M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W@{M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W}}\item[{\em 
+\hypertarget{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fab09c406decb8599d2aef4f9a60b7d46b}{}M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W\label{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fab09c406decb8599d2aef4f9a60b7d46b}
+}]The medium-\/low precision option. \index{L\+O\+W@{L\+O\+W}!Scalar Math Definitions@{Scalar Math Definitions}}\index{Scalar Math Definitions@{Scalar Math Definitions}!L\+O\+W@{L\+O\+W}}\item[{\em 
+\hypertarget{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fa373b1e7676b2164a2da51003b901df10}{}L\+O\+W\label{group___scalar_math_consts_ggae1c17f54b4cd35725ae7e4d54d5e8b8fa373b1e7676b2164a2da51003b901df10}
+}]The low precision option. \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___scalar_math_consts_ga7b99abd3f4b8efa174dfb553c47801f7}{}\index{Scalar Math Definitions@{Scalar Math Definitions}!Float\+Precision\+Value@{Float\+Precision\+Value}}
+\index{Float\+Precision\+Value@{Float\+Precision\+Value}!Scalar Math Definitions@{Scalar Math Definitions}}
+\subsubsection[{Float\+Precision\+Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision\+Val$>$ float gfxmath\+::\+Float\+Precision\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___scalar_math_consts_ga7b99abd3f4b8efa174dfb553c47801f7}
+
+
+Returns the ith single-\/precision floating point precision limit used for checking approximate equality of two single-\/precision floating point values. 
+
+\begin{DoxyRemark}{Remarks}
+Holds the following values\+:
+\begin{DoxyItemize}
+\item \%\%5.\+0$\ast$10$^\wedge$\{-\/07\}\%\% for gfxmath\+::\+Float\+Precision\+::\+H\+I\+G\+H
+\item \%\%1.\+0$\ast$10$^\wedge$\{-\/05\}\%\% for gfxmath\+::\+Float\+Precision\+::\+M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H
+\item \%\%1.\+0$\ast$10$^\wedge$\{-\/03\}\%\% for gfxmath\+::\+Float\+Precision\+::\+M\+E\+D\+I\+U\+M
+\item \%\%1.\+0$\ast$10$^\wedge$\{-\/02\}\%\% for gfxmath\+::\+Float\+Precision\+::\+M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W
+\item \%\%1.\+0$\ast$10$^\wedge$\{-\/01\}\%\% for gfxmath\+::\+Float\+Precision\+::\+L\+O\+W 
+\end{DoxyItemize}
+\end{DoxyRemark}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group___scalar_math_consts_gad2489c06f986e5af29bfb5c2eaca185f}{}\index{Scalar Math Definitions@{Scalar Math Definitions}!F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T@{F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T}}
+\index{F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T@{F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T}!Scalar Math Definitions@{Scalar Math Definitions}}
+\subsubsection[{F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T}]{\setlength{\rightskip}{0pt plus 5cm}const Mask\+Val gfxmath\+::\+F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T = 0x80000000}\label{group___scalar_math_consts_gad2489c06f986e5af29bfb5c2eaca185f}
+
+
+Mask for the sign bit for standard floating point numbers. 
+
+\hypertarget{group___scalar_math_consts_ga090f5a34fbed01148a6f72dc1abb00e9}{}\index{Scalar Math Definitions@{Scalar Math Definitions}!N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S@{N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S}}
+\index{N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S@{N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S}!Scalar Math Definitions@{Scalar Math Definitions}}
+\subsubsection[{N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S}]{\setlength{\rightskip}{0pt plus 5cm}const size\+\_\+t gfxmath\+::\+N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S = 16}\label{group___scalar_math_consts_ga090f5a34fbed01148a6f72dc1abb00e9}
+
+
+Maximum number of trig coefficients supported by I\+E\+E\+E 754 single-\/precision floating point numbers -\/ assuming a taylor approximation. 
+

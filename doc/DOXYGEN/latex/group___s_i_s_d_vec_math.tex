@@ -1,0 +1,1247 @@
+\hypertarget{group___s_i_s_d_vec_math}{}\section{S\+I\+S\+D Vector Math}
+\label{group___s_i_s_d_vec_math}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgfxmath_1_1_quaternion}{gfxmath\+::\+Quaternion}
+\begin{DoxyCompactList}\small\item\em The quaternion class. \end{DoxyCompactList}\item 
+class \hyperlink{classgfxmath_1_1_vec2}{gfxmath\+::\+Vec2}
+\begin{DoxyCompactList}\small\item\em A 2\+D Vector. \end{DoxyCompactList}\item 
+class \hyperlink{classgfxmath_1_1_vec3}{gfxmath\+::\+Vec3}
+\begin{DoxyCompactList}\small\item\em A mathematical vector with 3 components. \end{DoxyCompactList}\item 
+class \hyperlink{classgfxmath_1_1_vec4}{gfxmath\+::\+Vec4}
+\begin{DoxyCompactList}\small\item\em A mathematical vector with 4 components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}{gfxmath\+::\+Vec2\+Add} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec2s. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}{Vec2\+Add} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec2s. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}{Vec2\+Sub} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec2s. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}{Vec2\+Dot} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgfxmath_1_1_vec2}{Vec2} dot product. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}{Vec2\+Mul\+Scalar} (const Vec2 \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}{Vec2\+Div\+Scalar} (const Vec2 \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}{Vec2\+Normalize} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}{Vec2\+Negate} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}{Vec2\+Approx\+Equal} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec2s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}{Vec2\+Has\+Na\+N} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}{Vec2\+Has\+Infinite} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has an infinite value component. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_gac3979900225f137a1486a4491d0fb6d8}{gfxmath\+::\+Vec3\+Add} (const Vec3 \&first, const Vec3 \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec3s. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_ga8812efd4565ada77e6dab63828ad715b}{gfxmath\+::\+Vec4\+Add} (const Vec4 \&first, const Vec4 \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec4s. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}{gfxmath\+::\+Vec2\+Sub} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec2s. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_gae7189108aa879fb16ce9afd17052ac16}{gfxmath\+::\+Vec3\+Sub} (const Vec3 \&first, const Vec3 \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec3s. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_ga01968b83532d01613a8f89659d4a52dc}{gfxmath\+::\+Vec4\+Sub} (const Vec4 \&first, const Vec4 \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec4s. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}{gfxmath\+::\+Vec2\+Dot} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgfxmath_1_1_vec2}{Vec2} dot product. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_ga02eb26d5238095f747d35890a597e489}{gfxmath\+::\+Vec3\+Dot} (const Vec3 \&first, const Vec3 \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgfxmath_1_1_vec3}{Vec3} dot product. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_ga2deb01c8dd6f1a06c0a0cfc2e96e9c1e}{gfxmath\+::\+Vec4\+Dot} (const Vec4 \&first, const Vec4 \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgfxmath_1_1_vec4}{Vec4} dot product. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}{gfxmath\+::\+Vec2\+Mul\+Scalar} (const Vec2 \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_ga79475199c50b1ee42edc6aa8b5c5795f}{gfxmath\+::\+Vec3\+Mul\+Scalar} (const Vec3 \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_ga70441f2888f0df752fe0624a5a7b362d}{gfxmath\+::\+Vec4\+Mul\+Scalar} (const Vec4 \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}{gfxmath\+::\+Vec2\+Div\+Scalar} (const Vec2 \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_ga8c2d0c0b9d70b417e598489374ef1f88}{gfxmath\+::\+Vec3\+Div\+Scalar} (const Vec3 \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_ga670f1f6ebdadeaa2f656f153218fdee8}{gfxmath\+::\+Vec4\+Div\+Scalar} (const Vec4 \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}{gfxmath\+::\+Vec2\+Normalize} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_gafdbff8ff3fad75f9a9e924a58fcc4f4a}{gfxmath\+::\+Vec3\+Normalize} (const Vec3 \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgfxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_gaf1fa3fbf9843a509f3b8a476aa18361b}{gfxmath\+::\+Vec4\+Normalize} (const Vec4 \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+Quaternion \hyperlink{group___s_i_s_d_vec_math_ga0b4dfb2804fb5c44a112dc6b8ea43278}{gfxmath\+::\+Quaternion\+Normalize} (const Quaternion \&quat)
+\begin{DoxyCompactList}\small\item\em Normalize the given quaternion. \end{DoxyCompactList}\item 
+Vec2 \hyperlink{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}{gfxmath\+::\+Vec2\+Negate} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} components. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_ga8ccc52146f984a79c566ee8348e410e2}{gfxmath\+::\+Vec3\+Negate} (const Vec3 \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} components. \end{DoxyCompactList}\item 
+Vec4 \hyperlink{group___s_i_s_d_vec_math_ga9ba6951d54c6a4d9d513580f5bf3b928}{gfxmath\+::\+Vec4\+Negate} (const Vec4 \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}{gfxmath\+::\+Vec2\+Approx\+Equal} (const Vec2 \&first, const Vec2 \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec2s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_gac042c4407bfaa66715e3c4b5b0a839f4}{gfxmath\+::\+Vec3\+Approx\+Equal} (const Vec3 \&first, const Vec3 \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec3s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_ga819b8c958e12f0838288c641af7e1ab6}{gfxmath\+::\+Vec4\+Approx\+Equal} (const Vec4 \&first, const Vec4 \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec4s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}{gfxmath\+::\+Vec2\+Has\+Na\+N} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga5d19e3d1ee15741a65ede16f20e919a4}{gfxmath\+::\+Vec3\+Has\+Na\+N} (const Vec3 \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_gab82fdfebe73934664b56e9ba1174f37f}{gfxmath\+::\+Vec4\+Has\+Na\+N} (const Vec4 \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}{gfxmath\+::\+Vec2\+Has\+Infinite} (const Vec2 \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has an infinite value component. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_gae5205e805b23de865db9a40e5936f82a}{gfxmath\+::\+Vec3\+Has\+Infinite} (const Vec3 \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} has an infinite value component. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga29cd467d514b701c3a796cb75234be0b}{gfxmath\+::\+Vec4\+Has\+Infinite} (const Vec4 \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has an infinite value component. \end{DoxyCompactList}\item 
+Vec3 \hyperlink{group___s_i_s_d_vec_math_ga455b2ef17c947a780f2b2b9e4b6cccc8}{gfxmath\+::\+Vec3\+Cross} (const Vec3 \&first, const Vec3 \&second)
+\begin{DoxyCompactList}\small\item\em The cross product of the two given Vec3s. \end{DoxyCompactList}\item 
+Quaternion \hyperlink{group___s_i_s_d_vec_math_ga01d5534572884ea932229ccb1aa17ac1}{gfxmath\+::\+Quaternion\+Multiply} (const Quaternion \&q0, const Quaternion \&q1)
+\begin{DoxyCompactList}\small\item\em Multiply the two given Quaternions. \end{DoxyCompactList}\item 
+Quaternion \hyperlink{group___s_i_s_d_vec_math_ga7d4ad4615b2edcd99e9dcf6f0afe74ca}{gfxmath\+::\+Quaternion\+Lerp} (const Quaternion \&q\+Start, const Quaternion \&q\+End, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolate the given quaternions for time t. \end{DoxyCompactList}\item 
+Quaternion \hyperlink{group___s_i_s_d_vec_math_gabbc754cd1e171bd2d945376bb8a39a8f}{gfxmath\+::\+Quaternion\+From\+Axis\+Angle} (const Vec3 \&axis\+Vec, float angle)
+\begin{DoxyCompactList}\small\item\em Produces a quaternion representation of the given axis-\/angle rotation. \end{DoxyCompactList}\item 
+Quaternion \hyperlink{group___s_i_s_d_vec_math_ga6ea767e2a30159fd9c671ce16e949e38}{gfxmath\+::\+Quaternion\+From\+Euler} (const Vec3 \&angles)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\hypertarget{group___s_i_s_d_vec_math_gabbc754cd1e171bd2d945376bb8a39a8f}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Quaternion\+From\+Axis\+Angle@{Quaternion\+From\+Axis\+Angle}}
+\index{Quaternion\+From\+Axis\+Angle@{Quaternion\+From\+Axis\+Angle}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Quaternion\+From\+Axis\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion Quaternion\+From\+Axis\+Angle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{axis\+Vec, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gabbc754cd1e171bd2d945376bb8a39a8f}
+
+
+Produces a quaternion representation of the given axis-\/angle rotation. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Vec} & The axis vec. \\
+\hline
+{\em angle} & The angle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion representation of the given axis-\/angle rotation. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga6ea767e2a30159fd9c671ce16e949e38}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Quaternion\+From\+Euler@{Quaternion\+From\+Euler}}
+\index{Quaternion\+From\+Euler@{Quaternion\+From\+Euler}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Quaternion\+From\+Euler}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion Quaternion\+From\+Euler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{angles}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga6ea767e2a30159fd9c671ce16e949e38}
+
+
+Converts the given euler angles to a quaternion. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & The angles (in radians).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A quaternion representing the given euler angles. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga7d4ad4615b2edcd99e9dcf6f0afe74ca}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Quaternion\+Lerp@{Quaternion\+Lerp}}
+\index{Quaternion\+Lerp@{Quaternion\+Lerp}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Quaternion\+Lerp}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion Quaternion\+Lerp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{q\+Start, }
+\item[{const {\bf Quaternion} \&}]{q\+End, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga7d4ad4615b2edcd99e9dcf6f0afe74ca}
+
+
+Linearly interpolate the given quaternions for time t. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em q\+Start} & The start quaternion. \\
+\hline
+{\em q\+End} & The end quaternion. \\
+\hline
+{\em t} & The \char`\"{}time\char`\"{} between the two quaternions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion lerped between q\+Start and q\+End at time \textquotesingle{}t\textquotesingle{}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga01d5534572884ea932229ccb1aa17ac1}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Quaternion\+Multiply@{Quaternion\+Multiply}}
+\index{Quaternion\+Multiply@{Quaternion\+Multiply}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Quaternion\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion Quaternion\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{q0, }
+\item[{const {\bf Quaternion} \&}]{q1}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga01d5534572884ea932229ccb1aa17ac1}
+
+
+Multiply the two given Quaternions. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em q0} & The first quaternion in the multiplication. \\
+\hline
+{\em q1} & The second quaternion in the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The product of the two given quaternions. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga0b4dfb2804fb5c44a112dc6b8ea43278}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Quaternion\+Normalize@{Quaternion\+Normalize}}
+\index{Quaternion\+Normalize@{Quaternion\+Normalize}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Quaternion\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Quaternion Quaternion\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{quat}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga0b4dfb2804fb5c44a112dc6b8ea43278}
+
+
+Normalize the given quaternion. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & The quaternion.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Add@{Vec2\+Add}}
+\index{Vec2\+Add@{Vec2\+Add}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Add}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}
+
+
+Add the two given Vec2s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} representing the sum of the two given Vec2s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Add@{Vec2\+Add}}
+\index{Vec2\+Add@{Vec2\+Add}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Add}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}
+
+
+Add the two given Vec2s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} representing the sum of the two given Vec2s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Approx\+Equal@{Vec2\+Approx\+Equal}}
+\index{Vec2\+Approx\+Equal@{Vec2\+Approx\+Equal}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec2\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}
+
+
+Determines whether the two Vec2s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x and y components of the two given Vec2s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Approx\+Equal@{Vec2\+Approx\+Equal}}
+\index{Vec2\+Approx\+Equal@{Vec2\+Approx\+Equal}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec2\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}
+
+
+Determines whether the two Vec2s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x and y components of the two given Vec2s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Div\+Scalar@{Vec2\+Div\+Scalar}}
+\index{Vec2\+Div\+Scalar@{Vec2\+Div\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}
+
+
+Divide the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec2}{Vec2} 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Div\+Scalar@{Vec2\+Div\+Scalar}}
+\index{Vec2\+Div\+Scalar@{Vec2\+Div\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}
+
+
+Divide the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec2}{Vec2} 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Dot@{Vec2\+Dot}}
+\index{Vec2\+Dot@{Vec2\+Dot}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec2\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}
+
+
+\hyperlink{classgfxmath_1_1_vec2}{Vec2} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec2s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Dot@{Vec2\+Dot}}
+\index{Vec2\+Dot@{Vec2\+Dot}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec2\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}
+
+
+\hyperlink{classgfxmath_1_1_vec2}{Vec2} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec2s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Has\+Infinite@{Vec2\+Has\+Infinite}}
+\index{Vec2\+Has\+Infinite@{Vec2\+Has\+Infinite}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec2\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}
+
+
+Determines whether or not the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgfxmath_1_1_vec2}{Vec2} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Has\+Infinite@{Vec2\+Has\+Infinite}}
+\index{Vec2\+Has\+Infinite@{Vec2\+Has\+Infinite}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec2\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}
+
+
+Determines whether or not the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgfxmath_1_1_vec2}{Vec2} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Has\+Na\+N@{Vec2\+Has\+Na\+N}}
+\index{Vec2\+Has\+Na\+N@{Vec2\+Has\+Na\+N}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec2\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Has\+Na\+N@{Vec2\+Has\+Na\+N}}
+\index{Vec2\+Has\+Na\+N@{Vec2\+Has\+Na\+N}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec2\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Mul\+Scalar@{Vec2\+Mul\+Scalar}}
+\index{Vec2\+Mul\+Scalar@{Vec2\+Mul\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}
+
+
+Multiply the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Mul\+Scalar@{Vec2\+Mul\+Scalar}}
+\index{Vec2\+Mul\+Scalar@{Vec2\+Mul\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}
+
+
+Multiply the components of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Negate@{Vec2\+Negate}}
+\index{Vec2\+Negate@{Vec2\+Negate}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}
+
+
+Negate the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} with components that are of opposite sign of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Negate@{Vec2\+Negate}}
+\index{Vec2\+Negate@{Vec2\+Negate}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}
+
+
+Negate the given \hyperlink{classgfxmath_1_1_vec2}{Vec2} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} with components that are of opposite sign of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Normalize@{Vec2\+Normalize}}
+\index{Vec2\+Normalize@{Vec2\+Normalize}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}
+
+
+Normalize the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_vec2}{Vec2} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Normalize@{Vec2\+Normalize}}
+\index{Vec2\+Normalize@{Vec2\+Normalize}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}
+
+
+Normalize the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgfxmath_1_1_vec2}{Vec2}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_vec2}{Vec2} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Sub@{Vec2\+Sub}}
+\index{Vec2\+Sub@{Vec2\+Sub}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}
+
+
+Subtract the two given Vec2s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} representing the difference of the two given Vec2s\textquotesingle{} coponents. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec2\+Sub@{Vec2\+Sub}}
+\index{Vec2\+Sub@{Vec2\+Sub}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec2\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}Vec2 Vec2\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{first, }
+\item[{const {\bf Vec2} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}
+
+
+Subtract the two given Vec2s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec2}{Vec2} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec2}{Vec2} representing the difference of the two given Vec2s\textquotesingle{} coponents. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gac3979900225f137a1486a4491d0fb6d8}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Add@{Vec3\+Add}}
+\index{Vec3\+Add@{Vec3\+Add}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Add}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gac3979900225f137a1486a4491d0fb6d8}
+
+
+Add the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec3}{Vec3} representing the sum of the two given Vec3s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gac042c4407bfaa66715e3c4b5b0a839f4}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Approx\+Equal@{Vec3\+Approx\+Equal}}
+\index{Vec3\+Approx\+Equal@{Vec3\+Approx\+Equal}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec3\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_vec_math_gac042c4407bfaa66715e3c4b5b0a839f4}
+
+
+Determines whether the two Vec3s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x, y and z components of the two given Vec3s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga455b2ef17c947a780f2b2b9e4b6cccc8}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Cross@{Vec3\+Cross}}
+\index{Vec3\+Cross@{Vec3\+Cross}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Cross}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga455b2ef17c947a780f2b2b9e4b6cccc8}
+
+
+The cross product of the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the cross product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the cross product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cross produc of the two given Vec3s. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8c2d0c0b9d70b417e598489374ef1f88}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Div\+Scalar@{Vec3\+Div\+Scalar}}
+\index{Vec3\+Div\+Scalar@{Vec3\+Div\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga8c2d0c0b9d70b417e598489374ef1f88}
+
+
+Divide the components of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec3}{Vec3} 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga02eb26d5238095f747d35890a597e489}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Dot@{Vec3\+Dot}}
+\index{Vec3\+Dot@{Vec3\+Dot}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec3\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga02eb26d5238095f747d35890a597e489}
+
+
+\hyperlink{classgfxmath_1_1_vec3}{Vec3} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec3s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gae5205e805b23de865db9a40e5936f82a}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Has\+Infinite@{Vec3\+Has\+Infinite}}
+\index{Vec3\+Has\+Infinite@{Vec3\+Has\+Infinite}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec3\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gae5205e805b23de865db9a40e5936f82a}
+
+
+Determines whether or not the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgfxmath_1_1_vec3}{Vec3} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga5d19e3d1ee15741a65ede16f20e919a4}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Has\+Na\+N@{Vec3\+Has\+Na\+N}}
+\index{Vec3\+Has\+Na\+N@{Vec3\+Has\+Na\+N}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec3\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga5d19e3d1ee15741a65ede16f20e919a4}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga79475199c50b1ee42edc6aa8b5c5795f}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Mul\+Scalar@{Vec3\+Mul\+Scalar}}
+\index{Vec3\+Mul\+Scalar@{Vec3\+Mul\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga79475199c50b1ee42edc6aa8b5c5795f}
+
+
+Multiply the components of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8ccc52146f984a79c566ee8348e410e2}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Negate@{Vec3\+Negate}}
+\index{Vec3\+Negate@{Vec3\+Negate}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga8ccc52146f984a79c566ee8348e410e2}
+
+
+Negate the given \hyperlink{classgfxmath_1_1_vec3}{Vec3} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec3}{Vec3} with components that are of opposite sign of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gafdbff8ff3fad75f9a9e924a58fcc4f4a}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Normalize@{Vec3\+Normalize}}
+\index{Vec3\+Normalize@{Vec3\+Normalize}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gafdbff8ff3fad75f9a9e924a58fcc4f4a}
+
+
+Normalize the given \hyperlink{classgfxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgfxmath_1_1_vec3}{Vec3}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_vec3}{Vec3} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_vec_math_gae7189108aa879fb16ce9afd17052ac16}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec3\+Sub@{Vec3\+Sub}}
+\index{Vec3\+Sub@{Vec3\+Sub}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec3\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}Vec3 Vec3\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gae7189108aa879fb16ce9afd17052ac16}
+
+
+Subtract the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec3}{Vec3} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec3}{Vec3} representing the difference of the two given Vec3s\textquotesingle{} coponents. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga8812efd4565ada77e6dab63828ad715b}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Add@{Vec4\+Add}}
+\index{Vec4\+Add@{Vec4\+Add}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Add}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga8812efd4565ada77e6dab63828ad715b}
+
+
+Add the two given Vec4s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} representing the sum of the two given Vec4s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga819b8c958e12f0838288c641af7e1ab6}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Approx\+Equal@{Vec4\+Approx\+Equal}}
+\index{Vec4\+Approx\+Equal@{Vec4\+Approx\+Equal}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec4\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{group___s_i_s_d_vec_math_ga819b8c958e12f0838288c641af7e1ab6}
+
+
+Determines whether the two Vec4s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x, y, z and w components of the two given Vec4s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga670f1f6ebdadeaa2f656f153218fdee8}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Div\+Scalar@{Vec4\+Div\+Scalar}}
+\index{Vec4\+Div\+Scalar@{Vec4\+Div\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga670f1f6ebdadeaa2f656f153218fdee8}
+
+
+Divide the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec4}{Vec4} 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga2deb01c8dd6f1a06c0a0cfc2e96e9c1e}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Dot@{Vec4\+Dot}}
+\index{Vec4\+Dot@{Vec4\+Dot}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec4\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga2deb01c8dd6f1a06c0a0cfc2e96e9c1e}
+
+
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec4s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga29cd467d514b701c3a796cb75234be0b}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Has\+Infinite@{Vec4\+Has\+Infinite}}
+\index{Vec4\+Has\+Infinite@{Vec4\+Has\+Infinite}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec4\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga29cd467d514b701c3a796cb75234be0b}
+
+
+Determines whether or not the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgfxmath_1_1_vec4}{Vec4} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gab82fdfebe73934664b56e9ba1174f37f}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Has\+Na\+N@{Vec4\+Has\+Na\+N}}
+\index{Vec4\+Has\+Na\+N@{Vec4\+Has\+Na\+N}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec4\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gab82fdfebe73934664b56e9ba1174f37f}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga70441f2888f0df752fe0624a5a7b362d}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Mul\+Scalar@{Vec4\+Mul\+Scalar}}
+\index{Vec4\+Mul\+Scalar@{Vec4\+Mul\+Scalar}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga70441f2888f0df752fe0624a5a7b362d}
+
+
+Multiply the components of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_ga9ba6951d54c6a4d9d513580f5bf3b928}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Negate@{Vec4\+Negate}}
+\index{Vec4\+Negate@{Vec4\+Negate}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga9ba6951d54c6a4d9d513580f5bf3b928}
+
+
+Negate the given \hyperlink{classgfxmath_1_1_vec4}{Vec4} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} with components that are of opposite sign of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+\end{DoxyReturn}
+\hypertarget{group___s_i_s_d_vec_math_gaf1fa3fbf9843a509f3b8a476aa18361b}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Normalize@{Vec4\+Normalize}}
+\index{Vec4\+Normalize@{Vec4\+Normalize}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_gaf1fa3fbf9843a509f3b8a476aa18361b}
+
+
+Normalize the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgfxmath_1_1_vec4}{Vec4} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgfxmath_1_1_vec4}{Vec4}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_vec4}{Vec4} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{group___s_i_s_d_vec_math_ga01968b83532d01613a8f89659d4a52dc}{}\index{S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}!Vec4\+Sub@{Vec4\+Sub}}
+\index{Vec4\+Sub@{Vec4\+Sub}!S\+I\+S\+D Vector Math@{S\+I\+S\+D Vector Math}}
+\subsubsection[{Vec4\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}Vec4 Vec4\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{first, }
+\item[{const {\bf Vec4} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{group___s_i_s_d_vec_math_ga01968b83532d01613a8f89659d4a52dc}
+
+
+Subtract the two given Vec4s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgfxmath_1_1_vec4}{Vec4} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgfxmath_1_1_vec4}{Vec4} representing the difference of the two given Vec4s\textquotesingle{} coponents. 
+\end{DoxyReturn}

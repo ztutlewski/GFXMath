@@ -1,0 +1,51 @@
+\hypertarget{ssemat44_8h}{}\section{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssemat44.h File Reference}
+\label{ssemat44_8h}\index{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssemat44.\+h@{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssemat44.\+h}}
+{\ttfamily \#include \char`\"{}gfxmath\+\_\+config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ssemat\+\_\+math\+\_\+defs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ssevec\+\_\+math\+\_\+defs.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}ssevec.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mat44.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}scalar\+\_\+math.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sisd\+\_\+defns.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$array$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgfxmath_1_1_sse_mat44}{gfxmath\+::\+Sse\+Mat44}
+\begin{DoxyCompactList}\small\item\em A 4x4 column-\/major matrix that uses four Sse\+Vecs for column vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegfxmath}{gfxmath}
+\begin{DoxyCompactList}\small\item\em G of F of X math namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ float, 16 $>$ \hyperlink{namespacegfxmath_a5f87ab4eb6093d145cda3e6772c6bc0a}{gfxmath\+::\+Matrix\+To\+Array} (const Sse\+Mat44 \&mat)
+\begin{DoxyCompactList}\small\item\em Converts the given 4x4 matrix to an array of floats. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_ab38872b965a424d2660e1c4be71ddbe6}{gfxmath\+::\+Matrix\+Multiply} (const Sse\+Mat44 \&left, const Sse\+Mat44 \&right)
+\begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a7d63a634b20c220ad6047dc4633bf70f}{gfxmath\+::\+Matrix\+Inverse} (const Sse\+Mat44 \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a8c2545c52a86496bdf8917a1158f6f24}{gfxmath\+::\+Matrix\+Transpose} (const Sse\+Mat44 \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
+Sse\+Vec \hyperlink{namespacegfxmath_a6709364ddedc83299a1d6a58607a87aa}{gfxmath\+::\+Matrix\+Determinant} (const Sse\+Mat44 \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given \hyperlink{classgfxmath_1_1_sse_mat44}{Sse\+Mat44}. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a786ee918eca59978387d6fce4dab5122}{gfxmath\+::\+Rotation\+Matrix\+From\+Quaternion} (const Sse\+Vec \&quat)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_ac11c40e17108aa72d069b01b6a08bebf}{gfxmath\+::\+Rotation\+Matrix\+From\+Euler} (const Sse\+Vec \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a2b08e7c142f14df78883494d9c2f66e8}{gfxmath\+::\+Translation\+Matrix\+From\+Vec3} (const Sse\+Vec \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a7971ccb3a66b526ba72c66477539c923}{gfxmath\+::\+Scale\+Matrix\+From\+Vec3} (const Sse\+Vec \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a701f5bfeb4c0c0d4b080a9ad00f910ce}{gfxmath\+::\+Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect)
+\begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a67dc21f3890ac0ef9a36b05b71ad36db}{gfxmath\+::\+Look\+Dir} (const Sse\+Vec \&eye, const Sse\+Vec \&dir, const Sse\+Vec \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_abc7554e34178f4e36a906a12ea469c64}{gfxmath\+::\+Look\+At} (const Sse\+Vec \&eye, const Sse\+Vec \&target, const Sse\+Vec \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
+Sse\+Vec \hyperlink{namespacegfxmath_a7f0f017f89ae1ba6cf642fba6ce8e4cd}{gfxmath\+::\+Transform\+Vec3} (const Sse\+Mat44 \&mat, const Sse\+Vec \&vec)
+\begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector via the given \hyperlink{classgfxmath_1_1_sse_mat44}{Sse\+Mat44} matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+

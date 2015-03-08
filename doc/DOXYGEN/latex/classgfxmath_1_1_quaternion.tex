@@ -1,0 +1,413 @@
+\hypertarget{classgfxmath_1_1_quaternion}{}\section{gfxmath\+:\+:Quaternion Class Reference}
+\label{classgfxmath_1_1_quaternion}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+
+
+The quaternion class.  
+
+
+
+
+{\ttfamily \#include $<$quaternion.\+h$>$}
+
+Inheritance diagram for gfxmath\+:\+:Quaternion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classgfxmath_1_1_quaternion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}{Quaternion} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} with all four components being initialized to 0.\+0f. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}{Quaternion} (float xyzw)
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float argument that will be copied into all four component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}{Quaternion} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, float \hyperlink{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}, float \hyperlink{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking four separate component values to use for the respective coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_a4034b6d18b58b65ecf329531d78317db}{Quaternion} (const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&xy, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&zw)
+\begin{DoxyCompactList}\small\item\em Constructor that takes two \hyperlink{classgfxmath_1_1_vec2}{Vec2} arguments and copies their values into the first and second pair of components, respectively. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_a3ae6c4d2f305a7d89f517fdab000152b}{Quaternion} (const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&xy, float \hyperlink{classgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the x and y-\/component values, then two separate floats for the z and w-\/coordinate component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_a3c3a835a39e53ccdccd9b5cce341f379}{Quaternion} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&yz, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float for the x-\/coordinate component, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the y and z-\/coordinate component values, then another floats for the w-\/coordinate component. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_ae3fb1cfeffa2dfe7e5f798d79148eb99}{Quaternion} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, float \hyperlink{classgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}, const \hyperlink{classgfxmath_1_1_vec2}{Vec2} \&zw)
+\begin{DoxyCompactList}\small\item\em Constructor taking two float values for the x and y-\/coordinate component values, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the z and w-\/coordinate component values. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_a86f8a453d076124dc9d19f7e8ab9f045}{Quaternion} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&xyz, float \hyperlink{classgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Constructor taking a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values, followed by a single float for the w-\/coordinate component value. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion_aa91bb97300aa0a6058f0e7ebb52c04db}{Quaternion} (float \hyperlink{classgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&yzw)
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float for the w-\/coordinate component value, followed by a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgfxmath_1_1_quaternion_ace9f51df9b457cbce0c4901087009548}{}static \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_ace9f51df9b457cbce0c4901087009548}{Identity} ()\label{classgfxmath_1_1_quaternion_ace9f51df9b457cbce0c4901087009548}
+
+\begin{DoxyCompactList}\small\item\em The identity quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) {\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_a0b4dfb2804fb5c44a112dc6b8ea43278}{Quaternion\+Normalize} (const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Normalize the given quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_a01d5534572884ea932229ccb1aa17ac1}{Quaternion\+Multiply} (const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&q0, const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&q1)
+\begin{DoxyCompactList}\small\item\em Multiply the two given Quaternions. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_a7d4ad4615b2edcd99e9dcf6f0afe74ca}{Quaternion\+Lerp} (const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&q\+Start, const \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \&q\+End, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolate the given quaternions for time t. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_abbc754cd1e171bd2d945376bb8a39a8f}{Quaternion\+From\+Axis\+Angle} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&axis\+Vec, float angle)
+\begin{DoxyCompactList}\small\item\em Produces a quaternion representation of the given axis-\/angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgfxmath_1_1_quaternion}{Quaternion} \hyperlink{classgfxmath_1_1_quaternion_a6ea767e2a30159fd9c671ce16e949e38}{Quaternion\+From\+Euler} (const \hyperlink{classgfxmath_1_1_vec3}{Vec3} \&angles)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The quaternion class. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+A specialized \hyperlink{classgfxmath_1_1_vec4}{Vec4} used to contain quaternion-\/based rotation data.
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classgfxmath_1_1_vec4}{Vec4} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}
+
+
+Constructs a \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} with all four components being initialized to 0.\+0f. 
+
+\begin{DoxyDate}{Date}
+2/22/2015 
+\end{DoxyDate}
+\hypertarget{classgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{xyzw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}
+
+
+Constructor taking a single float argument that will be copied into all four component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyzw} & The value that will be copied into the x, y, z, and w components. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}
+
+
+Constructor taking four separate component values to use for the respective coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em y} & The y-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em z} & The z-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_a4034b6d18b58b65ecf329531d78317db}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{const {\bf Vec2} \&}]{zw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a4034b6d18b58b65ecf329531d78317db}
+
+
+Constructor that takes two \hyperlink{classgfxmath_1_1_vec2}{Vec2} arguments and copies their values into the first and second pair of components, respectively. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the x and y-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em zw} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_a3ae6c4d2f305a7d89f517fdab000152b}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a3ae6c4d2f305a7d89f517fdab000152b}
+
+
+Constructor taking a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the x and y-\/component values, then two separate floats for the z and w-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the x and y-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em z} & The z-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_a3c3a835a39e53ccdccd9b5cce341f379}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec2} \&}]{yz, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a3c3a835a39e53ccdccd9b5cce341f379}
+
+
+Constructor taking a single float for the x-\/coordinate component, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the y and z-\/coordinate component values, then another floats for the w-\/coordinate component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em yz} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the y and z-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_ae3fb1cfeffa2dfe7e5f798d79148eb99}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{const {\bf Vec2} \&}]{zw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_ae3fb1cfeffa2dfe7e5f798d79148eb99}
+
+
+Constructor taking two float values for the x and y-\/coordinate component values, followed by a \hyperlink{classgfxmath_1_1_vec2}{Vec2} for the z and w-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em y} & The y-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em zw} & The \hyperlink{classgfxmath_1_1_vec2}{Vec2} that will contribute its components to the z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_a86f8a453d076124dc9d19f7e8ab9f045}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{xyz, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_a86f8a453d076124dc9d19f7e8ab9f045}
+
+
+Constructor taking a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values, followed by a single float for the w-\/coordinate component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyz} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} that will contribute its components to the x, y and z-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em w} & The w-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgfxmath_1_1_quaternion_aa91bb97300aa0a6058f0e7ebb52c04db}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec3} \&}]{yzw}
+\end{DoxyParamCaption}
+)}\label{classgfxmath_1_1_quaternion_aa91bb97300aa0a6058f0e7ebb52c04db}
+
+
+Constructor taking a single float for the w-\/coordinate component value, followed by a single \hyperlink{classgfxmath_1_1_vec3}{Vec3} for the x, y, and z-\/coordinate component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate component value of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+{\em yzw} & The \hyperlink{classgfxmath_1_1_vec3}{Vec3} that will contribute its components to the y, z and w-\/coordinate components of this \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgfxmath_1_1_quaternion_abbc754cd1e171bd2d945376bb8a39a8f}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion\+From\+Axis\+Angle@{Quaternion\+From\+Axis\+Angle}}
+\index{Quaternion\+From\+Axis\+Angle@{Quaternion\+From\+Axis\+Angle}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion\+From\+Axis\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Quaternion\+From\+Axis\+Angle (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{axis\+Vec, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_quaternion_abbc754cd1e171bd2d945376bb8a39a8f}
+
+
+Produces a quaternion representation of the given axis-\/angle rotation. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em axis\+Vec} & The axis vec. \\
+\hline
+{\em angle} & The angle.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion representation of the given axis-\/angle rotation. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_quaternion_a6ea767e2a30159fd9c671ce16e949e38}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion\+From\+Euler@{Quaternion\+From\+Euler}}
+\index{Quaternion\+From\+Euler@{Quaternion\+From\+Euler}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion\+From\+Euler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Quaternion\+From\+Euler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{angles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_quaternion_a6ea767e2a30159fd9c671ce16e949e38}
+
+
+Converts the given euler angles to a quaternion. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & The angles (in radians).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A quaternion representing the given euler angles. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_quaternion_a7d4ad4615b2edcd99e9dcf6f0afe74ca}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion\+Lerp@{Quaternion\+Lerp}}
+\index{Quaternion\+Lerp@{Quaternion\+Lerp}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion\+Lerp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Quaternion\+Lerp (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{q\+Start, }
+\item[{const {\bf Quaternion} \&}]{q\+End, }
+\item[{float}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_quaternion_a7d4ad4615b2edcd99e9dcf6f0afe74ca}
+
+
+Linearly interpolate the given quaternions for time t. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em q\+Start} & The start quaternion. \\
+\hline
+{\em q\+End} & The end quaternion. \\
+\hline
+{\em t} & The \char`\"{}time\char`\"{} between the two quaternions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The quaternion lerped between q\+Start and q\+End at time \textquotesingle{}t\textquotesingle{}. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_quaternion_a01d5534572884ea932229ccb1aa17ac1}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion\+Multiply@{Quaternion\+Multiply}}
+\index{Quaternion\+Multiply@{Quaternion\+Multiply}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Quaternion\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{q0, }
+\item[{const {\bf Quaternion} \&}]{q1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_quaternion_a01d5534572884ea932229ccb1aa17ac1}
+
+
+Multiply the two given Quaternions. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em q0} & The first quaternion in the multiplication. \\
+\hline
+{\em q1} & The second quaternion in the multiplication.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The product of the two given quaternions. 
+\end{DoxyReturn}
+\hypertarget{classgfxmath_1_1_quaternion_a0b4dfb2804fb5c44a112dc6b8ea43278}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion\+Normalize@{Quaternion\+Normalize}}
+\index{Quaternion\+Normalize@{Quaternion\+Normalize}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Quaternion} Quaternion\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgfxmath_1_1_quaternion_a0b4dfb2804fb5c44a112dc6b8ea43278}
+
+
+Normalize the given quaternion. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & The quaternion.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classgfxmath_1_1_quaternion}{Quaternion}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgfxmath_1_1_quaternion}{Quaternion} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{quaternion_8h}{quaternion.\+h}\item 
+D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/\hyperlink{vecmath_8h}{vecmath.\+h}\end{DoxyCompactItemize}
