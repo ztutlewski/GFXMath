@@ -164,7 +164,7 @@ lib
 
 **/Windows x86
 **/Windows x86_64
-
+**/Linux x86_64
 # Extra doxygen files
 doc/DOXYGEN/*
 
