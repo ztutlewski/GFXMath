@@ -7,7 +7,7 @@
 
 using namespace std;
 
-namespace gfxengine
+namespace gofxengine
 {
 	string GL_type_to_string(GLenum type)
 	{
@@ -108,7 +108,7 @@ namespace gfxengine
 
 				for (int j = 0; j < size; j++) 
 				{
-					string long_name = nameString + "[" + gfxengine::cvt_to_string(j) + "]";
+					string long_name = nameString + "[" + gofxengine::cvt_to_string(j) + "]";
 					int location = glGetAttribLocation(prog, long_name.c_str());
 					cout << "  " << i << ") type:" << GL_type_to_string(type) << " name:" << name << " location:" << location << endl;
 				}

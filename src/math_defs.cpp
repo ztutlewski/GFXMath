@@ -1,7 +1,7 @@
 #include "math_defs.h"
 #include <limits>
 
-namespace gfxmath
+namespace gofxmath
 {
 	float Infinity()
 	{

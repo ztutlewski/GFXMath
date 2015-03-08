@@ -1,6 +1,6 @@
 #include "string_convert.h"
 
-namespace gfxengine
+namespace gofxengine
 {
 
 #ifdef __MINGW32__

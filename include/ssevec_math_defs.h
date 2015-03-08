@@ -5,13 +5,13 @@
 #include <smmintrin.h>
 #include <immintrin.h>
 #include "math_defs.h"
-#include "gfxmath_config.h"
+
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*! \defgroup VecMathDefs Vector Math Definitions */
 	

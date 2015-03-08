@@ -4,16 +4,16 @@
 #include <array>
 #include <iostream>
 #include "sisd_defns.h"
-#include "gfxmath_config.h"
+
 /*! \file 
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	class Vec2;
 	class Vec4;

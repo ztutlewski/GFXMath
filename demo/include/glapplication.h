@@ -3,7 +3,7 @@
 #include <glew.h>
 #include <GLFW\glfw3.h>
 
-namespace gfxengine
+namespace gofxengine
 {
 	class GLApplication
 	{

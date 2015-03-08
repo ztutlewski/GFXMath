@@ -5,7 +5,7 @@
 #include "scalar_math.h"
 #include <iomanip>
 
-namespace gfxmath
+namespace gofxmath
 {
 	Vec4 Vec4::E0()
 	{

@@ -4,9 +4,9 @@
 #include "ssemat44.h"
 
 using namespace std;
-using namespace gfxmath;
+using namespace gofxmath;
 
-namespace gfxengine
+namespace gofxengine
 {
 	void PrintGofFofXMatrix(const SseMat44& mat)
 	{

@@ -1,7 +1,7 @@
 #ifndef INPUT_DOT_H
 #define INPUT_DOT_H
 
-namespace gfxengine
+namespace gofxengine
 {
 	class GLApplication;
 

@@ -2,7 +2,7 @@
 
 
 using namespace std;
-using namespace gfxmath;
+using namespace gofxmath;
 
 void RunSseMat44InvalidTest(const SseMat44& result)
 {

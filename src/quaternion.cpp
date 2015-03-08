@@ -1,7 +1,7 @@
 #include "quaternion.h"
 #include "vec4.h"
 
-namespace gfxmath
+namespace gofxmath
 {
 	Quaternion Quaternion::Identity()
 	{

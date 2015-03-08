@@ -1,6 +1,6 @@
 #include "objmaterial.h"
 
-namespace gfxengine
+namespace gofxengine
 {
 	// Clear this material (resets everything to defaults)
 	void ObjMaterial::clear()

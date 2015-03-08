@@ -1,6 +1,6 @@
 #include "scalar_tests.h"
 
-using namespace gfxmath;
+using namespace gofxmath;
 
 const std::array<float, NUM_PRECISION_VALS> INF_PRECISION_VALS
 {{

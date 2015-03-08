@@ -1,17 +1,17 @@
 #ifndef QUATERNION_DOT_H
 #define QUATERNION_DOT_H
 #include "vec4.h"
-#include "gfxmath_config.h"
+
 /*! 
  * \file 
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 
 	/*!

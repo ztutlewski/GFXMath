@@ -4,7 +4,7 @@
 #include "vec2.h"
 #include "vec3.h"
 #include "vec4.h"
-#include "gfxmath_config.h"
+
 /*! 
  * \file 
  */
@@ -14,11 +14,11 @@
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \ingroup SIMDVecMath

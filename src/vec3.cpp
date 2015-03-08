@@ -4,7 +4,7 @@
 #include "vec4.h"
 #include <iomanip>
 
-namespace gfxmath
+namespace gofxmath
 {
 	Vec3 Vec3::Right()
 	{ 
@@ -89,12 +89,12 @@ namespace gfxmath
 		return !(left == right);
 	}
 
-	Vec3::operator gfxmath::Vec2() const
+	Vec3::operator gofxmath::Vec2() const
 	{
 		return Vec2(x, y);
 	}
 
-	Vec3::operator gfxmath::Vec4() const
+	Vec3::operator gofxmath::Vec4() const
 	{
 		return Vec4(x, y, z, 0.0f);
 	}

@@ -2,7 +2,7 @@
 #include "vec_tests.h"
 
 using namespace std;
-using namespace gfxmath;
+using namespace gofxmath;
 
 void RunMat44InvalidTest(const Mat44& result)
 {

@@ -6,15 +6,15 @@
 #include <cmath>
 #include <limits>
 
-template<gfxmath::FloatPrecision precisionLevel = gfxmath::FloatPrecision::HIGH>
+template<gofxmath::FloatPrecision precisionLevel = gofxmath::FloatPrecision::HIGH>
 inline bool ApproxEqual_Debug(float left, float right)
 {
-	static const float EPSILON = gfxmath::FloatPrecisionValue<precisionLevel>();
+	static const float EPSILON = gofxmath::FloatPrecisionValue<precisionLevel>();
 
 	return abs(left - right) < EPSILON;
 }
 
-template<gfxmath::FloatPrecision precisionLevel = gfxmath::FloatPrecision::HIGH>
+template<gofxmath::FloatPrecision precisionLevel = gofxmath::FloatPrecision::HIGH>
 inline void RunScalarTest(float result, float expected)
 {
 	INFO("RESULT: " << result);
@@ -24,7 +24,7 @@ inline void RunScalarTest(float result, float expected)
 
 void RunScalarInfTest(float result);
 
-template<gfxmath::FloatPrecision precisionLevel = gfxmath::FloatPrecision::HIGH>
+template<gofxmath::FloatPrecision precisionLevel = gofxmath::FloatPrecision::HIGH>
 inline void RunScalarApproxInfTest(float result)
 {
 	INFO("RESULT: " << result);
@@ -36,6 +36,6 @@ inline void RunScalarApproxInfTest(float result)
 }
 
 
-extern const std::array<float, gfxmath::NUM_PRECISION_VALS> INF_PRECISION_VALS;
+extern const std::array<float, gofxmath::NUM_PRECISION_VALS> INF_PRECISION_VALS;
 
 #endif

@@ -15,7 +15,7 @@ std::string convert(const T& n)
 #define CONVERT_TO_STRING(v) std::to_string((v))
 #endif
 
-namespace gfxengine
+namespace gofxengine
 {
 
 

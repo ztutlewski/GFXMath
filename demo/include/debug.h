@@ -3,19 +3,19 @@
 #include <string>
 #include "ssevec_math_defs.h"
 
-namespace gfxmath
+namespace gofxmath
 {
 	class SseMat44;
 	class Mat44;
 }
 
-namespace gfxengine
+namespace gofxengine
 {
-	void PrintGofFofXMatrix(const gfxmath::SseMat44& mat);
-	void PrintGofFofXMatrix(const gfxmath::Mat44& mat);
-	void PrintMat4WithHeader(const std::string& header, const gfxmath::Mat44& toPrint);
-	void PrintMat4WithHeader(const std::string& header, const gfxmath::SseMat44& toPrint);
-	void PrintSseVecWithHeader(const std::string& header, const gfxmath::SseVec& vec);
+	void PrintGofFofXMatrix(const gofxmath::SseMat44& mat);
+	void PrintGofFofXMatrix(const gofxmath::Mat44& mat);
+	void PrintMat4WithHeader(const std::string& header, const gofxmath::Mat44& toPrint);
+	void PrintMat4WithHeader(const std::string& header, const gofxmath::SseMat44& toPrint);
+	void PrintSseVecWithHeader(const std::string& header, const gofxmath::SseVec& vec);
 }
 
 #endif

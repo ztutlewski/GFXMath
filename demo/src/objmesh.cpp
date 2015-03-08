@@ -1,6 +1,6 @@
 #include "objmesh.h"
 
-namespace gfxengine
+namespace gofxengine
 {
 	// Clear this mesh
 	void ObjMesh::clear()

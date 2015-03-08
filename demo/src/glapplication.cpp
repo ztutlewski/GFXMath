@@ -15,9 +15,9 @@
 #include "ssemat44.h"
 
 using namespace std;
-using namespace gfxmath;
+using namespace gofxmath;
 
-namespace gfxengine
+namespace gofxengine
 {
 	Input input;
 	SseMat44 projection, view, mv, mvp;
@@ -72,7 +72,7 @@ namespace gfxengine
 
 	void GlfwErrorCallback(int error, const char* description)
 	{
-		GLLogErr("GLFW ERROR: code " + gfxengine::cvt_to_string(error) + " msg:" + description);
+		GLLogErr("GLFW ERROR: code " + gofxengine::cvt_to_string(error) + " msg:" + description);
 	}
 
 	void UpdateFPSCounter(GLFWwindow* window)
@@ -87,7 +87,7 @@ namespace gfxengine
 		{
 			previous_seconds = current_seconds;
 			double fps = (double)frame_count / elapsed_seconds;
-			string tmp = "opengl @ fps: " + gfxengine::cvt_to_string(fps);
+			string tmp = "opengl @ fps: " + gofxengine::cvt_to_string(fps);
 			glfwSetWindowTitle(window, tmp.c_str());
 			frame_count = 0;
 		}

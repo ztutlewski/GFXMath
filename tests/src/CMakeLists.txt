@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
-project (GFXTests)
+project (GoFXTests)
 
 include_directories(
 	${GFXMATH_INCLUDE_DIR}
@@ -7,7 +7,7 @@ include_directories(
 	${CMAKE_SOURCE_DIR}/tests/include/Catch
 	)
 	
-add_executable (GFXTests
+add_executable (GoFXTests
 	main.cpp
 	matmath_tests.cpp
 	scalar_tests.cpp
@@ -18,4 +18,4 @@ add_executable (GFXTests
 	
 SET(EXECUTABLE_OUTPUT_PATH ${GFXTESTS_DIR})
 	
-target_link_libraries(GFXTests ${GFXMATH_LIB})
+target_link_libraries(GoFXTests ${GFXMATH_LIB})

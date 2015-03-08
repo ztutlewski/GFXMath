@@ -2,16 +2,15 @@
 #define SCALAR_MATH_DOT_H
 #include "math_defs.h"
 #include <stdint.h>
-#include "gfxmath_config.h"
 /*! \file 
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \defgroup SISDScalarMath SISD Scalar Math

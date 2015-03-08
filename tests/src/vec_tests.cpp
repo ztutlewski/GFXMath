@@ -1,6 +1,6 @@
 #include "vec_tests.h"
 
-using namespace gfxmath;
+using namespace gofxmath;
 using namespace std;
 
 
@@ -36,17 +36,17 @@ bool Vec4IsInf_Debug(const Vec4& vec)
 }
 
 
-void CheckVec2IsNaN(const gfxmath::Vec2& vec)
+void CheckVec2IsNaN(const gofxmath::Vec2& vec)
 {
 	CHECK(Vec2IsNaN_Debug(vec));
 }
 
-void CheckVec3IsNaN(const gfxmath::Vec3& vec)
+void CheckVec3IsNaN(const gofxmath::Vec3& vec)
 {
 	CHECK(Vec3IsNaN_Debug(vec));
 }
 
-void CheckVec4IsNaN(const gfxmath::Vec4& vec)
+void CheckVec4IsNaN(const gofxmath::Vec4& vec)
 {
 	CHECK(Vec4IsNaN_Debug(vec));
 }

@@ -6,7 +6,7 @@
 #include "Vec3.h"
 #include "objmaterial.h"
 
-namespace gfxengine
+namespace gofxengine
 {
 	/* Types of polygons */
 	enum PolyType
@@ -35,9 +35,9 @@ namespace gfxengine
 	/* struct for storing .obj information */
 	struct ObjMesh
 	{
-		std::vector<gfxmath::Vec3> vertices;// Vertices for this mesh
-		std::vector<gfxmath::Vec2> uv;// UV Texture coordinates for this mesh
-		std::vector<gfxmath::Vec3> normals;// Normals for this mesh
+		std::vector<gofxmath::Vec3> vertices;// Vertices for this mesh
+		std::vector<gofxmath::Vec2> uv;// UV Texture coordinates for this mesh
+		std::vector<gofxmath::Vec3> normals;// Normals for this mesh
 		std::vector<unsigned int> faceIndices;// Vertex indices for the faces of this mesh
 		std::vector<unsigned int> uvIndices;// UV indices to go with each vertex
 		std::vector<unsigned int> normIndices;// Normal indices to go with each vertex

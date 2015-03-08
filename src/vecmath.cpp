@@ -2,7 +2,7 @@
 #include <cmath>
 #include "scalar_math.h"
 
-namespace gfxmath
+namespace gofxmath
 {
 	Vec2 Vec2Add(const Vec2& first, const Vec2& second)
 	{

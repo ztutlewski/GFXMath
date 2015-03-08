@@ -1,7 +1,7 @@
 #ifndef MAT_MATH_DOT_H
 #define MAT_MATH_DOT_H
 
-#include "gfxmath_config.h"
+
 #include <array>
 #include "mat44.h"
 
@@ -14,11 +14,11 @@
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	class Quaternion;
 	class Vec3;
@@ -38,7 +38,7 @@ namespace gfxmath
 	 *
 	 * \return	The post-multiplied product of the two matrices.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 MatrixMultiply(const Mat44& first, const Mat44& second);
 
@@ -51,7 +51,7 @@ namespace gfxmath
 	 *
 	 * \return	A float.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	float MatrixDeterminant(const Mat44& mat);
 
@@ -64,7 +64,7 @@ namespace gfxmath
 	 *
 	 * \return	The inverse of the given matrix.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 MatrixInverse(const Mat44& mat);
 
@@ -77,7 +77,7 @@ namespace gfxmath
 	 *
 	 * \return	The transpose matrix of the given matrix.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 MatrixTranspose(const Mat44& mat);
 
@@ -90,7 +90,7 @@ namespace gfxmath
 	 *
 	 * \return	A Mat44.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 RotationMatrixFromQuaternion(const Quaternion& quat);
 
@@ -103,7 +103,7 @@ namespace gfxmath
 	 *
 	 * \return	The 4x4 rotation matrix represented by the given euler angle rotation.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 RotationMatrixFromEuler(const Vec3& angles);
 
@@ -116,7 +116,7 @@ namespace gfxmath
 	 *
 	 * \return	The translation matrix represented by the given 3D position vector.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 TranslationMatrixFromVec3(const Vec3& vec);
 
@@ -129,7 +129,7 @@ namespace gfxmath
 	 *
 	 * \return	The scale matrix represented by the given 3D position vector.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 ScaleMatrixFromVec3(const Vec3& vec);
 
@@ -162,7 +162,7 @@ namespace gfxmath
 	 * + \\(n\\) is the distance to the near clipping plane.
 	 * + \\(a\\) is the aspect ratio of the viewport.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	void PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44& result);
 
@@ -180,7 +180,7 @@ namespace gfxmath
 	 *
 	 * \return	The calculated view matrix.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
 	 */
 	Mat44 LookDir(const Vec3& eye, const Vec3& dir, const Vec3& up);
 
@@ -197,7 +197,7 @@ namespace gfxmath
      *
      * \return The calculated view matrix.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
      */
 	Mat44 LookAt(const Vec3& eye, const Vec3& target, const Vec3& up);
 
@@ -211,7 +211,7 @@ namespace gfxmath
      *
      * \return The transformed 3D vector.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
      */
 	Vec3 TransformVec3(const Mat44& mat, const Vec3& vec);
 
@@ -224,7 +224,7 @@ namespace gfxmath
      * 
      * \return the determinant of the given matrix.
 	 * 
-	 * \relatedalso gfxmath::Mat44
+	 * \relatedalso gofxmath::Mat44
      */
 	float MatrixDeterminant(const Mat44& mat);
 

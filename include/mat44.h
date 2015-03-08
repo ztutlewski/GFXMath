@@ -1,7 +1,7 @@
 #ifndef MAT44_DOT_H
 #define MAT44_DOT_H
 
-#include "gfxmath_config.h"
+
 #include "vec4.h"
 #include "sisd_defns.h"
 #include <string>
@@ -11,11 +11,11 @@
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \ingroup SISDMatMath

@@ -4,7 +4,7 @@
 #include "scalar_math.h"
 #include <iomanip>
 
-namespace gfxmath
+namespace gofxmath
 {
 	Vec2 Vec2::Right()
 	{ 
@@ -76,12 +76,12 @@ namespace gfxmath
 		return !(left == right);
 	}
 
-	Vec2::operator gfxmath::Vec3() const
+	Vec2::operator gofxmath::Vec3() const
 	{
 		return Vec3(x, y, 0.0f);
 	}
 
-	Vec2::operator gfxmath::Vec4() const
+	Vec2::operator gofxmath::Vec4() const
 	{
 		return Vec4(x, y, 0.0f, 0.0f);
 	}

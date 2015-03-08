@@ -4,7 +4,7 @@
 #include <GLFW\glfw3.h>
 #include <string>
 
-namespace gfxengine
+namespace gofxengine
 {
 	std::string GL_type_to_string(GLenum type);
 	bool Is_valid(GLuint prog);

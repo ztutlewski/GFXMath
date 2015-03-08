@@ -1,15 +1,15 @@
 #ifndef MATH_DEFS_DOT_H
 #define MATH_DEFS_DOT_H
 #include <array>
-#include "gfxmath_config.h"
+
 /*! \file */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \defgroup ScalarMathConsts Scalar Math Definitions
@@ -148,11 +148,11 @@ namespace gfxmath
 	 *			equality of two single-precision floating point values.
 	 *
 	 * \remarks	Holds the following values:
-	 *				+ %%5.0*10^{-07}%% for gfxmath::FloatPrecision::HIGH
-	 *				+ %%1.0*10^{-05}%% for gfxmath::FloatPrecision::MEDIUM_HIGH
-	 *				+ %%1.0*10^{-03}%% for gfxmath::FloatPrecision::MEDIUM
-	 *				+ %%1.0*10^{-02}%% for gfxmath::FloatPrecision::MEDIUM_LOW
-	 *				+ %%1.0*10^{-01}%% for gfxmath::FloatPrecision::LOW
+	 *				+ %%5.0*10^{-07}%% for gofxmath::FloatPrecision::HIGH
+	 *				+ %%1.0*10^{-05}%% for gofxmath::FloatPrecision::MEDIUM_HIGH
+	 *				+ %%1.0*10^{-03}%% for gofxmath::FloatPrecision::MEDIUM
+	 *				+ %%1.0*10^{-02}%% for gofxmath::FloatPrecision::MEDIUM_LOW
+	 *				+ %%1.0*10^{-01}%% for gofxmath::FloatPrecision::LOW
 	 */
 	template<FloatPrecision precisionVal>
 	inline float FloatPrecisionValue()

@@ -6,7 +6,7 @@
 #include <cstdlib>
 #endif
 
-namespace gfxmath
+namespace gofxmath
 {
 	Mat44 MatrixMultiply(const Mat44& left, const Mat44& right)
 	{

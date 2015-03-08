@@ -14,11 +14,11 @@ public:
 
 	int matrixTypeVal;
 
-	Mat44TestContext() : matrixTypeVal(gfxmath::MatrixType::MISC), m() {}
+	Mat44TestContext() : matrixTypeVal(gofxmath::MatrixType::MISC), m() {}
 
-	Mat44TestContext(const Mat44Contents& mParam, int matrixTypeVal = gfxmath::MatrixType::MISC) : m(mParam), matrixTypeVal(matrixTypeVal) {}
+	Mat44TestContext(const Mat44Contents& mParam, int matrixTypeVal = gofxmath::MatrixType::MISC) : m(mParam), matrixTypeVal(matrixTypeVal) {}
 
-	Mat44TestContext(const gfxmath::Mat44& mat) : matrixTypeVal(mat.matrixTypeVal)
+	Mat44TestContext(const gofxmath::Mat44& mat) : matrixTypeVal(mat.matrixTypeVal)
 	{
 		for (size_t i = 0; i < 4; i++)
 		{
@@ -29,7 +29,7 @@ public:
 		}
 	}
 
-	template<gfxmath::FloatPrecision precisionLevel>
+	template<gofxmath::FloatPrecision precisionLevel>
 	bool ApproxEqual(const Mat44TestContext& mat)
 	{
 		for (size_t i = 0; i < 4; i++)
@@ -50,8 +50,8 @@ public:
 	friend std::istream& operator >>(std::istream& stream, const Mat44TestContext& mat);
 };
 
-template<gfxmath::FloatPrecision precisionLevel = gfxmath::FloatPrecision::LOW>
-inline void RunMat44Test(const gfxmath::Mat44& result, const gfxmath::Mat44& expected)
+template<gofxmath::FloatPrecision precisionLevel = gofxmath::FloatPrecision::LOW>
+inline void RunMat44Test(const gofxmath::Mat44& result, const gofxmath::Mat44& expected)
 {
 	Mat44TestContext res(result);
 	Mat44TestContext exp(expected);
@@ -65,6 +65,6 @@ inline void RunMat44Test(const gfxmath::Mat44& result, const gfxmath::Mat44& exp
 	CHECK(res.ApproxEqual<precisionLevel>(exp));
 }
 
-void RunMat44InvalidTest(const gfxmath::Mat44& result);
+void RunMat44InvalidTest(const gofxmath::Mat44& result);
 
 #endif

@@ -2,7 +2,7 @@
 #include "glapplication.h"
 #include <iostream>
 
-namespace gfxengine
+namespace gofxengine
 {
 	Input* Input::currentInput;
 	bool Input::inputFuncsInitialized;

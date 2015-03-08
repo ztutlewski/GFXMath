@@ -1,6 +1,6 @@
 #ifndef SSE_MAT44_DOT_H
 #define SSE_MAT44_DOT_H
-#include "gfxmath_config.h"
+
 #include "ssemat_math_defs.h"
 #include "ssevec_math_defs.h"
 #include "ssevec.h"
@@ -18,11 +18,11 @@
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \ingroup SIMDMatMath
@@ -193,7 +193,7 @@ namespace gfxmath
 	 *
 	 * \return	The array of floats representing the given 4x4 matrix.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	inline std::array<float, 16>  MatrixToArray(const SseMat44& mat)
 	{
@@ -224,7 +224,7 @@ namespace gfxmath
 	 *
 	 * \return	The post-multiplied product of the two matrices.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL MatrixMultiply(const SseMat44& left, const SseMat44& right)
 	{
@@ -326,7 +326,7 @@ namespace gfxmath
 	 *
 	 * \return	The inverse of the given matrix.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL MatrixInverse(const SseMat44& mat)
 	{
@@ -495,7 +495,7 @@ namespace gfxmath
 	 *
 	 * \return	The transpose matrix of the given matrix.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL MatrixTranspose(const SseMat44& mat)
 	{
@@ -536,7 +536,7 @@ namespace gfxmath
 	 *
 	 * \return	An SseVec containing four identical copies of this matrix's determinant.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	inline SseVec MatrixDeterminant(const SseMat44& mat)
 	{
@@ -636,7 +636,7 @@ namespace gfxmath
 	 * \return	An SseMat44 with values representing the rotation that was given by. the passed
 	 * 			SseVec quaternion.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL RotationMatrixFromQuaternion(const SseVec& quat)
 	{
@@ -722,7 +722,7 @@ namespace gfxmath
 	 *
 	 * \return	The 4x4 rotation matrix represented by the given euler angle rotation.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL RotationMatrixFromEuler(const SseVec& angles)
 	{
@@ -788,7 +788,7 @@ namespace gfxmath
 	 *
 	 * \return	The translation matrix represented by the given 3D position vector.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL TranslationMatrixFromVec3(const SseVec& vec)
 	{
@@ -810,7 +810,7 @@ namespace gfxmath
 	 *
 	 * \return	The scale matrix represented by the given 3D position vector.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL ScaleMatrixFromVec3(const SseVec& vec)
 	{
@@ -858,7 +858,7 @@ namespace gfxmath
 	 *
 	 * \sa void PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44& result)
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL PerspectiveProjectionMatrix(float near, float far, float fov, float aspect)
 	{		
@@ -895,7 +895,7 @@ namespace gfxmath
 	 *
 	 * \return	The calculated view matrix.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL LookDir(const SseVec& eye, const SseVec& dir, const SseVec& up)
 	{
@@ -973,7 +973,7 @@ namespace gfxmath
 	 *
 	 * \return	The calculated view matrix.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	SSE_MAT_CALL LookAt(const SseVec& eye, const SseVec& target, const SseVec& up)
 	{
@@ -991,7 +991,7 @@ namespace gfxmath
 	 *
 	 * \return	The transformed 3D vector.
 	 *
-	 * \relatedalso gfxmath::SseMat44
+	 * \relatedalso gofxmath::SseMat44
 	 */
 	inline SseVec TransformVec3(const SseMat44& mat, const SseVec& vec)
 	{

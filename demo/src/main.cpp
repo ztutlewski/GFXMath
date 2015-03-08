@@ -1,6 +1,6 @@
 #include "glapplication.h"
 
-using namespace gfxengine;
+using namespace gofxengine;
 
 
 size_t width = 640;

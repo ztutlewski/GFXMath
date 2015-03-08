@@ -36,31 +36,31 @@ struct SseVec2Context;
 struct SseVec3Context;
 struct SseVec4Context;
 
-void RunVec2IsNaNTest(const SseVec2Context& context, const gfxmath::SseVec& result);
-void RunVec3IsNaNTest(const SseVec2Context& context, const gfxmath::SseVec& result);
-void RunVec4IsNaNTest(const SseVec2Context& context, const gfxmath::SseVec& result);
+void RunVec2IsNaNTest(const SseVec2Context& context, const gofxmath::SseVec& result);
+void RunVec3IsNaNTest(const SseVec2Context& context, const gofxmath::SseVec& result);
+void RunVec4IsNaNTest(const SseVec2Context& context, const gofxmath::SseVec& result);
 
-void RunVec2InfTest(const SseVec2Context& context, const gfxmath::SseVec& result);
-void RunVec3InfTest(const SseVec2Context& context, const gfxmath::SseVec& result);
-void RunVec4InfTest(const SseVec2Context& context, const gfxmath::SseVec& result);
+void RunVec2InfTest(const SseVec2Context& context, const gofxmath::SseVec& result);
+void RunVec3InfTest(const SseVec2Context& context, const gofxmath::SseVec& result);
+void RunVec4InfTest(const SseVec2Context& context, const gofxmath::SseVec& result);
 
-void CheckSseVec2IsInfinite(const gfxmath::SseVec& vec);
-void CheckSseVec3IsInfinite(const gfxmath::SseVec& vec);
-void CheckSseVec4IsInfinite(const gfxmath::SseVec& vec);
+void CheckSseVec2IsInfinite(const gofxmath::SseVec& vec);
+void CheckSseVec3IsInfinite(const gofxmath::SseVec& vec);
+void CheckSseVec4IsInfinite(const gofxmath::SseVec& vec);
 
-void CheckSseVec2IsNaN(const gfxmath::SseVec& vec);
-void CheckSseVec3IsNaN(const gfxmath::SseVec& vec);
-void CheckSseVec4IsNaN(const gfxmath::SseVec& vec);
+void CheckSseVec2IsNaN(const gofxmath::SseVec& vec);
+void CheckSseVec3IsNaN(const gofxmath::SseVec& vec);
+void CheckSseVec4IsNaN(const gofxmath::SseVec& vec);
 
-std::string FLoatPrecisionToString(gfxmath::FloatPrecision precision);
+std::string FLoatPrecisionToString(gofxmath::FloatPrecision precision);
 
-gfxmath::SseVec SetSseVec4_Debug(float x, float y, float z, float w);
-gfxmath::SseVec SetSseVec3_Debug(float x, float y, float z);
-gfxmath::SseVec SetSseVec2_Debug(float x, float y);
+gofxmath::SseVec SetSseVec4_Debug(float x, float y, float z, float w);
+gofxmath::SseVec SetSseVec3_Debug(float x, float y, float z);
+gofxmath::SseVec SetSseVec2_Debug(float x, float y);
 
-gfxmath::Vec4 StoreSseVec4_Debug(gfxmath::SseVec col);
-gfxmath::Vec3 StoreSseVec3_Debug(gfxmath::SseVec col);
-gfxmath::Vec2 StoreSseVec2_Debug(gfxmath::SseVec col);
+gofxmath::Vec4 StoreSseVec4_Debug(gofxmath::SseVec col);
+gofxmath::Vec3 StoreSseVec3_Debug(gofxmath::SseVec col);
+gofxmath::Vec2 StoreSseVec2_Debug(gofxmath::SseVec col);
 
 ALIGNED_STRUCT(16) AlignedFloat4
 {
@@ -86,14 +86,14 @@ ALIGNED_STRUCT(16) SseVecContext
 
 ALIGNED_STRUCT(16) SseVec2Context : public SseVecContext
 {
-	gfxmath::Vec2 expected;
+	gofxmath::Vec2 expected;
 
 	SseVec2Context() : SseVecContext()
 	{
-		expected = gfxmath::Vec2();
+		expected = gofxmath::Vec2();
 	}
 
-	SseVec2Context(const std::string& infoParam, const gfxmath::Vec2& expectedParam) : SseVecContext(infoParam)
+	SseVec2Context(const std::string& infoParam, const gofxmath::Vec2& expectedParam) : SseVecContext(infoParam)
 	{
 		expected = expectedParam;
 	}
@@ -101,14 +101,14 @@ ALIGNED_STRUCT(16) SseVec2Context : public SseVecContext
 
 ALIGNED_STRUCT(16) SseVec3Context : public SseVecContext
 {
-	gfxmath::Vec3 expected;
+	gofxmath::Vec3 expected;
 
 	SseVec3Context() : SseVecContext()
 	{
-		expected = gfxmath::Vec3();
+		expected = gofxmath::Vec3();
 	}
 
-	SseVec3Context(const std::string& infoParam, const gfxmath::Vec3& expectedParam) : SseVecContext(infoParam)
+	SseVec3Context(const std::string& infoParam, const gofxmath::Vec3& expectedParam) : SseVecContext(infoParam)
 	{
 		expected = expectedParam;
 	}
@@ -116,14 +116,14 @@ ALIGNED_STRUCT(16) SseVec3Context : public SseVecContext
 
 ALIGNED_STRUCT(16) SseVec4Context : public SseVecContext
 {
-	gfxmath::Vec4 expected;
+	gofxmath::Vec4 expected;
 
 	SseVec4Context() : SseVecContext()
 	{
-		expected = gfxmath::Vec4();
+		expected = gofxmath::Vec4();
 	}
 
-	SseVec4Context(const std::string& infoParam, const gfxmath::Vec4& expectedParam) : SseVecContext(infoParam)
+	SseVec4Context(const std::string& infoParam, const gofxmath::Vec4& expectedParam) : SseVecContext(infoParam)
 	{
 		expected = expectedParam;
 	}
@@ -133,63 +133,63 @@ ALIGNED_STRUCT(16) SseVec4Context : public SseVecContext
 
 ALIGNED_STRUCT(16) SseVec2Context_1Arg : public SseVec2Context
 {
-	gfxmath::SseVec arg;
+	gofxmath::SseVec arg;
 
 	SseVec2Context_1Arg() : SseVec2Context()
 	{
 		arg = _mm_setzero_ps();
 	}
 
-	SseVec2Context_1Arg(const std::string& infoParam, const gfxmath::Vec2& argParam, const gfxmath::Vec2& expectedParam) : SseVec2Context(infoParam, expectedParam)
+	SseVec2Context_1Arg(const std::string& infoParam, const gofxmath::Vec2& argParam, const gofxmath::Vec2& expectedParam) : SseVec2Context(infoParam, expectedParam)
 	{
 		info = infoParam;
-		arg = gfxmath::LoadSseVec2(argParam);
+		arg = gofxmath::LoadSseVec2(argParam);
 		expected = expectedParam;
 	}
 
-	SseVec2Context_1Arg(const std::string& infoParam, const gfxmath::Vec2& argParam) : SseVec2Context_1Arg(infoParam, argParam, argParam) {}
+	SseVec2Context_1Arg(const std::string& infoParam, const gofxmath::Vec2& argParam) : SseVec2Context_1Arg(infoParam, argParam, argParam) {}
 };
 
 ALIGNED_STRUCT(16) SseVec3Context_1Arg : public SseVec3Context
 {
-	gfxmath::SseVec arg;
+	gofxmath::SseVec arg;
 
 	SseVec3Context_1Arg() : SseVec3Context()
 	{
 		arg = _mm_setzero_ps();
 	}
 
-	SseVec3Context_1Arg(const std::string& infoParam, const gfxmath::Vec3& argParam, const gfxmath::Vec3& expectedParam) : SseVec3Context(infoParam, expectedParam)
+	SseVec3Context_1Arg(const std::string& infoParam, const gofxmath::Vec3& argParam, const gofxmath::Vec3& expectedParam) : SseVec3Context(infoParam, expectedParam)
 	{
 		info = infoParam;
-		arg = gfxmath::SetSseVec3(argParam.x, argParam.y, argParam.z);
+		arg = gofxmath::SetSseVec3(argParam.x, argParam.y, argParam.z);
 		expected = expectedParam;
 	}
 
-	SseVec3Context_1Arg(const std::string& infoParam, const gfxmath::Vec3& argParam) : SseVec3Context_1Arg(infoParam, argParam, argParam) {}
+	SseVec3Context_1Arg(const std::string& infoParam, const gofxmath::Vec3& argParam) : SseVec3Context_1Arg(infoParam, argParam, argParam) {}
 };
 
 ALIGNED_STRUCT(16) SseVec4Context_1Arg : public SseVec4Context
 {
-	gfxmath::SseVec arg;
+	gofxmath::SseVec arg;
 
 	SseVec4Context_1Arg() : SseVec4Context()
 	{
 		arg = _mm_setzero_ps();
 	}
 
-	SseVec4Context_1Arg(const std::string& infoParam, const gfxmath::Vec4& argParam, const gfxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
+	SseVec4Context_1Arg(const std::string& infoParam, const gofxmath::Vec4& argParam, const gofxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
 	{
-		arg = gfxmath::LoadSseVec4(argParam);
+		arg = gofxmath::LoadSseVec4(argParam);
 	}
 
-	SseVec4Context_1Arg(const std::string& infoParam, const gfxmath::Vec4& argParam) : SseVec4Context_1Arg(infoParam, argParam, argParam) {}
+	SseVec4Context_1Arg(const std::string& infoParam, const gofxmath::Vec4& argParam) : SseVec4Context_1Arg(infoParam, argParam, argParam) {}
 };
 
 ALIGNED_STRUCT(16) SseVec4Context_2Vec4Args1ScalarArg : public SseVec4Context
 {
-	gfxmath::SseVec arg0;
-	gfxmath::SseVec arg1;
+	gofxmath::SseVec arg0;
+	gofxmath::SseVec arg1;
 	float scalarArg;
 
 	SseVec4Context_2Vec4Args1ScalarArg() : SseVec4Context()
@@ -198,17 +198,17 @@ ALIGNED_STRUCT(16) SseVec4Context_2Vec4Args1ScalarArg : public SseVec4Context
 		scalarArg = 0.0f;
 	}
 
-	SseVec4Context_2Vec4Args1ScalarArg(const std::string& infoParam, const gfxmath::Vec4& arg0Param, const gfxmath::Vec4& arg1Param, float scalarArgParam, const gfxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
+	SseVec4Context_2Vec4Args1ScalarArg(const std::string& infoParam, const gofxmath::Vec4& arg0Param, const gofxmath::Vec4& arg1Param, float scalarArgParam, const gofxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
 	{
-		arg0 = gfxmath::LoadSseVec4(arg0Param);
-		arg1 = gfxmath::LoadSseVec4(arg1Param);
+		arg0 = gofxmath::LoadSseVec4(arg0Param);
+		arg1 = gofxmath::LoadSseVec4(arg1Param);
 		scalarArg = scalarArgParam;
 	}
 };
 
 ALIGNED_STRUCT(16) SseVec4Context_1Vec3Arg1ScalarArg : public SseVec4Context
 {
-	gfxmath::SseVec arg;
+	gofxmath::SseVec arg;
 	float scalarArg;
 
 	SseVec4Context_1Vec3Arg1ScalarArg() : SseVec4Context()
@@ -217,7 +217,7 @@ ALIGNED_STRUCT(16) SseVec4Context_1Vec3Arg1ScalarArg : public SseVec4Context
 		scalarArg = 0.0f;
 	}
 
-	SseVec4Context_1Vec3Arg1ScalarArg(const std::string& infoParam, const gfxmath::Vec3& argParam, float scalarArgParam, const gfxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
+	SseVec4Context_1Vec3Arg1ScalarArg(const std::string& infoParam, const gofxmath::Vec3& argParam, float scalarArgParam, const gofxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
 	{
 		arg = LoadSseVec3(argParam);
 		scalarArg = scalarArgParam;
@@ -226,77 +226,77 @@ ALIGNED_STRUCT(16) SseVec4Context_1Vec3Arg1ScalarArg : public SseVec4Context
 
 ALIGNED_STRUCT(16) SseVec4Context_1Vec3Arg : public SseVec4Context
 {
-	gfxmath::SseVec arg;
+	gofxmath::SseVec arg;
 
 	SseVec4Context_1Vec3Arg() : SseVec4Context()
 	{
 		arg = _mm_setzero_ps();
 	}
 
-	SseVec4Context_1Vec3Arg(const std::string& infoParam, const gfxmath::Vec3& argParam, const gfxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
+	SseVec4Context_1Vec3Arg(const std::string& infoParam, const gofxmath::Vec3& argParam, const gofxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
 	{
-		arg = gfxmath::LoadSseVec3(argParam);
+		arg = gofxmath::LoadSseVec3(argParam);
 	}
 };
 
 
 ALIGNED_STRUCT(16) SseVec2Context_2Args : public SseVec2Context
 {
-	gfxmath::SseVec arg0;
-	gfxmath::SseVec arg1;
+	gofxmath::SseVec arg0;
+	gofxmath::SseVec arg1;
 
 	SseVec2Context_2Args() : SseVec2Context()
 	{
 		arg0 = arg1 = _mm_setzero_ps();
 	}
 
-	SseVec2Context_2Args(const std::string& infoParam, const gfxmath::Vec2& arg0Param, const gfxmath::Vec2& arg1Param, const gfxmath::Vec2& expectedParam) : SseVec2Context(infoParam, expectedParam)
+	SseVec2Context_2Args(const std::string& infoParam, const gofxmath::Vec2& arg0Param, const gofxmath::Vec2& arg1Param, const gofxmath::Vec2& expectedParam) : SseVec2Context(infoParam, expectedParam)
 	{
-		arg0 = gfxmath::LoadSseVec2(arg0Param);
-		arg1 = gfxmath::LoadSseVec2(arg1Param);
+		arg0 = gofxmath::LoadSseVec2(arg0Param);
+		arg1 = gofxmath::LoadSseVec2(arg1Param);
 	}
 };
 
 ALIGNED_STRUCT(16) SseVec3Context_2Args : public SseVec3Context
 {
 	std::string info;
-	gfxmath::SseVec arg0;
-	gfxmath::SseVec arg1;
-	gfxmath::Vec3 expected;
+	gofxmath::SseVec arg0;
+	gofxmath::SseVec arg1;
+	gofxmath::Vec3 expected;
 
 	SseVec3Context_2Args() : SseVec3Context()
 	{
 		arg0 = arg1 = _mm_setzero_ps();
 	}
 
-	SseVec3Context_2Args(const std::string& infoParam, const gfxmath::Vec3& arg0Param, const gfxmath::Vec3& arg1Param, const gfxmath::Vec3& expectedParam) : SseVec3Context(infoParam, expectedParam)
+	SseVec3Context_2Args(const std::string& infoParam, const gofxmath::Vec3& arg0Param, const gofxmath::Vec3& arg1Param, const gofxmath::Vec3& expectedParam) : SseVec3Context(infoParam, expectedParam)
 	{
-		arg0 = gfxmath::LoadSseVec3(arg0Param);
-		arg1 = gfxmath::LoadSseVec3(arg1Param);
+		arg0 = gofxmath::LoadSseVec3(arg0Param);
+		arg1 = gofxmath::LoadSseVec3(arg1Param);
 	}
 };
 
 ALIGNED_STRUCT(16) SseVec4Context_2Args : public SseVec4Context
 {
-	gfxmath::SseVec arg0;
-	gfxmath::SseVec arg1;
+	gofxmath::SseVec arg0;
+	gofxmath::SseVec arg1;
 
 	SseVec4Context_2Args() : SseVec4Context()
 	{
 		arg0 = arg1 = _mm_setzero_ps();
 	}
 
-	SseVec4Context_2Args(const std::string& infoParam, const gfxmath::Vec4& arg0Param, const gfxmath::Vec4& arg1Param, const gfxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
+	SseVec4Context_2Args(const std::string& infoParam, const gofxmath::Vec4& arg0Param, const gofxmath::Vec4& arg1Param, const gofxmath::Vec4& expectedParam) : SseVec4Context(infoParam, expectedParam)
 	{
-		arg0 = gfxmath::LoadSseVec4(arg0Param);
-		arg1 = gfxmath::LoadSseVec4(arg1Param);
+		arg0 = gofxmath::LoadSseVec4(arg0Param);
+		arg1 = gofxmath::LoadSseVec4(arg1Param);
 	}
 };
 
-template<gfxmath::FloatPrecision precisionLevel = gfxmath::FloatPrecision::HIGH>
-inline bool SseVecEqual(const gfxmath::SseVec& leftVec, const gfxmath::SseVec& rightVec)
+template<gofxmath::FloatPrecision precisionLevel = gofxmath::FloatPrecision::HIGH>
+inline bool SseVecEqual(const gofxmath::SseVec& leftVec, const gofxmath::SseVec& rightVec)
 {
-	static const float precisionValue = gfxmath::FloatPrecisionValue<precisionLevel>();
+	static const float precisionValue = gofxmath::FloatPrecisionValue<precisionLevel>();
 
 	AlignedFloat4 leftContainer;
 	AlignedFloat4 rightContainer;
@@ -314,32 +314,32 @@ inline bool SseVecEqual(const gfxmath::SseVec& leftVec, const gfxmath::SseVec& r
 	return true;
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void CheckSseVec2(const gfxmath::SseVec& vec, const gfxmath::Vec2& expected)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void CheckSseVec2(const gofxmath::SseVec& vec, const gofxmath::Vec2& expected)
 {
-	gfxmath::Vec2 result = StoreSseVec2_Debug(vec);
+	gofxmath::Vec2 result = StoreSseVec2_Debug(vec);
 
 	CHECK(Vec2ApproxEqual_Debug<precision>(result, expected));
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void CheckSseVec3(const gfxmath::SseVec& vec, const gfxmath::Vec3& expected)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void CheckSseVec3(const gofxmath::SseVec& vec, const gofxmath::Vec3& expected)
 {
-	gfxmath::Vec3 result = StoreSseVec3_Debug(vec);
+	gofxmath::Vec3 result = StoreSseVec3_Debug(vec);
 
 	CHECK(Vec3ApproxEqual_Debug<precision>(result, expected));
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void CheckSseVec4(const gfxmath::SseVec& vec, const gfxmath::Vec4& expected)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void CheckSseVec4(const gofxmath::SseVec& vec, const gofxmath::Vec4& expected)
 {
-	gfxmath::Vec4 result = StoreSseVec4_Debug(vec);
+	gofxmath::Vec4 result = StoreSseVec4_Debug(vec);
 
 	CHECK(Vec4ApproxEqual_Debug<precision>(result, expected));
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void CheckSseVec(const gfxmath::SseVec& resultVec, const gfxmath::SseVec& expectedVec)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void CheckSseVec(const gofxmath::SseVec& resultVec, const gofxmath::SseVec& expectedVec)
 {
 	AlignedFloat4 resultContainer;
 	AlignedFloat4 expectedContainer;
@@ -351,10 +351,10 @@ inline void CheckSseVec(const gfxmath::SseVec& resultVec, const gfxmath::SseVec&
 	CHECK(SseVecEqual<precision>(resultVec, expectedVec));
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void RunVec2Test(const SseVec2Context& context, const gfxmath::SseVec& result, int index = -1)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void RunVec2Test(const SseVec2Context& context, const gofxmath::SseVec& result, int index = -1)
 {
-	std::string closing = index >= 0 ? "> at index " + gfxengine::cvt_to_string(index) : ">";
+	std::string closing = index >= 0 ? "> at index " + gofxengine::cvt_to_string(index) : ">";
 	std::string resultString = "Result Vector <";
 	std::string expectedString = "Expected Vector <";
 	INFO("Test " << context.info);
@@ -364,10 +364,10 @@ inline void RunVec2Test(const SseVec2Context& context, const gfxmath::SseVec& re
 	CheckSseVec2<precision>(result, context.expected);
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void RunVec3Test(const SseVec3Context& context, const gfxmath::SseVec& result, int index = -1)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void RunVec3Test(const SseVec3Context& context, const gofxmath::SseVec& result, int index = -1)
 {
-	std::string closing = index >= 0 ? "> at index " + gfxengine::cvt_to_string(index) : ">";
+	std::string closing = index >= 0 ? "> at index " + gofxengine::cvt_to_string(index) : ">";
 	std::string resultString = "Result Vector <";
 	std::string expectedString = "Expected Vector <";
 	INFO("Test " << context.info);
@@ -377,14 +377,14 @@ inline void RunVec3Test(const SseVec3Context& context, const gfxmath::SseVec& re
 	CheckSseVec3<precision>(result, context.expected);
 }
 
-template<gfxmath::FloatPrecision precision = gfxmath::FloatPrecision::HIGH>
-inline void RunVec4Test(const SseVec4Context& context, const gfxmath::SseVec& result, int index = -1)
+template<gofxmath::FloatPrecision precision = gofxmath::FloatPrecision::HIGH>
+inline void RunVec4Test(const SseVec4Context& context, const gofxmath::SseVec& result, int index = -1)
 {
-	std::string closing = index >= 0 ? "> at index " + gfxengine::cvt_to_string(index) : ">";
+	std::string closing = index >= 0 ? "> at index " + gofxengine::cvt_to_string(index) : ">";
 	std::string resultString = "Result Vector <";
 	std::string expectedString = "Expected Vector <";
 
-	gfxmath::Vec4 res = StoreSseVec4_Debug(result);
+	gofxmath::Vec4 res = StoreSseVec4_Debug(result);
 
 	INFO("Test " << context.info);
 	INFO(resultString << res << ">");

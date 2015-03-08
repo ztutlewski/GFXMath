@@ -5,7 +5,7 @@
 #include <iomanip>
 
 
-namespace gfxmath
+namespace gofxmath
 {
 	Mat44 Mat44::Identity()
 	{

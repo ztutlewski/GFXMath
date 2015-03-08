@@ -10,7 +10,7 @@
 
 using namespace std;
 
-namespace gfxengine
+namespace gofxengine
 {
 	const string GL_LOG_FILE = "gl.log";
 	const string GL_ERR_FILE = "gl_err.log";
@@ -35,7 +35,7 @@ namespace gfxengine
 #endif
 
 		file << "GL_LOG_FILE log. local time " << (now.tm_year + 1900) << '-' << (now.tm_mon + 1) << '-' << now.tm_mday
-			<< " :: " << gfxengine::cvt_to_string(now.tm_hour) << ":" << gfxengine::cvt_to_string(now.tm_min) << ":" << gfxengine::cvt_to_string(now.tm_sec) << endl;
+			<< " :: " << gofxengine::cvt_to_string(now.tm_hour) << ":" << gofxengine::cvt_to_string(now.tm_min) << ":" << gofxengine::cvt_to_string(now.tm_sec) << endl;
 
 		file.close();
 
@@ -109,16 +109,16 @@ namespace gfxengine
 		for (int i = 0; i < 10; i++) {
 			int v = 0;
 			glGetIntegerv(params[i], &v);
-			GLLog(names[i] + " " + gfxengine::cvt_to_string(v));
+			GLLog(names[i] + " " + gofxengine::cvt_to_string(v));
 		}
 		// others
 		int v[2];
 		v[0] = v[1] = 0;
 		glGetIntegerv(params[10], v);
-		GLLog(names[10] + " " + gfxengine::cvt_to_string(v[0]) + " " + gfxengine::cvt_to_string(v[1]));
+		GLLog(names[10] + " " + gofxengine::cvt_to_string(v[0]) + " " + gofxengine::cvt_to_string(v[1]));
 		unsigned char s = 0;
 		glGetBooleanv(params[11], &s);
-		GLLog(names[11] + " " + gfxengine::cvt_to_string((unsigned int)s));
+		GLLog(names[11] + " " + gofxengine::cvt_to_string((unsigned int)s));
 		GLLog("-----------------------------");
 	}
 }

@@ -44,7 +44,7 @@ if(WIN32)
 
 	set(GFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}")
 			
-	set(GFXMATH_LIB "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}/GfxMath.lib")
+	set(GFXMATH_LIB "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}/GoFXMath.lib")
 		
 	set(GFXTESTS_DIR "${CMAKE_SOURCE_DIR}/tests/${OS_DIR}")
 		
@@ -54,7 +54,7 @@ else(WIN32)
 	
 	set(GFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/Linux")
 		
-	set(GFXMATH_LIB "${GFX_MATH_LIB_DIR}/libGfxMath.a")
+	set(GFXMATH_LIB "${GFX_MATH_LIB_DIR}/libGoFXMath.a")
 		
 endif(WIN32)
 

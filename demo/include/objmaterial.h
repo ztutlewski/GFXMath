@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace gfxengine
+namespace gofxengine
 {
 	/* Illumination Models */
 	enum IlluminationModel

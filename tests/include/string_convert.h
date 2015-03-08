@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace gfxengine
+namespace gofxengine
 {
 	std::string cvt_to_string(int n);
 	std::string cvt_to_string(unsigned int n);

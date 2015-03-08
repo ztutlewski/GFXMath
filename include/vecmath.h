@@ -6,7 +6,7 @@
 #include "vec4.h"
 #include "quaternion.h"
 #include "scalar_math.h"
-#include "gfxmath_config.h"
+
 /*! 
  * \file 
  */
@@ -16,12 +16,12 @@
  */
 
 /*!
- * \namespace	gfxmath
+ * \namespace	gofxmath
  *
  * \brief	G of F of X math namespace.
  */
 
-namespace gfxmath
+namespace gofxmath
 {
 	/*!
 	 * \ingroup SISDVecMath
@@ -38,7 +38,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec2 representing the sum of the two given Vec2s' components.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2Add(const Vec2& first, const Vec2& second);
 
@@ -52,7 +52,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec3 representing the sum of the two given Vec3s' components.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3Add(const Vec3& first, const Vec3& second);
 
@@ -66,7 +66,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec4 representing the sum of the two given Vec4s' components.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4Add(const Vec4& first, const Vec4& second);
 
@@ -80,7 +80,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec2 representing the difference of the two given Vec2s' coponents.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2Sub(const Vec2& first, const Vec2& second);
 
@@ -94,7 +94,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec3 representing the difference of the two given Vec3s' coponents.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3Sub(const Vec3& first, const Vec3& second);
 
@@ -108,7 +108,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec4 representing the difference of the two given Vec4s' coponents.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4Sub(const Vec4& first, const Vec4& second);
 
@@ -122,7 +122,7 @@ namespace gfxmath
 	 *
 	 * \return	The scalar value resulting from the dot product of the two Vec2s' components.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	float Vec2Dot(const Vec2& first, const Vec2& second);
 
@@ -136,7 +136,7 @@ namespace gfxmath
 	 *
 	 * \return	The scalar value resulting from the dot product of the two Vec3s' components.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	float Vec3Dot(const Vec3& first, const Vec3& second);
 
@@ -150,7 +150,7 @@ namespace gfxmath
 	 *
 	 * \return	The scalar value resulting from the dot product of the two Vec4s' components.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	float Vec4Dot(const Vec4& first, const Vec4& second);
 
@@ -164,7 +164,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec2.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2MulScalar(const Vec2& vec, float factor);
 
@@ -178,7 +178,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec3.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3MulScalar(const Vec3& vec, float factor);
 
@@ -192,7 +192,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec4.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4MulScalar(const Vec4& vec, float factor);
 
@@ -206,7 +206,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec2
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2DivScalar(const Vec2& vec, float divisor);
 
@@ -220,7 +220,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec3
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3DivScalar(const Vec3& vec, float divisor);
 
@@ -234,7 +234,7 @@ namespace gfxmath
 	 *
 	 * \return	The scaled Vec4
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4DivScalar(const Vec4& vec, float divisor);
 
@@ -251,7 +251,7 @@ namespace gfxmath
 	 * \remarks Scales the components of the Vec2 such that its
 	 *			length is 1 (unit length).
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2Normalize(const Vec2& vec);
 
@@ -268,7 +268,7 @@ namespace gfxmath
 	 * \remarks Scales the components of the Vec3 such that its
 	 *			length is 1 (unit length).
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3Normalize(const Vec3& vec);
 
@@ -285,7 +285,7 @@ namespace gfxmath
 	 * \remarks Scales the components of the Vec4 such that its
 	 *			length is 1 (unit length).
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4Normalize(const Vec4& vec);
 
@@ -301,7 +301,7 @@ namespace gfxmath
 	 * \remarks Scales the components of the Quaternion such that its
 	 *			length is 1 (unit length).
 	 *
-	 * \relatedalso gfxmath::Quaternion
+	 * \relatedalso gofxmath::Quaternion
 	 */
 	Quaternion QuaternionNormalize(const Quaternion& quat);
 
@@ -314,7 +314,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec2 with components that are of opposite sign of the given Vec2.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	Vec2 Vec2Negate(const Vec2& vec);
 
@@ -327,7 +327,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec3 with components that are of opposite sign of the given Vec3.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3Negate(const Vec3& vec);
 
@@ -340,7 +340,7 @@ namespace gfxmath
 	 *
 	 * \return	The Vec4 with components that are of opposite sign of the given Vec4.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	Vec4 Vec4Negate(const Vec4& vec);
 
@@ -355,7 +355,7 @@ namespace gfxmath
 	 *
 	 * \return  true if the x and y components of the two given Vec2s have values that are within the FloatPrecision accuracy definition of one another, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	template<FloatPrecision precision = FloatPrecision::HIGH>
 	inline bool Vec2ApproxEqual(const Vec2& first, const Vec2& second)
@@ -374,7 +374,7 @@ namespace gfxmath
 	 *
 	 * \return  true if the x, y and z components of the two given Vec3s have values that are within the FloatPrecision accuracy definition of one another, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	template<FloatPrecision precision = FloatPrecision::HIGH>
 	inline bool Vec3ApproxEqual(const Vec3& first, const Vec3& second)
@@ -393,7 +393,7 @@ namespace gfxmath
 	 *
 	 * \return  true if the x, y, z and w components of the two given Vec4s have values that are within the FloatPrecision accuracy definition of one another, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	template<FloatPrecision precision = FloatPrecision::HIGH>
 	inline bool Vec4ApproxEqual(const Vec4& first, const Vec4& second)
@@ -410,7 +410,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec2 has at least one NaN value, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	bool Vec2HasNaN(const Vec2& vec);
 
@@ -423,7 +423,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec3 has at least one NaN value, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	bool Vec3HasNaN(const Vec3& vec);
 
@@ -436,7 +436,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec4 has at least one NaN value, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	bool Vec4HasNaN(const Vec4& vec);
 
@@ -449,7 +449,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec2 has at least one infinite value in its components, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec2
+	 * \relatedalso gofxmath::Vec2
 	 */
 	bool Vec2HasInfinite(const Vec2& vec);
 
@@ -462,7 +462,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec3 has at least one infinite value in its components, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	bool Vec3HasInfinite(const Vec3& vec);
 
@@ -475,7 +475,7 @@ namespace gfxmath
 	 *
 	 * \return	true if the given Vec4 has at least one infinite value in its components, otherwise false.
 	 *
-	 * \relatedalso gfxmath::Vec4
+	 * \relatedalso gofxmath::Vec4
 	 */
 	bool Vec4HasInfinite(const Vec4& vec);
 
@@ -489,7 +489,7 @@ namespace gfxmath
 	 *
 	 * \return	The cross produc of the two given Vec3s.
 	 *
-	 * \relatedalso gfxmath::Vec3
+	 * \relatedalso gofxmath::Vec3
 	 */
 	Vec3 Vec3Cross(const Vec3& first, const Vec3& second);
 
@@ -503,7 +503,7 @@ namespace gfxmath
 	 *
 	 * \return	The product of the two given quaternions.
 	 *
-	 * \relatedalso gfxmath::Quaternion
+	 * \relatedalso gofxmath::Quaternion
 	 */
 	Quaternion QuaternionMultiply(const Quaternion& q0, const Quaternion& q1);
 
@@ -518,7 +518,7 @@ namespace gfxmath
 	 *
 	 * \return	The quaternion lerped between qStart and qEnd at time 't'.
 	 *
-	 * \relatedalso gfxmath::Quaternion
+	 * \relatedalso gofxmath::Quaternion
 	 */
 	Quaternion QuaternionLerp(const Quaternion& qStart, const Quaternion& qEnd, float t);
 
@@ -532,7 +532,7 @@ namespace gfxmath
 	 *
 	 * \return	The quaternion representation of the given axis-angle rotation.
 	 *
-	 * \relatedalso gfxmath::Quaternion
+	 * \relatedalso gofxmath::Quaternion
 	 */
 	Quaternion QuaternionFromAxisAngle(const Vec3& axisVec, float angle);
 
@@ -545,7 +545,7 @@ namespace gfxmath
 	 *
 	 * \return	A quaternion representing the given euler angles.
 	 *
-	 * \relatedalso gfxmath::Quaternion
+	 * \relatedalso gofxmath::Quaternion
 	 */
 	Quaternion QuaternionFromEuler(const Vec3& angles);
 

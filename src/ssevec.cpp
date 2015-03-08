@@ -3,7 +3,7 @@
 
 using namespace std;
 
-namespace gfxmath
+namespace gofxmath
 {
 	void PrintSseVec2(const SseVec& vec)
 	{

@@ -1,6 +1,6 @@
 #ifndef SISD_DEFNS_DOT_H
 #define SISD_DEFNS_DOT_H
-#include "gfxmath_config.h"
+
 #if defined(_MSC_VER)
 /*! \def A byte aligned type */
 #define ALIGNED_TYPE(t,x) __declspec(align(x)) t

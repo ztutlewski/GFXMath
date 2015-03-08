@@ -16,7 +16,7 @@ inline std::string to_string(const T& n)
 }
 #endif
 
-namespace gfxengine
+namespace gofxengine
 {
 	bool RestartGLLog();
 	bool GLLog(const std::string& message);

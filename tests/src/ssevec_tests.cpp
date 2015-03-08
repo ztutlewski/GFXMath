@@ -1,7 +1,7 @@
 #include "ssevec_tests.h"
 #include <array>
 
-using namespace gfxmath;
+using namespace gofxmath;
 using namespace std;
 
 const float SMALL = Epsilon();

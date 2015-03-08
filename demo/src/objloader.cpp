@@ -7,9 +7,9 @@
 #include "stringutility.h"
 #include <unordered_set>
 
-namespace gfxengine
+namespace gofxengine
 {
-	using namespace gfxmath;
+	using namespace gofxmath;
 
 	typedef std::tuple<unsigned int, unsigned int, unsigned int> faceTuple;// Simplification of face tuples into a type
 	void ParseMtlFile(std::string fileDir);
