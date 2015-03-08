@@ -1,9 +1,9 @@
 cmake_minimum_required (VERSION 2.6)
-project (GFXMath)
+project (GoFXMath)
 
 include_directories(${GFXMATH_INCLUDE_DIR})
 
-add_library(GFXMath STATIC 
+add_library(GoFXMath STATIC 
 	mat44.cpp 
 	math_defs.cpp
 	matmath.cpp 
@@ -18,4 +18,4 @@ add_library(GFXMath STATIC
 
 SET(LIBRARY_OUTPUT_PATH ${GFXMATH_LIB_DIR})
 
-target_link_libraries(GFXMath  ITKCommon)
+target_link_libraries(GoFXMath  ITKCommon)
