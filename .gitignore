@@ -166,8 +166,8 @@ lib
 **/Windows x86_64
 
 # Extra doxygen files
-DOXYGEN/*
+doc/DOXYGEN/*
 
 # Keep the subdirectories, though
-!DOXYGEN/html
-!DOXYGEN/latex
+!doc/DOXYGEN/html
+!doc/DOXYGEN/latex
