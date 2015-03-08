@@ -154,3 +154,20 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+# =========================
+# Project Specific Files
+# =========================
+
+# Binary directories
+lib
+**/Linux x86_64
+**/Windows x86
+**/Windows x86_64
+
+# Extra doxygen files
+DOXYGEN/*
+
+# Keep the subdirectories, though
+!DOXYGEN/html
+!DOXYGEN/latex
