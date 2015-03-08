@@ -1,7 +1,7 @@
-# GFXMath
+# GoFXMath
 ## Introduction
 
-The (G&#8728;F)(X) Math library (abbreviated GFXMath) is a lightweight, but powerful, data-oriented math library focused on the development of graphics-oriented applications in C++.
+The (G&#8728;F)(X) Math library (abbreviated GoFXMath) is a lightweight, but powerful, data-oriented math library focused on the development of graphics-oriented applications in C++.
 
 ## Design
 Given that the GFXMath library is designed with data in mind, much of its functionality is overloaded between two major sections: SISD code and SIMD code.
