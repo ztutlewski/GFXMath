@@ -22,6 +22,8 @@ The GoFXMath library does make use of some C++11 features, so any compiler that 
 
 Additionally, as mentioned in the **SIMD** section, the GoFXMath library makes heavy use of intel&reg; SSE functions.  While most of this functionality is defined in earlier forms of the SSE intrinsics, some require SSE-4.1.  However, most currently used, standard, consumer-grade CPUs should be able to accommodate this requirement, as it has had fairly wide support for quite some time.
 
+Compiler-specific binaries can be found at the [GoFXMath Sourceforge page.](https://sourceforge.net/projects/gofx/files/lib/)
+
 ## Tests and Demo Projects
 The prepackaged distribution files, in addition to the binaries and documentation, also contain the compiled test projects and a demo project written for OpenGL (using [GLEW](http://glew.sourceforge.net/) and [GLFW](http://www.glfw.org/)).
 #### Tests
@@ -33,3 +35,5 @@ More information on how to run (or even add to) the tests can be found on the [C
 #### Demo
 --
 There are included windows and linux executables for the demo project.  Naturally, the source code is included alongside the executable.  As mentioned  in the beginning of this section, the demo project uses [GLEW](http://glew.sourceforge.net/) and [GLFW](http://www.glfw.org/), and will require both to be properly linked before it can be built.
+
+Binaries for the demo can be obtained from the [GoFXDemoEngine Sourceforge page.](https://sourceforge.net/projects/gofx/files/demo/)
