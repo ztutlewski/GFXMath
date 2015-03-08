@@ -24,7 +24,6 @@ The SIMD side, on the other hand, almost exclusively utilizes intel® SSE intrin
 
 It should be noted that the defined functions and constants for the GoFXMath library rely on big-endian logic for the SSE registers.  That is to say that the logic incorporated positions the values in "reverse" order in the register from what the built-in sse functions use.  The reason for this is to improve readability of complex SSE logic, and to prevent extra loading/unloading overhead when switching between the standard registers and the SSE registers.  What this means is that when loading a `Vec4` into or out from an SSE register, its values will not need to be reversed on each transfer, and can simply be loaded and unloaded in-order.  Similarly, when calling one of the `SetSseVec` functions, the arguments passed are to be used in the same logical order for the desired vector (e.g. `SetSseVec3(x,y,z)` loads the SSE register with the values like this: `<1.0f, z, y, x>` where the `1.0f` is used with calculations involving transformation matrices.
 
-<<<<<<< HEAD
 ##Requirements
 
 =======
@@ -35,7 +34,7 @@ Compiler-specific binaries, as well as a few other various zipped forms of the p
 
 
 ## Requirements
->>>>>>> origin/master
+
 The GoFXMath library doesn't have any particular dependencies attached to it.  It has been built and tested with Visual C++ 2013 (32 and 64-bit versions, on Windows 7 64-bit), MinGW-w64 g++4.9.2 (64-bit version on Windows 7 64-bit), and GNU g++4.8.2 (Ubuntu 14.04.2 LTS 64-bit).  As of yet, it has not been tested on an Apple machine, though the standard XCode C++ compiler should yield similarly successful results.
 
 The GoFXMath library does make use of some C++11 features, so any compiler that should have any hope of building or using it would need to be up to at least the same level of C++11 standards as Visual C++ 12.
