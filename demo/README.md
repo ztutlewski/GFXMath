@@ -21,4 +21,4 @@
 
 ***Note:*** there are two shader files included - (FragmentShader.frag and VertexShader.vert).  They are not necessary for the project to run, but if they are found in the same directory as the exectuable, they will be used.  By default, they are the same as the default shaders, and are written in GLSL.  Feel free to edit them as you see fit.
 
-Binaries can be obtained 
+Binaries can be obtained at the [GoFXMath source forge page.](https://sourceforge.net/projects/gofx/files/demo/)
