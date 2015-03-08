@@ -1,5 +1,5 @@
-﻿
-#G○FXMath
+
+#(G○F)(X) Math
 
 
 ##Introduction
