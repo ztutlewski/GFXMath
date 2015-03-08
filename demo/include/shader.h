@@ -1,7 +1,7 @@
 #ifndef SHADER_DOT_H
 #define SHADER_DOT_H
-#include <glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <string>
 
 namespace gofxengine

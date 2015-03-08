@@ -2,68 +2,60 @@ cmake_minimum_required (VERSION 2.6)
 	
 # Set the compiler-specific 
 if(MINGW OR CMAKE_COMPILER_IS_GNUCXX)
-	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -msse4.1")
-	set (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -Wall")
-	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Og")
+	set (CUSTOM_FLAGS "-std=c++11 -msse4.1")
+	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CUSTOM_FLAGS}")
+	set (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${CUSTOM_FLAGS} -O3 -Wall")
+	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} ${CUSTOM_FLAGS} -Og")
 elseif (MSVC)
-	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /O2 /Ob2 /Oi /Ot /GL")
-	set (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /W3")
-	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} /Zi /W4")
+	set (CUSTOM_FLAGS "/O2 /Ob2 /Oi /Ot /GL")
+	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${CUSTOM_FLAGS}")
+	set (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${CUSTOM_FLAGS} /W3")
+	string(REGEX REPLACE "/RTC1" "" CMAKE_CXX_FLAGS_DEBUG ${CMAKE_CXX_FLAGS_DEBUG})
+	set (CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} ${CUSTOM_FLAGS} /Zi /W4")
 endif(MINGW OR CMAKE_COMPILER_IS_GNUCXX)
 
-if(WIN32)
-	if(CMAKE_CL_64)
-	
-		if(MINGW)
-		
-			set(ARCH_DIR "MinGW_w64")
-			
-		elseif(MSVC)
-		
-			set(ARCH_DIR "MSVCPP 2013 x86_64")
-			
-		endif(MINGW)
-		
-		set(OS_DIR "Windows x86_64")
-		
-	else(CMAKE_CL_64)
-	
-		if(MINGW)
-		
-			set(ARCH_DIR "MinGW")
-			
-		elseif(MSVC)
-		
-			set(ARCH_DIR "MSVCPP 2013 x86")
-			
-		endif(MINGW)
-		
-		set(OS_DIR "Windows x86")
-		
-	endif(CMAKE_CL_64)
+set(CMAKE_DEBUG_POSTFIX _d)
+set(LIB_EXPORT_FILE "${CMAKE_SOURCE_DIR}/GoFXMath-exports.cmake")
 
-	set(GFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}")
-			
-	set(GFXMATH_LIB "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}/GoFXMath.lib")
-		
-	set(GFXTESTS_DIR "${CMAKE_SOURCE_DIR}/tests/${OS_DIR}")
-		
+if(CMAKE_BUILD_TYPE MATCHES DEBUG)
+	set(BUILD_TYPE_DIR "Debug")
+elseif(CMAKE_BUILD_TYPE MATCHES RELEASE)
+	set(BUIDL_TYPE_DIR "Release")
+elseif(CMAKE_BUILD_TYPE MATCHES RELWITHDEBINFO)
+	set(BUILD_TYPE_DIR "RelWithDebInfo")
+elseif(CMAKE_BUILD_TYPE MATCHES MINSIZEREL)
+	set(BUILD_TYPE_DIR "MinSizeRel")
+endif()
+
+if(WIN32)
+	if(MSVC)
+		if(CMAKE_CL_64)			
+			set(ARCH_DIR "MSVCPP 2013 x86_64")
+			set(OS_DIR "Windows x86_64")
+		else(CMAKE_CL_64)
+			set(ARCH_DIR "MSVCPP 2013 x86")			
+			set(OS_DIR "Windows x86")			
+		endif(CMAKE_CL_64)
+	elseif(MINGW)
+		set(ARCH_DIR "MinGW_w64")
+		if(CMAKE_CL_64)
+			set(ARCH_DIR "MSVCPP 2013 x86_64")
+		else(CMAKE_CL_64)
+			set(OS_DIR "Windows x86")
+		endif(CMAKE_CL_64)
+	endif(MSVC)		
+	
+	set(GOFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/${ARCH_DIR}")
 else(WIN32)
 
 	set(OS_DIR "Linux x86_64")
-	
-	set(GFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/Linux")
-		
-	set(GFXMATH_LIB "${GFX_MATH_LIB_DIR}/libGoFXMath.a")
+	set(GOFXMATH_LIB_DIR "${CMAKE_SOURCE_DIR}/lib/GNU")
 		
 endif(WIN32)
 
-set(GFXMATH_INCLUDE_DIR
-	${CMAKE_SOURCE_DIR}/include)
-set(GFXMATH_DOC_DIR 
-	${CMAKE_SOURCE_DIR}/doc)
-	
-	
+set(GOFXTESTS_DIR "${CMAKE_SOURCE_DIR}/tests/${OS_DIR}")
+set(GOFXMATH_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
+set(GOFXMATH_DOC_DIR "${CMAKE_SOURCE_DIR}/doc")
 
-add_subdirectory(${CMAKE_BINARY_DIR}/src)
-add_subdirectory(${CMAKE_BINARY_DIR}/tests/src)
+add_subdirectory("${CMAKE_BINARY_DIR}/src")
+add_subdirectory("${CMAKE_BINARY_DIR}/tests/src")

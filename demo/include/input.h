@@ -20,8 +20,6 @@ namespace gofxengine
 		float mouseDeltaX;
 		float mouseDeltaY;
 
-		Input(const GLApplication& application);
-
 		Input();
 
 		void ConsumeEvents();

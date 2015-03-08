@@ -1,7 +1,7 @@
 #include "log.h"
 
-#include <glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <time.h>
 #include <stdarg.h>
 #include <iostream>

@@ -1,7 +1,7 @@
 #ifndef GL_APPLICATION_DOT_H
 #define GL_APPLICATION_DOT_H
-#include <glew.h>
-#include <GLFW\glfw3.h>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 
 namespace gofxengine
 {

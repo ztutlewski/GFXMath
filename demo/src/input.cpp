@@ -7,9 +7,7 @@ namespace gofxengine
 	Input* Input::currentInput;
 	bool Input::inputFuncsInitialized;
 
-	Input::Input(){}
-
-	Input::Input(const GLApplication& application)
+	Input::Input()
 	{
 		for (size_t i = 0; i < 26; i++)
 		{
@@ -59,11 +57,6 @@ namespace gofxengine
 		}
 	}
 
-	void MouseButtonEvent(GLFWwindow* window, int button, int action, int mods)
-	{
-
-	}
-
 	Input& Input::GetCurrentInput()
 	{
 		return *currentInput;
@@ -79,7 +72,6 @@ namespace gofxengine
 
 			glfwSetCursorPosCallback(window, MouseMoveEvent);
 			glfwSetKeyCallback(window, KeyEvent);
-			glfwSetMouseButtonCallback(window, MouseButtonEvent);
 
 			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 

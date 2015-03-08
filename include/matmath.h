@@ -20,13 +20,11 @@
  */
 namespace gofxmath
 {
-	class Quaternion;
-	class Vec3;
-	
 	/*!
 	 * \ingroup SISDMatMath
-	 * @{
 	 */
+	class Quaternion;
+	class Vec3;
 
 	/*!
 	 * \brief Calculates the product (post-multiplication) of the two given 4x4 matrices.
@@ -149,9 +147,9 @@ namespace gofxmath
 	 *			\f[
 	 * 			P_{m,n} = 
 	 * 			 \begin{pmatrix}
-	 *			  \cot(\theta)  &	0				 &	 0			&	 0		\\
-	 *			   0			&	\cot(\theta) * a &	-f/(f-n)	&	-1		\\
-	 *			   0			&	 0				 &	-fn/(f-n)	&	 0
+	 *			  \cot(\theta)  &    0               &	 0			&    0		\\
+	 *			   0            &   \cot(\theta) * a &	-f/(f-n)	&	-1		\\
+	 *			   0			&	 0				 &  -fn/(f-n)	&	 0
 	 *			 \end{pmatrix}
 	 *			\f]
 	 *

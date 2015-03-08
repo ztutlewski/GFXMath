@@ -1,11 +1,17 @@
 cmake_minimum_required (VERSION 2.6)
 project (GoFXTests)
 
+set(GOFXTESTS_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/tests/include")
+
 include_directories(
-	${GFXMATH_INCLUDE_DIR}
-	${CMAKE_SOURCE_DIR}/tests/include
-	${CMAKE_SOURCE_DIR}/tests/include/Catch
+	"${GOFXMATH_INCLUDE_DIR}"
+	"${GOFXTESTS_INCLUDE_DIR}"
+	"${GOFXTESTS_INCLUDE_DIR}/Catch"
 	)
+
+link_directories("${GOFXMATH_LIB_DIR}/${BUILD_TYPE_DIR}")
+
+FILE(GLOB GOFXTESTS_HEADERS "${GOFXTESTS_INCLUDE_DIR}/*.h")
 	
 add_executable (GoFXTests
 	main.cpp
@@ -14,8 +20,9 @@ add_executable (GoFXTests
 	ssevec_tests.cpp
 	vec_tests.cpp
 	string_convert.cpp
+	${GOFXTESTS_HEADERS}
 	)
-	
-SET(EXECUTABLE_OUTPUT_PATH ${GFXTESTS_DIR})
-	
-target_link_libraries(GoFXTests ${GFXMATH_LIB})
+
+set(EXECUTABLE_OUTPUT_PATH "${GOFXTESTS_DIR}")
+
+target_link_libraries(GoFXTests GoFXMath)

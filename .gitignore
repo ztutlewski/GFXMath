@@ -171,3 +171,8 @@ doc/DOXYGEN/*
 # Keep the subdirectories, though
 !doc/DOXYGEN/html
 !doc/DOXYGEN/latex
+
+**/CMakeFiles/*
+*.zip
+**/Makefile
+**/cmake_install.cmake

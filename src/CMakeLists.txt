@@ -1,7 +1,9 @@
 cmake_minimum_required (VERSION 2.6)
 project (GoFXMath)
 
-include_directories(${GFXMATH_INCLUDE_DIR})
+include_directories("${GOFXMATH_INCLUDE_DIR}")
+
+FILE(GLOB GOFXMATH_HEADERS "${GOFXMATH_INCLUDE_DIR}/*.h")
 
 add_library(GoFXMath STATIC 
 	mat44.cpp 
@@ -13,9 +15,12 @@ add_library(GoFXMath STATIC
 	vec2.cpp 
 	vec3.cpp 
 	vec4.cpp 
-	vecmath.cpp)
-	
+	vecmath.cpp
+	${GOFXMATH_HEADERS}
+	)
 
-SET(LIBRARY_OUTPUT_PATH ${GFXMATH_LIB_DIR})
+set(LIBRARY_OUTPUT_PATH "${GOFXMATH_LIB_DIR}")
 
-target_link_libraries(GoFXMath  ITKCommon)
+target_link_libraries(GoFXMath)
+
+

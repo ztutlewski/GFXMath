@@ -5,6 +5,7 @@
 #include "vec4.h"
 #include "sisd_defns.h"
 #include <string>
+#include <sstream>
 
 /*!
  * \file 
@@ -169,7 +170,7 @@ namespace gofxmath
 		friend bool operator!=(const Mat44& left, const Mat44& right);
 
 		/*!
-		 * \brief Prints the given matrix's values.
+		 * \brief Prints the given matrix.
 		 *
 		 * \date	2/21/2015
 		 *
@@ -188,16 +189,7 @@ namespace gofxmath
 		 */
 		friend std::string ToConsoleDebugString(const Mat44& mat);
 
-		/*!
-		 *  \brief 		Const accessor for the Vec4 columns that make up this matrix.
-		 *  
-		 *  \date 		3/7/2015
-		 *  
-		 *  \param	arg	The "index" of the column to get.
-		 *  
-		 *  \returns	The indicated column.
-		 */
-		inline Vec4 const& operator[](int arg) const
+		inline const Vec4& operator[](int arg) const
 		{
 			switch (arg)
 			{
@@ -210,17 +202,12 @@ namespace gofxmath
 			case 3:
 				return col3;
 			}
+
+			std::ostringstream msgStream;
+			msgStream << "Value " << arg << " is not valid.  Use an int value between 0 and 3 (inclusive).";
+			throw std::invalid_argument(msgStream.str().c_str());
 		}
 
-		/*!
-		 *  \brief 		Assignable accessor for the Vec4 columns that make up this matrix.
-		 *  
-		 *  \date 		3/7/2015
-		 *  
-		 *  \param	arg	The "index" of the column to get.
-		 *  
-		 *  \returns	The indicated column.
-		 */
 		inline Vec4& operator[](int arg)
 		{
 			switch (arg)
@@ -234,12 +221,16 @@ namespace gofxmath
 			case 3:
 				return col3;
 			}
+
+			std::ostringstream msgStream;
+			msgStream << "Value " << arg << " is not valid.  Use an int value between 0 and 3 (inclusive).";
+			throw std::invalid_argument(msgStream.str().c_str());
 		}
 
-		Vec4 col0;/*!< The first column in the matrix */
-		Vec4 col1;/*!< The second column in the matrix */
-		Vec4 col2;/*!< The third column in the matrix */
-		Vec4 col3;/*!< The fourth column in the matrix */
+		Vec4 col0;
+		Vec4 col1;
+		Vec4 col2;
+		Vec4 col3;
 
 		MatrixType matrixTypeVal;   /*!< The matrix type value */
 

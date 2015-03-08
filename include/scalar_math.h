@@ -2,6 +2,7 @@
 #define SCALAR_MATH_DOT_H
 #include "math_defs.h"
 #include <stdint.h>
+
 /*! \file 
  */
 
