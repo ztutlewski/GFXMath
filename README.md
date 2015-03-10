@@ -27,7 +27,7 @@ It should be noted that the defined functions and constants for the GoFXMath lib
 
 ## Binaries
 
-Compiler-specific binaries, as well as a few other various zipped forms of the project, can be found at the [GoFXMath Sourceforge page.](https://sourceforge.net/projects/gofx/files/)
+Compiler-specific binaries, as well as a few other various zipped forms of the project, can be found in  [this project's releases](https://github.com/ztutlewski/GoFXMath/releases) or at the [GoFXMath Sourceforge page.](https://sourceforge.net/projects/gofx/files/)
 
 
 ## Requirements
