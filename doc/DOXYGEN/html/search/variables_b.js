@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../classgfxmath_1_1_vec2.html#ae822579debf2a7b9aab468fbb4ce218d',1,'gfxmath::Vec2::x()'],['../classgfxmath_1_1_vec3.html#adb7cecf3b6d25eecf3924583f41d8c3a',1,'gfxmath::Vec3::x()'],['../classgfxmath_1_1_vec4.html#a273598aff75406f0e7a47121b8b06037',1,'gfxmath::Vec4::x()']]]
+  ['x',['x',['../classgofxmath_1_1_vec2.html#a09ebe2a3b8bdcfe220849bebb45a7e73',1,'gofxmath::Vec2::x()'],['../classgofxmath_1_1_vec3.html#a507868ff65b4e42f80da14bf355ee10a',1,'gofxmath::Vec3::x()'],['../classgofxmath_1_1_vec4.html#a5de27b4df2e699a1b30ec3a51258f208',1,'gofxmath::Vec4::x()']]]
 ];

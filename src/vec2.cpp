@@ -85,4 +85,9 @@ namespace gofxmath
 	{
 		return Vec4(x, y, 0.0f, 0.0f);
 	}
+
+	Vec4 Vec2::ToColVec() const
+	{
+		return Vec4(x, y, 0.0f, 1.0f);
+	}
 }

@@ -1,0 +1,746 @@
+\hypertarget{classgofxmath_1_1_mat44}{}\section{gofxmath\+:\+:Mat44 Class Reference}
+\label{classgofxmath_1_1_mat44}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+
+
+4x4 Column Matrix.  
+
+
+
+
+{\ttfamily \#include $<$mat44.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgofxmath_1_1_mat44_ab452a16f32c33e05bfce858032906ee2}{Mat44} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to 0 vectors. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44_a9cd098e441ff71da3baa92e3698775a6}{Mat44} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&c0, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&c1, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&c2, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&c3, \hyperlink{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}{Matrix\+Type} \hyperlink{classgofxmath_1_1_mat44_a00c48d54f2828ae7c63821723a1c210f}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to the given 4\+D vectors and (optionally) the matrix\+Type\+Val with the given Matrix\+Type value. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44_a81b9064e89f6781310caeb8e7c68623e}{Mat44} (float m00, float m10, float m20, float m30, float m01, float m11, float m21, float m31, float m02, float m12, float m22, float m32, float m03, float m13, float m23, float m33, \hyperlink{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}{Matrix\+Type} \hyperlink{classgofxmath_1_1_mat44_a00c48d54f2828ae7c63821723a1c210f}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all 4 column vectors being initialized to the given scalar values. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44_afecfdb9f26d2b667ace74a2f7aa02ad8}{Mat44} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Copies the values from the given matrix\textquotesingle{}s columns into the respective columns of this matrix, sets this instance\textquotesingle{}s matrix\+Type\+Val to the matrix\+Type\+Val given by the converted matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44_a966d4fe8c53854e570e802c7ea7432b4}{Mat44} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_mat44_af1200cebfc1e017a9620c329a48983bc}{}const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int arg) const \label{classgofxmath_1_1_mat44_af1200cebfc1e017a9620c329a48983bc}
+
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a9bc95dac89f379fd7a8705e1bd991fb9}{}\hyperlink{classgofxmath_1_1_vec4}{Vec4} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int arg)\label{classgofxmath_1_1_mat44_a9bc95dac89f379fd7a8705e1bd991fb9}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_ab29ffef6b95835a3b7e9ac8f58cc2cd4}{Identity} ()
+\begin{DoxyCompactList}\small\item\em The 4x4 identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a364032fc50f6fdaabf8455d32c74e588}{}\hyperlink{classgofxmath_1_1_vec4}{Vec4} {\bfseries col0}\label{classgofxmath_1_1_mat44_a364032fc50f6fdaabf8455d32c74e588}
+
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a72f0814f75f9404603bb8f5b62e8ff34}{}\hyperlink{classgofxmath_1_1_vec4}{Vec4} {\bfseries col1}\label{classgofxmath_1_1_mat44_a72f0814f75f9404603bb8f5b62e8ff34}
+
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a984e37356a1e5adcbe6ea034948e33c7}{}\hyperlink{classgofxmath_1_1_vec4}{Vec4} {\bfseries col2}\label{classgofxmath_1_1_mat44_a984e37356a1e5adcbe6ea034948e33c7}
+
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a418eb7103e7a663ab3fcf096f9f2cb62}{}\hyperlink{classgofxmath_1_1_vec4}{Vec4} {\bfseries col3}\label{classgofxmath_1_1_mat44_a418eb7103e7a663ab3fcf096f9f2cb62}
+
+\item 
+\hypertarget{classgofxmath_1_1_mat44_a00c48d54f2828ae7c63821723a1c210f}{}\hyperlink{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}{Matrix\+Type} \hyperlink{classgofxmath_1_1_mat44_a00c48d54f2828ae7c63821723a1c210f}{matrix\+Type\+Val}\label{classgofxmath_1_1_mat44_a00c48d54f2828ae7c63821723a1c210f}
+
+\begin{DoxyCompactList}\small\item\em The matrix type value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classgofxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Stream insertion operator. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{classgofxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Stream extraction operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}{operator==} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&left, const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&right)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}{operator!=} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&left, const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&right)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\item 
+void \hyperlink{classgofxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}{Print} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Prints the given matrix. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classgofxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}{To\+Console\+Debug\+String} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Converts a mat to a console debug string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a4439d3f4590c372ada775196d1576f81}{Matrix\+Multiply} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&first, const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&second)
+\begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}{Matrix\+Determinant} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a38c661c8ad19528520d36fabca7d555f}{Matrix\+Inverse} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a626e52b58fb763a90ba6e9d46966ee75}{Matrix\+Transpose} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_ad7198c521a4d93e82694f39f0be736c9}{Rotation\+Matrix\+From\+Quaternion} (const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a206e53fa5ea77b54765946af3d04ca0e}{Rotation\+Matrix\+From\+Euler} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a2d82d58bdc14d1f1644b05a7419ea05e}{Translation\+Matrix\+From\+Vec3} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a8ec877a1635b6a682a15195b47e1f21d}{Scale\+Matrix\+From\+Vec3} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
+void \hyperlink{classgofxmath_1_1_mat44_a8aa599fb24b0a8ce16acf8092ee29478}{Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect, \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&result)
+\begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_a1d0cf66e3877d2be1e104bbacec0c917}{Look\+Dir} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&dir, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{classgofxmath_1_1_mat44_ac420c9cd578ebe0b21c9db7757bc4c2d}{Look\+At} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&target, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_mat44_a503b30792d41234b29089176be81cf6c}{Transform\+Vec3} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}{Matrix\+Determinant} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given \hyperlink{classgofxmath_1_1_mat44}{Mat44}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+4x4 Column Matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgofxmath_1_1_mat44_ab452a16f32c33e05bfce858032906ee2}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_mat44_ab452a16f32c33e05bfce858032906ee2}
+
+
+Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to 0 vectors. 
+
+\begin{DoxyDate}{Date}
+2/21/2015 
+\end{DoxyDate}
+\hypertarget{classgofxmath_1_1_mat44_a9cd098e441ff71da3baa92e3698775a6}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{c0, }
+\item[{const {\bf Vec4} \&}]{c1, }
+\item[{const {\bf Vec4} \&}]{c2, }
+\item[{const {\bf Vec4} \&}]{c3, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_mat44_a9cd098e441ff71da3baa92e3698775a6}
+
+
+Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all four column vectors being initialized to the given 4\+D vectors and (optionally) the matrix\+Type\+Val with the given Matrix\+Type value. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em c0} & The first column. \\
+\hline
+{\em c1} & The second column. \\
+\hline
+{\em c2} & The third column. \\
+\hline
+{\em c3} & The fourth column. \\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_mat44_a81b9064e89f6781310caeb8e7c68623e}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{float}]{m00, }
+\item[{float}]{m10, }
+\item[{float}]{m20, }
+\item[{float}]{m30, }
+\item[{float}]{m01, }
+\item[{float}]{m11, }
+\item[{float}]{m21, }
+\item[{float}]{m31, }
+\item[{float}]{m02, }
+\item[{float}]{m12, }
+\item[{float}]{m22, }
+\item[{float}]{m32, }
+\item[{float}]{m03, }
+\item[{float}]{m13, }
+\item[{float}]{m23, }
+\item[{float}]{m33, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_mat44_a81b9064e89f6781310caeb8e7c68623e}
+
+
+Constructs a \hyperlink{classgofxmath_1_1_mat44}{Mat44} with all 4 column vectors being initialized to the given scalar values. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em m00} & Row 0 Col 0 Value. \\
+\hline
+{\em m10} & Row 1 Col 0 Value. \\
+\hline
+{\em m20} & Row 2 Col 0 Value. \\
+\hline
+{\em m30} & Row 3 Col 0 Value.\\
+\hline
+{\em m01} & Row 0 Col 1 Value. \\
+\hline
+{\em m11} & Row 1 Col 1 Value. \\
+\hline
+{\em m21} & Row 2 Col 1 Value. \\
+\hline
+{\em m31} & Row 3 Col 1 Value.\\
+\hline
+{\em m02} & Row 0 Col 2 Value. \\
+\hline
+{\em m12} & Row 1 Col 2 Value. \\
+\hline
+{\em m22} & Row 2 Col 2 Value. \\
+\hline
+{\em m32} & Row 3 Col 2 Value.\\
+\hline
+{\em m03} & Row 0 Col 3 Value. \\
+\hline
+{\em m13} & Row 1 Col 3 Value. \\
+\hline
+{\em m23} & Row 2 Col 3 Value. \\
+\hline
+{\em m33} & Row 3 Col 3 Value.\\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_mat44_afecfdb9f26d2b667ace74a2f7aa02ad8}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_mat44_afecfdb9f26d2b667ace74a2f7aa02ad8}
+
+
+Copies the values from the given matrix\textquotesingle{}s columns into the respective columns of this matrix, sets this instance\textquotesingle{}s matrix\+Type\+Val to the matrix\+Type\+Val given by the converted matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to convert. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_mat44_a966d4fe8c53854e570e802c7ea7432b4}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Mat44@{Mat44}}
+\index{Mat44@{Mat44}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Mat44\+::\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_mat44_a966d4fe8c53854e570e802c7ea7432b4}
+
+
+Copy constructor. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgofxmath_1_1_mat44_ab29ffef6b95835a3b7e9ac8f58cc2cd4}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Identity@{Identity}}
+\index{Identity@{Identity}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Identity}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Mat44} gofxmath\+::\+Mat44\+::\+Identity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classgofxmath_1_1_mat44_ab29ffef6b95835a3b7e9ac8f58cc2cd4}
+
+
+The 4x4 identity matrix. 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgofxmath_1_1_mat44_ac420c9cd578ebe0b21c9db7757bc4c2d}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Look\+At@{Look\+At}}
+\index{Look\+At@{Look\+At}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Look\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Look\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{eye, }
+\item[{const {\bf Vec3} \&}]{target, }
+\item[{const {\bf Vec3} \&}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_ac420c9cd578ebe0b21c9db7757bc4c2d}
+
+
+Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em target} & The position of the target that the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a1d0cf66e3877d2be1e104bbacec0c917}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Look\+Dir@{Look\+Dir}}
+\index{Look\+Dir@{Look\+Dir}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Look\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Look\+Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{eye, }
+\item[{const {\bf Vec3} \&}]{dir, }
+\item[{const {\bf Vec3} \&}]{up}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a1d0cf66e3877d2be1e104bbacec0c917}
+
+
+Calculates the view matrix given the forward direction vector, rather than a target position. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em dir} & The direction the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Matrix\+Determinant@{Matrix\+Determinant}}
+\index{Matrix\+Determinant@{Matrix\+Determinant}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Matrix\+Determinant}]{\setlength{\rightskip}{0pt plus 5cm}float Matrix\+Determinant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}
+
+
+Calculates the determinant of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to find the determinant of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Matrix\+Determinant@{Matrix\+Determinant}}
+\index{Matrix\+Determinant@{Matrix\+Determinant}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Matrix\+Determinant}]{\setlength{\rightskip}{0pt plus 5cm}float Matrix\+Determinant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a285829d964b38ad14730e85c325e775c}
+
+
+Calculates the determinant of the given \hyperlink{classgofxmath_1_1_mat44}{Mat44}. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix for which to calculate the determinant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the determinant of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a38c661c8ad19528520d36fabca7d555f}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Matrix\+Inverse@{Matrix\+Inverse}}
+\index{Matrix\+Inverse@{Matrix\+Inverse}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Matrix\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Inverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a38c661c8ad19528520d36fabca7d555f}
+
+
+Calculates the inverse of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to invert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a4439d3f4590c372ada775196d1576f81}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Matrix\+Multiply@{Matrix\+Multiply}}
+\index{Matrix\+Multiply@{Matrix\+Multiply}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Matrix\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{first, }
+\item[{const {\bf Mat44} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a4439d3f4590c372ada775196d1576f81}
+
+
+Calculates the product (post-\/multiplication) of the two given 4x4 matrices. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The left matrix. \\
+\hline
+{\em second} & The right matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The post-\/multiplied product of the two matrices. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a626e52b58fb763a90ba6e9d46966ee75}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Matrix\+Transpose@{Matrix\+Transpose}}
+\index{Matrix\+Transpose@{Matrix\+Transpose}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Matrix\+Transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Transpose (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a626e52b58fb763a90ba6e9d46966ee75}
+
+
+Calculates the transpose of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transpose matrix of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{left, }
+\item[{const {\bf Mat44} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_acbc1598a85e4db1071aa8b4f005ad422}
+
+
+Inequality operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_a3fe91a98667ad47a13792a3910edc689}
+
+
+Stream insertion operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The stream. \\
+\hline
+ & {\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The shifted result. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!operator==@{operator==}}
+\index{operator==@{operator==}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{left, }
+\item[{const {\bf Mat44} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_af4dc2dcc368fc35c6fd456a0bb87f7a2}
+
+
+Equality operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_addb2505fe2722a6fe1e02f4f7fefbae6}
+
+
+Stream extraction operator. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The stream. \\
+\hline
+\mbox{\tt in,out}  & {\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The shifted result. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a8aa599fb24b0a8ce16acf8092ee29478}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}}
+\index{Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Perspective\+Projection\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Perspective\+Projection\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{near, }
+\item[{float}]{far, }
+\item[{float}]{fov, }
+\item[{float}]{aspect, }
+\item[{{\bf Mat44} \&}]{result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a8aa599fb24b0a8ce16acf8092ee29478}
+
+
+Calculates the right-\/handed perspective projection matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em near} & The distance to the near clip plane. \\
+\hline
+ & {\em far} & The distance to the far clip plane. \\
+\hline
+ & {\em fov} & The vertical field of view angle. \\
+\hline
+ & {\em aspect} & The aspect ratio (width / height). \\
+\hline
+\mbox{\tt in,out}  & {\em result} & The result matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This form of the perspective projection matrix takes on the following format\+:
+\end{DoxyRemark}
+\[ P_{m,n} = \begin{pmatrix} \cot(\theta) & 0 & 0 & 0 \\ 0 & \cot(\theta) * a & -f/(f-n) & -1 \\ 0 & 0 & -fn/(f-n) & 0 \end{pmatrix} \]
+
+Where\+:
+\begin{DoxyItemize}
+\item \textbackslash{}(\textbackslash{}theta\textbackslash{}) is the fov (field of view) angle.
+\item \textbackslash{}(f\textbackslash{}) is the distance to the far clipping plane.
+\item \textbackslash{}(n\textbackslash{}) is the distance to the near clipping plane.
+\item \textbackslash{}(a\textbackslash{}) is the aspect ratio of the viewport. 
+\end{DoxyItemize}\hypertarget{classgofxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Print@{Print}}
+\index{Print@{Print}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Print}]{\setlength{\rightskip}{0pt plus 5cm}void Print (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_a29435fda8e5d65db573dadafee977651}
+
+
+Prints the given matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_mat44_a206e53fa5ea77b54765946af3d04ca0e}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}}
+\index{Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Rotation\+Matrix\+From\+Euler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Rotation\+Matrix\+From\+Euler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{angles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a206e53fa5ea77b54765946af3d04ca0e}
+
+
+Calculates the 4x4 rotation matrix represented by the given euler angle rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & The euler angles to use for generating the 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 4x4 rotation matrix represented by the given euler angle rotation. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_ad7198c521a4d93e82694f39f0be736c9}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}}
+\index{Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Rotation\+Matrix\+From\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Rotation\+Matrix\+From\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{quat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_ad7198c521a4d93e82694f39f0be736c9}
+
+
+Calculates the 4x4 rotation matrix represented by the given quaternion rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & The quaternion rotation to transform into a 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classgofxmath_1_1_mat44}{Mat44}. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a8ec877a1635b6a682a15195b47e1f21d}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}}
+\index{Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Scale\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Scale\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a8ec877a1635b6a682a15195b47e1f21d}
+
+
+Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D scale vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scale matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!To\+Console\+Debug\+String@{To\+Console\+Debug\+String}}
+\index{To\+Console\+Debug\+String@{To\+Console\+Debug\+String}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{To\+Console\+Debug\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string To\+Console\+Debug\+String (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_mat44_a5d850a4033c3297037241bf1c9ba6223}
+
+
+Converts a mat to a console debug string. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mat as a std\+::string. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a503b30792d41234b29089176be81cf6c}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Transform\+Vec3@{Transform\+Vec3}}
+\index{Transform\+Vec3@{Transform\+Vec3}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Transform\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Transform\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat, }
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a503b30792d41234b29089176be81cf6c}
+
+
+Transforms the given 3\+D vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix that will be multiplied against the 3\+D vector. \\
+\hline
+{\em vec} & The 3\+D vector to transform.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed 3\+D vector. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_mat44_a2d82d58bdc14d1f1644b05a7419ea05e}{}\index{gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}!Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}}
+\index{Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}!gofxmath\+::\+Mat44@{gofxmath\+::\+Mat44}}
+\subsubsection[{Translation\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Translation\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_mat44_a2d82d58bdc14d1f1644b05a7419ea05e}
+
+
+Calculates the 4x4 translation matrix represented by the given 3\+D position vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D position vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The translation matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mat44_8h}{mat44.\+h}\item 
+\hyperlink{matmath_8h}{matmath.\+h}\end{DoxyCompactItemize}

@@ -43,15 +43,23 @@ namespace gofxengine
 		/// <summary>
 		/// Starts the game loop.
 		/// </summary>
+		/// <param name="performanceTest">If true, calls the <c>PerformanceTestGameLoop</c>, and returns its return value, instead of running the normal game loop.</param>
 		/// <returns></returns>
-		int StartGameLoop();
+		int StartGameLoop(bool performanceTest = false);
 		
 		/// <summary>
-		/// Gets the window.
+		/// Gets the current GLFW window.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>A pointer to the current GLFW window</returns>
 		GLFWwindow* GetWindow() const;
 	private:
+		
+		/// <summary>
+		/// Alternate version of game loop used for performance testing.
+		/// </summary>
+		/// <returns>Return code for the game loop</returns>
+		int GLApplication::PerformanceTestGameLoop();
+
 		GLApplication(GLApplication& other){}
 
 		/// <summary>

@@ -1265,11 +1265,11 @@ TEST_CASE("QuaternionLerp can produce the linear interpolation of two quaternion
 
 TEST_CASE("QuaternionFromEuler can produce quaternions from euler angles", "[SseVec][3D][Rotation]")
 {
-	const int NUM_TESTS = 12;
+	const int NUM_TESTS = 16;
 	SseVec4Context_1Vec3Arg tests[NUM_TESTS] {
 		{ "< PI/2      0     0>", Vec3(F_PI_2, 0.0f, 0.0f), Quaternion( F_1_SQRT2,	 0.0f,		 0.0f,		F_1_SQRT2) },
-		{ "<    0   PI/2     0>", Vec3(0.0f, F_PI_2, 0.0f), Quaternion( 0.0f,		 F_1_SQRT2,	 0.0f,	    F_1_SQRT2) },
-		{ "<    0      0  PI/2>", Vec3(0.0f, 0.0f, F_PI_2), Quaternion( 0.0f,		 0.0f,		 F_1_SQRT2, F_1_SQRT2) },
+		{ "<    0   PI/2     0>", Vec3(0.0f, F_PI_2, 0.0f), Quaternion( 0.0f,		 F_1_SQRT2,	 0.0f,		F_1_SQRT2) },
+		{ "<    0      0  PI/2>", Vec3(0.0f, 0.0f, F_PI_2), Quaternion( 0.0f,		 0.0f,		 F_1_SQRT2,	F_1_SQRT2) },
 
 		{ "< -PI/2     0     0>", Vec3(-F_PI_2, 0.0f, 0.0f), Quaternion(-F_1_SQRT2,	 0.0f,		 0.0f,		F_1_SQRT2) },
 		{ "<     0 -PI/2     0>", Vec3(0.0f, -F_PI_2, 0.0f), Quaternion(0.0f,		-F_1_SQRT2,  0.0f,		F_1_SQRT2) },
@@ -1282,6 +1282,11 @@ TEST_CASE("QuaternionFromEuler can produce quaternions from euler angles", "[Sse
 		{ "<-PI   0   0>", Vec3(-F_PI,  0.0f,  0.0f), Quaternion(-1.0f,  0.0f,  0.0f, 0.0f) },
 		{ "<  0 -PI   0>", Vec3( 0.0f, -F_PI,  0.0f), Quaternion( 0.0f, -1.0f,  0.0f, 0.0f) },
 		{ "<  0   0 -PI>", Vec3( 0.0f,  0.0f, -F_PI), Quaternion( 0.0f,  0.0f, -1.0f, 0.0f) },
+
+		{ "<PI/2  0  PI/2>", Vec3(F_PI_2, 0.0f, F_PI_2), Quaternion(0.5f, 0.5f, 0.5f, 0.5f) },
+		{ "<PI/2  0  PI/4>", Vec3(F_PI_2, 0.0f, F_PI_4), Quaternion(0.6532814824381883f, 0.2705980500730985f, 0.2705980500730985f, 0.6532814824381883f) },
+		{ "<PI/2  PI/4  0>", Vec3(F_PI_2, F_PI_4, 0.0f), Quaternion(0.6532814824381883f, 0.2705980500730985f, -0.2705980500730985f, 0.6532814824381883f) },
+		{ "<PI/2  3PI/4  PI/4>", Vec3(F_PI_2, F_3PI_4, F_PI_4), Quaternion(0.5f, 0.7071067811865475f, -0.5f, 0.5f) }
 	};
 
 	for (size_t i = 0; i < NUM_TESTS; i++)
@@ -1423,7 +1428,7 @@ TEST_CASE("FastQuaternionLerp can produce the approximate linear interpolation o
 	}
 }
 
-TEST_CASE("StoreSseVec2 should properly store a SseVec into a Vec2", "[SseVec][2D][MEMORY]")
+TEST_CASE("StoreSseVec2 stores a SseVec into a Vec2", "[SseVec][2D][MEMORY]")
 {
 	// Using standard intrinsics load function rather than custom, swizzled function.  
 	// The leftmost 1 is only there as a formality.  This test shouldn't require that it be there,
@@ -1439,7 +1444,7 @@ TEST_CASE("StoreSseVec2 should properly store a SseVec into a Vec2", "[SseVec][2
 	CHECK(result == expected);
 }
 
-TEST_CASE("StoreSseVec3 should properly store a SseVec into a Vec3", "[SseVec][3D][MEMORY]")
+TEST_CASE("StoreSseVec3 stores a SseVec into a Vec3", "[SseVec][3D][MEMORY]")
 {
 	// Using standard intrinsics load function rather than custom, swizzled function.  
 	// The leftmost 1 is only there as a formality.  This test shouldn't require that it be there,
@@ -1455,7 +1460,7 @@ TEST_CASE("StoreSseVec3 should properly store a SseVec into a Vec3", "[SseVec][3
 	CHECK(result == expected);
 }
 
-TEST_CASE("StoreSseVec4 should properly store a SseVec into a Vec4", "[SseVec][4D][MEMORY]")
+TEST_CASE("StoreSseVec4 stores a SseVec into a Vec4", "[SseVec][4D][MEMORY]")
 {
 	SseVec cv = _mm_set_ps(1.0f, 4.0f, 3.0f, 2.0f);
 	Vec4 result = StoreSseVec4(cv);
@@ -1465,7 +1470,7 @@ TEST_CASE("StoreSseVec4 should properly store a SseVec into a Vec4", "[SseVec][4
 	CHECK(result == expected);
 }
 
-TEST_CASE("LoadSseVec2 should properly load a Vec2 into a SseVec", "[SseVec][2D][MEMORY]")
+TEST_CASE("LoadSseVec2 loads a Vec2 into a SseVec", "[SseVec][2D][MEMORY]")
 {
 	// Using standard intrinsics load function rather than custom, swizzled function.  
 	// The leftmost 1 is only there as a formality.  This test shouldn't require that it be there,
@@ -1484,7 +1489,7 @@ TEST_CASE("LoadSseVec2 should properly load a Vec2 into a SseVec", "[SseVec][2D]
 	CHECK(result == expected);
 }
 
-TEST_CASE("LoadSseVec3 should properly store a Vec3 into a SseVec", "[SseVec][3D][MEMORY]")
+TEST_CASE("LoadSseVec3 stores a Vec3 into a SseVec", "[SseVec][3D][MEMORY]")
 {
 	// Using standard intrinsics load function rather than custom, swizzled function.  
 	// The leftmost 1 is only there as a formality.  This test shouldn't require that it be there,
@@ -1502,7 +1507,7 @@ TEST_CASE("LoadSseVec3 should properly store a Vec3 into a SseVec", "[SseVec][3D
 	CHECK(result == expected);
 }
 
-TEST_CASE("LoadSseVec4 should properly store a Vec4 into a SseVec", "[SseVec][4D][MEMORY]")
+TEST_CASE("LoadSseVec4 stores a Vec4 into a SseVec", "[SseVec][4D][MEMORY]")
 {
 	SseVec cv = LoadSseVec4(Vec4(2.0f, 3.0f, 4.0f, 1.0f));
 	AlignedFloat4 resultContainer;
@@ -1512,4 +1517,23 @@ TEST_CASE("LoadSseVec4 should properly store a Vec4 into a SseVec", "[SseVec][4D
 	Vec4 expected(2.0f, 3.0f, 4.0f, 1.0f);
 
 	CHECK(result == expected);
+}
+
+TEST_CASE("VecBlend blends two SseVecs together", "[SsVec][4D]")
+{
+	SECTION("All Left")
+	{
+		SseVec resultSseVec = VecBlend<BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT>(UNIT_1000, SetSseVec4(0.0f, 1.0f, 1.0f, 1.0f));
+		Vec4 result = StoreSseVec4_Debug(resultSseVec);
+		Vec4 expected = Vec4::E0();
+		CHECK(result == expected);
+	}
+
+	SECTION("<L L L R>")
+	{
+		SseVec resultSseVec = VecBlend<BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::RIGHT>(UNIT_1000, SetSseVec4(0.0f, 1.0f, 1.0f, 2.0f));
+		Vec4 result = StoreSseVec4_Debug(resultSseVec);
+		Vec4 expected = Vec4(1.0f, 0.0f, 0.0f, 2.0f);
+		CHECK(result == expected);
+	}
 }

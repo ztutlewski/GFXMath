@@ -127,6 +127,18 @@ namespace gofxmath
 		 */
 		explicit operator Vec4() const;
 
+		/*!
+		 * \brief	Creates the 4-component column vector version of this Vec2.
+		 * 
+		 * \date	3/20/2015
+		 * 
+		 * \return	The resulting Vec4 representing a transformable 2D column vector.
+		 * 
+		 * \remarks	Sets the fourth component to 1.0f.  Otherwise identical to the
+		 *			explicit cast from Vec2 to Vec4;
+		 */
+		Vec4 ToColVec() const;
+
 		//! \cond 
 		union
 		{

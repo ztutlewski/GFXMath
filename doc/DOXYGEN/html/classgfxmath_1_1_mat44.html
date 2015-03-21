@@ -1,11 +1,10 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>GFXMath Docs</title>
+<title>%%(G \circ F)(\vec{X})%%: gfxmath::Mat44 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,17 +24,10 @@ MathJax.Hub.Config(
 		displayAlign: "left", 
 		tex2jax: {inlineMath: [['%%','%%']]}
 	});
-MathJax.Hub.Queue(
-    function () {
-    var x = document.getElementsByTagName("body")[0];
-	x.style.visibility = "";
-    }
-  );
 </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="visibility:hidden">
+<body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -57,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -109,9 +102,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
+<a href="#related">Related Functions</a> &#124;
 <a href="classgfxmath_1_1_mat44-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gfxmath::Mat44 Class Reference</div>  </div>
@@ -140,41 +134,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abcebf9e54a3a7954d4f870d1e076517a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#abcebf9e54a3a7954d4f870d1e076517a">Mat44</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
 <tr class="memdesc:abcebf9e54a3a7954d4f870d1e076517a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#abcebf9e54a3a7954d4f870d1e076517a">More...</a><br /></td></tr>
 <tr class="separator:abcebf9e54a3a7954d4f870d1e076517a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2fba80f3d058c256de19aa52106b75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> const &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#afa2fba80f3d058c256de19aa52106b75">operator[]</a> (int arg) const </td></tr>
-<tr class="memdesc:afa2fba80f3d058c256de19aa52106b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Const accessor for the <a class="el" href="classgfxmath_1_1_vec4.html" title="A mathematical vector with 4 components. ">Vec4</a> columns that make up this matrix.  <a href="#afa2fba80f3d058c256de19aa52106b75">More...</a><br /></td></tr>
-<tr class="separator:afa2fba80f3d058c256de19aa52106b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afca7649a550e6f60443710a586b59cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#afca7649a550e6f60443710a586b59cb5">operator[]</a> (int arg)</td></tr>
-<tr class="memdesc:afca7649a550e6f60443710a586b59cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignable accessor for the <a class="el" href="classgfxmath_1_1_vec4.html" title="A mathematical vector with 4 components. ">Vec4</a> columns that make up this matrix.  <a href="#afca7649a550e6f60443710a586b59cb5">More...</a><br /></td></tr>
-<tr class="separator:afca7649a550e6f60443710a586b59cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:affaa1c0f2a0746b7d15d02a970590764"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#affaa1c0f2a0746b7d15d02a970590764">Identity</a> ()</td></tr>
-<tr class="memdesc:affaa1c0f2a0746b7d15d02a970590764"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 4x4 identity matrix.  <a href="#affaa1c0f2a0746b7d15d02a970590764">More...</a><br /></td></tr>
-<tr class="separator:affaa1c0f2a0746b7d15d02a970590764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14a9f934c2487a5dd9e4702a0b539cb4"></a>
-<a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a14a9f934c2487a5dd9e4702a0b539cb4">col0</a></td></tr>
-<tr class="memdesc:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first column in the matrix. <br /></td></tr>
-<tr class="separator:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ac4cf40ac05a9ad94964d247d8256e1"></a>
-<a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a9ac4cf40ac05a9ad94964d247d8256e1">col1</a></td></tr>
-<tr class="memdesc:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second column in the matrix. <br /></td></tr>
-<tr class="separator:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa810627c4b5df8432b36befdd4649763"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa810627c4b5df8432b36befdd4649763"></a>
-<a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#aa810627c4b5df8432b36befdd4649763">col2</a></td></tr>
-<tr class="memdesc:aa810627c4b5df8432b36befdd4649763"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third column in the matrix. <br /></td></tr>
-<tr class="separator:aa810627c4b5df8432b36befdd4649763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c1b1363d41cee3b241cf8843d02289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09c1b1363d41cee3b241cf8843d02289"></a>
-<a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a09c1b1363d41cee3b241cf8843d02289">col3</a></td></tr>
-<tr class="memdesc:a09c1b1363d41cee3b241cf8843d02289"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fourth column in the matrix. <br /></td></tr>
-<tr class="separator:a09c1b1363d41cee3b241cf8843d02289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523cda94e6f5b2df5276d821b3471605"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a523cda94e6f5b2df5276d821b3471605"></a>
 <a class="el" href="group___s_i_s_d_mat_math.html#ga6c8951c82aec5015dd6806affb4c8d03">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a523cda94e6f5b2df5276d821b3471605">matrixTypeVal</a></td></tr>
 <tr class="memdesc:a523cda94e6f5b2df5276d821b3471605"><td class="mdescLeft">&#160;</td><td class="mdescRight">The matrix type value. <br /></td></tr>
 <tr class="separator:a523cda94e6f5b2df5276d821b3471605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59a6195e1c74aee94b3434b9fed8aa7a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a59a6195e1c74aee94b3434b9fed8aa7a">m</a> [4][4]</td></tr>
+<tr class="memdesc:a59a6195e1c74aee94b3434b9fed8aa7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The matrix values [row][column].  <a href="#a59a6195e1c74aee94b3434b9fed8aa7a">More...</a><br /></td></tr>
+<tr class="separator:a59a6195e1c74aee94b3434b9fed8aa7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a14a9f934c2487a5dd9e4702a0b539cb4">col0</a></td></tr>
+<tr class="memdesc:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first column.  <a href="#a14a9f934c2487a5dd9e4702a0b539cb4">More...</a><br /></td></tr>
+<tr class="separator:a14a9f934c2487a5dd9e4702a0b539cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a9ac4cf40ac05a9ad94964d247d8256e1">col1</a></td></tr>
+<tr class="memdesc:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second column.  <a href="#a9ac4cf40ac05a9ad94964d247d8256e1">More...</a><br /></td></tr>
+<tr class="separator:a9ac4cf40ac05a9ad94964d247d8256e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa810627c4b5df8432b36befdd4649763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#aa810627c4b5df8432b36befdd4649763">col2</a></td></tr>
+<tr class="memdesc:aa810627c4b5df8432b36befdd4649763"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third column.  <a href="#aa810627c4b5df8432b36befdd4649763">More...</a><br /></td></tr>
+<tr class="separator:aa810627c4b5df8432b36befdd4649763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c1b1363d41cee3b241cf8843d02289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a09c1b1363d41cee3b241cf8843d02289">col3</a></td></tr>
+<tr class="memdesc:a09c1b1363d41cee3b241cf8843d02289"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fourth column.  <a href="#a09c1b1363d41cee3b241cf8843d02289">More...</a><br /></td></tr>
+<tr class="separator:a09c1b1363d41cee3b241cf8843d02289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:acf3201b485f8e67fd931703fb2c55ead"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#acf3201b485f8e67fd931703fb2c55ead">IDENTITY</a></td></tr>
+<tr class="memdesc:acf3201b485f8e67fd931703fb2c55ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 4x4 identity matrix.  <a href="#acf3201b485f8e67fd931703fb2c55ead">More...</a><br /></td></tr>
+<tr class="separator:acf3201b485f8e67fd931703fb2c55ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -191,7 +178,7 @@ Friends</h2></td></tr>
 <tr class="memdesc:acbc1598a85e4db1071aa8b4f005ad422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator.  <a href="#acbc1598a85e4db1071aa8b4f005ad422">More...</a><br /></td></tr>
 <tr class="separator:acbc1598a85e4db1071aa8b4f005ad422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29435fda8e5d65db573dadafee977651"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a29435fda8e5d65db573dadafee977651">Print</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:a29435fda8e5d65db573dadafee977651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the given matrix's values.  <a href="#a29435fda8e5d65db573dadafee977651">More...</a><br /></td></tr>
+<tr class="memdesc:a29435fda8e5d65db573dadafee977651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the given matrix.  <a href="#a29435fda8e5d65db573dadafee977651">More...</a><br /></td></tr>
 <tr class="separator:a29435fda8e5d65db573dadafee977651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d850a4033c3297037241bf1c9ba6223"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a5d850a4033c3297037241bf1c9ba6223">ToConsoleDebugString</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
 <tr class="memdesc:a5d850a4033c3297037241bf1c9ba6223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a mat to a console debug string.  <a href="#a5d850a4033c3297037241bf1c9ba6223">More...</a><br /></td></tr>
@@ -201,46 +188,45 @@ Friends</h2></td></tr>
 Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ga4439d3f4590c372ada775196d1576f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga4439d3f4590c372ada775196d1576f81">MatrixMultiply</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;first, const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;second)</td></tr>
-<tr class="memdesc:ga4439d3f4590c372ada775196d1576f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the product (post-multiplication) of the two given 4x4 matrices.  <a href="group___s_i_s_d_mat_math.html#ga4439d3f4590c372ada775196d1576f81">More...</a><br /></td></tr>
-<tr class="separator:ga4439d3f4590c372ada775196d1576f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
-<tr class="separator:ga285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38c661c8ad19528520d36fabca7d555f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga38c661c8ad19528520d36fabca7d555f">MatrixInverse</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga38c661c8ad19528520d36fabca7d555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga38c661c8ad19528520d36fabca7d555f">More...</a><br /></td></tr>
-<tr class="separator:ga38c661c8ad19528520d36fabca7d555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga626e52b58fb763a90ba6e9d46966ee75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga626e52b58fb763a90ba6e9d46966ee75">MatrixTranspose</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga626e52b58fb763a90ba6e9d46966ee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transpose of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga626e52b58fb763a90ba6e9d46966ee75">More...</a><br /></td></tr>
-<tr class="separator:ga626e52b58fb763a90ba6e9d46966ee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7198c521a4d93e82694f39f0be736c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#gad7198c521a4d93e82694f39f0be736c9">RotationMatrixFromQuaternion</a> (const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;quat)</td></tr>
-<tr class="memdesc:gad7198c521a4d93e82694f39f0be736c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given quaternion rotation.  <a href="group___s_i_s_d_mat_math.html#gad7198c521a4d93e82694f39f0be736c9">More...</a><br /></td></tr>
-<tr class="separator:gad7198c521a4d93e82694f39f0be736c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga206e53fa5ea77b54765946af3d04ca0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga206e53fa5ea77b54765946af3d04ca0e">RotationMatrixFromEuler</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;angles)</td></tr>
-<tr class="memdesc:ga206e53fa5ea77b54765946af3d04ca0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given euler angle rotation.  <a href="group___s_i_s_d_mat_math.html#ga206e53fa5ea77b54765946af3d04ca0e">More...</a><br /></td></tr>
-<tr class="separator:ga206e53fa5ea77b54765946af3d04ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga2d82d58bdc14d1f1644b05a7419ea05e">TranslationMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 translation matrix represented by the given 3D position vector.  <a href="group___s_i_s_d_mat_math.html#ga2d82d58bdc14d1f1644b05a7419ea05e">More...</a><br /></td></tr>
-<tr class="separator:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ec877a1635b6a682a15195b47e1f21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga8ec877a1635b6a682a15195b47e1f21d">ScaleMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga8ec877a1635b6a682a15195b47e1f21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 scale matrix represented by the given 3D scale vector.  <a href="group___s_i_s_d_mat_math.html#ga8ec877a1635b6a682a15195b47e1f21d">More...</a><br /></td></tr>
-<tr class="separator:ga8ec877a1635b6a682a15195b47e1f21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478">PerspectiveProjectionMatrix</a> (float near, float far, float fov, float aspect, <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;result)</td></tr>
-<tr class="memdesc:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the right-handed perspective projection matrix.  <a href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478">More...</a><br /></td></tr>
-<tr class="separator:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga1d0cf66e3877d2be1e104bbacec0c917">LookDir</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;dir, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
-<tr class="memdesc:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the view matrix given the forward direction vector, rather than a target position.  <a href="group___s_i_s_d_mat_math.html#ga1d0cf66e3877d2be1e104bbacec0c917">More...</a><br /></td></tr>
-<tr class="separator:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#gac420c9cd578ebe0b21c9db7757bc4c2d">LookAt</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;target, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
-<tr class="memdesc:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector.  <a href="group___s_i_s_d_mat_math.html#gac420c9cd578ebe0b21c9db7757bc4c2d">More...</a><br /></td></tr>
-<tr class="separator:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga503b30792d41234b29089176be81cf6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga503b30792d41234b29089176be81cf6c">TransformVec3</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga503b30792d41234b29089176be81cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the given 3D vector.  <a href="group___s_i_s_d_mat_math.html#ga503b30792d41234b29089176be81cf6c">More...</a><br /></td></tr>
-<tr class="separator:ga503b30792d41234b29089176be81cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>.  <a href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
-<tr class="separator:ga285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4439d3f4590c372ada775196d1576f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a4439d3f4590c372ada775196d1576f81">MatrixMultiply</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;first, const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;second)</td></tr>
+<tr class="memdesc:a4439d3f4590c372ada775196d1576f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the product (post-multiplication) of the two given 4x4 matrices.  <a href="#a4439d3f4590c372ada775196d1576f81">More...</a><br /></td></tr>
+<tr class="separator:a4439d3f4590c372ada775196d1576f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given 4x4 matrix.  <a href="#a285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
+<tr class="separator:a285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c661c8ad19528520d36fabca7d555f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a38c661c8ad19528520d36fabca7d555f">MatrixInverse</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a38c661c8ad19528520d36fabca7d555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the given 4x4 matrix.  <a href="#a38c661c8ad19528520d36fabca7d555f">More...</a><br /></td></tr>
+<tr class="separator:a38c661c8ad19528520d36fabca7d555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626e52b58fb763a90ba6e9d46966ee75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a626e52b58fb763a90ba6e9d46966ee75">MatrixTranspose</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a626e52b58fb763a90ba6e9d46966ee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transpose of the given 4x4 matrix.  <a href="#a626e52b58fb763a90ba6e9d46966ee75">More...</a><br /></td></tr>
+<tr class="separator:a626e52b58fb763a90ba6e9d46966ee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7198c521a4d93e82694f39f0be736c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#ad7198c521a4d93e82694f39f0be736c9">RotationMatrixFromQuaternion</a> (const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;quat)</td></tr>
+<tr class="memdesc:ad7198c521a4d93e82694f39f0be736c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given quaternion rotation.  <a href="#ad7198c521a4d93e82694f39f0be736c9">More...</a><br /></td></tr>
+<tr class="separator:ad7198c521a4d93e82694f39f0be736c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206e53fa5ea77b54765946af3d04ca0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a206e53fa5ea77b54765946af3d04ca0e">RotationMatrixFromEuler</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;angles)</td></tr>
+<tr class="memdesc:a206e53fa5ea77b54765946af3d04ca0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given euler angle rotation.  <a href="#a206e53fa5ea77b54765946af3d04ca0e">More...</a><br /></td></tr>
+<tr class="separator:a206e53fa5ea77b54765946af3d04ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a2d82d58bdc14d1f1644b05a7419ea05e">TranslationMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 translation matrix represented by the given 3D position vector.  <a href="#a2d82d58bdc14d1f1644b05a7419ea05e">More...</a><br /></td></tr>
+<tr class="separator:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec877a1635b6a682a15195b47e1f21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a8ec877a1635b6a682a15195b47e1f21d">ScaleMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a8ec877a1635b6a682a15195b47e1f21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 scale matrix represented by the given 3D scale vector.  <a href="#a8ec877a1635b6a682a15195b47e1f21d">More...</a><br /></td></tr>
+<tr class="separator:a8ec877a1635b6a682a15195b47e1f21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa599fb24b0a8ce16acf8092ee29478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a8aa599fb24b0a8ce16acf8092ee29478">PerspectiveProjectionMatrix</a> (float near, float far, float fov, float aspect, <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;result)</td></tr>
+<tr class="memdesc:a8aa599fb24b0a8ce16acf8092ee29478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the right-handed perspective projection matrix.  <a href="#a8aa599fb24b0a8ce16acf8092ee29478">More...</a><br /></td></tr>
+<tr class="separator:a8aa599fb24b0a8ce16acf8092ee29478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0cf66e3877d2be1e104bbacec0c917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a1d0cf66e3877d2be1e104bbacec0c917">LookDir</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;dir, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
+<tr class="memdesc:a1d0cf66e3877d2be1e104bbacec0c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the view matrix given the forward direction vector, rather than a target position.  <a href="#a1d0cf66e3877d2be1e104bbacec0c917">More...</a><br /></td></tr>
+<tr class="separator:a1d0cf66e3877d2be1e104bbacec0c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#ac420c9cd578ebe0b21c9db7757bc4c2d">LookAt</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;target, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
+<tr class="memdesc:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector.  <a href="#ac420c9cd578ebe0b21c9db7757bc4c2d">More...</a><br /></td></tr>
+<tr class="separator:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503b30792d41234b29089176be81cf6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a503b30792d41234b29089176be81cf6c">TransformVec3</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a503b30792d41234b29089176be81cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the given 3D vector.  <a href="#a503b30792d41234b29089176be81cf6c">More...</a><br /></td></tr>
+<tr class="separator:a503b30792d41234b29089176be81cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgfxmath_1_1_mat44.html#a285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>.  <a href="#a285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
+<tr class="separator:a285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>4x4 Column Matrix. </p>
@@ -512,101 +498,292 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="affaa1c0f2a0746b7d15d02a970590764"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> gfxmath::Mat44::Identity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The 4x4 identity matrix. </p>
-
-</div>
-</div>
-<a class="anchor" id="afa2fba80f3d058c256de19aa52106b75"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> const&amp; gfxmath::Mat44::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Const accessor for the <a class="el" href="classgfxmath_1_1_vec4.html" title="A mathematical vector with 4 components. ">Vec4</a> columns that make up this matrix. </p>
-<dl class="section date"><dt>Date</dt><dd>3/7/2015</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arg</td><td>The "index" of the column to get.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The indicated column. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afca7649a550e6f60443710a586b59cb5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a>&amp; gfxmath::Mat44::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assignable accessor for the <a class="el" href="classgfxmath_1_1_vec4.html" title="A mathematical vector with 4 components. ">Vec4</a> columns that make up this matrix. </p>
-<dl class="section date"><dt>Date</dt><dd>3/7/2015</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arg</td><td>The "index" of the column to get.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The indicated column. </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="ac420c9cd578ebe0b21c9db7757bc4c2d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> LookAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>eye</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eye</td><td>The position of the camera, in world space. </td></tr>
+    <tr><td class="paramname">target</td><td>The position of the target that the camera is facing. </td></tr>
+    <tr><td class="paramname">up</td><td>The camera's relative "up" direction - should always be &lt;0 1 0&gt; unless the camera has a roll/bank rotation that isn't 0, or the camera has its pitch value at %%\pm\frac{\pi}{2}%% radians (\pm %%90^{\circ}%%%).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated view matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d0cf66e3877d2be1e104bbacec0c917"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> LookDir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>eye</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the view matrix given the forward direction vector, rather than a target position. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eye</td><td>The position of the camera, in world space. </td></tr>
+    <tr><td class="paramname">dir</td><td>The direction the camera is facing. </td></tr>
+    <tr><td class="paramname">up</td><td>The camera's relative "up" direction - should always be &lt;0 1 0&gt; unless the camera has a roll/bank rotation that isn't 0, or the camera has its pitch value at %%\pm\frac{\pi}{2}%% radians (\pm %%90^{\circ}%%%).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated view matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a285829d964b38ad14730e85c325e775c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MatrixDeterminant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the determinant of the given 4x4 matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to find the determinant of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A float. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a285829d964b38ad14730e85c325e775c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MatrixDeterminant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the determinant of the given <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix for which to calculate the determinant.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the determinant of the given matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38c661c8ad19528520d36fabca7d555f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixInverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the inverse of the given 4x4 matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to invert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the given matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4439d3f4590c372ada775196d1576f81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixMultiply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the product (post-multiplication) of the two given 4x4 matrices. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>The left matrix. </td></tr>
+    <tr><td class="paramname">second</td><td>The right matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The post-multiplied product of the two matrices. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a626e52b58fb763a90ba6e9d46966ee75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixTranspose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the transpose of the given 4x4 matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to transpose.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transpose matrix of the given matrix. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acbc1598a85e4db1071aa8b4f005ad422"></a>
 <div class="memitem">
 <div class="memproto">
@@ -787,6 +964,81 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8aa599fb24b0a8ce16acf8092ee29478"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PerspectiveProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>far</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the right-handed perspective projection matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">near</td><td>The distance to the near clip plane. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">far</td><td>The distance to the far clip plane. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">fov</td><td>The vertical field of view angle. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">aspect</td><td>The aspect ratio (width / height). </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">result</td><td>The result matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This form of the perspective projection matrix takes on the following format:</dd></dl>
+<p class="formulaDsp">
+\[ P_{m,n} = \begin{pmatrix} \cot(\theta) &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cot(\theta) * a &amp; -f/(f-n) &amp; -1 \\ 0 &amp; 0 &amp; -fn/(f-n) &amp; 0 \end{pmatrix} \]
+</p>
+<p>Where:</p><ul>
+<li>\(\theta\) is the fov (field of view) angle.</li>
+<li>\(f\) is the distance to the far clipping plane.</li>
+<li>\(n\) is the distance to the near clipping plane.</li>
+<li>\(a\) is the aspect ratio of the viewport. </li>
+</ul>
+
+</div>
+</div>
 <a class="anchor" id="a29435fda8e5d65db573dadafee977651"></a>
 <div class="memitem">
 <div class="memproto">
@@ -809,7 +1061,7 @@ Related Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Prints the given matrix's values. </p>
+<p>Prints the given matrix. </p>
 <dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -817,6 +1069,108 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a206e53fa5ea77b54765946af3d04ca0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> RotationMatrixFromEuler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>angles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 rotation matrix represented by the given euler angle rotation. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angles</td><td>The euler angles to use for generating the 4x4 matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The 4x4 rotation matrix represented by the given euler angle rotation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad7198c521a4d93e82694f39f0be736c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> RotationMatrixFromQuaternion </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>quat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 rotation matrix represented by the given quaternion rotation. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quat</td><td>The quaternion rotation to transform into a 4x4 matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ec877a1635b6a682a15195b47e1f21d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> ScaleMatrixFromVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 scale matrix represented by the given 3D scale vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The given 3D scale vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scale matrix represented by the given 3D position vector. </dd></dl>
 
 </div>
 </div>
@@ -854,15 +1208,192 @@ Related Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a503b30792d41234b29089176be81cf6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> TransformVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transforms the given 3D vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix that will be multiplied against the 3D vector. </td></tr>
+    <tr><td class="paramname">vec</td><td>The 3D vector to transform.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transformed 3D vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2d82d58bdc14d1f1644b05a7419ea05e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> TranslationMatrixFromVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 translation matrix represented by the given 3D position vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The given 3D position vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The translation matrix represented by the given 3D position vector. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a14a9f934c2487a5dd9e4702a0b539cb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> gfxmath::Mat44::col0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The first column. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Equivalent to m[0] </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ac4cf40ac05a9ad94964d247d8256e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> gfxmath::Mat44::col1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The second column. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Equivalent to m[1] </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa810627c4b5df8432b36befdd4649763"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> gfxmath::Mat44::col2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The third column. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Equivalent to m[2] </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09c1b1363d41cee3b241cf8843d02289"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec4.html">Vec4</a> gfxmath::Mat44::col3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The fourth column. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Equivalent to m[3] </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acf3201b485f8e67fd931703fb2c55ead"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> gfxmath::Mat44::IDENTITY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The 4x4 identity matrix. </p>
+
+</div>
+</div>
+<a class="anchor" id="a59a6195e1c74aee94b3434b9fed8aa7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float gfxmath::Mat44::m[4][4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The matrix values [row][column]. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>Contains the same values as are contained in the column vectors.<br />
+ i.e. <b>m[0][0-3]</b> are equivalent to <b>col0</b>, <b>m[1][0-3]</b> are equivalent to <b>col1</b>, <b>m[2][0-3]</b> are equivalent to <b>col2</b>, and <b>m[3][0-3]</b> are equiavlent to <b>col3</b>. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/GFXMath/GFXMath/include/<a class="el" href="mat44_8h_source.html">mat44.h</a></li>
-<li>D:/GFXMath/GFXMath/include/<a class="el" href="matmath_8h_source.html">matmath.h</a></li>
+<li><a class="el" href="mat44_8h_source.html">mat44.h</a></li>
+<li><a class="el" href="matmath_8h_source.html">matmath.h</a></li>
 </ul>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 16:19:15 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 08:03:47 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sin',['SIN',['../namespacegfxmath.html#ac97be114298a04e9db7f993085667b00ac25dc94e5f333f4dc6ead2b93687bfcc',1,'gfxmath']]]
+  ['sin',['SIN',['../namespacegofxmath.html#a67a56526fdca522579dadeb59e2cedaaa4c66cfae8f94035eaede20844570a27f',1,'gofxmath']]]
 ];

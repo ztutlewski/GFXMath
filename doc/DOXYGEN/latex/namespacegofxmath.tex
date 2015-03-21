@@ -1,0 +1,1607 @@
+\hypertarget{namespacegofxmath}{}\section{gofxmath Namespace Reference}
+\label{namespacegofxmath}\index{gofxmath@{gofxmath}}
+
+
+G of F of X math namespace.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classgofxmath_1_1_mat44}{Mat44}
+\begin{DoxyCompactList}\small\item\em 4x4 Column Matrix. \end{DoxyCompactList}\item 
+class \hyperlink{classgofxmath_1_1_quaternion}{Quaternion}
+\begin{DoxyCompactList}\small\item\em The quaternion class. \end{DoxyCompactList}\item 
+class \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44}
+\begin{DoxyCompactList}\small\item\em A 4x4 column-\/major matrix that uses four Sse\+Vecs for column vectors. \end{DoxyCompactList}\item 
+class \hyperlink{classgofxmath_1_1_vec2}{Vec2}
+\begin{DoxyCompactList}\small\item\em A 2\+D Vector. \end{DoxyCompactList}\item 
+class \hyperlink{classgofxmath_1_1_vec3}{Vec3}
+\begin{DoxyCompactList}\small\item\em A mathematical vector with 3 components. \end{DoxyCompactList}\item 
+class \hyperlink{classgofxmath_1_1_vec4}{Vec4}
+\begin{DoxyCompactList}\small\item\em A mathematical vector with 4 components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{}typedef unsigned int \hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val}\label{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}
+
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the mask value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___scalar_math_consts_ga4b1c9ff152a66c5d35b4767a57782f63}{Float\+Precision} \{ \\*
+\hyperlink{group___scalar_math_consts_gga4b1c9ff152a66c5d35b4767a57782f63a244eee80507aa2a13170d96d214b9104}{H\+I\+G\+H} = 0, 
+\hyperlink{group___scalar_math_consts_gga4b1c9ff152a66c5d35b4767a57782f63a8a0bf373c4216f2f3fcc42b6e80f44c2}{M\+E\+D\+I\+U\+M\+\_\+\+H\+I\+G\+H} = 1, 
+\hyperlink{group___scalar_math_consts_gga4b1c9ff152a66c5d35b4767a57782f63a01c38b422afce79a2ddb938cf9971b76}{M\+E\+D\+I\+U\+M} = 2, 
+\hyperlink{group___scalar_math_consts_gga4b1c9ff152a66c5d35b4767a57782f63ad7e5e2d6d083857d80ec72cb9ff9df15}{M\+E\+D\+I\+U\+M\+\_\+\+L\+O\+W} = 3, 
+\\*
+\hyperlink{group___scalar_math_consts_gga4b1c9ff152a66c5d35b4767a57782f63a9db1590eafa097de6665238345fdf63e}{L\+O\+W} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent float precisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}{}enum \hyperlink{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}{Matrix\+Type} \{ {\bfseries I\+D\+E\+N\+T\+I\+T\+Y} = 0x1, 
+{\bfseries M\+I\+S\+C} = 0x3, 
+{\bfseries I\+N\+V\+A\+L\+I\+D} = -\/1
+ \}\label{group___s_i_s_d_mat_math_ga0434ae8f7ee0d8d40277184552eebef4}
+
+\begin{DoxyCompactList}\small\item\em The type of matrix being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_ga88a517d09326cefa42e5a854384217dd}{}float \hyperlink{group___scalar_math_consts_ga88a517d09326cefa42e5a854384217dd}{Epsilon} ()\label{group___scalar_math_consts_ga88a517d09326cefa42e5a854384217dd}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}epsilon\%\% (epsilon) is the smallest single-\/precision floating point value such that \%\%1.\+0\%f\%\% + \textbackslash{}epsilon \textbackslash{}not= 1.\+0\%f \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga06bd81da4df7e94c91fbd777f208f000}{}float \hyperlink{group___scalar_math_consts_ga06bd81da4df7e94c91fbd777f208f000}{Infinity} ()\label{group___scalar_math_consts_ga06bd81da4df7e94c91fbd777f208f000}
+
+\begin{DoxyCompactList}\small\item\em Single-\/precision floating point representation of \%\%\textbackslash{}infty\%\%. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga6a01ee138954aa627264187944f9b636}{}float \hyperlink{group___scalar_math_consts_ga6a01ee138954aa627264187944f9b636}{Float\+Max} ()\label{group___scalar_math_consts_ga6a01ee138954aa627264187944f9b636}
+
+\begin{DoxyCompactList}\small\item\em Maximum possible value for a single-\/precision floating point number such that the number is not \%\%\textbackslash{}infty\%\%. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaee3e576be53b2e48bc14cb4779197d48}{}float \hyperlink{group___scalar_math_consts_gaee3e576be53b2e48bc14cb4779197d48}{Sin\+Coef} (int i)\label{group___scalar_math_consts_gaee3e576be53b2e48bc14cb4779197d48}
+
+\begin{DoxyCompactList}\small\item\em Returns the (i+1)th coefficient for the taylor approximation of sine. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga6ed06be895b61252517cb57df1f83ffa}{}float \hyperlink{group___scalar_math_consts_ga6ed06be895b61252517cb57df1f83ffa}{Cos\+Coef} (int i)\label{group___scalar_math_consts_ga6ed06be895b61252517cb57df1f83ffa}
+
+\begin{DoxyCompactList}\small\item\em The (i+1)th coefficient for the taylor approximation of cosine. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Val$>$ }\\float \hyperlink{group___scalar_math_consts_ga0d7e921997d870cf603b42e6741dd7db}{Float\+Precision\+Value} ()
+\begin{DoxyCompactList}\small\item\em Returns the ith single-\/precision floating point precision limit used for checking approximate equality of two single-\/precision floating point values. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga342bf08edf4feeccb1f216b558064211}{}{\footnotesize template$<$Float\+Precision precision\+Val$>$ }\\int \hyperlink{group___scalar_math_consts_ga342bf08edf4feeccb1f216b558064211}{Trig\+Precision\+Value} ()\label{group___scalar_math_consts_ga342bf08edf4feeccb1f216b558064211}
+
+\begin{DoxyCompactList}\small\item\em Returns the ith trig function precision value used to determine how many iterations of a taylor approximation are needed to reach a given accuracy standard. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a4439d3f4590c372ada775196d1576f81}{Matrix\+Multiply} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&first, const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&second)
+\begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
+float \hyperlink{namespacegofxmath_a285829d964b38ad14730e85c325e775c}{Matrix\+Determinant} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a38c661c8ad19528520d36fabca7d555f}{Matrix\+Inverse} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a626e52b58fb763a90ba6e9d46966ee75}{Matrix\+Transpose} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_ad7198c521a4d93e82694f39f0be736c9}{Rotation\+Matrix\+From\+Quaternion} (const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a206e53fa5ea77b54765946af3d04ca0e}{Rotation\+Matrix\+From\+Euler} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a2d82d58bdc14d1f1644b05a7419ea05e}{Translation\+Matrix\+From\+Vec3} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a8ec877a1635b6a682a15195b47e1f21d}{Scale\+Matrix\+From\+Vec3} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
+void \hyperlink{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}{Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect, \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&result)
+\begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_a1d0cf66e3877d2be1e104bbacec0c917}{Look\+Dir} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&dir, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_mat44}{Mat44} \hyperlink{namespacegofxmath_ac420c9cd578ebe0b21c9db7757bc4c2d}{Look\+At} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&eye, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&target, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{namespacegofxmath_a503b30792d41234b29089176be81cf6c}{Transform\+Vec3} (const \hyperlink{classgofxmath_1_1_mat44}{Mat44} \&mat, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_ga53debb59a36f436520d9f8696fb5af17}{Normalize\+Angle} (float angle)
+\begin{DoxyCompactList}\small\item\em Normalize the angle to the range of \mbox{[}-\/\+P\+I,P\+I). \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_gacda965689f172d535fcea8ca52a28358}{Fast\+Sin\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast sine approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_ga225f52235ddb3aac0be7405e966df40e}{Fast\+Cos\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast cosine approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_ga29cc2127c4bb018c147006a618baf5f3}{Fast\+Tan\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast tangent approximation. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_scalar_math_gabd664af8218cb91dc9b74786a054f45a}{Fast\+Cot\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Fast cotangent approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_gaece3a06431141a5c010de32ea23bedcf}{Sin\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Sine Approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_ga6f84a45d1d98a6be758df9fc78615000}{Cos\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Cosine approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_ga38631bdf076826ca766dc35f3b150897}{Tan\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Tangent approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\float \hyperlink{group___s_i_s_d_scalar_math_gac1c6ea5bb8f4958158ccb1a33123d64b}{Cot\+Approx} (float angle)
+\begin{DoxyCompactList}\small\item\em Cotangent Approximation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_scalar_math_gac302f56236758d08c1923095e381e53b}{Approx\+Equal} (float left, float right)
+\begin{DoxyCompactList}\small\item\em Check for approximate equality of two floating point numbers. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_scalar_math_gafa30a49468e40679f196b2bc791849e5}{Is\+Na\+N} (float val)
+\begin{DoxyCompactList}\small\item\em Check if the given float value is Na\+N. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_scalar_math_ga56a70269c92df99f699e0456613e4a52}{Is\+Infinity} (float val)
+\begin{DoxyCompactList}\small\item\em Check if the given float value is positive or negative infinity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ float, 16 $>$ \hyperlink{namespacegofxmath_a5f87ab4eb6093d145cda3e6772c6bc0a}{Matrix\+To\+Array} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Converts the given 4x4 matrix to an array of floats. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_ab38872b965a424d2660e1c4be71ddbe6}{Matrix\+Multiply} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&left, const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&right)
+\begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a7d63a634b20c220ad6047dc4633bf70f}{Matrix\+Inverse} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a8c2545c52a86496bdf8917a1158f6f24}{Matrix\+Transpose} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
+\hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a6709364ddedc83299a1d6a58607a87aa}{Matrix\+Determinant} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em Calculates the determinant of the given \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44}. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a786ee918eca59978387d6fce4dab5122}{Rotation\+Matrix\+From\+Quaternion} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&quat)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_ac11c40e17108aa72d069b01b6a08bebf}{Rotation\+Matrix\+From\+Euler} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a2b08e7c142f14df78883494d9c2f66e8}{Translation\+Matrix\+From\+Vec3} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a7971ccb3a66b526ba72c66477539c923}{Scale\+Matrix\+From\+Vec3} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a701f5bfeb4c0c0d4b080a9ad00f910ce}{Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect)
+\begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a67dc21f3890ac0ef9a36b05b71ad36db}{Look\+Dir} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&eye, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&dir, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
+\hyperlink{ssemat__math__defs_8h_a741f88d5589197d03fea9ab2b7622b8a}{S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_abc7554e34178f4e36a906a12ea469c64}{Look\+At} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&eye, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&target, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&up)
+\begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
+\hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a7f0f017f89ae1ba6cf642fba6ce8e4cd}{Transform\+Vec3} (const \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} \&mat, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector via the given \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Vec\+Coord coord\+X, Vec\+Coord coord\+Y, Vec\+Coord coord\+Z, Vec\+Coord coord\+W$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga7b898d302ff9f1463df60c1ca7f03360}{Vec\+Shuffle} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Shuffles two values from the left Sse\+Vec into the lower two positions of the result Sse\+Vec, and two values from the right Sse\+Vec into the upper two positions of the result. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Vec\+Coord c\+X, Vec\+Coord c\+Y, Vec\+Coord c\+Z, Vec\+Coord c\+W$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga301067d1f7d26034d5b23f8b1d419856}{Vec\+Swizzle} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Swizzles the given Sse\+Vec into itself, allowing for mixing and matching of coordinate values. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Vec\+Coord c$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga11f32c02b44ae471bedaae3ab1812e1d}{Vec\+Splat} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Splats the given Sse\+Vec into itself, setting all four values of the result Sse\+Vec to only one of the values from the original Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Blend\+Order b\+X, Blend\+Order b\+Y, Blend\+Order b\+Z, Blend\+Order b\+W$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga48b58f474383827ced71edfdf5bb0f8c}{Vec\+Blend} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&left, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&right)
+\begin{DoxyCompactList}\small\item\em Blends the two given Sse\+Vecs together, selecting values from the left or right arguments depending on the chosen template arguments. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Sin\+Cos\+Flag b\+X, Sin\+Cos\+Flag b\+Y, Sin\+Cos\+Flag b\+Z, Sin\+Cos\+Flag b\+W$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga7b0224a324592a5fc96f9558bd8d4697}{Vec\+Sin\+Cos\+Blend} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&left, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&right)
+\begin{DoxyCompactList}\small\item\em Blends the two given Sse\+Vecs together, selecting values from the left or right arguments depending on the chosen template arguments. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga79078e17e228025b5a974f11aa5fbb74}{Vec\+And} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&left, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&right)
+\begin{DoxyCompactList}\small\item\em Performs a bitwise \char`\"{}and\char`\"{} on the two given Sse\+Vecs. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad38069a17733d63e5a17bbe45d792ea5}{Vec\+Or} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&left, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&right)
+\begin{DoxyCompactList}\small\item\em Performs a bitwise \char`\"{}or\char`\"{} on the two given Sse\+Vecs. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gaf0e068289862b8f6cd6c3371798cba01}{Vec\+X\+Or} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&left, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&right)
+\begin{DoxyCompactList}\small\item\em Performs a bitwise \char`\"{}exclusive or\char`\"{} on the two given Sse\+Vecs. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gac163833435974faa24c026a9709eb7d4}{Vec\+Floor} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Rounds the values of all four components of the given Sse\+Vec to the next whole number in the direction of \%\%-\/\textbackslash{}infty\%\%, and returns the result. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga8a1aa92fcef0713d09a19c8d3df476b8}{Vec\+Ceil} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Rounds the values of all four components of the given Sse\+Vec to the next whole number in the direction of \%\%\textbackslash{}infty\%\%, and returns the result. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga458ffba4de61723c646a36595a67d63c}{Vec\+Round} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Rounds the values of all four components of the given Sse\+Vec toward the closest whole number, and returns the result. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga85f7501f91a11ba01f589001a5e7b147}{Set\+Vec\+Zero} ()
+\begin{DoxyCompactList}\small\item\em Sets and returns an Sse\+Vec with all 0 values. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gabe3a018b9d6a7bfd471e9e79c6d426b4}{Load\+Sse\+Vec2} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec)
+\begin{DoxyCompactList}\small\item\em Loads and returns a Sse\+Vec with the components from the given \hyperlink{classgofxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gae96ebc5e457de66eef7e98cd376091c6}{Load\+Sse\+Vec3} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Loads and returns a Sse\+Vec with the components from the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gab6df575aef0bbd218edfd71d72595355}{Load\+Sse\+Vec4} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Loads and returns a Sse\+Vec with the components from the given \hyperlink{classgofxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_m_d_vec_math_ga40c204913db7670aba5504b920c123ce}{Store\+Sse\+Vec2} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Stores the Sse\+Vec representation of a 2\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_m_d_vec_math_gac4ff1b6370eaf567846d209b4068bc75}{Store\+Sse\+Vec3} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Stores the Sse\+Vec representation of a 3\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_m_d_vec_math_ga451a176ebe90e4e965ee7e9def06b240}{Store\+Sse\+Vec4} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Stores the Sse\+Vec representation of a 4\+D vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool n\+X = true, bool n\+Y = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gaba273219fc8b8a373abad0e833505511}{Vec2\+Negate} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 2\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool n\+X = true, bool n\+Y = true, bool n\+Z = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad5ea03b6d75bf8e3d39a0434b4616b9c}{Vec3\+Negate} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 3\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool n\+X = true, bool n\+Y = true, bool n\+Z = true, bool n\+W = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga4f827fad311b93fa33bd61894aeec1cc}{Vec4\+Negate} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 4\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool a\+X = true, bool a\+Y = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gae52a21e900378c201bcd250b3955d44f}{Vec2\+Abs} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 2\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool a\+X = true, bool a\+Y = true, bool a\+Z = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gabf51927fbe1bfdca633d048af832c95b}{Vec3\+Abs} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 3\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+{\footnotesize template$<$bool a\+X = true, bool a\+Y = true, bool a\+Z = true, bool a\+W = true$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad56f44d523b3a19103850d4bdb84c940}{Vec4\+Abs} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Negates the 4\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_i_m_d_vec_math_ga78f12d2d1d6c49fb87351f8826b80c00}{Print\+Sse\+Vec2} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Prints the 2\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_i_m_d_vec_math_ga1b2fce92fe923cebc413a666a5f3d006}{Print\+Sse\+Vec3} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Prints the 3\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+void \hyperlink{group___s_i_m_d_vec_math_ga699fd6ca653661bdefc07e5502fc680a}{Print\+Sse\+Vec4} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Prints the 4\+D components of the given Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga6bd433144b73ee2858195fc380e97846}{Vec2\+Dot} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Takes the dot product of the two given 2\+D Sse\+Vecs and loads the resulting value into all four positions in the returned Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga9c49b81f2971aa5fbc103517738fbef2}{Vec3\+Dot} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Takes the dot product of the two given 3\+D Sse\+Vecs and loads the resulting value into all four positions in the returned Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gaad124f4ea11c4c588206b762284c86d7}{Vec4\+Dot} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Takes the dot product of the two given 4\+D Sse\+Vecs and loads the resulting value into all four positions in the returned Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga69a2cb46cd6fcbe12e62c7d9c28598f1}{Vec\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Adds two given Sse\+Vecs and returns the sum Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga6f3fc6f79d25a89eab0633445544af3f}{Vec\+Sub} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Subtracts two given Sse\+Vecs and returns the difference Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gac6a154e8cd9fe66c30e8b2302815b0df}{Vec\+Add\+Sub} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Subtracts even-\/indexed positions and adds on odd-\/indexed positions. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga8bd586fb40d6514eb52c04f8ded33a74}{Vec\+Mul} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Multiplies the two given Sse\+Vecs. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gae4bc9cf7c5e4eeddd2e8b3f869798033}{Vec\+R\+Sqrt} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates and returns the reciprocal square root of the given Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga5a870dbad6fdb8496b2e95104cc15f12}{Vec\+Sqrt} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates and returns the square root of the given Sse\+Vec. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga1aa6bb34526133e71f288a8e1e100fb1}{Vec\+Div} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Divides the two given Sse\+Vecs. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad1bc5d9e13ba5c54e2bf457ef9c0a30b}{Vec2\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Adds two Sse\+Vecs representing Vec2s. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga8a939dc9ef27240f00b4e0062afa4f92}{Vec3\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Adds two Sse\+Vecs representing Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga0be0d77c16ddfb98fe517eb0dfa36545}{Vec2\+Sub} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Subtracts two Sse\+Vecs representing Vec2s. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad3a936a686c5d67ed357c9f5b8fc3935}{Vec3\+Sub} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Subtracts two Sse\+Vecs representing Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gac636b80fed0de6de23d967e2c3843c5c}{Vec2\+Mul\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v2)
+\begin{DoxyCompactList}\small\item\em Multiplies two Sse\+Vecs representing Vec2s and then adds a third. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga8bf86ce62253caf59a6312559c203272}{Vec3\+Mul\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v2)
+\begin{DoxyCompactList}\small\item\em Multiplies two Sse\+Vecs representing Vec3s then adds a third. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gadd6b823e88b387ad8deaa65244ad46a0}{Vec4\+Mul\+Add} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v2)
+\begin{DoxyCompactList}\small\item\em Multiplies two Sse\+Vecs representing Vec4s then adds a third. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga3498fd49b8075dc7bea8512216819822}{Vec2\+Mul\+Scalar} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, float scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies the given Sse\+Vec representing a \hyperlink{classgofxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga8629aabc4a7f360497641e3e9179dc4b}{Vec3\+Mul\+Scalar} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, float scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies the given Sse\+Vec representing a \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gac0c5fe54879497395203b4bf7e31586b}{Vec4\+Mul\+Scalar} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, float scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies the given Sse\+Vec representing a \hyperlink{classgofxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga2924184aeecf58733cf8cd36e025b0a6}{Vec2\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the normalized form of the given 2\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga652e2847e6f220ff53c1e99ffe14c68c}{Vec3\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the normalized form of the given 3\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga426569dc94583afda5006317993642df}{Vec4\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates the normalized form of the given 4\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gaebbcf811d495f5e61c17624041e7c6d4}{Fast\+Vec2\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates a fast approximation of the normalized form of a given 2\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gab94457a45f418afc149535de9bc04ba1}{Fast\+Vec3\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates a fast approximation of the normalized form of a given 3\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga293b1bddb59e19059c55c7e91475dc45}{Fast\+Vec4\+Normalize} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&vec)
+\begin{DoxyCompactList}\small\item\em Calculates a fast approximation of the normalized form of a given 4\+D vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga12bda9f58865d8d62c5f6aca955bf2d2}{Vec3\+Cross} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&v1)
+\begin{DoxyCompactList}\small\item\em Calculates the cross product of the two given 3\+D vectors. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad597eb099f2f4e22aec183c593e8facc}{Normalize\+Angles} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Normalizes the given angles (assumed radians) to (-\/\+P\+I,P\+I). \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga3ef82fc17481b408f903c68e67f2c319}{Fast\+Cos\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates a fast approximation of the cosine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga4ea85c8f8966a02e8917ad45d974244e}{Fast\+Sin\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates a fast approximation of the sine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Sin\+Cos\+Flag x\+Flag, Sin\+Cos\+Flag y\+Flag, Sin\+Cos\+Flag z\+Flag, Sin\+Cos\+Flag w\+Flag$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gafadb857fe7e6ccbe5f3c635e3c205258}{Fast\+Sin\+Cos\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates a rougher (but generally much faster) approximation of the sine and/or cosine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gacc1711e105bd1188ae80b9b8f7df2555}{Cos\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates an approximation of the cosine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gad3563d1afb9f13748de00a48a8a7b298}{Sin\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates an approximation of the sine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Sin\+Cos\+Flag x\+Flag, Sin\+Cos\+Flag y\+Flag, Sin\+Cos\+Flag z\+Flag, Sin\+Cos\+Flag w\+Flag, Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gadea0402aa6c42033d4bd68d8218bd966}{Sin\+Cos\+Sse\+Vec} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Calculates an approximation of the sine and/or cosine of the various angles in the given column vector. \end{DoxyCompactList}\item 
+\hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{group___s_i_m_d_vec_math_ga0e384fad353b857ff4ef591d332f1ed5}{Quaternion\+Multiply} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&quat0, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&quat1)
+\begin{DoxyCompactList}\small\item\em Multiplies the two given Sse\+Vecs representing unit quaternions, then returns another unit quaternion. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gaa2b75972dcdfee3ce9416c181e3232c4}{Quaternion\+From\+Axis\+Angle} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&axis\+Vec, float angle)
+\begin{DoxyCompactList}\small\item\em Produces a quaternion representation of the given axis-\/angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gafc7d80c6545a113babc44f60d858982d}{Fast\+Quaternion\+From\+Axis\+Angle} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&axis\+Vec, float angle)
+\begin{DoxyCompactList}\small\item\em Generates a quick approximation of the quaternion representing the given axis-\/angle. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga42795c54ec5735bb7aa2a164d3e6ed5c}{Quaternion\+Lerp} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&start, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&end, float weight)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between the two given quaternion Sse\+Vecs by the given interpolation weight. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga632ef80a1f66a0de3be83b4133470169}{Fast\+Quaternion\+Lerp} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&start, const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&end, float weight)
+\begin{DoxyCompactList}\small\item\em Approximates the linear interpolation between the two given quaternion Sse\+Vecs by the given interpolation weight. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_ga833d20d6dc42c134320a3ad0b77d7b3a}{Quaternion\+From\+Euler} (const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \&angles)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision\+Level = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{group___s_i_m_d_vec_math_gab95cb1ddc35f7af91cdf2a12edaf5122}{Sse\+Quaternion\+From\+Euler} (float pitch, float yaw, float roll)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+{\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_gac9d2c898c69c771b9d9993a4c4f1a146}{Vec2\+Add} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&first, const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec2s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_gac3979900225f137a1486a4491d0fb6d8}{Vec3\+Add} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_ga8812efd4565ada77e6dab63828ad715b}{Vec4\+Add} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec4s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_gabc910528ba2f4f4c3b69bf432e5c7731}{Vec2\+Sub} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&first, const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec2s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_gae7189108aa879fb16ce9afd17052ac16}{Vec3\+Sub} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_ga01968b83532d01613a8f89659d4a52dc}{Vec4\+Sub} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec4s. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_gaf722c71a1e9ef7bf97d9489b1cf561e0}{Vec2\+Dot} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&first, const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgofxmath_1_1_vec2}{Vec2} dot product. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_ga02eb26d5238095f747d35890a597e489}{Vec3\+Dot} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgofxmath_1_1_vec3}{Vec3} dot product. \end{DoxyCompactList}\item 
+float \hyperlink{group___s_i_s_d_vec_math_ga2deb01c8dd6f1a06c0a0cfc2e96e9c1e}{Vec4\+Dot} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgofxmath_1_1_vec4}{Vec4} dot product. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_ga8e4fd4586284706a28625b0fca6c85e7}{Vec2\+Mul\+Scalar} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgofxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_ga79475199c50b1ee42edc6aa8b5c5795f}{Vec3\+Mul\+Scalar} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_ga70441f2888f0df752fe0624a5a7b362d}{Vec4\+Mul\+Scalar} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgofxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_ga8686be4c3f0ee27b05363661fb75a228}{Vec2\+Div\+Scalar} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgofxmath_1_1_vec2}{Vec2} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_ga8c2d0c0b9d70b417e598489374ef1f88}{Vec3\+Div\+Scalar} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_ga670f1f6ebdadeaa2f656f153218fdee8}{Vec4\+Div\+Scalar} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgofxmath_1_1_vec4}{Vec4} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_gaa0125e18e221531bfc7d72d47cdf42d9}{Vec2\+Normalize} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgofxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_gafdbff8ff3fad75f9a9e924a58fcc4f4a}{Vec3\+Normalize} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_gaf1fa3fbf9843a509f3b8a476aa18361b}{Vec4\+Normalize} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgofxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_ga0b4dfb2804fb5c44a112dc6b8ea43278}{Quaternion\+Normalize} (const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&quat)
+\begin{DoxyCompactList}\small\item\em Normalize the given quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec2}{Vec2} \hyperlink{group___s_i_s_d_vec_math_ga55959c707ef1b444eb2d71009a201aa2}{Vec2\+Negate} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgofxmath_1_1_vec2}{Vec2} components. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_ga8ccc52146f984a79c566ee8348e410e2}{Vec3\+Negate} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} components. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{group___s_i_s_d_vec_math_ga9ba6951d54c6a4d9d513580f5bf3b928}{Vec4\+Negate} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgofxmath_1_1_vec4}{Vec4} components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_gae2e5df24e56917013fefa17579bb8749}{Vec2\+Approx\+Equal} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&first, const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec2s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_gac042c4407bfaa66715e3c4b5b0a839f4}{Vec3\+Approx\+Equal} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec3s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{group___s_i_s_d_vec_math_ga819b8c958e12f0838288c641af7e1ab6}{Vec4\+Approx\+Equal} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&first, const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec4s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga7b340b1e4dd88d99aba27f41cd0c1d17}{Vec2\+Has\+Na\+N} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga5d19e3d1ee15741a65ede16f20e919a4}{Vec3\+Has\+Na\+N} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_gab82fdfebe73934664b56e9ba1174f37f}{Vec4\+Has\+Na\+N} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga6eb96a6532361189c7cacdbd9ae95c90}{Vec2\+Has\+Infinite} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgofxmath_1_1_vec2}{Vec2} has an infinite value component. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_gae5205e805b23de865db9a40e5936f82a}{Vec3\+Has\+Infinite} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} has an infinite value component. \end{DoxyCompactList}\item 
+bool \hyperlink{group___s_i_s_d_vec_math_ga29cd467d514b701c3a796cb75234be0b}{Vec4\+Has\+Infinite} (const \hyperlink{classgofxmath_1_1_vec4}{Vec4} \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgofxmath_1_1_vec4}{Vec4} has an infinite value component. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{group___s_i_s_d_vec_math_ga455b2ef17c947a780f2b2b9e4b6cccc8}{Vec3\+Cross} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em The cross product of the two given Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_ga01d5534572884ea932229ccb1aa17ac1}{Quaternion\+Multiply} (const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&q0, const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&q1)
+\begin{DoxyCompactList}\small\item\em Multiply the two given Quaternions. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_ga7d4ad4615b2edcd99e9dcf6f0afe74ca}{Quaternion\+Lerp} (const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&q\+Start, const \hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \&q\+End, float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolate the given quaternions for time t. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_gabbc754cd1e171bd2d945376bb8a39a8f}{Quaternion\+From\+Axis\+Angle} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&axis\+Vec, float angle)
+\begin{DoxyCompactList}\small\item\em Produces a quaternion representation of the given axis-\/angle rotation. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_ga6ea767e2a30159fd9c671ce16e949e38}{Quaternion\+From\+Euler} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&angles)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_quaternion}{Quaternion} \hyperlink{group___s_i_s_d_vec_math_gabcc390d952d7b142babc93c6faadef79}{Quaternion\+From\+Euler} (float pitch, float yaw, float roll)
+\begin{DoxyCompactList}\small\item\em Converts the given euler angles to a quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___scalar_math_consts_ga12f80781f7eb3697d59ab8a1ed1a4cf3}{}const float \hyperlink{group___scalar_math_consts_ga12f80781f7eb3697d59ab8a1ed1a4cf3}{D\+E\+G\+\_\+\+T\+O\+\_\+\+R\+A\+D} = 0.\+01745329251994329576923690768489f\label{group___scalar_math_consts_ga12f80781f7eb3697d59ab8a1ed1a4cf3}
+
+\begin{DoxyCompactList}\small\item\em Degrees to radians conversion factor (\%\%\textbackslash{}frac\{\textbackslash{}pi\}\{180\}\%\%) \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga64a9a19137bce5d9eb22c3e5ef7766ed}{}const float \hyperlink{group___scalar_math_consts_ga64a9a19137bce5d9eb22c3e5ef7766ed}{F\+\_\+\+P\+I\+\_\+4} = 0.\+78539816339744830961566084581988f\label{group___scalar_math_consts_ga64a9a19137bce5d9eb22c3e5ef7766ed}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{4\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gac7dedc26e0695833bd1aa3a17dd257c5}{}const float \hyperlink{group___scalar_math_consts_gac7dedc26e0695833bd1aa3a17dd257c5}{F\+\_\+\+P\+I\+\_\+3} = 1.\+0471975511965977461542144610932f\label{group___scalar_math_consts_gac7dedc26e0695833bd1aa3a17dd257c5}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga946e6dc7aaa53bbc0d3b6d433891c7a8}{}const float \hyperlink{group___scalar_math_consts_ga946e6dc7aaa53bbc0d3b6d433891c7a8}{F\+\_\+\+P\+I\+\_\+2} = 1.\+5707963267948966192313216916398f\label{group___scalar_math_consts_ga946e6dc7aaa53bbc0d3b6d433891c7a8}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gad791e3195a27956d70d1d6912fa386a5}{}const float \hyperlink{group___scalar_math_consts_gad791e3195a27956d70d1d6912fa386a5}{F\+\_\+2\+P\+I\+\_\+3} = 2.\+0943951023931954923084289221863f\label{group___scalar_math_consts_gad791e3195a27956d70d1d6912fa386a5}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{2\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga0c35a004d833cc1dfbee7acbccaab09c}{}const float \hyperlink{group___scalar_math_consts_ga0c35a004d833cc1dfbee7acbccaab09c}{F\+\_\+3\+P\+I\+\_\+4} = 2.\+3561944901923449288469825374596f\label{group___scalar_math_consts_ga0c35a004d833cc1dfbee7acbccaab09c}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{3\textbackslash{}pi\}\{4\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gafafb6dc6f6a78d4380d623b37686827b}{}const float \hyperlink{group___scalar_math_consts_gafafb6dc6f6a78d4380d623b37686827b}{F\+\_\+\+P\+I} = 3.\+1415926535897932384626433832795f\label{group___scalar_math_consts_gafafb6dc6f6a78d4380d623b37686827b}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}pi\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaf59322d3dc0e90033f44d217583e9610}{}const float \hyperlink{group___scalar_math_consts_gaf59322d3dc0e90033f44d217583e9610}{F\+\_\+\+P\+I2} = 9.\+8696044010893586188344909998762f\label{group___scalar_math_consts_gaf59322d3dc0e90033f44d217583e9610}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}pi$^\wedge$2\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga66ec3d4c6fb8f4879f419676a5cd1ae3}{}const float \hyperlink{group___scalar_math_consts_ga66ec3d4c6fb8f4879f419676a5cd1ae3}{F\+\_\+4\+P\+I\+\_\+3} = 4.\+1887902047863909846168578443727f\label{group___scalar_math_consts_ga66ec3d4c6fb8f4879f419676a5cd1ae3}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\textbackslash{}pi\}\{3\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga7f5e7bc15600bd01690e89244107f84f}{}const float \hyperlink{group___scalar_math_consts_ga7f5e7bc15600bd01690e89244107f84f}{F\+\_\+3\+P\+I\+\_\+2} = 4.\+7123889803846898576939650749193f\label{group___scalar_math_consts_ga7f5e7bc15600bd01690e89244107f84f}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{3\textbackslash{}pi\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga1f732c1484129c0ec49718665c5334a9}{}const float \hyperlink{group___scalar_math_consts_ga1f732c1484129c0ec49718665c5334a9}{F\+\_\+2\+P\+I} = 6.\+283185307179586476925286766559f\label{group___scalar_math_consts_ga1f732c1484129c0ec49718665c5334a9}
+
+\begin{DoxyCompactList}\small\item\em \%\%2\textbackslash{}pi\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga1e7d6dc0fa11f4284b6f0eaa5b08a351}{}const float \hyperlink{group___scalar_math_consts_ga1e7d6dc0fa11f4284b6f0eaa5b08a351}{F\+\_\+1\+\_\+2\+P\+I} = 0.\+15915494309189533576888376337251f\label{group___scalar_math_consts_ga1e7d6dc0fa11f4284b6f0eaa5b08a351}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{2\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaaf7b5cfd9c005c51df9c94cbfeb77b2c}{}const float \hyperlink{group___scalar_math_consts_gaaf7b5cfd9c005c51df9c94cbfeb77b2c}{F\+\_\+2\+\_\+\+P\+I} = 0.\+63661977236758134307553505349006f\label{group___scalar_math_consts_gaaf7b5cfd9c005c51df9c94cbfeb77b2c}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{2\}\{\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga17543086409760281a83ba571b38eda4}{}const float \hyperlink{group___scalar_math_consts_ga17543086409760281a83ba571b38eda4}{F\+\_\+4\+\_\+\+P\+I} = 1.\+2732395447351626861510701069801f\label{group___scalar_math_consts_ga17543086409760281a83ba571b38eda4}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\}\{\textbackslash{}pi\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga6e0a91cbc33147860a0af980969f00aa}{}const float \hyperlink{group___scalar_math_consts_ga6e0a91cbc33147860a0af980969f00aa}{F\+\_\+4\+\_\+\+P\+I2} = 0.\+40528473456935108577551785283891f\label{group___scalar_math_consts_ga6e0a91cbc33147860a0af980969f00aa}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{4\}\{\textbackslash{}pi$^\wedge$2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga6ec302fb2e7b4cfb615300db5bc4f271}{}const float \hyperlink{group___scalar_math_consts_ga6ec302fb2e7b4cfb615300db5bc4f271}{F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2} = -\/0.\+40528473456935108577551785283891f\label{group___scalar_math_consts_ga6ec302fb2e7b4cfb615300db5bc4f271}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gad425f5da9daf66a4bf041bf10752f52f}{}const float \hyperlink{group___scalar_math_consts_gad425f5da9daf66a4bf041bf10752f52f}{F\+\_\+\+S\+Q\+R\+T2} = 1.\+4142135623730950488016887242097f\label{group___scalar_math_consts_gad425f5da9daf66a4bf041bf10752f52f}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}sqrt\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaf5e286a6a93e2ea1dc623acbcbcc8159}{}const float \hyperlink{group___scalar_math_consts_gaf5e286a6a93e2ea1dc623acbcbcc8159}{F\+\_\+1\+\_\+\+S\+Q\+R\+T2} = 0.\+70710678118654752440084436210485f\label{group___scalar_math_consts_gaf5e286a6a93e2ea1dc623acbcbcc8159}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{2\}\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaeb8c2298593ed612e5ad6d69bfa0bcd6}{}const float \hyperlink{group___scalar_math_consts_gaeb8c2298593ed612e5ad6d69bfa0bcd6}{F\+\_\+1\+\_\+\+S\+Q\+R\+T3} = 0.\+57735026918962576450914878050196f\label{group___scalar_math_consts_gaeb8c2298593ed612e5ad6d69bfa0bcd6}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{1\}\{\textbackslash{}sqrt\{3\}\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_gaf63dd491939d577dc0d1d1f1989341bb}{}const float \hyperlink{group___scalar_math_consts_gaf63dd491939d577dc0d1d1f1989341bb}{F\+\_\+\+S\+Q\+R\+T3\+\_\+2} = 0.\+86602540378443864676372317075294f\label{group___scalar_math_consts_gaf63dd491939d577dc0d1d1f1989341bb}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}frac\{\textbackslash{}sqrt\{3\}\}\{2\}\%\% \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga1a5c35ecfaa4a8bbb408287ab3d38248}{}const float \hyperlink{group___scalar_math_consts_ga1a5c35ecfaa4a8bbb408287ab3d38248}{F\+\_\+\+S\+Q\+R\+T3} = 1.\+7320508075688772935274463415059f\label{group___scalar_math_consts_ga1a5c35ecfaa4a8bbb408287ab3d38248}
+
+\begin{DoxyCompactList}\small\item\em \%\%\textbackslash{}sqrt\{3\}\%\% \end{DoxyCompactList}\item 
+const \hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} \hyperlink{group___scalar_math_consts_gae9346089acea1670286e7cbe27bdbbbb}{F\+\_\+\+S\+I\+G\+N\+\_\+\+B\+I\+T} = 0x80000000
+\begin{DoxyCompactList}\small\item\em Mask for the sign bit for standard floating point numbers. \end{DoxyCompactList}\item 
+const size\+\_\+t \hyperlink{group___scalar_math_consts_gab7b8a16b47f0cca40952e44fdd24f87d}{N\+U\+M\+\_\+\+T\+R\+I\+G\+\_\+\+C\+O\+E\+F\+S} = 16
+\begin{DoxyCompactList}\small\item\em Maximum number of trig coefficients supported by I\+E\+E\+E 754 single-\/precision floating point numbers -\/ assuming a taylor approximation. \end{DoxyCompactList}\item 
+\hypertarget{group___scalar_math_consts_ga5c411f18f77bce82247b32ea257204fb}{}const size\+\_\+t \hyperlink{group___scalar_math_consts_ga5c411f18f77bce82247b32ea257204fb}{N\+U\+M\+\_\+\+P\+R\+E\+C\+I\+S\+I\+O\+N\+\_\+\+V\+A\+L\+S} = 5\label{group___scalar_math_consts_ga5c411f18f77bce82247b32ea257204fb}
+
+\begin{DoxyCompactList}\small\item\em Number of precision values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaa}{Sin\+Cos\+Flag} \{ \hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaa4c66cfae8f94035eaede20844570a27f}{S\+I\+N} = 0, 
+\hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaac06d99c0a383a5ea3aca59fa2f00f519}{C\+O\+S} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent sine cosine flags. \end{DoxyCompactList}\item 
+enum \hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034f}{Blend\+Order} \{ \hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fab28013e6e287ee6b2890c0809dc4eb50}{L\+E\+F\+T} = 0, 
+\hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa3949eb6190e4e02933ded246a5d8fb11}{R\+I\+G\+H\+T} = 1, 
+\hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa6fd5e4e8e4bb7db4dd9086e8a5e313a4}{N\+O\+\_\+\+O\+R\+D\+E\+R} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent blend orders. \end{DoxyCompactList}\item 
+enum \hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741}{Vec\+Coord} \{ \\*
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a1b2cd11034f7c778f8e0930f57a15577}{X} = 0, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a98d90627fe2347723d56eb2b5fd7492d}{Y} = 1, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a56adb0786cb240ee8baed7fe3e48c58e}{Z} = 2, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741ae38bfc064233b06432b115dca29d5c5a}{W} = 3, 
+\\*
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a9fc8bb14e129d2beab9c4027f9c0beef}{N\+A} = 0
+ \}
+\begin{DoxyCompactList}\small\item\em Values that represent vector coordinates. \end{DoxyCompactList}\item 
+typedef \+\_\+\+\_\+m128 \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the Sse\+Vec. \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}{U\+N\+I\+T\+\_\+0001} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f)\label{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}
+
+\begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 0 0 1$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}{U\+N\+I\+T\+\_\+0010} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f)\label{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}
+
+\begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 0 1 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}{U\+N\+I\+T\+\_\+0100} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f)\label{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}
+
+\begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 1 0 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}{U\+N\+I\+T\+\_\+1000} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f)\label{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}
+
+\begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$1 0 0 0$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}{F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga6ec302fb2e7b4cfb615300db5bc4f271}{F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2})\label{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\})$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}{F\+\_\+4\+\_\+\+P\+I\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga17543086409760281a83ba571b38eda4}{F\+\_\+4\+\_\+\+P\+I})\label{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\}\textbackslash{})$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}{F\+\_\+1\+\_\+2\+P\+I\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga1e7d6dc0fa11f4284b6f0eaa5b08a351}{F\+\_\+1\+\_\+2\+P\+I})\label{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\}\textbackslash{})$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}{F\+\_\+\+P\+I\+\_\+2\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga946e6dc7aaa53bbc0d3b6d433891c7a8}{F\+\_\+\+P\+I\+\_\+2})\label{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\})$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}{F\+\_\+\+P\+I\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_gafafb6dc6f6a78d4380d623b37686827b}{F\+\_\+\+P\+I})\label{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}pi \textbackslash{}pi \textbackslash{}pi \textbackslash{}pi\textbackslash{})$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}{F\+\_\+2\+P\+I\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga1f732c1484129c0ec49718665c5334a9}{F\+\_\+2\+P\+I})\label{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(2\textbackslash{}pi 2\textbackslash{}pi 2\textbackslash{}pi 2\textbackslash{}pi\textbackslash{})$>$ \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a47a55dbc42a84afc2fc369f8d87605d1}{M\+A\+S\+K\+\_\+1000} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x-\/coordinate position. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a8cdc76e209aa891f09b886c3f00fa7ba}{M\+A\+S\+K\+\_\+0100} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y-\/coordinate position. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ad431727ef9389a0240a56b9fa2f99a14}{M\+A\+S\+K\+\_\+0010} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the z-\/coordinate position. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_afec549b0968ef5d9ea00d1eb2deda70b}{M\+A\+S\+K\+\_\+0001} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the w-\/coordinate position. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_aa909e3bfeab0b420da664a23efb26895}{M\+A\+S\+K\+\_\+1100} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or y-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ac0b117ecea85861132b3f5bb90629497}{M\+A\+S\+K\+\_\+1010} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or z-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a689cc233b7fa8e315c8cc38f474677df}{M\+A\+S\+K\+\_\+1001} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_af23b97e8acce0ac2474bef3510e8dea3}{M\+A\+S\+K\+\_\+0110} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y or z-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a64d1694904be595e301c48b51810b43d}{M\+A\+S\+K\+\_\+0101} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ab4d2ad1ff23d4e35a2cb19a3be6dbe19}{M\+A\+S\+K\+\_\+0011} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the z or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a26899473d5a93ecf33fbdeb7bf332890}{M\+A\+S\+K\+\_\+0111} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y, z, or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a93d32bd94a23c12d1e647ec1d5e25303}{M\+A\+S\+K\+\_\+1011} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, z, or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_af1a1ed503168492328267f3064cde68d}{M\+A\+S\+K\+\_\+1101} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, y, or w-\/coordinate positions. \end{DoxyCompactList}\item 
+const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a557ea8335b7d1d30471f67b1853b74c6}{M\+A\+S\+K\+\_\+1110} = \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+\begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, y, or z-\/coordinate positions. \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+O\+N\+E} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(1.\+0f)\label{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$1.\+0f 1.\+0f 1.\+0f 1.\+0f$>$ \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}{}const \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}{E\+P\+S\+I\+L\+O\+N\+\_\+1111} = \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4}(\hyperlink{group___scalar_math_consts_ga88a517d09326cefa42e5a854384217dd}{Epsilon}())\label{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}
+
+\begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\%\%\textbackslash{}epsilon \textbackslash{}epsilon \textbackslash{}epsilon \textbackslash{}epsilon\%\%$>$ where \%\%\textbackslash{}epsilon\%\% is the smallest value such that \%\%1.\+0f + \textbackslash{}epsilon \textbackslash{}not= 1.\+0f\%\%. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_acfe1470c8903c33f2301785881213d6b}{Set\+Sse\+Vec2} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 2-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a9470bf18fa113d0d4696f64bdd17de52}{Set\+Sse\+Vec3} (float x, float y, float z)
+\begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 3-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{Set\+Sse\+Vec4} (float x, float y, float z, float w)
+\begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a4384f47a58c716aecdb418fe2af93c12}{Set\+Sse\+Vec4} (float xyzw)
+\begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{Set\+Sse\+Vec\+Mask} (\hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} x, \hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} y, \hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} z, \hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} w)
+\begin{DoxyCompactList}\small\item\em Creates a \char`\"{}masking\char`\"{} Sse\+Vec, using the bits from x, y, z, and w. \end{DoxyCompactList}\item 
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a2f592b6bcc06fdfaa561ed3f33ca0ed2}{Set1\+Sse\+Vec\+Mask} (\hyperlink{group___scalar_math_consts_gab1b391d7995f105a3340b15c6c9d0763}{Mask\+Val} xyzw)
+\begin{DoxyCompactList}\small\item\em Sets an Sse\+Vec mask with one value, placing said value into each of the four positions in the register. \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}{}\hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}{Sin\+Coef\+Sse\+Vec} (int i)\label{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}
+
+\begin{DoxyCompactList}\small\item\em First 16 taylor series sine approximation coefficients loaded into all four components of their respective Sse\+Vecs. \end{DoxyCompactList}\item 
+\hypertarget{namespacegofxmath_a17160d92d915e28c97837f75754401d0}{}\hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{Sse\+Vec} \hyperlink{namespacegofxmath_a17160d92d915e28c97837f75754401d0}{Cos\+Coef\+Sse\+Vec} (int i)\label{namespacegofxmath_a17160d92d915e28c97837f75754401d0}
+
+\begin{DoxyCompactList}\small\item\em First 16 taylor series cosine approximation coefficients loaded into all four components of their respective Sse\+Vecs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+G of F of X math namespace. 
+
+\subsection{Typedef Documentation}
+\hypertarget{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{}\index{gofxmath@{gofxmath}!Sse\+Vec@{Sse\+Vec}}
+\index{Sse\+Vec@{Sse\+Vec}!gofxmath@{gofxmath}}
+\subsubsection[{Sse\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+m128 {\bf gofxmath\+::\+Sse\+Vec}}\label{namespacegofxmath_a634570ddcd2496053ee966227080e02f}
+
+
+Defines an alias representing the Sse\+Vec. 
+
+\begin{DoxyRemark}{Remarks}
+It should be noted that the intel\textregistered{} S\+S\+E registers (\+\_\+\+\_\+m128 types) use little-\/endian logic. That is to say the memory layout is arranged like such\+: \mbox{[}3 2 1 0\mbox{]} where the numbers represent the indexed positions of the 32-\/bit sections where single-\/precision floating point or standard 1-\/word int values can be placed. Because this can lead to some confusion with regards to where the indices of the vector are located, vectors are located in reverse order, like so\+: \mbox{[}w z y x\mbox{]}. where the letters represent the coordinate components of the vectors. 
+\end{DoxyRemark}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034f}{}\index{gofxmath@{gofxmath}!Blend\+Order@{Blend\+Order}}
+\index{Blend\+Order@{Blend\+Order}!gofxmath@{gofxmath}}
+\subsubsection[{Blend\+Order}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf gofxmath\+::\+Blend\+Order}}\label{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034f}
+
+
+Values that represent blend orders. 
+
+\begin{DoxyRemark}{Remarks}
+Used with vector blending operations. 
+\end{DoxyRemark}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+E\+F\+T@{L\+E\+F\+T}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!L\+E\+F\+T@{L\+E\+F\+T}}\item[{\em 
+\hypertarget{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fab28013e6e287ee6b2890c0809dc4eb50}{}L\+E\+F\+T\label{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fab28013e6e287ee6b2890c0809dc4eb50}
+}]The left blend order option. Chooses the left argument in the blend call. \index{R\+I\+G\+H\+T@{R\+I\+G\+H\+T}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!R\+I\+G\+H\+T@{R\+I\+G\+H\+T}}\item[{\em 
+\hypertarget{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa3949eb6190e4e02933ded246a5d8fb11}{}R\+I\+G\+H\+T\label{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa3949eb6190e4e02933ded246a5d8fb11}
+}]The right blend order option. Chooses the right argument in the blend call. \index{N\+O\+\_\+\+O\+R\+D\+E\+R@{N\+O\+\_\+\+O\+R\+D\+E\+R}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!N\+O\+\_\+\+O\+R\+D\+E\+R@{N\+O\+\_\+\+O\+R\+D\+E\+R}}\item[{\em 
+\hypertarget{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa6fd5e4e8e4bb7db4dd9086e8a5e313a4}{}N\+O\+\_\+\+O\+R\+D\+E\+R\label{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa6fd5e4e8e4bb7db4dd9086e8a5e313a4}
+}]The N\+O\+\_\+\+O\+R\+D\+E\+R option. \begin{DoxyRemark}{Remarks}
+This represents a coordinate we \char`\"{}don\textquotesingle{}t care about.\char`\"{} \begin{DoxyVerb}           When blending, much like when swizzling or shuffling, there may be times when you must blend in
+           more values than you need, or values that you don't need in certain positions.  Sometimes this is
+           because the values that are needed for those positions are not available in the source vector.
+
+           For example, when loading a 3D vector, the final (fourth) value should (ideally) be <B>1.0f</B>,
+           yielding a vector layout that looks like <CODE>&lt;x y z 1.0f&gt;</CODE>.
+           This is largely for the sake of mathematical completeness, and to prevent errors during other calculations.
+
+           It is likely more convenient for other calculations, and for readability, to simply ignore what
+           values are pushed into the fourth position of the vector until the end of the calculations, at
+           which time one might use a VecBlend call or a similar method to force a value of 1.0f in that
+           space.
+
+           The NO_ORDER value is designated for any such situations where the value in the given SseVec position
+           is not important to the calculations, and is <EM>purely</EM> intended to be used for purposes of
+           readability.
+
+           <B>Note:</B> It is <EM>strongly</EM> discouraged that one use the NO_ORDER for its numerical value during calculations,
+           as its use implies that the numerical value of the index in that position, as well as the value the index points
+           to, <B>do not matter to the calculations</B>.\end{DoxyVerb}
+ 
+\end{DoxyRemark}
+\end{description}
+\end{Desc}
+\hypertarget{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaa}{}\index{gofxmath@{gofxmath}!Sin\+Cos\+Flag@{Sin\+Cos\+Flag}}
+\index{Sin\+Cos\+Flag@{Sin\+Cos\+Flag}!gofxmath@{gofxmath}}
+\subsubsection[{Sin\+Cos\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf gofxmath\+::\+Sin\+Cos\+Flag}}\label{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaa}
+
+
+Values that represent sine cosine flags. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+I\+N@{S\+I\+N}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!S\+I\+N@{S\+I\+N}}\item[{\em 
+\hypertarget{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaa4c66cfae8f94035eaede20844570a27f}{}S\+I\+N\label{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaa4c66cfae8f94035eaede20844570a27f}
+}]Sine option. \index{C\+O\+S@{C\+O\+S}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!C\+O\+S@{C\+O\+S}}\item[{\em 
+\hypertarget{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaac06d99c0a383a5ea3aca59fa2f00f519}{}C\+O\+S\label{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaac06d99c0a383a5ea3aca59fa2f00f519}
+}]Cosine option. \end{description}
+\end{Desc}
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741}{}\index{gofxmath@{gofxmath}!Vec\+Coord@{Vec\+Coord}}
+\index{Vec\+Coord@{Vec\+Coord}!gofxmath@{gofxmath}}
+\subsubsection[{Vec\+Coord}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf gofxmath\+::\+Vec\+Coord}}\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741}
+
+
+Values that represent vector coordinates. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+Used for ssevec swizzling and shuffling function calls.
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+
+\end{DoxySeeAlso}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{X@{X}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!X@{X}}\item[{\em 
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a1b2cd11034f7c778f8e0930f57a15577}{}X\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a1b2cd11034f7c778f8e0930f57a15577}
+}]The x coordinate option (int value 0) \index{Y@{Y}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!Y@{Y}}\item[{\em 
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a98d90627fe2347723d56eb2b5fd7492d}{}Y\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a98d90627fe2347723d56eb2b5fd7492d}
+}]The y coordinate option (int value 1) \index{Z@{Z}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!Z@{Z}}\item[{\em 
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a56adb0786cb240ee8baed7fe3e48c58e}{}Z\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a56adb0786cb240ee8baed7fe3e48c58e}
+}]The z coordinate option (int value 2) \index{W@{W}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!W@{W}}\item[{\em 
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741ae38bfc064233b06432b115dca29d5c5a}{}W\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741ae38bfc064233b06432b115dca29d5c5a}
+}]The w coordinate option (int value 3) \index{N\+A@{N\+A}!gofxmath@{gofxmath}}\index{gofxmath@{gofxmath}!N\+A@{N\+A}}\item[{\em 
+\hypertarget{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a9fc8bb14e129d2beab9c4027f9c0beef}{}N\+A\label{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a9fc8bb14e129d2beab9c4027f9c0beef}
+}]The N\+A option. \begin{DoxyRemark}{Remarks}
+This represents a coordinate we \char`\"{}don\textquotesingle{}t care about.\char`\"{} \begin{DoxyVerb}          When swizzling or shuffling, there may be times when you must shuffle in
+          more values than you need, or values that you don't need in certain positions.  Sometimes this is
+          because the values that are needed for those positions are not available in the source vector.
+
+          For example, when loading a 3D vector, the final (fourth) value should (ideally) be <B>1.0f</B>,
+          yielding a vector layout that looks like <CODE>&lt;x y z 1.0f&gt;</CODE>.
+          This is largely for the sake of mathematical completeness, and to prevent errors during other calculations.
+
+          It is likely more convenient for other calculations, and for readability, to simply ignore what
+          values are pushed into the fourth position of the vector until the end of the calculations, at
+          which time one might use a VecBlend call or a similar method to force a value of 1.0f in that
+          space.
+
+          The NA value is designated for any such situations where the value in the given SseVec position
+          is not important to the calculations, and while it is given a valid vector index value, and
+          theoretically <EM>could</EM> be used in place of one of the other VecCoord enum constants,
+          is purely intended to be used for purposes of readability, and should never be used for its
+          numeric value.\end{DoxyVerb}
+ 
+\end{DoxyRemark}
+\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacegofxmath_ac420c9cd578ebe0b21c9db7757bc4c2d}{}\index{gofxmath@{gofxmath}!Look\+At@{Look\+At}}
+\index{Look\+At@{Look\+At}!gofxmath@{gofxmath}}
+\subsubsection[{Look\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Look\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{eye, }
+\item[{const {\bf Vec3} \&}]{target, }
+\item[{const {\bf Vec3} \&}]{up}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_ac420c9cd578ebe0b21c9db7757bc4c2d}
+
+
+Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em target} & The position of the target that the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_abc7554e34178f4e36a906a12ea469c64}{}\index{gofxmath@{gofxmath}!Look\+At@{Look\+At}}
+\index{Look\+At@{Look\+At}!gofxmath@{gofxmath}}
+\subsubsection[{Look\+At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Look\+At (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{eye, }
+\item[{const {\bf Sse\+Vec} \&}]{target, }
+\item[{const {\bf Sse\+Vec} \&}]{up}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_abc7554e34178f4e36a906a12ea469c64}
+
+
+Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em target} & The position of the target that the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a1d0cf66e3877d2be1e104bbacec0c917}{}\index{gofxmath@{gofxmath}!Look\+Dir@{Look\+Dir}}
+\index{Look\+Dir@{Look\+Dir}!gofxmath@{gofxmath}}
+\subsubsection[{Look\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Look\+Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{eye, }
+\item[{const {\bf Vec3} \&}]{dir, }
+\item[{const {\bf Vec3} \&}]{up}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a1d0cf66e3877d2be1e104bbacec0c917}
+
+
+Calculates the view matrix given the forward direction vector, rather than a target position. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em dir} & The direction the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a67dc21f3890ac0ef9a36b05b71ad36db}{}\index{gofxmath@{gofxmath}!Look\+Dir@{Look\+Dir}}
+\index{Look\+Dir@{Look\+Dir}!gofxmath@{gofxmath}}
+\subsubsection[{Look\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Look\+Dir (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{eye, }
+\item[{const {\bf Sse\+Vec} \&}]{dir, }
+\item[{const {\bf Sse\+Vec} \&}]{up}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a67dc21f3890ac0ef9a36b05b71ad36db}
+
+
+Calculates the view matrix given the forward direction vector, rather than a target position. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em eye} & The position of the camera, in world space. \\
+\hline
+{\em dir} & The direction the camera is facing. \\
+\hline
+{\em up} & The camera\textquotesingle{}s relative \char`\"{}up\char`\"{} direction -\/ should always be $<$0 1 0$>$ unless the camera has a roll/bank rotation that isn\textquotesingle{}t 0, or the camera has its pitch value at \%\%\textbackslash{}pm\textbackslash{}frac\{\textbackslash{}pi\}\{2\}\%\% radians (\textbackslash{}pm \%\%90$^\wedge$\{\textbackslash{}circ\}\%\%\%).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated view matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a285829d964b38ad14730e85c325e775c}{}\index{gofxmath@{gofxmath}!Matrix\+Determinant@{Matrix\+Determinant}}
+\index{Matrix\+Determinant@{Matrix\+Determinant}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Determinant}]{\setlength{\rightskip}{0pt plus 5cm}float Matrix\+Determinant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a285829d964b38ad14730e85c325e775c}
+
+
+Calculates the determinant of the given 4x4 matrix. 
+
+Calculates the determinant of the given \hyperlink{classgofxmath_1_1_mat44}{Mat44}.
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to find the determinant of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A float.
+\end{DoxyReturn}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix for which to calculate the determinant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the determinant of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a6709364ddedc83299a1d6a58607a87aa}{}\index{gofxmath@{gofxmath}!Matrix\+Determinant@{Matrix\+Determinant}}
+\index{Matrix\+Determinant@{Matrix\+Determinant}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Determinant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} Matrix\+Determinant (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacegofxmath_a6709364ddedc83299a1d6a58607a87aa}
+
+
+Calculates the determinant of the given \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44}. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to calculate the determinant of.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Sse\+Vec containing four identical copies of this matrix\textquotesingle{}s determinant. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a38c661c8ad19528520d36fabca7d555f}{}\index{gofxmath@{gofxmath}!Matrix\+Inverse@{Matrix\+Inverse}}
+\index{Matrix\+Inverse@{Matrix\+Inverse}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Inverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a38c661c8ad19528520d36fabca7d555f}
+
+
+Calculates the inverse of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to invert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a7d63a634b20c220ad6047dc4633bf70f}{}\index{gofxmath@{gofxmath}!Matrix\+Inverse@{Matrix\+Inverse}}
+\index{Matrix\+Inverse@{Matrix\+Inverse}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Matrix\+Inverse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a7d63a634b20c220ad6047dc4633bf70f}
+
+
+Calculates the inverse of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to invert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The inverse of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a4439d3f4590c372ada775196d1576f81}{}\index{gofxmath@{gofxmath}!Matrix\+Multiply@{Matrix\+Multiply}}
+\index{Matrix\+Multiply@{Matrix\+Multiply}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{first, }
+\item[{const {\bf Mat44} \&}]{second}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a4439d3f4590c372ada775196d1576f81}
+
+
+Calculates the product (post-\/multiplication) of the two given 4x4 matrices. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The left matrix. \\
+\hline
+{\em second} & The right matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The post-\/multiplied product of the two matrices. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_ab38872b965a424d2660e1c4be71ddbe6}{}\index{gofxmath@{gofxmath}!Matrix\+Multiply@{Matrix\+Multiply}}
+\index{Matrix\+Multiply@{Matrix\+Multiply}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Matrix\+Multiply (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{left, }
+\item[{const {\bf Sse\+Mat44} \&}]{right}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_ab38872b965a424d2660e1c4be71ddbe6}
+
+
+Calculates the product (post-\/multiplication) of the two given 4x4 matrices. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The left matrix. \\
+\hline
+{\em right} & The right matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The post-\/multiplied product of the two matrices. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a5f87ab4eb6093d145cda3e6772c6bc0a}{}\index{gofxmath@{gofxmath}!Matrix\+To\+Array@{Matrix\+To\+Array}}
+\index{Matrix\+To\+Array@{Matrix\+To\+Array}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+To\+Array}]{\setlength{\rightskip}{0pt plus 5cm}std\+::array$<$ float, 16 $>$ Matrix\+To\+Array (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacegofxmath_a5f87ab4eb6093d145cda3e6772c6bc0a}
+
+
+Converts the given 4x4 matrix to an array of floats. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to convert to an array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The array of floats representing the given 4x4 matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a626e52b58fb763a90ba6e9d46966ee75}{}\index{gofxmath@{gofxmath}!Matrix\+Transpose@{Matrix\+Transpose}}
+\index{Matrix\+Transpose@{Matrix\+Transpose}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Matrix\+Transpose (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a626e52b58fb763a90ba6e9d46966ee75}
+
+
+Calculates the transpose of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transpose matrix of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a8c2545c52a86496bdf8917a1158f6f24}{}\index{gofxmath@{gofxmath}!Matrix\+Transpose@{Matrix\+Transpose}}
+\index{Matrix\+Transpose@{Matrix\+Transpose}!gofxmath@{gofxmath}}
+\subsubsection[{Matrix\+Transpose}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Matrix\+Transpose (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a8c2545c52a86496bdf8917a1158f6f24}
+
+
+Calculates the transpose of the given 4x4 matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix to transpose.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transpose matrix of the given matrix. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}{}\index{gofxmath@{gofxmath}!Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}}
+\index{Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}!gofxmath@{gofxmath}}
+\subsubsection[{Perspective\+Projection\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Perspective\+Projection\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{near, }
+\item[{float}]{far, }
+\item[{float}]{fov, }
+\item[{float}]{aspect, }
+\item[{{\bf Mat44} \&}]{result}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}
+
+
+Calculates the right-\/handed perspective projection matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em near} & The distance to the near clip plane. \\
+\hline
+ & {\em far} & The distance to the far clip plane. \\
+\hline
+ & {\em fov} & The vertical field of view angle. \\
+\hline
+ & {\em aspect} & The aspect ratio (width / height). \\
+\hline
+\mbox{\tt in,out}  & {\em result} & The result matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This form of the perspective projection matrix takes on the following format\+:
+\end{DoxyRemark}
+\[ P_{m,n} = \begin{pmatrix} \cot(\theta) & 0 & 0 & 0 \\ 0 & \cot(\theta) * a & -f/(f-n) & -1 \\ 0 & 0 & -fn/(f-n) & 0 \end{pmatrix} \]
+
+Where\+:
+\begin{DoxyItemize}
+\item \textbackslash{}(\textbackslash{}theta\textbackslash{}) is the fov (field of view) angle.
+\item \textbackslash{}(f\textbackslash{}) is the distance to the far clipping plane.
+\item \textbackslash{}(n\textbackslash{}) is the distance to the near clipping plane.
+\item \textbackslash{}(a\textbackslash{}) is the aspect ratio of the viewport. 
+\end{DoxyItemize}\hypertarget{namespacegofxmath_a701f5bfeb4c0c0d4b080a9ad00f910ce}{}\index{gofxmath@{gofxmath}!Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}}
+\index{Perspective\+Projection\+Matrix@{Perspective\+Projection\+Matrix}!gofxmath@{gofxmath}}
+\subsubsection[{Perspective\+Projection\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Perspective\+Projection\+Matrix (
+\begin{DoxyParamCaption}
+\item[{float}]{near, }
+\item[{float}]{far, }
+\item[{float}]{fov, }
+\item[{float}]{aspect}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a701f5bfeb4c0c0d4b080a9ad00f910ce}
+
+
+Calculates the right-\/handed perspective projection matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em near} & The distance to the near clip plane. \\
+\hline
+{\em far} & The distance to the far clip plane. \\
+\hline
+{\em fov} & The vertical field of view angle. \\
+\hline
+{\em aspect} & The aspect ratio (width / height).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The right-\/handed perspective projection matrix.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+This form of the perspective projection matrix takes on the following format\+:
+\end{DoxyRemark}
+\[ P_{m,n} = \begin{pmatrix} \cot(\theta) & 0 & 0 & 0 \\ 0 & \cot(\theta) * a & -f/(f-n) & -1 \\ 0 & 0 & -fn/(f-n) & 0 \end{pmatrix} \]
+
+Where\+:
+\begin{DoxyItemize}
+\item \textbackslash{}(\textbackslash{}theta\textbackslash{}) is the fov (field of view) angle.
+\item \textbackslash{}(f\textbackslash{}) is the distance to the far clipping plane.
+\item \textbackslash{}(n\textbackslash{}) is the distance to the near clipping plane.
+\item \textbackslash{}(a\textbackslash{}) is the aspect ratio of the viewport.
+\end{DoxyItemize}
+
+This is the \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} equivalent of the \hyperlink{classgofxmath_1_1_mat44}{Mat44} version of this function\+:~\newline
+ \hyperlink{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}{Perspective\+Projection\+Matrix(float near, float far, float fov, float aspect, Mat44\& result)}
+
+\begin{DoxySeeAlso}{See also}
+void \hyperlink{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}{Perspective\+Projection\+Matrix(float near, float far, float fov, float aspect, Mat44\& result)} 
+\end{DoxySeeAlso}
+\hypertarget{namespacegofxmath_a206e53fa5ea77b54765946af3d04ca0e}{}\index{gofxmath@{gofxmath}!Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}}
+\index{Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}!gofxmath@{gofxmath}}
+\subsubsection[{Rotation\+Matrix\+From\+Euler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Rotation\+Matrix\+From\+Euler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{angles}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a206e53fa5ea77b54765946af3d04ca0e}
+
+
+Calculates the 4x4 rotation matrix represented by the given euler angle rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & The euler angles to use for generating the 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 4x4 rotation matrix represented by the given euler angle rotation. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_ac11c40e17108aa72d069b01b6a08bebf}{}\index{gofxmath@{gofxmath}!Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}}
+\index{Rotation\+Matrix\+From\+Euler@{Rotation\+Matrix\+From\+Euler}!gofxmath@{gofxmath}}
+\subsubsection[{Rotation\+Matrix\+From\+Euler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Rotation\+Matrix\+From\+Euler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{angles}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_ac11c40e17108aa72d069b01b6a08bebf}
+
+
+Calculates the 4x4 rotation matrix represented by the given euler angle rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & The euler angles to use for generating the 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The 4x4 rotation matrix represented by the given euler angle rotation. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_ad7198c521a4d93e82694f39f0be736c9}{}\index{gofxmath@{gofxmath}!Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}}
+\index{Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}!gofxmath@{gofxmath}}
+\subsubsection[{Rotation\+Matrix\+From\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Rotation\+Matrix\+From\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Quaternion} \&}]{quat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_ad7198c521a4d93e82694f39f0be736c9}
+
+
+Calculates the 4x4 rotation matrix represented by the given quaternion rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & The quaternion rotation to transform into a 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classgofxmath_1_1_mat44}{Mat44}. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a786ee918eca59978387d6fce4dab5122}{}\index{gofxmath@{gofxmath}!Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}}
+\index{Rotation\+Matrix\+From\+Quaternion@{Rotation\+Matrix\+From\+Quaternion}!gofxmath@{gofxmath}}
+\subsubsection[{Rotation\+Matrix\+From\+Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Rotation\+Matrix\+From\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{quat}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a786ee918eca59978387d6fce4dab5122}
+
+
+Calculates the 4x4 rotation matrix represented by the given quaternion rotation. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em quat} & The quaternion rotation to transform into a 4x4 matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} with values representing the rotation that was given by. the passed Sse\+Vec quaternion. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a8ec877a1635b6a682a15195b47e1f21d}{}\index{gofxmath@{gofxmath}!Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}}
+\index{Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Scale\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Scale\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a8ec877a1635b6a682a15195b47e1f21d}
+
+
+Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D scale vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scale matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a7971ccb3a66b526ba72c66477539c923}{}\index{gofxmath@{gofxmath}!Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}}
+\index{Scale\+Matrix\+From\+Vec3@{Scale\+Matrix\+From\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Scale\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Scale\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a7971ccb3a66b526ba72c66477539c923}
+
+
+Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D scale vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scale matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a2f592b6bcc06fdfaa561ed3f33ca0ed2}{}\index{gofxmath@{gofxmath}!Set1\+Sse\+Vec\+Mask@{Set1\+Sse\+Vec\+Mask}}
+\index{Set1\+Sse\+Vec\+Mask@{Set1\+Sse\+Vec\+Mask}!gofxmath@{gofxmath}}
+\subsubsection[{Set1\+Sse\+Vec\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set1\+Sse\+Vec\+Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf Mask\+Val}}]{xyzw}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a2f592b6bcc06fdfaa561ed3f33ca0ed2}
+
+
+Sets an Sse\+Vec mask with one value, placing said value into each of the four positions in the register. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyzw} & The value to place in all four coordinate positions.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Sse\+Vec with the given value placed in all four coordinate positions. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_acfe1470c8903c33f2301785881213d6b}{}\index{gofxmath@{gofxmath}!Set\+Sse\+Vec2@{Set\+Sse\+Vec2}}
+\index{Set\+Sse\+Vec2@{Set\+Sse\+Vec2}!gofxmath@{gofxmath}}
+\subsubsection[{Set\+Sse\+Vec2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set\+Sse\+Vec2 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_acfe1470c8903c33f2301785881213d6b}
+
+
+Sets the Sse\+Vec to represent a 2-\/component vector, with the given floating point components. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component of the resulting 2\+D Sse\+Vec. \\
+\hline
+{\em y} & The y component of the resulting 2\+D Sse\+Vec.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sse\+Vec representation of a 2-\/component vector, using the given components.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The 128-\/bit registers are loaded in \char`\"{}reverse\char`\"{} order (with respect to intel specifications). Intel loads packed registers in descending order of indices (that is, the highest index is also the left-\/most index). The resulting layout looks something like this\+: \mbox{[}3 2 1 0\mbox{]} where the numbers represent the index of the packed member.
+\end{DoxyRemark}
+These representations load the registers in ascending order of indices. This produces a memory structure that can be represented as such\+: \mbox{[}0 1 2 3\mbox{]}, which is generally more readable and maintainable.
+
+Sets the third and fourth components of the Sse\+Vec to 0.\+0f and 1.\+0f, respectively. \hypertarget{namespacegofxmath_a9470bf18fa113d0d4696f64bdd17de52}{}\index{gofxmath@{gofxmath}!Set\+Sse\+Vec3@{Set\+Sse\+Vec3}}
+\index{Set\+Sse\+Vec3@{Set\+Sse\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Set\+Sse\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set\+Sse\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a9470bf18fa113d0d4696f64bdd17de52}
+
+
+Sets the Sse\+Vec to represent a 3-\/component vector, with the given floating point components. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component. \\
+\hline
+{\em y} & The y component. \\
+\hline
+{\em z} & The z component.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sse\+Vec representation of a 3-\/component vector, using the given components.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The 128-\/bit registers are loaded in \char`\"{}reverse\char`\"{} order (with respect to intel specifications). Intel loads packed registers in descending order of indices (that is, the highest index is also the left-\/most index). The resulting layout looks something like this\+: \mbox{[}3 2 1 0\mbox{]} where the numbers represent the index of the packed member.
+\end{DoxyRemark}
+These representations load the registers in ascending order of indices. This produces a memory structure that can be represented as such\+: \mbox{[}0 1 2 3\mbox{]}, which is generally more readable and maintainable.
+
+Sets the fourth component value of the Sse\+Vec to 1.\+0f. \hypertarget{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{}\index{gofxmath@{gofxmath}!Set\+Sse\+Vec4@{Set\+Sse\+Vec4}}
+\index{Set\+Sse\+Vec4@{Set\+Sse\+Vec4}!gofxmath@{gofxmath}}
+\subsubsection[{Set\+Sse\+Vec4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set\+Sse\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}
+
+
+Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x component. \\
+\hline
+{\em y} & The y component. \\
+\hline
+{\em z} & The z component. \\
+\hline
+{\em w} & The w component.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sse\+Vec representation of a 4-\/component vector, using the given components.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+The 128-\/bit registers are loaded in \char`\"{}reverse\char`\"{} order (with respect to intel specifications). Intel loads packed registers in descending order of indices (that is, the highest index is also the left-\/most index). The resulting layout looks something like this\+: \mbox{[}3 2 1 0\mbox{]} where the numbers represent the index of the packed member.
+\end{DoxyRemark}
+These representations load the registers in ascending order of indices. This produces a memory structure that can be represented as such\+: \mbox{[}0 1 2 3\mbox{]}, which is generally more readable and maintainable. \hypertarget{namespacegofxmath_a4384f47a58c716aecdb418fe2af93c12}{}\index{gofxmath@{gofxmath}!Set\+Sse\+Vec4@{Set\+Sse\+Vec4}}
+\index{Set\+Sse\+Vec4@{Set\+Sse\+Vec4}!gofxmath@{gofxmath}}
+\subsubsection[{Set\+Sse\+Vec4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set\+Sse\+Vec4 (
+\begin{DoxyParamCaption}
+\item[{float}]{xyzw}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a4384f47a58c716aecdb418fe2af93c12}
+
+
+Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyzw} & The float value to load in all four components.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Sse\+Vec representation of a 4-\/component vector, using the given component value.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+An Sse\+Vec loaded with all four components set to the given float value. 
+\end{DoxyRemark}
+\hypertarget{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{}\index{gofxmath@{gofxmath}!Set\+Sse\+Vec\+Mask@{Set\+Sse\+Vec\+Mask}}
+\index{Set\+Sse\+Vec\+Mask@{Set\+Sse\+Vec\+Mask}!gofxmath@{gofxmath}}
+\subsubsection[{Set\+Sse\+Vec\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} gofxmath\+::\+Set\+Sse\+Vec\+Mask (
+\begin{DoxyParamCaption}
+\item[{{\bf Mask\+Val}}]{x, }
+\item[{{\bf Mask\+Val}}]{y, }
+\item[{{\bf Mask\+Val}}]{z, }
+\item[{{\bf Mask\+Val}}]{w}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}
+
+
+Creates a \char`\"{}masking\char`\"{} Sse\+Vec, using the bits from x, y, z, and w. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate mask value. \\
+\hline
+{\em y} & The y-\/coordinate mask value. \\
+\hline
+{\em z} & The z-\/coordinate mask value. \\
+\hline
+{\em w} & The w-\/coordinate mask value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An Sse\+Vec with the bits copied into its components from the four given Mask\+Vals.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Sse\+Vec masks allow for quick, easy, and readable bitwise operations on other Sse\+Vecs. The four Mask\+Val values passed to this function are loaded into an \href{https://msdn.microsoft.com/en-us/library/26232t5c.aspx}{\tt \+\_\+\+\_\+m128i} register, then the register\textquotesingle{}s contents are then statically cast to an \href{https://msdn.microsoft.com/en-us/library/ayeb3ayc.aspx}{\tt \+\_\+\+\_\+m128} value register, keeping the exact bit layout that was contained in the \+\_\+\+\_\+m128i register. 
+\end{DoxyRemark}
+\hypertarget{namespacegofxmath_a503b30792d41234b29089176be81cf6c}{}\index{gofxmath@{gofxmath}!Transform\+Vec3@{Transform\+Vec3}}
+\index{Transform\+Vec3@{Transform\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Transform\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Transform\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mat44} \&}]{mat, }
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a503b30792d41234b29089176be81cf6c}
+
+
+Transforms the given 3\+D vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix that will be multiplied against the 3\+D vector. \\
+\hline
+{\em vec} & The 3\+D vector to transform.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed 3\+D vector. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a7f0f017f89ae1ba6cf642fba6ce8e4cd}{}\index{gofxmath@{gofxmath}!Transform\+Vec3@{Transform\+Vec3}}
+\index{Transform\+Vec3@{Transform\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Transform\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} Transform\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Mat44} \&}]{mat, }
+\item[{const {\bf Sse\+Vec} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{namespacegofxmath_a7f0f017f89ae1ba6cf642fba6ce8e4cd}
+
+
+Transforms the given 3\+D vector via the given \hyperlink{classgofxmath_1_1_sse_mat44}{Sse\+Mat44} matrix. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em mat} & The matrix that will be multiplied against the 3\+D vector. \\
+\hline
+{\em vec} & The 3\+D vector to transform.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformed 3\+D vector. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a2d82d58bdc14d1f1644b05a7419ea05e}{}\index{gofxmath@{gofxmath}!Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}}
+\index{Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Translation\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mat44} Translation\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a2d82d58bdc14d1f1644b05a7419ea05e}
+
+
+Calculates the 4x4 translation matrix represented by the given 3\+D position vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D position vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The translation matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+\hypertarget{namespacegofxmath_a2b08e7c142f14df78883494d9c2f66e8}{}\index{gofxmath@{gofxmath}!Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}}
+\index{Translation\+Matrix\+From\+Vec3@{Translation\+Matrix\+From\+Vec3}!gofxmath@{gofxmath}}
+\subsubsection[{Translation\+Matrix\+From\+Vec3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+E\+\_\+\+M\+A\+T\+\_\+\+C\+A\+L\+L} Translation\+Matrix\+From\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{vec}
+\end{DoxyParamCaption}
+)}\label{namespacegofxmath_a2b08e7c142f14df78883494d9c2f66e8}
+
+
+Calculates the 4x4 translation matrix represented by the given 3\+D position vector. 
+
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given 3\+D position vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The translation matrix represented by the given 3\+D position vector. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacegofxmath_afec549b0968ef5d9ea00d1eb2deda70b}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0001@{M\+A\+S\+K\+\_\+0001}}
+\index{M\+A\+S\+K\+\_\+0001@{M\+A\+S\+K\+\_\+0001}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0001}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0001 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_afec549b0968ef5d9ea00d1eb2deda70b}
+
+
+Sse\+Vec mask that will match any bit in the w-\/coordinate position. 
+
+Takes the form $<$ 0x0 0x0 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_ad431727ef9389a0240a56b9fa2f99a14}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0010@{M\+A\+S\+K\+\_\+0010}}
+\index{M\+A\+S\+K\+\_\+0010@{M\+A\+S\+K\+\_\+0010}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0010}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0010 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)}\label{namespacegofxmath_ad431727ef9389a0240a56b9fa2f99a14}
+
+
+Sse\+Vec mask that will match any bit in the z-\/coordinate position. 
+
+Takes the form $<$ 0x0 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0$>$ \hypertarget{namespacegofxmath_ab4d2ad1ff23d4e35a2cb19a3be6dbe19}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0011@{M\+A\+S\+K\+\_\+0011}}
+\index{M\+A\+S\+K\+\_\+0011@{M\+A\+S\+K\+\_\+0011}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0011}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0011 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_ab4d2ad1ff23d4e35a2cb19a3be6dbe19}
+
+
+Sse\+Vec mask that will match any bit in the z or w-\/coordinate positions. 
+
+Takes the form $<$0x0 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_a8cdc76e209aa891f09b886c3f00fa7ba}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0100@{M\+A\+S\+K\+\_\+0100}}
+\index{M\+A\+S\+K\+\_\+0100@{M\+A\+S\+K\+\_\+0100}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0100}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0100 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)}\label{namespacegofxmath_a8cdc76e209aa891f09b886c3f00fa7ba}
+
+
+Sse\+Vec mask that will match any bit in the y-\/coordinate position. 
+
+Takes the form $<$ 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x0$>$ \hypertarget{namespacegofxmath_a64d1694904be595e301c48b51810b43d}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0101@{M\+A\+S\+K\+\_\+0101}}
+\index{M\+A\+S\+K\+\_\+0101@{M\+A\+S\+K\+\_\+0101}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0101}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0101 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_a64d1694904be595e301c48b51810b43d}
+
+
+Sse\+Vec mask that will match any bit in the y or w-\/coordinate positions. 
+
+Takes the form $<$0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_af23b97e8acce0ac2474bef3510e8dea3}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0110@{M\+A\+S\+K\+\_\+0110}}
+\index{M\+A\+S\+K\+\_\+0110@{M\+A\+S\+K\+\_\+0110}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0110}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0110 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)}\label{namespacegofxmath_af23b97e8acce0ac2474bef3510e8dea3}
+
+
+Sse\+Vec mask that will match any bit in the y or z-\/coordinate positions. 
+
+Takes the form $<$0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0$>$ \hypertarget{namespacegofxmath_a26899473d5a93ecf33fbdeb7bf332890}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+0111@{M\+A\+S\+K\+\_\+0111}}
+\index{M\+A\+S\+K\+\_\+0111@{M\+A\+S\+K\+\_\+0111}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+0111}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+0111 = {\bf Set\+Sse\+Vec\+Mask}(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_a26899473d5a93ecf33fbdeb7bf332890}
+
+
+Sse\+Vec mask that will match any bit in the y, z, or w-\/coordinate positions. 
+
+Takes the form $<$0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_a47a55dbc42a84afc2fc369f8d87605d1}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1000@{M\+A\+S\+K\+\_\+1000}}
+\index{M\+A\+S\+K\+\_\+1000@{M\+A\+S\+K\+\_\+1000}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1000}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1000 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x0)}\label{namespacegofxmath_a47a55dbc42a84afc2fc369f8d87605d1}
+
+
+Sse\+Vec mask that will match any bit in the x-\/coordinate position. 
+
+Takes the form $<$ 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x0 0x0$>$ \hypertarget{namespacegofxmath_a689cc233b7fa8e315c8cc38f474677df}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1001@{M\+A\+S\+K\+\_\+1001}}
+\index{M\+A\+S\+K\+\_\+1001@{M\+A\+S\+K\+\_\+1001}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1001}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1001 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_a689cc233b7fa8e315c8cc38f474677df}
+
+
+Sse\+Vec mask that will match any bit in the x or w-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_ac0b117ecea85861132b3f5bb90629497}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1010@{M\+A\+S\+K\+\_\+1010}}
+\index{M\+A\+S\+K\+\_\+1010@{M\+A\+S\+K\+\_\+1010}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1010}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1010 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)}\label{namespacegofxmath_ac0b117ecea85861132b3f5bb90629497}
+
+
+Sse\+Vec mask that will match any bit in the x or z-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0$>$ \hypertarget{namespacegofxmath_a93d32bd94a23c12d1e647ec1d5e25303}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1011@{M\+A\+S\+K\+\_\+1011}}
+\index{M\+A\+S\+K\+\_\+1011@{M\+A\+S\+K\+\_\+1011}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1011}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1011 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_a93d32bd94a23c12d1e647ec1d5e25303}
+
+
+Sse\+Vec mask that will match any bit in the x, z, or w-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_aa909e3bfeab0b420da664a23efb26895}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1100@{M\+A\+S\+K\+\_\+1100}}
+\index{M\+A\+S\+K\+\_\+1100@{M\+A\+S\+K\+\_\+1100}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1100}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1100 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)}\label{namespacegofxmath_aa909e3bfeab0b420da664a23efb26895}
+
+
+Sse\+Vec mask that will match any bit in the x or y-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x0$>$ \hypertarget{namespacegofxmath_af1a1ed503168492328267f3064cde68d}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1101@{M\+A\+S\+K\+\_\+1101}}
+\index{M\+A\+S\+K\+\_\+1101@{M\+A\+S\+K\+\_\+1101}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1101}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1101 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)}\label{namespacegofxmath_af1a1ed503168492328267f3064cde68d}
+
+
+Sse\+Vec mask that will match any bit in the x, y, or w-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0 0x\+F\+F\+F\+F\+F\+F\+F\+F$>$ \hypertarget{namespacegofxmath_a557ea8335b7d1d30471f67b1853b74c6}{}\index{gofxmath@{gofxmath}!M\+A\+S\+K\+\_\+1110@{M\+A\+S\+K\+\_\+1110}}
+\index{M\+A\+S\+K\+\_\+1110@{M\+A\+S\+K\+\_\+1110}!gofxmath@{gofxmath}}
+\subsubsection[{M\+A\+S\+K\+\_\+1110}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Sse\+Vec} gofxmath\+::\+M\+A\+S\+K\+\_\+1110 = {\bf Set\+Sse\+Vec\+Mask}(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)}\label{namespacegofxmath_a557ea8335b7d1d30471f67b1853b74c6}
+
+
+Sse\+Vec mask that will match any bit in the x, y, or z-\/coordinate positions. 
+
+Takes the form $<$0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x\+F\+F\+F\+F\+F\+F\+F\+F 0x0$>$ 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['X',['../namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0bad0d09e689002558ad9843a534c0be86e',1,'gfxmath']]]
+  ['x',['X',['../namespacegofxmath.html#a6c05153fd2e2d4119d91daca01a06741a1b2cd11034f7c778f8e0930f57a15577',1,'gofxmath']]]
 ];

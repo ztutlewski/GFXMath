@@ -1,11 +1,10 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>GFXMath Docs</title>
+<title>%%(G \circ F)(\vec{X})%%: scalar_math.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,17 +24,10 @@ MathJax.Hub.Config(
 		displayAlign: "left", 
 		tex2jax: {inlineMath: [['%%','%%']]}
 	});
-MathJax.Hub.Queue(
-    function () {
-    var x = document.getElementsByTagName("body")[0];
-	x.style.visibility = "";
-    }
-  );
 </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="visibility:hidden">
+<body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -57,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -85,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -99,11 +93,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">scalar_math.h</div>  </div>
@@ -113,53 +102,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCALAR_MATH_DOT_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="math__defs_8h.html">math_defs.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;gfxmath_config.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegfxmath.html">gfxmath</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacegofxmath.html">gofxmath</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">   35</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">   35</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">NormalizeAngle</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> shiftedAndScaled = (int)((angle + <a class="code" href="group___scalar_math_consts.html#ga2c19b1c00458d0f6bd454617b337d468">F_PI</a>) * <a class="code" href="group___scalar_math_consts.html#ga325608134effda0b7b34f7088c419db0">F_1_2PI</a> + <a class="code" href="group___scalar_math_consts.html#gafaec804c6b9d6173f5c1fc07ae7fda13">Epsilon</a>());</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> angle - ((float)shiftedAndScaled * <a class="code" href="group___scalar_math_consts.html#gac6cbd226e329cad09f1bab1504203fec">F_2PI</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">int</span> shiftedAndScaled = (int)((angle + <a class="code" href="group___scalar_math_consts.html#gafafb6dc6f6a78d4380d623b37686827b">F_PI</a>) * <a class="code" href="group___scalar_math_consts.html#ga1e7d6dc0fa11f4284b6f0eaa5b08a351">F_1_2PI</a> + <a class="code" href="group___scalar_math_consts.html#ga88a517d09326cefa42e5a854384217dd">Epsilon</a>());</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">return</span> angle - ((float)shiftedAndScaled * <a class="code" href="group___scalar_math_consts.html#ga1f732c1484129c0ec49718665c5334a9">F_2PI</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">   50</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">FastSinApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">   50</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">FastSinApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">float</span> coef = angle &lt; 0 ? <a class="code" href="group___scalar_math_consts.html#ga0eddee00e29a22722352a3d22728d807">F_4_PI2</a> : -<a class="code" href="group___scalar_math_consts.html#ga0eddee00e29a22722352a3d22728d807">F_4_PI2</a>;        </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">float</span> sin = (<a class="code" href="group___scalar_math_consts.html#ga3cd60bb81423c63766d16736f113da50">F_4_PI</a> + angle * coef) * angle;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">float</span> coef = angle &lt; 0 ? <a class="code" href="group___scalar_math_consts.html#ga6e0a91cbc33147860a0af980969f00aa">F_4_PI2</a> : -<a class="code" href="group___scalar_math_consts.html#ga6e0a91cbc33147860a0af980969f00aa">F_4_PI2</a>;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">float</span> sin = (<a class="code" href="group___scalar_math_consts.html#ga17543086409760281a83ba571b38eda4">F_4_PI</a> + angle * coef) * angle;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">float</span> absSin = sin &lt; 0 ? -sin : sin;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> sin * (0.775f + 0.225f * absSin);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">FastCosApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">FastCosApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        angle += angle &gt; <a class="code" href="group___scalar_math_consts.html#ga0c8bf8cc8172c063476b12e41af90fdd">F_PI_2</a> ? -<a class="code" href="group___scalar_math_consts.html#ga868af3e091584d5352e3b00e1503a650">F_3PI_2</a> : <a class="code" href="group___scalar_math_consts.html#ga0c8bf8cc8172c063476b12e41af90fdd">F_PI_2</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">FastSinApprox</a>(angle);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        angle += angle &gt; <a class="code" href="group___scalar_math_consts.html#ga946e6dc7aaa53bbc0d3b6d433891c7a8">F_PI_2</a> ? -<a class="code" href="group___scalar_math_consts.html#ga7f5e7bc15600bd01690e89244107f84f">F_3PI_2</a> : <a class="code" href="group___scalar_math_consts.html#ga946e6dc7aaa53bbc0d3b6d433891c7a8">F_PI_2</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">FastSinApprox</a>(angle);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gae63b81e8a10d131334205c50b9b2166d">   83</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gae63b81e8a10d131334205c50b9b2166d">FastTanApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga29cc2127c4bb018c147006a618baf5f3">   83</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga29cc2127c4bb018c147006a618baf5f3">FastTanApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span>  <a class="code" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">FastSinApprox</a>(angle) / <a class="code" href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">FastCosApprox</a>(angle);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span>  <a class="code" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">FastSinApprox</a>(angle) / <a class="code" href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">FastCosApprox</a>(angle);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gab16e2d48a3790c9f448feefe7192dbe1">   97</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gab16e2d48a3790c9f448feefe7192dbe1">FastCotApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gabd664af8218cb91dc9b74786a054f45a">   97</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gabd664af8218cb91dc9b74786a054f45a">FastCotApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">FastCosApprox</a>(angle) / <a class="code" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">FastSinApprox</a>(angle);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">FastCosApprox</a>(angle) / <a class="code" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">FastSinApprox</a>(angle);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">template</span>&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gacf3bf50cb40374d40ffd25e382ca53c8">  115</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gacf3bf50cb40374d40ffd25e382ca53c8">SinApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gaece3a06431141a5c010de32ea23bedcf">  115</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gaece3a06431141a5c010de32ea23bedcf">SinApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> PRECISION = TrigPrecisionValue&lt;precisionLevel&gt;();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a>(angle - <a class="code" href="group___scalar_math_consts.html#ga0c8bf8cc8172c063476b12e41af90fdd">F_PI_2</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">NormalizeAngle</a>(angle - <a class="code" href="group___scalar_math_consts.html#ga946e6dc7aaa53bbc0d3b6d433891c7a8">F_PI_2</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">float</span> normSqr = norm * norm;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(PRECISION);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = PRECISION - 1; i-- &gt; 0;)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(i);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(i);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            sinAngle *= normSqr;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
@@ -170,18 +159,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">template</span>&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt;</div>
-<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga4c7f22bb5c746703d834991b074e2721">  149</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga4c7f22bb5c746703d834991b074e2721">CosApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga6f84a45d1d98a6be758df9fc78615000">  149</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga6f84a45d1d98a6be758df9fc78615000">CosApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> PRECISION = TrigPrecisionValue&lt;precisionLevel&gt;();</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a>(angle);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">NormalizeAngle</a>(angle);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">float</span> normSqr = norm * norm;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(PRECISION);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = PRECISION - 1; i-- &gt; 0;)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(i);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(i);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            cosAngle *= normSqr;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
@@ -191,20 +180,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">template</span>&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gac117306c04c7d0b931c3b2b4eb4fd6ae">  182</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gac117306c04c7d0b931c3b2b4eb4fd6ae">TanApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga38631bdf076826ca766dc35f3b150897">  182</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga38631bdf076826ca766dc35f3b150897">TanApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> PRECISION = TrigPrecisionValue&lt;precisionLevel&gt;();</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a>(angle);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">NormalizeAngle</a>(angle);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">float</span> normSqr = norm * norm;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">SinCoef</a>(PRECISION);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaee3e576be53b2e48bc14cb4779197d48">SinCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(PRECISION);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = PRECISION - 1; i-- &gt; 0;)</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">SinCoef</a>(i);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(i);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#gaee3e576be53b2e48bc14cb4779197d48">SinCoef</a>(i);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(i);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            sinAngle *= normSqr;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            cosAngle *= normSqr;</div>
@@ -217,20 +206,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keyword">template</span>&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt;</div>
-<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga6914719e1538a2c1d58828197bc76041">  220</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga6914719e1538a2c1d58828197bc76041">CotApprox</a>(<span class="keywordtype">float</span> angle)</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gac1c6ea5bb8f4958158ccb1a33123d64b">  220</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gac1c6ea5bb8f4958158ccb1a33123d64b">CotApprox</a>(<span class="keywordtype">float</span> angle)</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">size_t</span> PRECISION = TrigPrecisionValue&lt;precisionLevel&gt;();</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a>(angle);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordtype">float</span> norm = <a class="code" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">NormalizeAngle</a>(angle);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordtype">float</span> normSqr = norm * norm;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">SinCoef</a>(PRECISION);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">float</span> sinAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#gaee3e576be53b2e48bc14cb4779197d48">SinCoef</a>(PRECISION);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordtype">float</span> cosAngle = normSqr * <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(PRECISION);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = PRECISION - 1; i-- &gt; 0;)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">SinCoef</a>(i);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a>(i);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            sinAngle += <a class="code" href="group___scalar_math_consts.html#gaee3e576be53b2e48bc14cb4779197d48">SinCoef</a>(i);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            cosAngle += <a class="code" href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">CosCoef</a>(i);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            sinAngle *= normSqr;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            cosAngle *= normSqr;</div>
@@ -243,7 +232,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">template</span>&lt;FloatPrecision precision = FloatPrecision::HIGH&gt;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga384f6df082ace9bc432bac8fac5b6686">  259</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga384f6df082ace9bc432bac8fac5b6686">ApproxEqual</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right)</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gac302f56236758d08c1923095e381e53b">  259</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gac302f56236758d08c1923095e381e53b">ApproxEqual</a>(<span class="keywordtype">float</span> left, <span class="keywordtype">float</span> right)</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> EPSILON = FloatPrecisionValue&lt;precision&gt;();</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
@@ -252,12 +241,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> (dif &lt; 0 ? -dif : dif) &lt;= EPSILON;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga894ca122cd6d482ed5608f3410bc2bb4">  281</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga894ca122cd6d482ed5608f3410bc2bb4">IsNaN</a>(<span class="keywordtype">float</span> val)</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#gafa30a49468e40679f196b2bc791849e5">  281</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#gafa30a49468e40679f196b2bc791849e5">IsNaN</a>(<span class="keywordtype">float</span> val)</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> val != val;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">  298</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">IsInfinity</a>(<span class="keywordtype">float</span> val)</div>
+<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group___s_i_s_d_scalar_math.html#ga56a70269c92df99f699e0456613e4a52">  298</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="group___s_i_s_d_scalar_math.html#ga56a70269c92df99f699e0456613e4a52">IsInfinity</a>(<span class="keywordtype">float</span> val)</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">return</span> (val == val) &amp;&amp; (val - val) != 0.0f;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
@@ -265,35 +254,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_gacf3bf50cb40374d40ffd25e382ca53c8"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gacf3bf50cb40374d40ffd25e382ca53c8">gfxmath::SinApprox</a></div><div class="ttdeci">float SinApprox(float angle)</div><div class="ttdoc">Sine Approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:115</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga325608134effda0b7b34f7088c419db0"><div class="ttname"><a href="group___scalar_math_consts.html#ga325608134effda0b7b34f7088c419db0">gfxmath::F_1_2PI</a></div><div class="ttdeci">const float F_1_2PI</div><div class="ttdoc">%%\frac{1}{2\pi}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:37</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga6914719e1538a2c1d58828197bc76041"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga6914719e1538a2c1d58828197bc76041">gfxmath::CotApprox</a></div><div class="ttdeci">float CotApprox(float angle)</div><div class="ttdoc">Cotangent Approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:220</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_gafaec804c6b9d6173f5c1fc07ae7fda13"><div class="ttname"><a href="group___scalar_math_consts.html#gafaec804c6b9d6173f5c1fc07ae7fda13">gfxmath::Epsilon</a></div><div class="ttdeci">float Epsilon()</div><div class="ttdoc">%%\epsilon%% (epsilon) is the smallest single-precision floating point value such that %%1...</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_gac117306c04c7d0b931c3b2b4eb4fd6ae"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gac117306c04c7d0b931c3b2b4eb4fd6ae">gfxmath::TanApprox</a></div><div class="ttdeci">float TanApprox(float angle)</div><div class="ttdoc">Tangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:182</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_gae63b81e8a10d131334205c50b9b2166d"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gae63b81e8a10d131334205c50b9b2166d">gfxmath::FastTanApprox</a></div><div class="ttdeci">float FastTanApprox(float angle)</div><div class="ttdoc">Fast tangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:83</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga0eddee00e29a22722352a3d22728d807"><div class="ttname"><a href="group___scalar_math_consts.html#ga0eddee00e29a22722352a3d22728d807">gfxmath::F_4_PI2</a></div><div class="ttdeci">const float F_4_PI2</div><div class="ttdoc">%%\frac{4}{\pi^2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:40</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga384f6df082ace9bc432bac8fac5b6686"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga384f6df082ace9bc432bac8fac5b6686">gfxmath::ApproxEqual</a></div><div class="ttdeci">bool ApproxEqual(float left, float right)</div><div class="ttdoc">Check for approximate equality of two floating point numbers. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:259</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_gab16e2d48a3790c9f448feefe7192dbe1"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gab16e2d48a3790c9f448feefe7192dbe1">gfxmath::FastCotApprox</a></div><div class="ttdeci">float FastCotApprox(float angle)</div><div class="ttdoc">Fast cotangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:97</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga2c19b1c00458d0f6bd454617b337d468"><div class="ttname"><a href="group___scalar_math_consts.html#ga2c19b1c00458d0f6bd454617b337d468">gfxmath::F_PI</a></div><div class="ttdeci">const float F_PI</div><div class="ttdoc">%%\pi%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:32</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga5c9038d14fbd579ef9860351b41fbf95"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">gfxmath::FastCosApprox</a></div><div class="ttdeci">float FastCosApprox(float angle)</div><div class="ttdoc">Fast cosine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:68</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga894ca122cd6d482ed5608f3410bc2bb4"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga894ca122cd6d482ed5608f3410bc2bb4">gfxmath::IsNaN</a></div><div class="ttdeci">bool IsNaN(float val)</div><div class="ttdoc">Check if the given float value is NaN. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:281</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga868af3e091584d5352e3b00e1503a650"><div class="ttname"><a href="group___scalar_math_consts.html#ga868af3e091584d5352e3b00e1503a650">gfxmath::F_3PI_2</a></div><div class="ttdeci">const float F_3PI_2</div><div class="ttdoc">%%\frac{3\pi}{2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:35</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_gac6cbd226e329cad09f1bab1504203fec"><div class="ttname"><a href="group___scalar_math_consts.html#gac6cbd226e329cad09f1bab1504203fec">gfxmath::F_2PI</a></div><div class="ttdeci">const float F_2PI</div><div class="ttdoc">%%2\pi%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:36</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga84de592aedd66fb57593a14b25555f2f"><div class="ttname"><a href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">gfxmath::SinCoef</a></div><div class="ttdeci">float SinCoef(int i)</div><div class="ttdoc">Returns the (i+1)th coefficient for the taylor approximation of sine. </div><div class="ttdef"><b>Definition:</b> math_defs.h:93</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gabd664af8218cb91dc9b74786a054f45a"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gabd664af8218cb91dc9b74786a054f45a">gofxmath::FastCotApprox</a></div><div class="ttdeci">float FastCotApprox(float angle)</div><div class="ttdoc">Fast cotangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:97</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gacda965689f172d535fcea8ca52a28358"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">gofxmath::FastSinApprox</a></div><div class="ttdeci">float FastSinApprox(float angle)</div><div class="ttdoc">Fast sine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:50</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga29cc2127c4bb018c147006a618baf5f3"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga29cc2127c4bb018c147006a618baf5f3">gofxmath::FastTanApprox</a></div><div class="ttdeci">float FastTanApprox(float angle)</div><div class="ttdoc">Fast tangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:83</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga6f84a45d1d98a6be758df9fc78615000"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga6f84a45d1d98a6be758df9fc78615000">gofxmath::CosApprox</a></div><div class="ttdeci">float CosApprox(float angle)</div><div class="ttdoc">Cosine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:149</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga1e7d6dc0fa11f4284b6f0eaa5b08a351"><div class="ttname"><a href="group___scalar_math_consts.html#ga1e7d6dc0fa11f4284b6f0eaa5b08a351">gofxmath::F_1_2PI</a></div><div class="ttdeci">const float F_1_2PI</div><div class="ttdoc">%%\frac{1}{2\pi}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:37</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gac1c6ea5bb8f4958158ccb1a33123d64b"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gac1c6ea5bb8f4958158ccb1a33123d64b">gofxmath::CotApprox</a></div><div class="ttdeci">float CotApprox(float angle)</div><div class="ttdoc">Cotangent Approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:220</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gafa30a49468e40679f196b2bc791849e5"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gafa30a49468e40679f196b2bc791849e5">gofxmath::IsNaN</a></div><div class="ttdeci">bool IsNaN(float val)</div><div class="ttdoc">Check if the given float value is NaN. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:281</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga6ed06be895b61252517cb57df1f83ffa"><div class="ttname"><a href="group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa">gofxmath::CosCoef</a></div><div class="ttdeci">float CosCoef(int i)</div><div class="ttdoc">The (i+1)th coefficient for the taylor approximation of cosine. </div><div class="ttdef"><b>Definition:</b> math_defs.h:121</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gaece3a06431141a5c010de32ea23bedcf"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gaece3a06431141a5c010de32ea23bedcf">gofxmath::SinApprox</a></div><div class="ttdeci">float SinApprox(float angle)</div><div class="ttdoc">Sine Approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:115</div></div>
+<div class="ttc" id="namespacegofxmath_html"><div class="ttname"><a href="namespacegofxmath.html">gofxmath</a></div><div class="ttdoc">G of F of X math namespace. </div></div>
 <div class="ttc" id="math__defs_8h_html"><div class="ttname"><a href="math__defs_8h.html">math_defs.h</a></div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga4c7f22bb5c746703d834991b074e2721"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga4c7f22bb5c746703d834991b074e2721">gfxmath::CosApprox</a></div><div class="ttdeci">float CosApprox(float angle)</div><div class="ttdoc">Cosine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:149</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_gafb36256c1573aa72d03c3567f955bd83"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">gfxmath::FastSinApprox</a></div><div class="ttdeci">float FastSinApprox(float angle)</div><div class="ttdoc">Fast sine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:50</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_gaa3c80693c5730cf478e5d98f73e6a72c"><div class="ttname"><a href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">gfxmath::CosCoef</a></div><div class="ttdeci">float CosCoef(int i)</div><div class="ttdoc">The (i+1)th coefficient for the taylor approximation of cosine. </div><div class="ttdef"><b>Definition:</b> math_defs.h:121</div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga9ae15ff8e8601f2ed5381a5bce08d289"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">gfxmath::NormalizeAngle</a></div><div class="ttdeci">float NormalizeAngle(float angle)</div><div class="ttdoc">Normalize the angle to the range of [-PI,PI). </div><div class="ttdef"><b>Definition:</b> scalar_math.h:35</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga3cd60bb81423c63766d16736f113da50"><div class="ttname"><a href="group___scalar_math_consts.html#ga3cd60bb81423c63766d16736f113da50">gfxmath::F_4_PI</a></div><div class="ttdeci">const float F_4_PI</div><div class="ttdoc">%%\frac{4}{\pi}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:39</div></div>
-<div class="ttc" id="namespacegfxmath_html"><div class="ttname"><a href="namespacegfxmath.html">gfxmath</a></div><div class="ttdoc">G of F of X math namespace. </div></div>
-<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga29ffc432e0aaaa5201bfca15247fa648"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">gfxmath::IsInfinity</a></div><div class="ttdeci">bool IsInfinity(float val)</div><div class="ttdoc">Check if the given float value is positive or negative infinity. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:298</div></div>
-<div class="ttc" id="group___scalar_math_consts_html_ga0c8bf8cc8172c063476b12e41af90fdd"><div class="ttname"><a href="group___scalar_math_consts.html#ga0c8bf8cc8172c063476b12e41af90fdd">gfxmath::F_PI_2</a></div><div class="ttdeci">const float F_PI_2</div><div class="ttdoc">%%\frac{\pi}{2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:29</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga88a517d09326cefa42e5a854384217dd"><div class="ttname"><a href="group___scalar_math_consts.html#ga88a517d09326cefa42e5a854384217dd">gofxmath::Epsilon</a></div><div class="ttdeci">float Epsilon()</div><div class="ttdoc">%%\epsilon%% (epsilon) is the smallest single-precision floating point value such that %%1...</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga6e0a91cbc33147860a0af980969f00aa"><div class="ttname"><a href="group___scalar_math_consts.html#ga6e0a91cbc33147860a0af980969f00aa">gofxmath::F_4_PI2</a></div><div class="ttdeci">const float F_4_PI2</div><div class="ttdoc">%%\frac{4}{\pi^2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:40</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_gaee3e576be53b2e48bc14cb4779197d48"><div class="ttname"><a href="group___scalar_math_consts.html#gaee3e576be53b2e48bc14cb4779197d48">gofxmath::SinCoef</a></div><div class="ttdeci">float SinCoef(int i)</div><div class="ttdoc">Returns the (i+1)th coefficient for the taylor approximation of sine. </div><div class="ttdef"><b>Definition:</b> math_defs.h:93</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga17543086409760281a83ba571b38eda4"><div class="ttname"><a href="group___scalar_math_consts.html#ga17543086409760281a83ba571b38eda4">gofxmath::F_4_PI</a></div><div class="ttdeci">const float F_4_PI</div><div class="ttdoc">%%\frac{4}{\pi}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:39</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga225f52235ddb3aac0be7405e966df40e"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">gofxmath::FastCosApprox</a></div><div class="ttdeci">float FastCosApprox(float angle)</div><div class="ttdoc">Fast cosine approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:68</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga946e6dc7aaa53bbc0d3b6d433891c7a8"><div class="ttname"><a href="group___scalar_math_consts.html#ga946e6dc7aaa53bbc0d3b6d433891c7a8">gofxmath::F_PI_2</a></div><div class="ttdeci">const float F_PI_2</div><div class="ttdoc">%%\frac{\pi}{2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:29</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga56a70269c92df99f699e0456613e4a52"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga56a70269c92df99f699e0456613e4a52">gofxmath::IsInfinity</a></div><div class="ttdeci">bool IsInfinity(float val)</div><div class="ttdoc">Check if the given float value is positive or negative infinity. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:298</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga1f732c1484129c0ec49718665c5334a9"><div class="ttname"><a href="group___scalar_math_consts.html#ga1f732c1484129c0ec49718665c5334a9">gofxmath::F_2PI</a></div><div class="ttdeci">const float F_2PI</div><div class="ttdoc">%%2\pi%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:36</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga53debb59a36f436520d9f8696fb5af17"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">gofxmath::NormalizeAngle</a></div><div class="ttdeci">float NormalizeAngle(float angle)</div><div class="ttdoc">Normalize the angle to the range of [-PI,PI). </div><div class="ttdef"><b>Definition:</b> scalar_math.h:35</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_ga38631bdf076826ca766dc35f3b150897"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#ga38631bdf076826ca766dc35f3b150897">gofxmath::TanApprox</a></div><div class="ttdeci">float TanApprox(float angle)</div><div class="ttdoc">Tangent approximation. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:182</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_ga7f5e7bc15600bd01690e89244107f84f"><div class="ttname"><a href="group___scalar_math_consts.html#ga7f5e7bc15600bd01690e89244107f84f">gofxmath::F_3PI_2</a></div><div class="ttdeci">const float F_3PI_2</div><div class="ttdoc">%%\frac{3\pi}{2}%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:35</div></div>
+<div class="ttc" id="group___s_i_s_d_scalar_math_html_gac302f56236758d08c1923095e381e53b"><div class="ttname"><a href="group___s_i_s_d_scalar_math.html#gac302f56236758d08c1923095e381e53b">gofxmath::ApproxEqual</a></div><div class="ttdeci">bool ApproxEqual(float left, float right)</div><div class="ttdoc">Check for approximate equality of two floating point numbers. </div><div class="ttdef"><b>Definition:</b> scalar_math.h:259</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_gafafb6dc6f6a78d4380d623b37686827b"><div class="ttname"><a href="group___scalar_math_consts.html#gafafb6dc6f6a78d4380d623b37686827b">gofxmath::F_PI</a></div><div class="ttdeci">const float F_PI</div><div class="ttdoc">%%\pi%% </div><div class="ttdef"><b>Definition:</b> math_defs.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 16:19:14 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 20 2015 16:05:06 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

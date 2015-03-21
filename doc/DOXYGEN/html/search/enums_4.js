@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['veccoord',['VecCoord',['../namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0b',1,'gfxmath']]]
+  ['veccoord',['VecCoord',['../namespacegofxmath.html#a6c05153fd2e2d4119d91daca01a06741',1,'gofxmath']]]
 ];

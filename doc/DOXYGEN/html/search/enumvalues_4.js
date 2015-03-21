@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['na',['NA',['../namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0baa2f2f53ce2dc4111dbf16ba3d31692f7',1,'gfxmath']]],
-  ['no_5forder',['NO_ORDER',['../namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da631e9eab7013501bd492e4730e793d27',1,'gfxmath']]]
+  ['na',['NA',['../namespacegofxmath.html#a6c05153fd2e2d4119d91daca01a06741a9fc8bb14e129d2beab9c4027f9c0beef',1,'gofxmath']]],
+  ['no_5forder',['NO_ORDER',['../namespacegofxmath.html#a2dce5f39d4af2a18b930b7eee34e034fa6fd5e4e8e4bb7db4dd9086e8a5e313a4',1,'gofxmath']]]
 ];

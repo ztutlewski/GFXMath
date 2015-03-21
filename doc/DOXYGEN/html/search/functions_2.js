@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['cosapprox',['CosApprox',['../group___s_i_s_d_scalar_math.html#ga4c7f22bb5c746703d834991b074e2721',1,'gfxmath']]],
-  ['coscoef',['CosCoef',['../group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c',1,'gfxmath']]],
-  ['coscoefssevec',['CosCoefSseVec',['../namespacegfxmath.html#a6f2aeaccbda129941daa886e40980a92',1,'gfxmath']]],
-  ['cosssevec',['CosSseVec',['../group___s_i_m_d_vec_math.html#gadfd52b1db588193d4c0e9ba2f4011557',1,'gfxmath']]],
-  ['cotapprox',['CotApprox',['../group___s_i_s_d_scalar_math.html#ga6914719e1538a2c1d58828197bc76041',1,'gfxmath']]]
+  ['cosapprox',['CosApprox',['../group___s_i_s_d_scalar_math.html#ga6f84a45d1d98a6be758df9fc78615000',1,'gofxmath']]],
+  ['coscoef',['CosCoef',['../group___scalar_math_consts.html#ga6ed06be895b61252517cb57df1f83ffa',1,'gofxmath']]],
+  ['coscoefssevec',['CosCoefSseVec',['../namespacegofxmath.html#a17160d92d915e28c97837f75754401d0',1,'gofxmath']]],
+  ['cosssevec',['CosSseVec',['../group___s_i_m_d_vec_math.html#gacc1711e105bd1188ae80b9b8f7df2555',1,'gofxmath']]],
+  ['cotapprox',['CotApprox',['../group___s_i_s_d_scalar_math.html#gac1c6ea5bb8f4958158ccb1a33123d64b',1,'gofxmath']]]
 ];

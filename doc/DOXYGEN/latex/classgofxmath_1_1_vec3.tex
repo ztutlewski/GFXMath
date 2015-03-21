@@ -1,0 +1,697 @@
+\hypertarget{classgofxmath_1_1_vec3}{}\section{gofxmath\+:\+:Vec3 Class Reference}
+\label{classgofxmath_1_1_vec3}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+
+
+A mathematical vector with 3 components.  
+
+
+
+
+{\ttfamily \#include $<$vec3.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgofxmath_1_1_vec3_a21a3f52051b2f4e2ab82ae5bc5d15566}{Vec3} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgofxmath_1_1_vec3}{Vec3} with all three components being initialized to 0.\+0f. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_a561d4237e4f4d437c90cdf359d6385f5}{Vec3} (float \hyperlink{classgofxmath_1_1_vec3_a507868ff65b4e42f80da14bf355ee10a}{x}, float \hyperlink{classgofxmath_1_1_vec3_afd348ae9f3c31f6215e91d8b5adcea5f}{y}, float \hyperlink{classgofxmath_1_1_vec3_a201779cb941bb4a6478ff13c897494ba}{z})
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{classgofxmath_1_1_vec3}{Vec3} with the given x, y, and z values assigned to their respective components. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_a21acf0cd1c7271a16280c7f63887a128}{Vec3} (const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&xy, float \hyperlink{classgofxmath_1_1_vec3_a201779cb941bb4a6478ff13c897494ba}{z})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_aa445359b4fd336dc73e4a58e656b5bd7}{Vec3} (float \hyperlink{classgofxmath_1_1_vec3_a507868ff65b4e42f80da14bf355ee10a}{x}, const \hyperlink{classgofxmath_1_1_vec2}{Vec2} \&yz)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_a7f4f66cef7a64bef3748485833360f62}{Vec3} (float xyz)
+\begin{DoxyCompactList}\small\item\em Constructor taking a single float argument that will be copied into all three component values. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_a56486007b902333e096d31fa5a85c424}{operator Vec2} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to a \hyperlink{classgofxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3_ace8614bf15309030f5feabcfc3d69812}{operator Vec4} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to a \hyperlink{classgofxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec4}{Vec4} \hyperlink{classgofxmath_1_1_vec3_a0dc737644758a9a7422d9d667ce0ab24}{To\+Col\+Vec} () const 
+\begin{DoxyCompactList}\small\item\em Creates the 4-\/component column vector version of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgofxmath_1_1_vec3_a3843a434bea55846dec8e084b5014ec8}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a3843a434bea55846dec8e084b5014ec8}{Right} ()\label{classgofxmath_1_1_vec3_a3843a434bea55846dec8e084b5014ec8}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} right direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a577a89d8bc72f925851bc5c3e5e4700e}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a577a89d8bc72f925851bc5c3e5e4700e}{Up} ()\label{classgofxmath_1_1_vec3_a577a89d8bc72f925851bc5c3e5e4700e}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} up direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a386d5fbb2fb2727db4204a0fc66fda16}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a386d5fbb2fb2727db4204a0fc66fda16}{Forward} ()\label{classgofxmath_1_1_vec3_a386d5fbb2fb2727db4204a0fc66fda16}
+
+\begin{DoxyCompactList}\small\item\em The forward \hyperlink{classgofxmath_1_1_vec3}{Vec3} direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a161acaeebbaa305fecee0c53a119bc34}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a161acaeebbaa305fecee0c53a119bc34}{Left} ()\label{classgofxmath_1_1_vec3_a161acaeebbaa305fecee0c53a119bc34}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} left direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_ab0aea11f78b5ed9702dbd3f9dec87f9c}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_ab0aea11f78b5ed9702dbd3f9dec87f9c}{Down} ()\label{classgofxmath_1_1_vec3_ab0aea11f78b5ed9702dbd3f9dec87f9c}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} down direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a91e5bcac1a3a86bb052516490caca401}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a91e5bcac1a3a86bb052516490caca401}{Back} ()\label{classgofxmath_1_1_vec3_a91e5bcac1a3a86bb052516490caca401}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} back direction vector. \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a5481fa38cda92462ae430f23cb98b40a}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a5481fa38cda92462ae430f23cb98b40a}{One} ()\label{classgofxmath_1_1_vec3_a5481fa38cda92462ae430f23cb98b40a}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} one vector (all components are 1.\+0f) \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_aec972e7480ca551b7ca3470417008c33}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_aec972e7480ca551b7ca3470417008c33}{Neg\+One} ()\label{classgofxmath_1_1_vec3_aec972e7480ca551b7ca3470417008c33}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} negative one vector (all components are -\/1.\+0f) \end{DoxyCompactList}\item 
+\hypertarget{classgofxmath_1_1_vec3_a23a13d2b0b35f2ae6c3ead4acb050292}{}static \hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a23a13d2b0b35f2ae6c3ead4acb050292}{Zero} ()\label{classgofxmath_1_1_vec3_a23a13d2b0b35f2ae6c3ead4acb050292}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{classgofxmath_1_1_vec3}{Vec3} zero vector (all components are 0.\+0f) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classgofxmath_1_1_vec3_a3971d9f465d93491b33f68a9460721a5}{vals} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em The 3 components of the \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_vec3_a507868ff65b4e42f80da14bf355ee10a}{x}
+\begin{DoxyCompactList}\small\item\em The x-\/coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_vec3_afd348ae9f3c31f6215e91d8b5adcea5f}{y}
+\begin{DoxyCompactList}\small\item\em The y-\/coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_vec3_a201779cb941bb4a6478ff13c897494ba}{z}
+\begin{DoxyCompactList}\small\item\em The z-\/coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classgofxmath_1_1_vec3_a9902784eb40b0c5ee0378e1c2526eb1e}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that writes the given 3\+D vector to the given output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{classgofxmath_1_1_vec3_acf645c325558f6e8eabcbad87b4eea50}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that reads in the a 3\+D vector from the given input stream. \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}{operator==} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&left, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&right)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}{operator!=} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&left, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&right)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) {\bf }\par
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_ac3979900225f137a1486a4491d0fb6d8}{Vec3\+Add} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Add the two given Vec3s. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_ae7189108aa879fb16ce9afd17052ac16}{Vec3\+Sub} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Subtract the two given Vec3s. \end{DoxyCompactList}\item 
+float \hyperlink{classgofxmath_1_1_vec3_a02eb26d5238095f747d35890a597e489}{Vec3\+Dot} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classgofxmath_1_1_vec3}{Vec3} dot product. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a79475199c50b1ee42edc6aa8b5c5795f}{Vec3\+Mul\+Scalar} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec, float factor)
+\begin{DoxyCompactList}\small\item\em Multiply the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a8c2d0c0b9d70b417e598489374ef1f88}{Vec3\+Div\+Scalar} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec, float divisor)
+\begin{DoxyCompactList}\small\item\em Divide the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_afdbff8ff3fad75f9a9e924a58fcc4f4a}{Vec3\+Normalize} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Normalize the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a8ccc52146f984a79c566ee8348e410e2}{Vec3\+Negate} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Negate the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ }\\bool \hyperlink{classgofxmath_1_1_vec3_ac042c4407bfaa66715e3c4b5b0a839f4}{Vec3\+Approx\+Equal} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em Determines whether the two Vec3s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_vec3_a5d19e3d1ee15741a65ede16f20e919a4}{Vec3\+Has\+Na\+N} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Vector 2 has a Na\+N component value. \end{DoxyCompactList}\item 
+bool \hyperlink{classgofxmath_1_1_vec3_ae5205e805b23de865db9a40e5936f82a}{Vec3\+Has\+Infinite} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em Determines whether or not the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} has an infinite value component. \end{DoxyCompactList}\item 
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} \hyperlink{classgofxmath_1_1_vec3_a455b2ef17c947a780f2b2b9e4b6cccc8}{Vec3\+Cross} (const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&first, const \hyperlink{classgofxmath_1_1_vec3}{Vec3} \&second)
+\begin{DoxyCompactList}\small\item\em The cross product of the two given Vec3s. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\subsection{Detailed Description}
+A mathematical vector with 3 components. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classgofxmath_1_1_vec3_a21a3f52051b2f4e2ab82ae5bc5d15566}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_vec3_a21a3f52051b2f4e2ab82ae5bc5d15566}
+
+
+Constructs a \hyperlink{classgofxmath_1_1_vec3}{Vec3} with all three components being initialized to 0.\+0f. 
+
+\begin{DoxyDate}{Date}
+2/22/2015 
+\end{DoxyDate}
+\hypertarget{classgofxmath_1_1_vec3_a561d4237e4f4d437c90cdf359d6385f5}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_vec3_a561d4237e4f4d437c90cdf359d6385f5}
+
+
+Constructs a \hyperlink{classgofxmath_1_1_vec3}{Vec3} with the given x, y, and z values assigned to their respective components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate to load into this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em y} & The y coordinate to load into this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em z} & The z coordinate to load into this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_vec3_a21acf0cd1c7271a16280c7f63887a128}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_vec3_a21acf0cd1c7271a16280c7f63887a128}
+
+
+Constructor. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The value of the x and y-\/coordinate components of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em z} & The value to load into the z-\/cordinate of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_vec3_aa445359b4fd336dc73e4a58e656b5bd7}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec2} \&}]{yz}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_vec3_aa445359b4fd336dc73e4a58e656b5bd7}
+
+
+Constructor. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/coordinate of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em yz} & The value of the y and z-\/coordinate components of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgofxmath_1_1_vec3_a7f4f66cef7a64bef3748485833360f62}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{xyz}
+\end{DoxyParamCaption}
+)}\label{classgofxmath_1_1_vec3_a7f4f66cef7a64bef3748485833360f62}
+
+
+Constructor taking a single float argument that will be copied into all three component values. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyz} & The value of the x, y, and z-\/coordinate components of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classgofxmath_1_1_vec3_a56486007b902333e096d31fa5a85c424}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator Vec2@{operator Vec2}}
+\index{operator Vec2@{operator Vec2}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator Vec2}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::operator {\bf Vec2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{classgofxmath_1_1_vec3_a56486007b902333e096d31fa5a85c424}
+
+
+Explicit cast that converts the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to a \hyperlink{classgofxmath_1_1_vec2}{Vec2}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_ace8614bf15309030f5feabcfc3d69812}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator Vec4@{operator Vec4}}
+\index{operator Vec4@{operator Vec4}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gofxmath\+::\+Vec3\+::operator {\bf Vec4} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{classgofxmath_1_1_vec3_ace8614bf15309030f5feabcfc3d69812}
+
+
+Explicit cast that converts the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to a \hyperlink{classgofxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{classgofxmath_1_1_vec4}{Vec4} from the cast. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a0dc737644758a9a7422d9d667ce0ab24}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!To\+Col\+Vec@{To\+Col\+Vec}}
+\index{To\+Col\+Vec@{To\+Col\+Vec}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{To\+Col\+Vec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec4} gofxmath\+::\+Vec3\+::\+To\+Col\+Vec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classgofxmath_1_1_vec3_a0dc737644758a9a7422d9d667ce0ab24}
+
+
+Creates the 4-\/component column vector version of this \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyDate}{Date}
+3/20/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The resulting \hyperlink{classgofxmath_1_1_vec4}{Vec4} representing a transformable 3\+D column vector.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Sets the fourth component to 1.\+0f. Otherwise identical to the explicit cast from \hyperlink{classgofxmath_1_1_vec3}{Vec3} to \hyperlink{classgofxmath_1_1_vec4}{Vec4}; 
+\end{DoxyRemark}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classgofxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{left, }
+\item[{const {\bf Vec3} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}
+
+
+Inequality operator. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a9902784eb40b0c5ee0378e1c2526eb1e}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_vec3_a9902784eb40b0c5ee0378e1c2526eb1e}
+
+
+A function that writes the given 3\+D vector to the given output stream. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The output stream to be written to. \\
+\hline
+ & {\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} to write to the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Writes the value of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to the given output stream. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator==@{operator==}}
+\index{operator==@{operator==}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{left, }
+\item[{const {\bf Vec3} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}
+
+
+Equality operator. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_acf645c325558f6e8eabcbad87b4eea50}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{classgofxmath_1_1_vec3_acf645c325558f6e8eabcbad87b4eea50}
+
+
+A function that reads in the a 3\+D vector from the given input stream. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The input stream to be read from. \\
+\hline
+\mbox{\tt in,out}  & {\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} to read values into from the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reads the value of the given input stream to the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_ac3979900225f137a1486a4491d0fb6d8}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Add@{Vec3\+Add}}
+\index{Vec3\+Add@{Vec3\+Add}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Add (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_ac3979900225f137a1486a4491d0fb6d8}
+
+
+Add the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the sum. \\
+\hline
+{\em second} & The second \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the sum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgofxmath_1_1_vec3}{Vec3} representing the sum of the two given Vec3s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_ac042c4407bfaa66715e3c4b5b0a839f4}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Approx\+Equal@{Vec3\+Approx\+Equal}}
+\index{Vec3\+Approx\+Equal@{Vec3\+Approx\+Equal}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Approx\+Equal}]{\setlength{\rightskip}{0pt plus 5cm}template$<$Float\+Precision precision = Float\+Precision\+::\+H\+I\+G\+H$>$ bool Vec3\+Approx\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_ac042c4407bfaa66715e3c4b5b0a839f4}
+
+
+Determines whether the two Vec3s are approximately equal, based on the given Precision template argument (defaults to H\+I\+G\+H precision). 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em precision} & Type of the precision. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the comparison. \\
+\hline
+{\em second} & The second \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the comparison.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the x, y and z components of the two given Vec3s have values that are within the Float\+Precision accuracy definition of one another, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a455b2ef17c947a780f2b2b9e4b6cccc8}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Cross@{Vec3\+Cross}}
+\index{Vec3\+Cross@{Vec3\+Cross}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Cross}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Cross (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a455b2ef17c947a780f2b2b9e4b6cccc8}
+
+
+The cross product of the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the cross product. \\
+\hline
+{\em second} & The second \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the cross product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cross produc of the two given Vec3s. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a8c2d0c0b9d70b417e598489374ef1f88}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Div\+Scalar@{Vec3\+Div\+Scalar}}
+\index{Vec3\+Div\+Scalar@{Vec3\+Div\+Scalar}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Div\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Div\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec, }
+\item[{float}]{divisor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a8c2d0c0b9d70b417e598489374ef1f88}
+
+
+Divide the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} to divide. \\
+\hline
+{\em divisor} & The scalar to divide by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgofxmath_1_1_vec3}{Vec3} 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a02eb26d5238095f747d35890a597e489}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Dot@{Vec3\+Dot}}
+\index{Vec3\+Dot@{Vec3\+Dot}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Dot}]{\setlength{\rightskip}{0pt plus 5cm}float Vec3\+Dot (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a02eb26d5238095f747d35890a597e489}
+
+
+\hyperlink{classgofxmath_1_1_vec3}{Vec3} dot product. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the dot product. \\
+\hline
+{\em second} & The second \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the dot product.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scalar value resulting from the dot product of the two Vec3s\textquotesingle{} components. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_ae5205e805b23de865db9a40e5936f82a}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Has\+Infinite@{Vec3\+Has\+Infinite}}
+\index{Vec3\+Has\+Infinite@{Vec3\+Has\+Infinite}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Has\+Infinite}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec3\+Has\+Infinite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_ae5205e805b23de865db9a40e5936f82a}
+
+
+Determines whether or not the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} has an infinite value component. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The given \hyperlink{classgofxmath_1_1_vec3}{Vec3} to check for infinite values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} has at least one infinite value in its components, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a5d19e3d1ee15741a65ede16f20e919a4}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Has\+Na\+N@{Vec3\+Has\+Na\+N}}
+\index{Vec3\+Has\+Na\+N@{Vec3\+Has\+Na\+N}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Has\+Na\+N}]{\setlength{\rightskip}{0pt plus 5cm}bool Vec3\+Has\+Na\+N (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a5d19e3d1ee15741a65ede16f20e919a4}
+
+
+Vector 2 has a Na\+N component value. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} has at least one Na\+N value, otherwise false. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a79475199c50b1ee42edc6aa8b5c5795f}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Mul\+Scalar@{Vec3\+Mul\+Scalar}}
+\index{Vec3\+Mul\+Scalar@{Vec3\+Mul\+Scalar}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Mul\+Scalar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Mul\+Scalar (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec, }
+\item[{float}]{factor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a79475199c50b1ee42edc6aa8b5c5795f}
+
+
+Multiply the components of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} by the given scalar. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} to multiply. \\
+\hline
+{\em factor} & The scalar to multiply by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The scaled \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_a8ccc52146f984a79c566ee8348e410e2}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Negate@{Vec3\+Negate}}
+\index{Vec3\+Negate@{Vec3\+Negate}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Negate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Negate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_a8ccc52146f984a79c566ee8348e410e2}
+
+
+Negate the given \hyperlink{classgofxmath_1_1_vec3}{Vec3} components. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} being negated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgofxmath_1_1_vec3}{Vec3} with components that are of opposite sign of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+\hypertarget{classgofxmath_1_1_vec3_afdbff8ff3fad75f9a9e924a58fcc4f4a}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Normalize@{Vec3\+Normalize}}
+\index{Vec3\+Normalize@{Vec3\+Normalize}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Normalize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Normalize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_afdbff8ff3fad75f9a9e924a58fcc4f4a}
+
+
+Normalize the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The \hyperlink{classgofxmath_1_1_vec3}{Vec3} to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The normalized form of the given \hyperlink{classgofxmath_1_1_vec3}{Vec3}.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Scales the components of the \hyperlink{classgofxmath_1_1_vec3}{Vec3} such that its length is 1 (unit length). 
+\end{DoxyRemark}
+\hypertarget{classgofxmath_1_1_vec3_ae7189108aa879fb16ce9afd17052ac16}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!Vec3\+Sub@{Vec3\+Sub}}
+\index{Vec3\+Sub@{Vec3\+Sub}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{Vec3\+Sub}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3} Vec3\+Sub (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{first, }
+\item[{const {\bf Vec3} \&}]{second}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{classgofxmath_1_1_vec3_ae7189108aa879fb16ce9afd17052ac16}
+
+
+Subtract the two given Vec3s. 
+
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the subtraction. \\
+\hline
+{\em second} & The second \hyperlink{classgofxmath_1_1_vec3}{Vec3} in the subtraction.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classgofxmath_1_1_vec3}{Vec3} representing the difference of the two given Vec3s\textquotesingle{} coponents. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classgofxmath_1_1_vec3_a3971d9f465d93491b33f68a9460721a5}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!vals@{vals}}
+\index{vals@{vals}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{vals}]{\setlength{\rightskip}{0pt plus 5cm}float gofxmath\+::\+Vec3\+::vals\mbox{[}3\mbox{]}}\label{classgofxmath_1_1_vec3_a3971d9f465d93491b33f68a9460721a5}
+
+
+The 3 components of the \hyperlink{classgofxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyRemark}{Remarks}
+Points to the same values as the x, y and z components (at indices 0, 1, and 2, respectively). 
+\end{DoxyRemark}
+\hypertarget{classgofxmath_1_1_vec3_a507868ff65b4e42f80da14bf355ee10a}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!x@{x}}
+\index{x@{x}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float gofxmath\+::\+Vec3\+::x}\label{classgofxmath_1_1_vec3_a507868ff65b4e42f80da14bf355ee10a}
+
+
+The x-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}0\mbox{]}}. 
+\end{DoxyRemark}
+\hypertarget{classgofxmath_1_1_vec3_afd348ae9f3c31f6215e91d8b5adcea5f}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!y@{y}}
+\index{y@{y}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float gofxmath\+::\+Vec3\+::y}\label{classgofxmath_1_1_vec3_afd348ae9f3c31f6215e91d8b5adcea5f}
+
+
+The y-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}1\mbox{]}}. 
+\end{DoxyRemark}
+\hypertarget{classgofxmath_1_1_vec3_a201779cb941bb4a6478ff13c897494ba}{}\index{gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}!z@{z}}
+\index{z@{z}!gofxmath\+::\+Vec3@{gofxmath\+::\+Vec3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float gofxmath\+::\+Vec3\+::z}\label{classgofxmath_1_1_vec3_a201779cb941bb4a6478ff13c897494ba}
+
+
+The z-\/coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}2\mbox{]}}. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vec3_8h}{vec3.\+h}\item 
+\hyperlink{vecmath_8h}{vecmath.\+h}\end{DoxyCompactItemize}

@@ -130,7 +130,7 @@ namespace gofxmath
 		friend bool operator!=(const Vec3& left, const Vec3& right);
 
 		/*!
-		 * \brief	Explicit cast that converts the given  to a Vec2.
+		 * \brief	Explicit cast that converts the given Vec3 to a Vec2.
 		 *
 		 * \date	2/22/2015
 		 *
@@ -139,13 +139,25 @@ namespace gofxmath
 		explicit operator Vec2() const;
 
 		/*!
-		 * \brief	Explicit cast that converts the given  to a Vec4.
+		 * \brief	Explicit cast that converts the given Vec3 to a Vec4.
 		 *
 		 * \date	2/22/2015
 		 *
-		 * \return	The result of the operation.
+		 * \return	The resulting Vec4 from the cast.
 		 */
 		explicit operator Vec4() const;
+
+		/*!
+		 * \brief	Creates the 4-component column vector version of this Vec3.
+		 * 
+		 * \date	3/20/2015
+		 * 
+		 * \return	The resulting Vec4 representing a transformable 3D column vector.
+		 * 
+		 * \remarks	Sets the fourth component to 1.0f.  Otherwise identical to the
+		 *			explicit cast from Vec3 to Vec4;
+		 */
+		Vec4 ToColVec() const;
 
 		//! \cond 
 		union {

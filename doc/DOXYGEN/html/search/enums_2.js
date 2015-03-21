@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrixtype',['MatrixType',['../group___s_i_s_d_mat_math.html#ga6c8951c82aec5015dd6806affb4c8d03',1,'gfxmath']]]
+  ['matrixtype',['MatrixType',['../group___s_i_s_d_mat_math.html#ga0434ae8f7ee0d8d40277184552eebef4',1,'gofxmath']]]
 ];

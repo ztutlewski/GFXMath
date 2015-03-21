@@ -1,0 +1,307 @@
+\hypertarget{structgfxmath_1_1_sse_mat44}{}\section{gfxmath\+:\+:Sse\+Mat44 Struct Reference}
+\label{structgfxmath_1_1_sse_mat44}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+
+
+A 4x4 matrix that uses four Sse\+Vecs for column vectors.  
+
+
+
+
+{\ttfamily \#include $<$ssemat44.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgfxmath_1_1_sse_mat44_aeee33533bcfdba675609d5b1155cf029}{Sse\+Mat44} ()
+\begin{DoxyCompactList}\small\item\em Empty \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_sse_mat44_a60f6b91adfec4810007c8bef96bca42c}{Sse\+Mat44} (const \hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \&v0, const \hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \&v1, const \hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \&v2, const \hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \&v3, \hyperlink{namespacegfxmath_a6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes Sse\+Vec arguments to fill the columns, and an optional Matrix\+Type argument to initialize its state. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_sse_mat44_a2fe0899f1f7a864586c5fb01397da259}{Sse\+Mat44} (const \hyperlink{structgfxmath_1_1_vec4}{Vec4} \&col0\+Param, const \hyperlink{structgfxmath_1_1_vec4}{Vec4} \&col1\+Param, const \hyperlink{structgfxmath_1_1_vec4}{Vec4} \&col2\+Param, const \hyperlink{structgfxmath_1_1_vec4}{Vec4} \&col3\+Param, \hyperlink{namespacegfxmath_a6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes \hyperlink{structgfxmath_1_1_vec4}{Vec4} arguments to fill the columns, and an optional Matrix\+Type argument to initialize its state. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_sse_mat44_ae77c1fcd0efebbcea2cbc61b8849cbd4}{Sse\+Mat44} (float f00, float f10, float f20, float f30, float f01, float f11, float f21, float f31, float f02, float f12, float f22, float f32, float f03, float f13, float f23, float f33, \hyperlink{namespacegfxmath_a6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}{matrix\+Type\+Val}=Matrix\+Type\+::\+M\+I\+S\+C)
+\begin{DoxyCompactList}\small\item\em An \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes 16 floats. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_sse_mat44_ae7f7bd62ac0d4d625a7b1d2701e8621f}{Sse\+Mat44} (\hyperlink{structgfxmath_1_1_mat44}{Mat44} \&mat)
+\begin{DoxyCompactList}\small\item\em A conversion constructor from \hyperlink{structgfxmath_1_1_mat44}{Mat44} to \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacegfxmath_a6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} \hyperlink{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}{matrix\+Type\+Val}
+\begin{DoxyCompactList}\small\item\em A Matrix\+Type used to track the matrix state. \end{DoxyCompactList}\item 
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \hyperlink{structgfxmath_1_1_sse_mat44_a5ba91c42ffa3a8158266badf214b07a6}{col0}
+\begin{DoxyCompactList}\small\item\em The first column vector. \end{DoxyCompactList}\item 
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \hyperlink{structgfxmath_1_1_sse_mat44_a836c79e6497a5aa122c240767e7376a1}{col1}
+\begin{DoxyCompactList}\small\item\em The second column vector. \end{DoxyCompactList}\item 
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \hyperlink{structgfxmath_1_1_sse_mat44_a636928a37222e474300ea4aa5ff5221c}{col2}
+\begin{DoxyCompactList}\small\item\em The third column vector. \end{DoxyCompactList}\item 
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} \hyperlink{structgfxmath_1_1_sse_mat44_a7ee53ec82e31166ee87c6dfe6bc5810c}{col3}
+\begin{DoxyCompactList}\small\item\em The fourth column vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structgfxmath_1_1_sse_mat44_a1da166cfaf4bd0082c0a6ee1c62153a1}{}static const \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} \hyperlink{structgfxmath_1_1_sse_mat44_a1da166cfaf4bd0082c0a6ee1c62153a1}{I\+D\+E\+N\+T\+I\+T\+Y}\label{structgfxmath_1_1_sse_mat44_a1da166cfaf4bd0082c0a6ee1c62153a1}
+
+\begin{DoxyCompactList}\small\item\em The identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A 4x4 matrix that uses four Sse\+Vecs for column vectors. 
+
+\begin{DoxyReturn}{Returns}
+The S\+S\+E matrix 44.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+This class is used to take advantage of sse intrinsics for substantial performance gains in cpu-\/heavy rendering calculations. 
+\end{DoxyRemark}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structgfxmath_1_1_sse_mat44_aeee33533bcfdba675609d5b1155cf029}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!Sse\+Mat44@{Sse\+Mat44}}
+\index{Sse\+Mat44@{Sse\+Mat44}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{Sse\+Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Sse\+Mat44\+::\+Sse\+Mat44 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structgfxmath_1_1_sse_mat44_aeee33533bcfdba675609d5b1155cf029}
+
+
+Empty \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+Sets all member columns to zerovectors, and sets the matrix\+Type\+Val to Matrix\+Type\+::\+M\+I\+S\+C. 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_sse_mat44_a60f6b91adfec4810007c8bef96bca42c}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!Sse\+Mat44@{Sse\+Mat44}}
+\index{Sse\+Mat44@{Sse\+Mat44}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{Sse\+Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Sse\+Mat44\+::\+Sse\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sse\+Vec} \&}]{v0, }
+\item[{const {\bf Sse\+Vec} \&}]{v1, }
+\item[{const {\bf Sse\+Vec} \&}]{v2, }
+\item[{const {\bf Sse\+Vec} \&}]{v3, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structgfxmath_1_1_sse_mat44_a60f6b91adfec4810007c8bef96bca42c}
+
+
+\hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes Sse\+Vec arguments to fill the columns, and an optional Matrix\+Type argument to initialize its state. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em v0} & An Sse\+Vec that will be placed in the first column. \\
+\hline
+{\em v1} & An Sse\+Vec that will be placed in the second column. \\
+\hline
+{\em v2} & An Sse\+Vec that will be placed in the third column. \\
+\hline
+{\em v3} & An Sse\+Vec that will be placed in the fourth column. \\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. Defaults as Matrix\+Type\+::\+M\+I\+S\+C\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Sets its respective column vectors to the given Sse\+Vec arguments, and optionally sets the matrix\+Type\+Val to the given Matrix\+Type (defaults to Matrix\+Type\+::\+M\+I\+S\+C) 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_sse_mat44_a2fe0899f1f7a864586c5fb01397da259}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!Sse\+Mat44@{Sse\+Mat44}}
+\index{Sse\+Mat44@{Sse\+Mat44}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{Sse\+Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Sse\+Mat44\+::\+Sse\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec4} \&}]{col0\+Param, }
+\item[{const {\bf Vec4} \&}]{col1\+Param, }
+\item[{const {\bf Vec4} \&}]{col2\+Param, }
+\item[{const {\bf Vec4} \&}]{col3\+Param, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structgfxmath_1_1_sse_mat44_a2fe0899f1f7a864586c5fb01397da259}
+
+
+\hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes \hyperlink{structgfxmath_1_1_vec4}{Vec4} arguments to fill the columns, and an optional Matrix\+Type argument to initialize its state. 
+
+\begin{DoxyRemark}{Remarks}
+Sets its respective column vectors to the given Sse\+Vec arguments, and optionally sets the matrix\+Type\+Val to the given Matrix\+Type (defaults to Matrix\+Type\+::\+M\+I\+S\+C)
+\end{DoxyRemark}
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em col0\+Param} & A \hyperlink{structgfxmath_1_1_vec4}{Vec4} that will be placed in the first column. \\
+\hline
+{\em col1\+Param} & A \hyperlink{structgfxmath_1_1_vec4}{Vec4} that will be placed in the second column. \\
+\hline
+{\em col2\+Param} & A \hyperlink{structgfxmath_1_1_vec4}{Vec4} that will be placed in the third column. \\
+\hline
+{\em col3\+Param} & A \hyperlink{structgfxmath_1_1_vec4}{Vec4} that will be placed in the fourth column. \\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. Defaults as Matrix\+Type\+::\+M\+I\+S\+C \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_sse_mat44_ae77c1fcd0efebbcea2cbc61b8849cbd4}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!Sse\+Mat44@{Sse\+Mat44}}
+\index{Sse\+Mat44@{Sse\+Mat44}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{Sse\+Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Sse\+Mat44\+::\+Sse\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{float}]{f00, }
+\item[{float}]{f10, }
+\item[{float}]{f20, }
+\item[{float}]{f30, }
+\item[{float}]{f01, }
+\item[{float}]{f11, }
+\item[{float}]{f21, }
+\item[{float}]{f31, }
+\item[{float}]{f02, }
+\item[{float}]{f12, }
+\item[{float}]{f22, }
+\item[{float}]{f32, }
+\item[{float}]{f03, }
+\item[{float}]{f13, }
+\item[{float}]{f23, }
+\item[{float}]{f33, }
+\item[{{\bf Matrix\+Type}}]{matrix\+Type\+Val = {\ttfamily MatrixType\+:\+:MISC}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structgfxmath_1_1_sse_mat44_ae77c1fcd0efebbcea2cbc61b8849cbd4}
+
+
+An \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44} constructor that takes 16 floats. 
+
+\begin{DoxyRemark}{Remarks}
+Each four floats correspond to the columns of the resulting matrix.
+\end{DoxyRemark}
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em f00} & The column 0, row 0 value. \\
+\hline
+{\em f10} & The column 0, row 1 value. \\
+\hline
+{\em f20} & The column 0, row 2 value. \\
+\hline
+{\em f30} & The column 0, row 3 value.\\
+\hline
+{\em f01} & The column 1, row 0 value. \\
+\hline
+{\em f11} & The column 1, row 1 value. \\
+\hline
+{\em f21} & The column 1, row 2 value. \\
+\hline
+{\em f31} & The column 1, row 3 value.\\
+\hline
+{\em f02} & The column 2, row 0 value. \\
+\hline
+{\em f12} & The column 2, row 1 value. \\
+\hline
+{\em f22} & The column 2, row 2 value. \\
+\hline
+{\em f32} & The column 2, row 3 value.\\
+\hline
+{\em f03} & The column 3, row 0 value. \\
+\hline
+{\em f13} & The column 3, row 1 value. \\
+\hline
+{\em f23} & The column 3, row 2 value. \\
+\hline
+{\em f33} & The column 3, row 3 value. \\
+\hline
+{\em matrix\+Type\+Val} & The matrix type value. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_sse_mat44_ae7f7bd62ac0d4d625a7b1d2701e8621f}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!Sse\+Mat44@{Sse\+Mat44}}
+\index{Sse\+Mat44@{Sse\+Mat44}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{Sse\+Mat44}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Sse\+Mat44\+::\+Sse\+Mat44 (
+\begin{DoxyParamCaption}
+\item[{{\bf Mat44} \&}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{structgfxmath_1_1_sse_mat44_ae7f7bd62ac0d4d625a7b1d2701e8621f}
+
+
+A conversion constructor from \hyperlink{structgfxmath_1_1_mat44}{Mat44} to \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44}. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em mat} & The \hyperlink{structgfxmath_1_1_mat44}{Mat44} matrix to copy from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Copies the values from the given \hyperlink{structgfxmath_1_1_mat44}{Mat44} columns into the columns for this \hyperlink{structgfxmath_1_1_sse_mat44}{Sse\+Mat44}, and sets the matrix\+Type\+Val to the corresponding matrix\+Type\+Val from the \hyperlink{structgfxmath_1_1_mat44}{Mat44} passed in. 
+\end{DoxyRemark}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structgfxmath_1_1_sse_mat44_a5ba91c42ffa3a8158266badf214b07a6}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!col0@{col0}}
+\index{col0@{col0}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{col0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} gfxmath\+::\+Sse\+Mat44\+::col0}\label{structgfxmath_1_1_sse_mat44_a5ba91c42ffa3a8158266badf214b07a6}
+
+
+The first column vector. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} 
+\end{DoxySeeAlso}
+\hypertarget{structgfxmath_1_1_sse_mat44_a836c79e6497a5aa122c240767e7376a1}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!col1@{col1}}
+\index{col1@{col1}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{col1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} gfxmath\+::\+Sse\+Mat44\+::col1}\label{structgfxmath_1_1_sse_mat44_a836c79e6497a5aa122c240767e7376a1}
+
+
+The second column vector. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} 
+\end{DoxySeeAlso}
+\hypertarget{structgfxmath_1_1_sse_mat44_a636928a37222e474300ea4aa5ff5221c}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!col2@{col2}}
+\index{col2@{col2}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{col2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} gfxmath\+::\+Sse\+Mat44\+::col2}\label{structgfxmath_1_1_sse_mat44_a636928a37222e474300ea4aa5ff5221c}
+
+
+The third column vector. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} 
+\end{DoxySeeAlso}
+\hypertarget{structgfxmath_1_1_sse_mat44_a7ee53ec82e31166ee87c6dfe6bc5810c}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!col3@{col3}}
+\index{col3@{col3}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{col3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sse\+Vec} gfxmath\+::\+Sse\+Mat44\+::col3}\label{structgfxmath_1_1_sse_mat44_a7ee53ec82e31166ee87c6dfe6bc5810c}
+
+
+The fourth column vector. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{Sse\+Vec} 
+\end{DoxySeeAlso}
+\hypertarget{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}{}\index{gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}!matrix\+Type\+Val@{matrix\+Type\+Val}}
+\index{matrix\+Type\+Val@{matrix\+Type\+Val}!gfxmath\+::\+Sse\+Mat44@{gfxmath\+::\+Sse\+Mat44}}
+\subsubsection[{matrix\+Type\+Val}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix\+Type} gfxmath\+::\+Sse\+Mat44\+::matrix\+Type\+Val}\label{structgfxmath_1_1_sse_mat44_abdcc4efbf8375bae103da12c0823a85c}
+
+
+A Matrix\+Type used to track the matrix state. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacegfxmath_a6c8951c82aec5015dd6806affb4c8d03}{Matrix\+Type} 
+\end{DoxySeeAlso}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ssemat44_8h}{ssemat44.\+h}\end{DoxyCompactItemize}

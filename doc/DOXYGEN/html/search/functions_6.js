@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['identity',['Identity',['../classgfxmath_1_1_mat44.html#affaa1c0f2a0746b7d15d02a970590764',1,'gfxmath::Mat44::Identity()'],['../classgfxmath_1_1_quaternion.html#ace9f51df9b457cbce0c4901087009548',1,'gfxmath::Quaternion::Identity()']]],
-  ['infinity',['Infinity',['../group___scalar_math_consts.html#gaf3d71b863bc7ac057d0928590246578e',1,'gfxmath']]],
-  ['isinfinity',['IsInfinity',['../group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648',1,'gfxmath']]],
-  ['isnan',['IsNaN',['../group___s_i_s_d_scalar_math.html#ga894ca122cd6d482ed5608f3410bc2bb4',1,'gfxmath']]]
+  ['identity',['Identity',['../classgofxmath_1_1_mat44.html#ab29ffef6b95835a3b7e9ac8f58cc2cd4',1,'gofxmath::Mat44::Identity()'],['../classgofxmath_1_1_quaternion.html#ae071fa7b5b88bedc7dc4786448335f42',1,'gofxmath::Quaternion::Identity()']]],
+  ['infinity',['Infinity',['../group___scalar_math_consts.html#ga06bd81da4df7e94c91fbd777f208f000',1,'gofxmath']]],
+  ['isinfinity',['IsInfinity',['../group___s_i_s_d_scalar_math.html#ga56a70269c92df99f699e0456613e4a52',1,'gofxmath']]],
+  ['isnan',['IsNaN',['../group___s_i_s_d_scalar_math.html#gafa30a49468e40679f196b2bc791849e5',1,'gofxmath']]]
 ];

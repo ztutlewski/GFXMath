@@ -549,6 +549,21 @@ namespace gofxmath
 	 */
 	Quaternion QuaternionFromEuler(const Vec3& angles);
 
+	/*!
+	 * \brief	Converts the given euler angles to a quaternion.
+	 *
+	 * \date	2/22/2015
+	 *
+	 * \param	pitch	The angle (in radians) to rotate along the x-axis.
+	 * \param   yaw		The angle (in radians) to rotate along the y-axis.
+	 * \param	roll	The angle (in radians) to rotate along the z-axis.
+	 *
+	 * \return	A quaternion representing the given euler angles.
+	 *
+	 * \relatedalso gofxmath::Quaternion
+	 */
+	Quaternion QuaternionFromEuler(float pitch, float yaw, float roll);
+
 	/*! @} */
 }
 

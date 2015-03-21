@@ -646,57 +646,48 @@ namespace gofxmath
 		SseMat44 result;
 
 		// Initialize commonly reused variables =======================================================================================
-		quatSqr = VecMul(quat, quat);
 		twoQuat = VecAdd(quat, quat);
+		quatSqr = VecMul(twoQuat, quat);
 
-		tmp0 = VecSwizzle<VecCoord::X, X, Y, NA>(twoQuat);// 2x 2x 2y na
-		tmp1 = VecSwizzle<VecCoord::Y, Z, Z, NA>(quat);// y z z na
-		tmp2 = VecSwizzle<W, W, W, NA>(twoQuat);// 2w 2w 2w na
-		tmp3 = VecSwizzle<VecCoord::X, Y, Z, NA>(quat);// x y z na
+		tmp0 = VecSwizzle<VecCoord::X, VecCoord::X, VecCoord::Y, VecCoord::NA>(twoQuat);// 2x 2x 2y na
+		tmp1 = VecSwizzle<VecCoord::Y, VecCoord::Z, VecCoord::Z, VecCoord::NA>(quat);// y z z na
+		tmp2 = VecSwizzle<VecCoord::W, VecCoord::W, VecCoord::W, VecCoord::NA>(twoQuat);// 2w 2w 2w na
+		tmp3 = VecSwizzle<VecCoord::X, VecCoord::Y, VecCoord::Z, VecCoord::NA>(quat);// x y z na
 
 
 		tmp0 = VecMul(tmp0, tmp1);// xy xz yz na
 		tmp1 = VecMul(tmp2, tmp3);// wx wy wz na
 
-		tmp2 = VecSplat<W>(quatSqr);// ww ww ww ww
-		tmp3 = VecSplat<VecCoord::X>(quatSqr);// xx xx xx xx
-
 		// Perform diagonal calculations ==============================================================================================
-		tmp2 = VecAddSub(tmp2, tmp3);// (ww - xx) (ww + xx) (ww - xx) na
 
-		tmp2 = VecSwizzle<VecCoord::Y, X, Z, NA>(tmp2);// (ww + xx) (ww - xx) (ww - xx) na
-		tmp3 = VecSplat<VecCoord::Y>(quatSqr);// yy yy yy yy
+		tmp2 = VecSwizzle<VecCoord::Y, VecCoord::X, VecCoord::X, VecCoord::NA>(quatSqr);// yy xx xx na
+		tmp3 = VecSwizzle<VecCoord::Z, VecCoord::Z, VecCoord::Y, VecCoord::NA>(quatSqr);// zz zz yy na
 
-		tmp2 = VecAddSub(tmp2, tmp3);// (ww + xx - yy) (ww - xx + yy) (ww - xx - yy) na
-
-		tmp2 = VecSwizzle<VecCoord::X, Z, Y, NA>(tmp2);// (ww + xx - yy) (ww - xx - yy) (ww - xx + yy) na
-		tmp3 = VecSplat<VecCoord::Z>(quatSqr);// zz zz zz zz
-
-		tmp2 = VecAddSub(tmp2, tmp3);// (ww + xx - yy - zz) (ww - xx - yy + zz) (ww - xx + yy - zz) na
-		tmp2 = VecSwizzle<VecCoord::X, Z, Y, NA>(tmp2);// (ww + xx - yy - zz) (ww - xx + yy - zz) (ww - xx - yy + zz) na
+		tmp2 = VecAdd(tmp2, tmp3);// (yy + zz) (xx + zz) (xx + yy) na
+		tmp2 = VecSub(SSE_VEC_ONE, tmp2);// (1 - yy - zz) (1 - xx - zz) (1 - xx - yy) na
 
 		// Perform other component calcuations ========================================================================================
-		tmp3 = VecSwizzle<VecCoord::Z, Y, X, NA>(tmp1);// wz wy wx na
+		tmp3 = VecSwizzle<VecCoord::Z, VecCoord::Y, VecCoord::X, VecCoord::NA>(tmp1);// wz wy wx na
 		tmp3 = VecAddSub(tmp0, tmp3);// (xy - wz) (xz + wy) (yz - wx) na
 
-		tmp4 = VecSwizzle<VecCoord::Y, Z, NA, X>(tmp0);// xz yz na xy
-		tmp5 = VecSwizzle<VecCoord::Y, X, NA, Z>(tmp1);// wy wx na wz
+		tmp4 = VecSwizzle<VecCoord::Y, VecCoord::Z, VecCoord::NA, VecCoord::X>(tmp0);// xz yz na xy
+		tmp5 = VecSwizzle<VecCoord::Y, VecCoord::X, VecCoord::NA, VecCoord::Z>(tmp1);// wy wx na wz
 
 		tmp1 = VecAddSub(tmp4, tmp5);// (xz - wy) (yz + wx) na (xy + wz)
 
 		
 		// Shift values and fill the result matrix ====================================================================================
-		tmp5 = VecShuffle<VecCoord::X, NA, W, X>(tmp2, tmp1);// (ww + xx - yy - zz) na (xy + wz) (xz - wy)
-		tmp4 = VecSwizzle<VecCoord::X, Z, W, NA>(tmp5);// (ww + xx - yy - zz) (xy + wz) (xz - wy) na
+		tmp5 = VecShuffle<VecCoord::X, VecCoord::NA, VecCoord::W, VecCoord::X>(tmp2, tmp1);// (1 - yy - zz) na (xy + wz) (xz - wy)
+		tmp4 = VecSwizzle<VecCoord::X, VecCoord::Z, VecCoord::W, VecCoord::NA>(tmp5);// (1 - yy - zz) (xy + wz) (xz - wy) na
 
 		result.col0 = VecAnd(tmp4, MASK_1110);// (ww + xx - yy - zz) (xy + wz) (xz - wy) 0
 
-		tmp5 = VecShuffle<NA, Y, X, NA>(tmp2, tmp3);// na (ww - xx + yy - zz) (xy - wz) na
-		tmp4 = VecShuffle<VecCoord::Z, Y, Y, NA>(tmp5, tmp1);// (xy - wz) (ww - xx + yy - zz) (yz + wx) na
+		tmp5 = VecShuffle<VecCoord::NA, VecCoord::Y, VecCoord::X, VecCoord::NA>(tmp2, tmp3);// na (1 - xx - zz) (xy - wz) na
+		tmp4 = VecShuffle<VecCoord::Z, VecCoord::Y, VecCoord::Y, VecCoord::NA>(tmp5, tmp1);// (xy - wz) (1 - xx - zz) (yz + wx) na
 
 		result.col1 = VecAnd(tmp4, MASK_1110);// (xy - wz) (ww - xx + yy - zz) (yz + wx) 0
 
-		tmp5 = VecShuffle<VecCoord::Y, Z, Z, NA>(tmp3, tmp2);// (xz + wy) (yz - wx) (ww - xx - yy + zz) na
+		tmp5 = VecShuffle<VecCoord::Y, VecCoord::Z, VecCoord::Z, VecCoord::NA>(tmp3, tmp2);// (xz + wy) (yz - wx) (1 - xx - yy) na
 
 		result.col2 = VecAnd(tmp5, MASK_1110);// (xz + wy) (yz - wx) (ww - xx - yy + zz) 0
 
@@ -704,11 +695,10 @@ namespace gofxmath
 
 		// Resulting Matrix:
 		// 
-		// [(ww + xx - yy - zz)      (xy - wz)           (xz + wy)      0 ]
-		// [     (xy + wz)      (ww - xx + yy - zz)      (yz - wx)      0 ]
-		// [     (xz - wy)           (yz + wx)      (ww - xx - yy + zz) 0 ]
-		// [         0                   0                   0          1 ]
-		// 
+		// [(1 - yy - zz)      (xy - wz)        (xz + wy)    0 ]
+		// [  (xy + wz)      (1 - xx - zz)      (yz - wx)    0 ]
+		// [  (xz - wy)        (yz + wx)      (1 - xx - yy)  0 ]
+		// [      0                0                0        1 ]
 
 		return result;
 	}

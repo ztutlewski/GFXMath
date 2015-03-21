@@ -189,6 +189,13 @@ namespace gofxmath
 		 */
 		friend std::string ToConsoleDebugString(const Mat44& mat);
 
+		/*!
+		 * \brief Gets the column associated with the given index.
+		 *
+		 * \param	arg	The given index.
+		 *
+		 * \return The column associated with the given index (0 for col0, 1 for col1, etc.).
+		 */
 		inline const Vec4& operator[](int arg) const
 		{
 			switch (arg)
@@ -208,6 +215,13 @@ namespace gofxmath
 			throw std::invalid_argument(msgStream.str().c_str());
 		}
 
+		/*!
+		 * \brief	Gets/Sets the column associated with the given index.
+		 * 
+		 * \param	arg	The given index.
+		 * 
+		 * \return The column associated with the given index (0 for col0, 1 for col1, etc.).
+		 */
 		inline Vec4& operator[](int arg)
 		{
 			switch (arg)
@@ -227,10 +241,10 @@ namespace gofxmath
 			throw std::invalid_argument(msgStream.str().c_str());
 		}
 
-		Vec4 col0;
-		Vec4 col1;
-		Vec4 col2;
-		Vec4 col3;
+		Vec4 col0;/*!< The first column of this matrix */
+		Vec4 col1;/*!< The second column of this matrix */
+		Vec4 col2;/*!< The third column of this matrix */
+		Vec4 col3;/*!< The fourth column of this matrix */
 
 		MatrixType matrixTypeVal;   /*!< The matrix type value */
 

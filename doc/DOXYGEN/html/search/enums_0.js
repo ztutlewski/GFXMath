@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['blendorder',['BlendOrder',['../namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3d',1,'gfxmath']]]
+  ['blendorder',['BlendOrder',['../namespacegofxmath.html#a2dce5f39d4af2a18b930b7eee34e034f',1,'gofxmath']]]
 ];

@@ -16,5 +16,5 @@ int main()
 	application.InitWindowed(3, 2, width, height, "GFX Engine");
 
 
-	return application.StartGameLoop();
+	return application.StartGameLoop(true);
 }

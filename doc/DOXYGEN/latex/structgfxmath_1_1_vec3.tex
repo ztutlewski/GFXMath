@@ -1,0 +1,417 @@
+\hypertarget{structgfxmath_1_1_vec3}{}\section{gfxmath\+:\+:Vec3 Struct Reference}
+\label{structgfxmath_1_1_vec3}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+
+
+A mathematical vector with 3 components.  
+
+
+
+
+{\ttfamily \#include $<$vec3.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgfxmath_1_1_vec3_a7ef06d33252e5c50c249d06eb1363700}{Vec3} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{structgfxmath_1_1_vec3}{Vec3} with all three components being initialized to 0.\+0f. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_a9eed21b7873f58760d6a8751e9972617}{Vec3} (float \hyperlink{structgfxmath_1_1_vec3_adb7cecf3b6d25eecf3924583f41d8c3a}{x}, float \hyperlink{structgfxmath_1_1_vec3_a398bee406395fdc1ad381f5b70d7fd99}{y}, float \hyperlink{structgfxmath_1_1_vec3_a93c1920712889d4f10520c7dc76a79c7}{z})
+\begin{DoxyCompactList}\small\item\em Constructs a \hyperlink{structgfxmath_1_1_vec3}{Vec3} with the given x, y, and z values assigned to their respective components. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_a5e51e927f3867e99d09ba451a51c0435}{Vec3} (const \hyperlink{structgfxmath_1_1_vec2}{Vec2} \&xy, float \hyperlink{structgfxmath_1_1_vec3_a93c1920712889d4f10520c7dc76a79c7}{z})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_abed154f883720d6cb93efa9f111f93b6}{Vec3} (float \hyperlink{structgfxmath_1_1_vec3_adb7cecf3b6d25eecf3924583f41d8c3a}{x}, const \hyperlink{structgfxmath_1_1_vec2}{Vec2} \&yz)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_aa9067613452e593627e33477cd4b63a3}{Vec3} (float xyz)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_a75e16fdee00a8ad1c6bb3e8d129bf9a5}{operator Vec2} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given to a \hyperlink{structgfxmath_1_1_vec2}{Vec2}. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_vec3_a63202163a9e528a6bd3a432b3b4ca686}{operator Vec4} () const 
+\begin{DoxyCompactList}\small\item\em Explicit cast that converts the given to a \hyperlink{structgfxmath_1_1_vec4}{Vec4}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structgfxmath_1_1_vec3_a9ce2feb7167c9fd1d521838da1daa7f9}{vals} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em The 3 components of the \hyperlink{structgfxmath_1_1_vec3}{Vec3}. \end{DoxyCompactList}\item 
+float \hyperlink{structgfxmath_1_1_vec3_adb7cecf3b6d25eecf3924583f41d8c3a}{x}
+\begin{DoxyCompactList}\small\item\em The x coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{structgfxmath_1_1_vec3_a398bee406395fdc1ad381f5b70d7fd99}{y}
+\begin{DoxyCompactList}\small\item\em The y coordinate. \end{DoxyCompactList}\item 
+float \hyperlink{structgfxmath_1_1_vec3_a93c1920712889d4f10520c7dc76a79c7}{z}
+\begin{DoxyCompactList}\small\item\em The z coordinate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structgfxmath_1_1_vec3_af7adb1dc66b03d8a7cd78fc28e5aa20b}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_af7adb1dc66b03d8a7cd78fc28e5aa20b}{R\+I\+G\+H\+T}\label{structgfxmath_1_1_vec3_af7adb1dc66b03d8a7cd78fc28e5aa20b}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} right direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_ab4c3bca411ed6fd8f7ce79969b06ed23}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_ab4c3bca411ed6fd8f7ce79969b06ed23}{U\+P}\label{structgfxmath_1_1_vec3_ab4c3bca411ed6fd8f7ce79969b06ed23}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} up direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_a289c04d3b17af6cddacb29efe9143e6f}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_a289c04d3b17af6cddacb29efe9143e6f}{F\+O\+R\+W\+A\+R\+D}\label{structgfxmath_1_1_vec3_a289c04d3b17af6cddacb29efe9143e6f}
+
+\begin{DoxyCompactList}\small\item\em The forward \hyperlink{structgfxmath_1_1_vec3}{Vec3} direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_aa881d0b142a615cdd79da19803e74fe5}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_aa881d0b142a615cdd79da19803e74fe5}{L\+E\+F\+T}\label{structgfxmath_1_1_vec3_aa881d0b142a615cdd79da19803e74fe5}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} left direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_ad4027a539980f50d8628f87e9c8912ad}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_ad4027a539980f50d8628f87e9c8912ad}{D\+O\+W\+N}\label{structgfxmath_1_1_vec3_ad4027a539980f50d8628f87e9c8912ad}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} down direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_a3abbcd22a86f239d8345bdcc0654fe70}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_a3abbcd22a86f239d8345bdcc0654fe70}{B\+A\+C\+K}\label{structgfxmath_1_1_vec3_a3abbcd22a86f239d8345bdcc0654fe70}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} back direction vector. \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_a66f3e0f49832d21f3ad8e59f3b0a5596}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_a66f3e0f49832d21f3ad8e59f3b0a5596}{O\+N\+E}\label{structgfxmath_1_1_vec3_a66f3e0f49832d21f3ad8e59f3b0a5596}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} one vector (all components are 1.\+0f) \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_aef5d6a224bc9f3b5cedda2a250330623}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_aef5d6a224bc9f3b5cedda2a250330623}{N\+E\+G\+\_\+\+O\+N\+E}\label{structgfxmath_1_1_vec3_aef5d6a224bc9f3b5cedda2a250330623}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} negative one vector (all components are -\/1.\+0f) \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_a118efe8c1f3e2b270d623a0743bbab89}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_a118efe8c1f3e2b270d623a0743bbab89}{Z\+E\+R\+O}\label{structgfxmath_1_1_vec3_a118efe8c1f3e2b270d623a0743bbab89}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} zero vector (all components are 0.\+0f) \end{DoxyCompactList}\item 
+\hypertarget{structgfxmath_1_1_vec3_adc0a8e147d92f5f00ed8a6f4dc3978d5}{}static const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \hyperlink{structgfxmath_1_1_vec3_adc0a8e147d92f5f00ed8a6f4dc3978d5}{I\+N\+F}\label{structgfxmath_1_1_vec3_adc0a8e147d92f5f00ed8a6f4dc3978d5}
+
+\begin{DoxyCompactList}\small\item\em The \hyperlink{structgfxmath_1_1_vec3}{Vec3} infinity vector (all components are infinity) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{structgfxmath_1_1_vec3_a77e412196e0210629d9cb8e2dcaf026b}{operator$<$$<$} (std\+::ostream \&stream, const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that writes the given 3\+D vector to the given output stream. \end{DoxyCompactList}\item 
+std\+::istream \& \hyperlink{structgfxmath_1_1_vec3_a3c4d205cb8dd79273c89781cdfa532d2}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&vec)
+\begin{DoxyCompactList}\small\item\em A function that reads in the a 3\+D vector from the given input stream. \end{DoxyCompactList}\item 
+bool \hyperlink{structgfxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}{operator==} (const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&left, const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&right)
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \hyperlink{structgfxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}{operator!=} (const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&left, const \hyperlink{structgfxmath_1_1_vec3}{Vec3} \&right)
+\begin{DoxyCompactList}\small\item\em Inequality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A mathematical vector with 3 components. 
+
+\begin{DoxyReturn}{Returns}
+The vector 3. 
+\end{DoxyReturn}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structgfxmath_1_1_vec3_a7ef06d33252e5c50c249d06eb1363700}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_vec3_a7ef06d33252e5c50c249d06eb1363700}
+
+
+Constructs a \hyperlink{structgfxmath_1_1_vec3}{Vec3} with all three components being initialized to 0.\+0f. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015 
+\end{DoxyDate}
+\hypertarget{structgfxmath_1_1_vec3_a9eed21b7873f58760d6a8751e9972617}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_vec3_a9eed21b7873f58760d6a8751e9972617}
+
+
+Constructs a \hyperlink{structgfxmath_1_1_vec3}{Vec3} with the given x, y, and z values assigned to their respective components. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate of the resulting \hyperlink{structgfxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em y} & The y coordinate of the resulting \hyperlink{structgfxmath_1_1_vec3}{Vec3}. \\
+\hline
+{\em z} & The z coordinate of the resulting \hyperlink{structgfxmath_1_1_vec3}{Vec3}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_vec3_a5e51e927f3867e99d09ba451a51c0435}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2} \&}]{xy, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_vec3_a5e51e927f3867e99d09ba451a51c0435}
+
+
+Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xy} & The xy. \\
+\hline
+{\em z} & The z coordinate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_vec3_abed154f883720d6cb93efa9f111f93b6}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{const {\bf Vec2} \&}]{yz}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_vec3_abed154f883720d6cb93efa9f111f93b6}
+
+
+Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em yz} & The yz. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_vec3_aa9067613452e593627e33477cd4b63a3}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{Vec3}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::\+Vec3 (
+\begin{DoxyParamCaption}
+\item[{float}]{xyz}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_vec3_aa9067613452e593627e33477cd4b63a3}
+
+
+Constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyz} & The xyz. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structgfxmath_1_1_vec3_a75e16fdee00a8ad1c6bb3e8d129bf9a5}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator Vec2@{operator Vec2}}
+\index{operator Vec2@{operator Vec2}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator Vec2}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::operator {\bf Vec2} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{structgfxmath_1_1_vec3_a75e16fdee00a8ad1c6bb3e8d129bf9a5}
+
+
+Explicit cast that converts the given to a \hyperlink{structgfxmath_1_1_vec2}{Vec2}. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+\hypertarget{structgfxmath_1_1_vec3_a63202163a9e528a6bd3a432b3b4ca686}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator Vec4@{operator Vec4}}
+\index{operator Vec4@{operator Vec4}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator Vec4}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Vec3\+::operator {\bf Vec4} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [explicit]}}\label{structgfxmath_1_1_vec3_a63202163a9e528a6bd3a432b3b4ca686}
+
+
+Explicit cast that converts the given to a \hyperlink{structgfxmath_1_1_vec4}{Vec4}. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+The result of the operation. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{structgfxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}bool operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{left, }
+\item[{const {\bf Vec3} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structgfxmath_1_1_vec3_ad5a37b5aca0611e88fb74d9dd01f307a}
+
+
+Inequality operator. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are not considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{structgfxmath_1_1_vec3_a77e412196e0210629d9cb8e2dcaf026b}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream, }
+\item[{const {\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structgfxmath_1_1_vec3_a77e412196e0210629d9cb8e2dcaf026b}
+
+
+A function that writes the given 3\+D vector to the given output stream. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The output stream to be written to. \\
+\hline
+ & {\em vec} & The \hyperlink{structgfxmath_1_1_vec3}{Vec3} to write to the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Writes the value of the given \hyperlink{structgfxmath_1_1_vec3}{Vec3} to the given output stream. 
+\end{DoxyReturn}
+\hypertarget{structgfxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator==@{operator==}}
+\index{operator==@{operator==}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{left, }
+\item[{const {\bf Vec3} \&}]{right}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structgfxmath_1_1_vec3_a73bad4468d068dd9b46b313330874c0c}
+
+
+Equality operator. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em left} & The first instance to compare. \\
+\hline
+{\em right} & The second instance to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the parameters are considered equivalent. 
+\end{DoxyReturn}
+\hypertarget{structgfxmath_1_1_vec3_a3c4d205cb8dd79273c89781cdfa532d2}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream \& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{stream, }
+\item[{{\bf Vec3} \&}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\label{structgfxmath_1_1_vec3_a3c4d205cb8dd79273c89781cdfa532d2}
+
+
+A function that reads in the a 3\+D vector from the given input stream. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/22/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em stream} & The input stream to be read from. \\
+\hline
+\mbox{\tt in,out}  & {\em vec} & The \hyperlink{structgfxmath_1_1_vec3}{Vec3} to read values into from the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reads the value of the given input stream to the given \hyperlink{structgfxmath_1_1_vec3}{Vec3}. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structgfxmath_1_1_vec3_a9ce2feb7167c9fd1d521838da1daa7f9}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!vals@{vals}}
+\index{vals@{vals}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{vals}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec3\+::vals\mbox{[}3\mbox{]}}\label{structgfxmath_1_1_vec3_a9ce2feb7167c9fd1d521838da1daa7f9}
+
+
+The 3 components of the \hyperlink{structgfxmath_1_1_vec3}{Vec3}. 
+
+\begin{DoxyRemark}{Remarks}
+Points to the same values as the x, y and z components (at indices 0, 1, and 2, respectively). 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_vec3_adb7cecf3b6d25eecf3924583f41d8c3a}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!x@{x}}
+\index{x@{x}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec3\+::x}\label{structgfxmath_1_1_vec3_adb7cecf3b6d25eecf3924583f41d8c3a}
+
+
+The x coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}0\mbox{]}}. 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_vec3_a398bee406395fdc1ad381f5b70d7fd99}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!y@{y}}
+\index{y@{y}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec3\+::y}\label{structgfxmath_1_1_vec3_a398bee406395fdc1ad381f5b70d7fd99}
+
+
+The y coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}1\mbox{]}}. 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_vec3_a93c1920712889d4f10520c7dc76a79c7}{}\index{gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}!z@{z}}
+\index{z@{z}!gfxmath\+::\+Vec3@{gfxmath\+::\+Vec3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float gfxmath\+::\+Vec3\+::z}\label{structgfxmath_1_1_vec3_a93c1920712889d4f10520c7dc76a79c7}
+
+
+The z coordinate. 
+
+\begin{DoxyRemark}{Remarks}
+Equivalent to {\bfseries vals\mbox{[}2\mbox{]}}. 
+\end{DoxyRemark}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vec3.\+h\end{DoxyCompactItemize}

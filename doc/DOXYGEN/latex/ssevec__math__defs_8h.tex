@@ -1,120 +1,119 @@
-\hypertarget{ssevec__math__defs_8h}{}\section{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssevec\+\_\+math\+\_\+defs.h File Reference}
-\label{ssevec__math__defs_8h}\index{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssevec\+\_\+math\+\_\+defs.\+h@{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/ssevec\+\_\+math\+\_\+defs.\+h}}
+\hypertarget{ssevec__math__defs_8h}{}\section{ssevec\+\_\+math\+\_\+defs.\+h File Reference}
+\label{ssevec__math__defs_8h}\index{ssevec\+\_\+math\+\_\+defs.\+h@{ssevec\+\_\+math\+\_\+defs.\+h}}
 {\ttfamily \#include $<$xmmintrin.\+h$>$}\\*
 {\ttfamily \#include $<$emmintrin.\+h$>$}\\*
 {\ttfamily \#include $<$smmintrin.\+h$>$}\\*
 {\ttfamily \#include $<$immintrin.\+h$>$}\\*
 {\ttfamily \#include \char`\"{}math\+\_\+defs.\+h\char`\"{}}\\*
-{\ttfamily \#include \char`\"{}gfxmath\+\_\+config.\+h\char`\"{}}\\*
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespacegfxmath}{gfxmath}
+ \hyperlink{namespacegofxmath}{gofxmath}
 \begin{DoxyCompactList}\small\item\em G of F of X math namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \begin{DoxyCompactItemize}
 \item 
 \#define \hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L}~inline Sse\+Vec
 \begin{DoxyCompactList}\small\item\em The calling convention for most Sse\+Vec functions. \end{DoxyCompactList}\item 
-enum \hyperlink{namespacegfxmath_ac97be114298a04e9db7f993085667b00}{gfxmath\+::\+Sin\+Cos\+Flag} \{ \hyperlink{namespacegfxmath_ac97be114298a04e9db7f993085667b00ac25dc94e5f333f4dc6ead2b93687bfcc}{gfxmath\+::\+S\+I\+N} = 0, 
-\hyperlink{namespacegfxmath_ac97be114298a04e9db7f993085667b00a46197a43f8fe8efbdae8c2670975d2e7}{gfxmath\+::\+C\+O\+S} = 1
+enum \hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaa}{gofxmath\+::\+Sin\+Cos\+Flag} \{ \hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaa4c66cfae8f94035eaede20844570a27f}{gofxmath\+::\+S\+I\+N} = 0, 
+\hyperlink{namespacegofxmath_a67a56526fdca522579dadeb59e2cedaaac06d99c0a383a5ea3aca59fa2f00f519}{gofxmath\+::\+C\+O\+S} = 1
  \}
 \begin{DoxyCompactList}\small\item\em Values that represent sine cosine flags. \end{DoxyCompactList}\item 
-enum \hyperlink{namespacegfxmath_ac03f836d004dbed0f2219c54b8e63e3d}{gfxmath\+::\+Blend\+Order} \{ \hyperlink{namespacegfxmath_ac03f836d004dbed0f2219c54b8e63e3da48d2a91c97bb0e96285fd218fbd098f5}{gfxmath\+::\+L\+E\+F\+T} = 0, 
-\hyperlink{namespacegfxmath_ac03f836d004dbed0f2219c54b8e63e3da28dcb685e33dd6cc73f168dbf003894e}{gfxmath\+::\+R\+I\+G\+H\+T} = 1, 
-\hyperlink{namespacegfxmath_ac03f836d004dbed0f2219c54b8e63e3da631e9eab7013501bd492e4730e793d27}{gfxmath\+::\+N\+O\+\_\+\+O\+R\+D\+E\+R} = 0
+enum \hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034f}{gofxmath\+::\+Blend\+Order} \{ \hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fab28013e6e287ee6b2890c0809dc4eb50}{gofxmath\+::\+L\+E\+F\+T} = 0, 
+\hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa3949eb6190e4e02933ded246a5d8fb11}{gofxmath\+::\+R\+I\+G\+H\+T} = 1, 
+\hyperlink{namespacegofxmath_a2dce5f39d4af2a18b930b7eee34e034fa6fd5e4e8e4bb7db4dd9086e8a5e313a4}{gofxmath\+::\+N\+O\+\_\+\+O\+R\+D\+E\+R} = 0
  \}
 \begin{DoxyCompactList}\small\item\em Values that represent blend orders. \end{DoxyCompactList}\item 
-enum \hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0b}{gfxmath\+::\+Vec\+Coord} \{ \\*
-\hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0bad0d09e689002558ad9843a534c0be86e}{gfxmath\+::\+X} = 0, 
-\hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0badd0e5340138dca954913bc9378f1c228}{gfxmath\+::\+Y} = 1, 
-\hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0ba15f9e08071113483f5106cf0ba08e502}{gfxmath\+::\+Z} = 2, 
-\hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0ba9589e88a1f2f02c189304aab6a2629f2}{gfxmath\+::\+W} = 3, 
+enum \hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741}{gofxmath\+::\+Vec\+Coord} \{ \\*
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a1b2cd11034f7c778f8e0930f57a15577}{gofxmath\+::\+X} = 0, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a98d90627fe2347723d56eb2b5fd7492d}{gofxmath\+::\+Y} = 1, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a56adb0786cb240ee8baed7fe3e48c58e}{gofxmath\+::\+Z} = 2, 
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741ae38bfc064233b06432b115dca29d5c5a}{gofxmath\+::\+W} = 3, 
 \\*
-\hyperlink{namespacegfxmath_a8930e63e96e91796ede30a8378b19d0baa2f2f53ce2dc4111dbf16ba3d31692f7}{gfxmath\+::\+N\+A} = 0
+\hyperlink{namespacegofxmath_a6c05153fd2e2d4119d91daca01a06741a9fc8bb14e129d2beab9c4027f9c0beef}{gofxmath\+::\+N\+A} = 0
  \}
 \begin{DoxyCompactList}\small\item\em Values that represent vector coordinates. \end{DoxyCompactList}\item 
-typedef \+\_\+\+\_\+m128 \hyperlink{namespacegfxmath_a0de2243e2b8d0fd46d3af5e036423004}{gfxmath\+::\+Sse\+Vec}
+typedef \+\_\+\+\_\+m128 \hyperlink{namespacegofxmath_a634570ddcd2496053ee966227080e02f}{gofxmath\+::\+Sse\+Vec}
 \begin{DoxyCompactList}\small\item\em Defines an alias representing the Sse\+Vec. \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a6994d7f14c150c61f588662f00d0c8ff}{}const Sse\+Vec \hyperlink{namespacegfxmath_a6994d7f14c150c61f588662f00d0c8ff}{gfxmath\+::\+U\+N\+I\+T\+\_\+0001} = Set\+Sse\+Vec4(0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f)\label{namespacegfxmath_a6994d7f14c150c61f588662f00d0c8ff}
+\hypertarget{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}{}const Sse\+Vec \hyperlink{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}{gofxmath\+::\+U\+N\+I\+T\+\_\+0001} = Set\+Sse\+Vec4(0.\+0f, 0.\+0f, 0.\+0f, 1.\+0f)\label{namespacegofxmath_abb9f5b43ffde326d3e63609f1d89d7d1}
 
 \begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 0 0 1$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a48ad75a66b328acc4e138ca986a012d8}{}const Sse\+Vec \hyperlink{namespacegfxmath_a48ad75a66b328acc4e138ca986a012d8}{gfxmath\+::\+U\+N\+I\+T\+\_\+0010} = Set\+Sse\+Vec4(0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f)\label{namespacegfxmath_a48ad75a66b328acc4e138ca986a012d8}
+\hypertarget{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}{}const Sse\+Vec \hyperlink{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}{gofxmath\+::\+U\+N\+I\+T\+\_\+0010} = Set\+Sse\+Vec4(0.\+0f, 0.\+0f, 1.\+0f, 0.\+0f)\label{namespacegofxmath_ae79bb596adccb91d5513cf2f89846b3b}
 
 \begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 0 1 0$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a99e3cab2ce1fc776b17352e8c6e71a23}{}const Sse\+Vec \hyperlink{namespacegfxmath_a99e3cab2ce1fc776b17352e8c6e71a23}{gfxmath\+::\+U\+N\+I\+T\+\_\+0100} = Set\+Sse\+Vec4(0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f)\label{namespacegfxmath_a99e3cab2ce1fc776b17352e8c6e71a23}
+\hypertarget{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}{}const Sse\+Vec \hyperlink{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}{gofxmath\+::\+U\+N\+I\+T\+\_\+0100} = Set\+Sse\+Vec4(0.\+0f, 1.\+0f, 0.\+0f, 0.\+0f)\label{namespacegofxmath_a921f81169d9261065e1e594e9f45227d}
 
 \begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$0 1 0 0$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_aca328652c569754fc01b923aa3be0531}{}const Sse\+Vec \hyperlink{namespacegfxmath_aca328652c569754fc01b923aa3be0531}{gfxmath\+::\+U\+N\+I\+T\+\_\+1000} = Set\+Sse\+Vec4(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f)\label{namespacegfxmath_aca328652c569754fc01b923aa3be0531}
+\hypertarget{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}{}const Sse\+Vec \hyperlink{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}{gofxmath\+::\+U\+N\+I\+T\+\_\+1000} = Set\+Sse\+Vec4(1.\+0f, 0.\+0f, 0.\+0f, 0.\+0f)\label{namespacegofxmath_ace43a689818ce606ddea62e3466dfd9d}
 
 \begin{DoxyCompactList}\small\item\em The unit Sse\+Vec $<$1 0 0 0$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a9062c4a7b8ac086ca7096e6b1f285310}{}const Sse\+Vec \hyperlink{namespacegfxmath_a9062c4a7b8ac086ca7096e6b1f285310}{gfxmath\+::\+F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2)\label{namespacegfxmath_a9062c4a7b8ac086ca7096e6b1f285310}
+\hypertarget{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}{}const Sse\+Vec \hyperlink{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}{gofxmath\+::\+F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+N\+E\+G4\+\_\+\+P\+I2)\label{namespacegofxmath_ae53b0b9582aa4b9ee97012219e83c072}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\} \textbackslash{}frac\{-\/4\}\{\textbackslash{}pi$^\wedge$2\})$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_aea61218c6969b532a24c56f9c9db5e59}{}const Sse\+Vec \hyperlink{namespacegfxmath_aea61218c6969b532a24c56f9c9db5e59}{gfxmath\+::\+F\+\_\+4\+\_\+\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+4\+\_\+\+P\+I)\label{namespacegfxmath_aea61218c6969b532a24c56f9c9db5e59}
+\hypertarget{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}{}const Sse\+Vec \hyperlink{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}{gofxmath\+::\+F\+\_\+4\+\_\+\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+4\+\_\+\+P\+I)\label{namespacegofxmath_a81dae68cc57b86fa3876cf0edc4456f4}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\} \textbackslash{}frac\{4\}\{\textbackslash{}pi\}\textbackslash{})$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a8b2f5f313f58e1bdf39b12672a2e2ea6}{}const Sse\+Vec \hyperlink{namespacegfxmath_a8b2f5f313f58e1bdf39b12672a2e2ea6}{gfxmath\+::\+F\+\_\+1\+\_\+2\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+1\+\_\+2\+P\+I)\label{namespacegfxmath_a8b2f5f313f58e1bdf39b12672a2e2ea6}
+\hypertarget{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}{}const Sse\+Vec \hyperlink{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}{gofxmath\+::\+F\+\_\+1\+\_\+2\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+1\+\_\+2\+P\+I)\label{namespacegofxmath_acb8bd518963c95a13b39ef68bbfa14af}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\} \textbackslash{}frac\{1\}\{2\textbackslash{}pi\}\textbackslash{})$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a0dac44cfab2d2b5e50f7cf27824e4020}{}const Sse\+Vec \hyperlink{namespacegfxmath_a0dac44cfab2d2b5e50f7cf27824e4020}{gfxmath\+::\+F\+\_\+\+P\+I\+\_\+2\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+P\+I\+\_\+2)\label{namespacegfxmath_a0dac44cfab2d2b5e50f7cf27824e4020}
+\hypertarget{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}{}const Sse\+Vec \hyperlink{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}{gofxmath\+::\+F\+\_\+\+P\+I\+\_\+2\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+P\+I\+\_\+2)\label{namespacegofxmath_aaea636fb8f936987307f5b28ca6fcd10}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\} \textbackslash{}frac\{\textbackslash{}pi\}\{2\})$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a9282b3367db2aaa0a821aec0a49db6e8}{}const Sse\+Vec \hyperlink{namespacegfxmath_a9282b3367db2aaa0a821aec0a49db6e8}{gfxmath\+::\+F\+\_\+\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+P\+I)\label{namespacegfxmath_a9282b3367db2aaa0a821aec0a49db6e8}
+\hypertarget{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}{}const Sse\+Vec \hyperlink{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}{gofxmath\+::\+F\+\_\+\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+\+P\+I)\label{namespacegofxmath_ac86409a0c7a7979e7ee36396f5a245db}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(\textbackslash{}pi \textbackslash{}pi \textbackslash{}pi \textbackslash{}pi\textbackslash{})$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a0242155348bcf78af6f9471724263460}{}const Sse\+Vec \hyperlink{namespacegfxmath_a0242155348bcf78af6f9471724263460}{gfxmath\+::\+F\+\_\+2\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+2\+P\+I)\label{namespacegfxmath_a0242155348bcf78af6f9471724263460}
+\hypertarget{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}{}const Sse\+Vec \hyperlink{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}{gofxmath\+::\+F\+\_\+2\+P\+I\+\_\+1111} = Set\+Sse\+Vec4(F\+\_\+2\+P\+I)\label{namespacegofxmath_a0b4351df875e350c3181a5028184f33c}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\textbackslash{}(2\textbackslash{}pi 2\textbackslash{}pi 2\textbackslash{}pi 2\textbackslash{}pi\textbackslash{})$>$ \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a10283405fa4ee9c652e68cd952034937}{gfxmath\+::\+M\+A\+S\+K\+\_\+1000} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_a47a55dbc42a84afc2fc369f8d87605d1}{gofxmath\+::\+M\+A\+S\+K\+\_\+1000} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x-\/coordinate position. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a2e6aab98443e9d5e2fe4270a1ed690ea}{gfxmath\+::\+M\+A\+S\+K\+\_\+0100} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_a8cdc76e209aa891f09b886c3f00fa7ba}{gofxmath\+::\+M\+A\+S\+K\+\_\+0100} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y-\/coordinate position. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a8cb1abe895cbdf8c2bfd4aebad8d8593}{gfxmath\+::\+M\+A\+S\+K\+\_\+0010} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_ad431727ef9389a0240a56b9fa2f99a14}{gofxmath\+::\+M\+A\+S\+K\+\_\+0010} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the z-\/coordinate position. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a509609b50e3dc6f09c54ef9d02f48f2c}{gfxmath\+::\+M\+A\+S\+K\+\_\+0001} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_afec549b0968ef5d9ea00d1eb2deda70b}{gofxmath\+::\+M\+A\+S\+K\+\_\+0001} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the w-\/coordinate position. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_aa0a06e585eb58938ab3952d53c917737}{gfxmath\+::\+M\+A\+S\+K\+\_\+1100} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_aa909e3bfeab0b420da664a23efb26895}{gofxmath\+::\+M\+A\+S\+K\+\_\+1100} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or y-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_aa01027212a31efde9054027b6a9c54de}{gfxmath\+::\+M\+A\+S\+K\+\_\+1010} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_ac0b117ecea85861132b3f5bb90629497}{gofxmath\+::\+M\+A\+S\+K\+\_\+1010} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or z-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a614228347cb24ffbda356c24735c1b3b}{gfxmath\+::\+M\+A\+S\+K\+\_\+1001} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_a689cc233b7fa8e315c8cc38f474677df}{gofxmath\+::\+M\+A\+S\+K\+\_\+1001} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a0a4b2297562ec2a6515260a20caca407}{gfxmath\+::\+M\+A\+S\+K\+\_\+0110} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_af23b97e8acce0ac2474bef3510e8dea3}{gofxmath\+::\+M\+A\+S\+K\+\_\+0110} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y or z-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_ab4dafd60d94026a9b0a4ff0593680a25}{gfxmath\+::\+M\+A\+S\+K\+\_\+0101} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_a64d1694904be595e301c48b51810b43d}{gofxmath\+::\+M\+A\+S\+K\+\_\+0101} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_ab0a1cad00f30a2a2967afd4076b70d14}{gfxmath\+::\+M\+A\+S\+K\+\_\+0011} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_ab4d2ad1ff23d4e35a2cb19a3be6dbe19}{gofxmath\+::\+M\+A\+S\+K\+\_\+0011} = Set\+Sse\+Vec\+Mask(0x0, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the z or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_af0b3d0d404066d8571a0a5b3ac58c76d}{gfxmath\+::\+M\+A\+S\+K\+\_\+0111} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_a26899473d5a93ecf33fbdeb7bf332890}{gofxmath\+::\+M\+A\+S\+K\+\_\+0111} = Set\+Sse\+Vec\+Mask(0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the y, z, or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_aacb5eed4ebafce721c4db8d6358854f6}{gfxmath\+::\+M\+A\+S\+K\+\_\+1011} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_a93d32bd94a23c12d1e647ec1d5e25303}{gofxmath\+::\+M\+A\+S\+K\+\_\+1011} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, z, or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a4116006bc68366e5d806a971fe6a3706}{gfxmath\+::\+M\+A\+S\+K\+\_\+1101} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
+const Sse\+Vec \hyperlink{namespacegofxmath_af1a1ed503168492328267f3064cde68d}{gofxmath\+::\+M\+A\+S\+K\+\_\+1101} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0, 0x\+F\+F\+F\+F\+F\+F\+F\+F)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, y, or w-\/coordinate positions. \end{DoxyCompactList}\item 
-const Sse\+Vec \hyperlink{namespacegfxmath_a9aed12c2814b84ca35d5d256596bf68e}{gfxmath\+::\+M\+A\+S\+K\+\_\+1110} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
+const Sse\+Vec \hyperlink{namespacegofxmath_a557ea8335b7d1d30471f67b1853b74c6}{gofxmath\+::\+M\+A\+S\+K\+\_\+1110} = Set\+Sse\+Vec\+Mask(0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x\+F\+F\+F\+F\+F\+F\+F\+F, 0x0)
 \begin{DoxyCompactList}\small\item\em Sse\+Vec mask that will match any bit in the x, y, or z-\/coordinate positions. \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a968d22c794bb9a46309737cb9a8112d2}{}const Sse\+Vec \hyperlink{namespacegfxmath_a968d22c794bb9a46309737cb9a8112d2}{gfxmath\+::\+S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+O\+N\+E} = Set\+Sse\+Vec4(1.\+0f)\label{namespacegfxmath_a968d22c794bb9a46309737cb9a8112d2}
+\hypertarget{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}{}const Sse\+Vec \hyperlink{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}{gofxmath\+::\+S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+O\+N\+E} = Set\+Sse\+Vec4(1.\+0f)\label{namespacegofxmath_a48e3accf6d256a116c69cc88c4c733b1}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$1.\+0f 1.\+0f 1.\+0f 1.\+0f$>$ \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a61d187e87e07e248aaebb359a772f815}{}const Sse\+Vec \hyperlink{namespacegfxmath_a61d187e87e07e248aaebb359a772f815}{gfxmath\+::\+E\+P\+S\+I\+L\+O\+N\+\_\+1111} = Set\+Sse\+Vec4(Epsilon())\label{namespacegfxmath_a61d187e87e07e248aaebb359a772f815}
+\hypertarget{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}{}const Sse\+Vec \hyperlink{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}{gofxmath\+::\+E\+P\+S\+I\+L\+O\+N\+\_\+1111} = Set\+Sse\+Vec4(Epsilon())\label{namespacegofxmath_ae3f018845f0d6aa6071757caea3246af}
 
 \begin{DoxyCompactList}\small\item\em Sse\+Vec of the form $<$\%\%\textbackslash{}epsilon \textbackslash{}epsilon \textbackslash{}epsilon \textbackslash{}epsilon\%\%$>$ where \%\%\textbackslash{}epsilon\%\% is the smallest value such that \%\%1.\+0f + \textbackslash{}epsilon \textbackslash{}not= 1.\+0f\%\%. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a9b39fe150660cfec6f39ea5c91e073b5}{gfxmath\+::\+Set\+Sse\+Vec2} (float x, float y)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_acfe1470c8903c33f2301785881213d6b}{gofxmath\+::\+Set\+Sse\+Vec2} (float x, float y)
 \begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 2-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a81678277edfb7788c4350f27c871f429}{gfxmath\+::\+Set\+Sse\+Vec3} (float x, float y, float z)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a9470bf18fa113d0d4696f64bdd17de52}{gofxmath\+::\+Set\+Sse\+Vec3} (float x, float y, float z)
 \begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 3-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a3b21a4362c6ac781c5f6ab922840ba77}{gfxmath\+::\+Set\+Sse\+Vec4} (float x, float y, float z, float w)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a5c69ea49b97ced58947fec384517442d}{gofxmath\+::\+Set\+Sse\+Vec4} (float x, float y, float z, float w)
 \begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a8ceb1c8310eb6cbeec062c9a2d73322e}{gfxmath\+::\+Set\+Sse\+Vec4} (float xyzw)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a4384f47a58c716aecdb418fe2af93c12}{gofxmath\+::\+Set\+Sse\+Vec4} (float xyzw)
 \begin{DoxyCompactList}\small\item\em Sets the Sse\+Vec to represent a 4-\/component vector, with the given floating point components. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_ae6fdce7b817a9d0caea6a71c5a377bbb}{gfxmath\+::\+Set\+Sse\+Vec\+Mask} (Mask\+Val x, Mask\+Val y, Mask\+Val z, Mask\+Val w)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a00fde6f7347c3610a9b6184079d6490e}{gofxmath\+::\+Set\+Sse\+Vec\+Mask} (Mask\+Val x, Mask\+Val y, Mask\+Val z, Mask\+Val w)
 \begin{DoxyCompactList}\small\item\em Creates a \char`\"{}masking\char`\"{} Sse\+Vec, using the bits from x, y, z, and w. \end{DoxyCompactList}\item 
-\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegfxmath_a6afdd3908c46c824484904fc028bac61}{gfxmath\+::\+Set1\+Sse\+Vec\+Mask} (Mask\+Val xyzw)
+\hyperlink{ssevec__math__defs_8h_a97454f977a5281455cecacce1e8ba670}{S\+S\+E\+\_\+\+V\+E\+C\+\_\+\+C\+A\+L\+L} \hyperlink{namespacegofxmath_a2f592b6bcc06fdfaa561ed3f33ca0ed2}{gofxmath\+::\+Set1\+Sse\+Vec\+Mask} (Mask\+Val xyzw)
 \begin{DoxyCompactList}\small\item\em Sets an Sse\+Vec mask with one value, placing said value into each of the four positions in the register. \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a32beb16d72f4724ce3e826acafa705d3}{}Sse\+Vec \hyperlink{namespacegfxmath_a32beb16d72f4724ce3e826acafa705d3}{gfxmath\+::\+Sin\+Coef\+Sse\+Vec} (int i)\label{namespacegfxmath_a32beb16d72f4724ce3e826acafa705d3}
+\hypertarget{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}{}Sse\+Vec \hyperlink{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}{gofxmath\+::\+Sin\+Coef\+Sse\+Vec} (int i)\label{namespacegofxmath_ab1875506d992bc0db715915d6fade98c}
 
 \begin{DoxyCompactList}\small\item\em First 16 taylor series sine approximation coefficients loaded into all four components of their respective Sse\+Vecs. \end{DoxyCompactList}\item 
-\hypertarget{namespacegfxmath_a6f2aeaccbda129941daa886e40980a92}{}Sse\+Vec \hyperlink{namespacegfxmath_a6f2aeaccbda129941daa886e40980a92}{gfxmath\+::\+Cos\+Coef\+Sse\+Vec} (int i)\label{namespacegfxmath_a6f2aeaccbda129941daa886e40980a92}
+\hypertarget{namespacegofxmath_a17160d92d915e28c97837f75754401d0}{}Sse\+Vec \hyperlink{namespacegofxmath_a17160d92d915e28c97837f75754401d0}{gofxmath\+::\+Cos\+Coef\+Sse\+Vec} (int i)\label{namespacegofxmath_a17160d92d915e28c97837f75754401d0}
 
 \begin{DoxyCompactList}\small\item\em First 16 taylor series cosine approximation coefficients loaded into all four components of their respective Sse\+Vecs. \end{DoxyCompactList}\end{DoxyCompactItemize}
 

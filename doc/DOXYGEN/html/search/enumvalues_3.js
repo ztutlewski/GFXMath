@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['medium',['MEDIUM',['../group___scalar_math_consts.html#ggae1c17f54b4cd35725ae7e4d54d5e8b8faae1748fe897ef72c65a32afb59edd9e9',1,'gfxmath']]],
-  ['medium_5fhigh',['MEDIUM_HIGH',['../group___scalar_math_consts.html#ggae1c17f54b4cd35725ae7e4d54d5e8b8faafc62be75ff50981d67b4fe3601020b3',1,'gfxmath']]],
-  ['medium_5flow',['MEDIUM_LOW',['../group___scalar_math_consts.html#ggae1c17f54b4cd35725ae7e4d54d5e8b8fab09c406decb8599d2aef4f9a60b7d46b',1,'gfxmath']]]
+  ['medium',['MEDIUM',['../group___scalar_math_consts.html#gga4b1c9ff152a66c5d35b4767a57782f63a01c38b422afce79a2ddb938cf9971b76',1,'gofxmath']]],
+  ['medium_5fhigh',['MEDIUM_HIGH',['../group___scalar_math_consts.html#gga4b1c9ff152a66c5d35b4767a57782f63a8a0bf373c4216f2f3fcc42b6e80f44c2',1,'gofxmath']]],
+  ['medium_5flow',['MEDIUM_LOW',['../group___scalar_math_consts.html#gga4b1c9ff152a66c5d35b4767a57782f63ad7e5e2d6d083857d80ec72cb9ff9df15',1,'gofxmath']]]
 ];

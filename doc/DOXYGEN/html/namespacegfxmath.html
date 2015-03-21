@@ -1,11 +1,10 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>GFXMath Docs</title>
+<title>%%(G \circ F)(\vec{X})%%: gfxmath Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,17 +24,10 @@ MathJax.Hub.Config(
 		displayAlign: "left", 
 		tex2jax: {inlineMath: [['%%','%%']]}
 	});
-MathJax.Hub.Queue(
-    function () {
-    var x = document.getElementsByTagName("body")[0];
-	x.style.visibility = "";
-    }
-  );
 </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="visibility:hidden">
+<body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -57,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -159,42 +152,49 @@ Enumerations</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ga6c8951c82aec5015dd6806affb4c8d03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6c8951c82aec5015dd6806affb4c8d03"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga6c8951c82aec5015dd6806affb4c8d03">MatrixType</a> { <b>IDENTITY</b> = 0x1, 
 <b>MISC</b> = 0x3, 
-<b>INVALID</b> = -1
+<b>INVALID</b> = 0xFFFFFFFF
  }</td></tr>
 <tr class="memdesc:ga6c8951c82aec5015dd6806affb4c8d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of matrix being used. <br /></td></tr>
 <tr class="separator:ga6c8951c82aec5015dd6806affb4c8d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafaec804c6b9d6173f5c1fc07ae7fda13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafaec804c6b9d6173f5c1fc07ae7fda13"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gafaec804c6b9d6173f5c1fc07ae7fda13">Epsilon</a> ()</td></tr>
-<tr class="memdesc:gafaec804c6b9d6173f5c1fc07ae7fda13"><td class="mdescLeft">&#160;</td><td class="mdescRight">%%\epsilon%% (epsilon) is the smallest single-precision floating point value such that %%1.0%f%% + \epsilon \not= 1.0%f <br /></td></tr>
-<tr class="separator:gafaec804c6b9d6173f5c1fc07ae7fda13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf3d71b863bc7ac057d0928590246578e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf3d71b863bc7ac057d0928590246578e"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gaf3d71b863bc7ac057d0928590246578e">Infinity</a> ()</td></tr>
-<tr class="memdesc:gaf3d71b863bc7ac057d0928590246578e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-precision floating point representation of %%\infty%%. <br /></td></tr>
-<tr class="separator:gaf3d71b863bc7ac057d0928590246578e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga992fb71755b0697662cf03672daf4b1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga992fb71755b0697662cf03672daf4b1f"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga992fb71755b0697662cf03672daf4b1f">FloatMax</a> ()</td></tr>
-<tr class="memdesc:ga992fb71755b0697662cf03672daf4b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum possible value for a single-precision floating point number such that the number is not %%\infty%%. <br /></td></tr>
-<tr class="separator:ga992fb71755b0697662cf03672daf4b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84de592aedd66fb57593a14b25555f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga84de592aedd66fb57593a14b25555f2f"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga84de592aedd66fb57593a14b25555f2f">SinCoef</a> (int i)</td></tr>
-<tr class="memdesc:ga84de592aedd66fb57593a14b25555f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (i+1)th coefficient for the taylor approximation of sine. <br /></td></tr>
-<tr class="separator:ga84de592aedd66fb57593a14b25555f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa3c80693c5730cf478e5d98f73e6a72c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa3c80693c5730cf478e5d98f73e6a72c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gaa3c80693c5730cf478e5d98f73e6a72c">CosCoef</a> (int i)</td></tr>
-<tr class="memdesc:gaa3c80693c5730cf478e5d98f73e6a72c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The (i+1)th coefficient for the taylor approximation of cosine. <br /></td></tr>
-<tr class="separator:gaa3c80693c5730cf478e5d98f73e6a72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b99abd3f4b8efa174dfb553c47801f7"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionVal&gt; </td></tr>
-<tr class="memitem:ga7b99abd3f4b8efa174dfb553c47801f7"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga7b99abd3f4b8efa174dfb553c47801f7">FloatPrecisionValue</a> ()</td></tr>
-<tr class="memdesc:ga7b99abd3f4b8efa174dfb553c47801f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ith single-precision floating point precision limit used for checking approximate equality of two single-precision floating point values.  <a href="group___scalar_math_consts.html#ga7b99abd3f4b8efa174dfb553c47801f7">More...</a><br /></td></tr>
-<tr class="separator:ga7b99abd3f4b8efa174dfb553c47801f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga762c25f568696ef816d06c6084820049"><td class="memTemplParams" colspan="2"><a class="anchor" id="ga762c25f568696ef816d06c6084820049"></a>
-template&lt;FloatPrecision precisionVal&gt; </td></tr>
-<tr class="memitem:ga762c25f568696ef816d06c6084820049"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga762c25f568696ef816d06c6084820049">TrigPrecisionValue</a> ()</td></tr>
-<tr class="memdesc:ga762c25f568696ef816d06c6084820049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ith trig function precision value used to determine how many iterations of a taylor approximation are needed to reach a given accuracy standard. <br /></td></tr>
-<tr class="separator:ga762c25f568696ef816d06c6084820049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4439d3f4590c372ada775196d1576f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a4439d3f4590c372ada775196d1576f81">MatrixMultiply</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;first, const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;second)</td></tr>
+<tr class="memdesc:a4439d3f4590c372ada775196d1576f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the product (post-multiplication) of the two given 4x4 matrices.  <a href="#a4439d3f4590c372ada775196d1576f81">More...</a><br /></td></tr>
+<tr class="separator:a4439d3f4590c372ada775196d1576f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given 4x4 matrix.  <a href="#a285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
+<tr class="separator:a285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c661c8ad19528520d36fabca7d555f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a38c661c8ad19528520d36fabca7d555f">MatrixInverse</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a38c661c8ad19528520d36fabca7d555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the given 4x4 matrix.  <a href="#a38c661c8ad19528520d36fabca7d555f">More...</a><br /></td></tr>
+<tr class="separator:a38c661c8ad19528520d36fabca7d555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626e52b58fb763a90ba6e9d46966ee75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a626e52b58fb763a90ba6e9d46966ee75">MatrixTranspose</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
+<tr class="memdesc:a626e52b58fb763a90ba6e9d46966ee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transpose of the given 4x4 matrix.  <a href="#a626e52b58fb763a90ba6e9d46966ee75">More...</a><br /></td></tr>
+<tr class="separator:a626e52b58fb763a90ba6e9d46966ee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7198c521a4d93e82694f39f0be736c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ad7198c521a4d93e82694f39f0be736c9">RotationMatrixFromQuaternion</a> (const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;quat)</td></tr>
+<tr class="memdesc:ad7198c521a4d93e82694f39f0be736c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given quaternion rotation.  <a href="#ad7198c521a4d93e82694f39f0be736c9">More...</a><br /></td></tr>
+<tr class="separator:ad7198c521a4d93e82694f39f0be736c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206e53fa5ea77b54765946af3d04ca0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a206e53fa5ea77b54765946af3d04ca0e">RotationMatrixFromEuler</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;angles)</td></tr>
+<tr class="memdesc:a206e53fa5ea77b54765946af3d04ca0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given euler angle rotation.  <a href="#a206e53fa5ea77b54765946af3d04ca0e">More...</a><br /></td></tr>
+<tr class="separator:a206e53fa5ea77b54765946af3d04ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a2d82d58bdc14d1f1644b05a7419ea05e">TranslationMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 translation matrix represented by the given 3D position vector.  <a href="#a2d82d58bdc14d1f1644b05a7419ea05e">More...</a><br /></td></tr>
+<tr class="separator:a2d82d58bdc14d1f1644b05a7419ea05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec877a1635b6a682a15195b47e1f21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a8ec877a1635b6a682a15195b47e1f21d">ScaleMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a8ec877a1635b6a682a15195b47e1f21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 scale matrix represented by the given 3D scale vector.  <a href="#a8ec877a1635b6a682a15195b47e1f21d">More...</a><br /></td></tr>
+<tr class="separator:a8ec877a1635b6a682a15195b47e1f21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa599fb24b0a8ce16acf8092ee29478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a8aa599fb24b0a8ce16acf8092ee29478">PerspectiveProjectionMatrix</a> (float near, float far, float fov, float aspect, <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;result)</td></tr>
+<tr class="memdesc:a8aa599fb24b0a8ce16acf8092ee29478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the right-handed perspective projection matrix.  <a href="#a8aa599fb24b0a8ce16acf8092ee29478">More...</a><br /></td></tr>
+<tr class="separator:a8aa599fb24b0a8ce16acf8092ee29478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0cf66e3877d2be1e104bbacec0c917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a1d0cf66e3877d2be1e104bbacec0c917">LookDir</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;dir, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
+<tr class="memdesc:a1d0cf66e3877d2be1e104bbacec0c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the view matrix given the forward direction vector, rather than a target position.  <a href="#a1d0cf66e3877d2be1e104bbacec0c917">More...</a><br /></td></tr>
+<tr class="separator:a1d0cf66e3877d2be1e104bbacec0c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ac420c9cd578ebe0b21c9db7757bc4c2d">LookAt</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;target, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
+<tr class="memdesc:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector.  <a href="#ac420c9cd578ebe0b21c9db7757bc4c2d">More...</a><br /></td></tr>
+<tr class="separator:ac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503b30792d41234b29089176be81cf6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a503b30792d41234b29089176be81cf6c">TransformVec3</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
+<tr class="memdesc:a503b30792d41234b29089176be81cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the given 3D vector.  <a href="#a503b30792d41234b29089176be81cf6c">More...</a><br /></td></tr>
+<tr class="separator:a503b30792d41234b29089176be81cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">NormalizeAngle</a> (float angle)</td></tr>
 <tr class="memdesc:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize the angle to the range of [-PI,PI).  <a href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">More...</a><br /></td></tr>
 <tr class="separator:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,43 +236,6 @@ template&lt;FloatPrecision precisionVal&gt; </td></tr>
 <tr class="memitem:ga29ffc432e0aaaa5201bfca15247fa648"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">IsInfinity</a> (float val)</td></tr>
 <tr class="memdesc:ga29ffc432e0aaaa5201bfca15247fa648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given float value is positive or negative infinity.  <a href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">More...</a><br /></td></tr>
 <tr class="separator:ga29ffc432e0aaaa5201bfca15247fa648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ga4439d3f4590c372ada775196d1576f81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga4439d3f4590c372ada775196d1576f81">MatrixMultiply</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;first, const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;second)</td></tr>
-<tr class="memdesc:ga4439d3f4590c372ada775196d1576f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the product (post-multiplication) of the two given 4x4 matrices.  <a href="group___s_i_s_d_mat_math.html#ga4439d3f4590c372ada775196d1576f81">More...</a><br /></td></tr>
-<tr class="separator:ga4439d3f4590c372ada775196d1576f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga285829d964b38ad14730e85c325e775c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">MatrixDeterminant</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga285829d964b38ad14730e85c325e775c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the determinant of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga285829d964b38ad14730e85c325e775c">More...</a><br /></td></tr>
-<tr class="separator:ga285829d964b38ad14730e85c325e775c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38c661c8ad19528520d36fabca7d555f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga38c661c8ad19528520d36fabca7d555f">MatrixInverse</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga38c661c8ad19528520d36fabca7d555f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the inverse of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga38c661c8ad19528520d36fabca7d555f">More...</a><br /></td></tr>
-<tr class="separator:ga38c661c8ad19528520d36fabca7d555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga626e52b58fb763a90ba6e9d46966ee75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga626e52b58fb763a90ba6e9d46966ee75">MatrixTranspose</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat)</td></tr>
-<tr class="memdesc:ga626e52b58fb763a90ba6e9d46966ee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the transpose of the given 4x4 matrix.  <a href="group___s_i_s_d_mat_math.html#ga626e52b58fb763a90ba6e9d46966ee75">More...</a><br /></td></tr>
-<tr class="separator:ga626e52b58fb763a90ba6e9d46966ee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7198c521a4d93e82694f39f0be736c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#gad7198c521a4d93e82694f39f0be736c9">RotationMatrixFromQuaternion</a> (const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;quat)</td></tr>
-<tr class="memdesc:gad7198c521a4d93e82694f39f0be736c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given quaternion rotation.  <a href="group___s_i_s_d_mat_math.html#gad7198c521a4d93e82694f39f0be736c9">More...</a><br /></td></tr>
-<tr class="separator:gad7198c521a4d93e82694f39f0be736c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga206e53fa5ea77b54765946af3d04ca0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga206e53fa5ea77b54765946af3d04ca0e">RotationMatrixFromEuler</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;angles)</td></tr>
-<tr class="memdesc:ga206e53fa5ea77b54765946af3d04ca0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 rotation matrix represented by the given euler angle rotation.  <a href="group___s_i_s_d_mat_math.html#ga206e53fa5ea77b54765946af3d04ca0e">More...</a><br /></td></tr>
-<tr class="separator:ga206e53fa5ea77b54765946af3d04ca0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga2d82d58bdc14d1f1644b05a7419ea05e">TranslationMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 translation matrix represented by the given 3D position vector.  <a href="group___s_i_s_d_mat_math.html#ga2d82d58bdc14d1f1644b05a7419ea05e">More...</a><br /></td></tr>
-<tr class="separator:ga2d82d58bdc14d1f1644b05a7419ea05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ec877a1635b6a682a15195b47e1f21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga8ec877a1635b6a682a15195b47e1f21d">ScaleMatrixFromVec3</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga8ec877a1635b6a682a15195b47e1f21d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the 4x4 scale matrix represented by the given 3D scale vector.  <a href="group___s_i_s_d_mat_math.html#ga8ec877a1635b6a682a15195b47e1f21d">More...</a><br /></td></tr>
-<tr class="separator:ga8ec877a1635b6a682a15195b47e1f21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478">PerspectiveProjectionMatrix</a> (float near, float far, float fov, float aspect, <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;result)</td></tr>
-<tr class="memdesc:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the right-handed perspective projection matrix.  <a href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478">More...</a><br /></td></tr>
-<tr class="separator:ga8aa599fb24b0a8ce16acf8092ee29478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga1d0cf66e3877d2be1e104bbacec0c917">LookDir</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;dir, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
-<tr class="memdesc:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the view matrix given the forward direction vector, rather than a target position.  <a href="group___s_i_s_d_mat_math.html#ga1d0cf66e3877d2be1e104bbacec0c917">More...</a><br /></td></tr>
-<tr class="separator:ga1d0cf66e3877d2be1e104bbacec0c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#gac420c9cd578ebe0b21c9db7757bc4c2d">LookAt</a> (const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;eye, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;target, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;up)</td></tr>
-<tr class="memdesc:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector.  <a href="group___s_i_s_d_mat_math.html#gac420c9cd578ebe0b21c9db7757bc4c2d">More...</a><br /></td></tr>
-<tr class="separator:gac420c9cd578ebe0b21c9db7757bc4c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga503b30792d41234b29089176be81cf6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_mat_math.html#ga503b30792d41234b29089176be81cf6c">TransformVec3</a> (const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;mat, const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;vec)</td></tr>
-<tr class="memdesc:ga503b30792d41234b29089176be81cf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the given 3D vector.  <a href="group___s_i_s_d_mat_math.html#ga503b30792d41234b29089176be81cf6c">More...</a><br /></td></tr>
-<tr class="separator:ga503b30792d41234b29089176be81cf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a5f87ab4eb6093d145cda3e6772c6bc0a"><td class="memItemLeft" align="right" valign="top">std::array&lt; float, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a5f87ab4eb6093d145cda3e6772c6bc0a">MatrixToArray</a> (const <a class="el" href="classgfxmath_1_1_sse_mat44.html">SseMat44</a> &amp;mat)</td></tr>
 <tr class="memdesc:a5f87ab4eb6093d145cda3e6772c6bc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the given 4x4 matrix to an array of floats.  <a href="#a5f87ab4eb6093d145cda3e6772c6bc0a">More...</a><br /></td></tr>
@@ -730,6 +693,17 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga1e7def1903a3d92805ba4ed841ee1bbf">F_SQRT3</a> = 1.7320508075688772935274463415059f</td></tr>
 <tr class="memdesc:ga1e7def1903a3d92805ba4ed841ee1bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">%%\sqrt{3}%% <br /></td></tr>
 <tr class="separator:ga1e7def1903a3d92805ba4ed841ee1bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4b8aaaeaf14dfc8a07938655564fcf7"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gaa4b8aaaeaf14dfc8a07938655564fcf7">F_INFINITY</a></td></tr>
+<tr class="memdesc:gaa4b8aaaeaf14dfc8a07938655564fcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single precision floating-point %%\infty%%.  <a href="group___scalar_math_consts.html#gaa4b8aaaeaf14dfc8a07938655564fcf7">More...</a><br /></td></tr>
+<tr class="separator:gaa4b8aaaeaf14dfc8a07938655564fcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac554360386eb65fd9657715e0b12d7d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac554360386eb65fd9657715e0b12d7d7"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gac554360386eb65fd9657715e0b12d7d7">F_EPSILON</a></td></tr>
+<tr class="memdesc:gac554360386eb65fd9657715e0b12d7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">%%\epsilon%% (epsilon) is the smallest single-precision floating point value such that %%1.0%f%% + \epsilon \not= 1.0%f <br /></td></tr>
+<tr class="separator:gac554360386eb65fd9657715e0b12d7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dea70f1a79ea8a5421e1325ef785d20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0dea70f1a79ea8a5421e1325ef785d20"></a>
+const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga0dea70f1a79ea8a5421e1325ef785d20">F_MAX</a></td></tr>
+<tr class="memdesc:ga0dea70f1a79ea8a5421e1325ef785d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The largest value that a single-precision floating point number can have. <br /></td></tr>
+<tr class="separator:ga0dea70f1a79ea8a5421e1325ef785d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2489c06f986e5af29bfb5c2eaca185f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="group___scalar_math_consts.html#gad991473bd51363f9743013730e68751a">MaskVal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gad2489c06f986e5af29bfb5c2eaca185f">F_SIGN_BIT</a> = 0x80000000</td></tr>
 <tr class="memdesc:gad2489c06f986e5af29bfb5c2eaca185f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask for the sign bit for standard floating point numbers.  <a href="group___scalar_math_consts.html#gad2489c06f986e5af29bfb5c2eaca185f">More...</a><br /></td></tr>
 <tr class="separator:gad2489c06f986e5af29bfb5c2eaca185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -740,17 +714,25 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga2b78b41d32d14485b997dada705037bb">NUM_PRECISION_VALS</a> = 5</td></tr>
 <tr class="memdesc:ga2b78b41d32d14485b997dada705037bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of precision values. <br /></td></tr>
 <tr class="separator:ga2b78b41d32d14485b997dada705037bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac97be114298a04e9db7f993085667b00"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00">SinCosFlag</a> { <a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00ac25dc94e5f333f4dc6ead2b93687bfcc">SIN</a> = 0, 
-<a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00a46197a43f8fe8efbdae8c2670975d2e7">COS</a> = 1
- }</td></tr>
-<tr class="memdesc:ac97be114298a04e9db7f993085667b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent sine cosine flags.  <a href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00">More...</a><br /></td></tr>
-<tr class="separator:ac97be114298a04e9db7f993085667b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac03f836d004dbed0f2219c54b8e63e3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3d">BlendOrder</a> { <a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da48d2a91c97bb0e96285fd218fbd098f5">LEFT</a> = 0, 
-<a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da28dcb685e33dd6cc73f168dbf003894e">RIGHT</a> = 1, 
-<a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da631e9eab7013501bd492e4730e793d27">NO_ORDER</a> = 0
- }</td></tr>
-<tr class="memdesc:ac03f836d004dbed0f2219c54b8e63e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent blend orders.  <a href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3d">More...</a><br /></td></tr>
-<tr class="separator:ac03f836d004dbed0f2219c54b8e63e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9ed3a0307a3da747c8515d9719f28eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf9ed3a0307a3da747c8515d9719f28eb"></a>
+const std::array&lt; float, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a></td></tr>
+<tr class="memdesc:gaf9ed3a0307a3da747c8515d9719f28eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sine coefficients. <br /></td></tr>
+<tr class="separator:gaf9ed3a0307a3da747c8515d9719f28eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3cff608c650433d8c7a42212ba6296aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3cff608c650433d8c7a42212ba6296aa"></a>
+const std::array&lt; float, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a></td></tr>
+<tr class="memdesc:ga3cff608c650433d8c7a42212ba6296aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cosine coefficients. <br /></td></tr>
+<tr class="separator:ga3cff608c650433d8c7a42212ba6296aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90b12065e5a4a254047642c470a914e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga90b12065e5a4a254047642c470a914e2"></a>
+const std::array&lt; float, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga90b12065e5a4a254047642c470a914e2">TAN_COEFS</a></td></tr>
+<tr class="memdesc:ga90b12065e5a4a254047642c470a914e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tangent coefficients. <br /></td></tr>
+<tr class="separator:ga90b12065e5a4a254047642c470a914e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4aa0e398360c38bcc73d49870dde85f"><td class="memItemLeft" align="right" valign="top">const std::array&lt; float, <a class="el" href="group___scalar_math_consts.html#ga2b78b41d32d14485b997dada705037bb">NUM_PRECISION_VALS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#gaf4aa0e398360c38bcc73d49870dde85f">FLOAT_PRECISION_VALUES</a></td></tr>
+<tr class="memdesc:gaf4aa0e398360c38bcc73d49870dde85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The single-precision floating point precision limits used for checking approximate equality of two single-precision floating point values.  <a href="group___scalar_math_consts.html#gaf4aa0e398360c38bcc73d49870dde85f">More...</a><br /></td></tr>
+<tr class="separator:gaf4aa0e398360c38bcc73d49870dde85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09446c202c72b49275691023496fc480"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga09446c202c72b49275691023496fc480"></a>
+const std::array&lt; size_t, <a class="el" href="group___scalar_math_consts.html#ga2b78b41d32d14485b997dada705037bb">NUM_PRECISION_VALS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___scalar_math_consts.html#ga09446c202c72b49275691023496fc480">TRIG_PRECISION_VALUES</a></td></tr>
+<tr class="memdesc:ga09446c202c72b49275691023496fc480"><td class="mdescLeft">&#160;</td><td class="mdescRight">The trig precision values. <br /></td></tr>
+<tr class="separator:ga09446c202c72b49275691023496fc480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8930e63e96e91796ede30a8378b19d0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0b">VecCoord</a> { <br />
 &#160;&#160;<a class="el" href="namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0bad0d09e689002558ad9843a534c0be86e">X</a> = 0, 
 <a class="el" href="namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0badd0e5340138dca954913bc9378f1c228">Y</a> = 1, 
@@ -762,6 +744,17 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
  }</td></tr>
 <tr class="memdesc:a8930e63e96e91796ede30a8378b19d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent vector coordinates.  <a href="namespacegfxmath.html#a8930e63e96e91796ede30a8378b19d0b">More...</a><br /></td></tr>
 <tr class="separator:a8930e63e96e91796ede30a8378b19d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97be114298a04e9db7f993085667b00"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00">SinCosFlag</a> { <a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00ac25dc94e5f333f4dc6ead2b93687bfcc">SIN</a> = 0, 
+<a class="el" href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00a46197a43f8fe8efbdae8c2670975d2e7">COS</a> = 1
+ }</td></tr>
+<tr class="memdesc:ac97be114298a04e9db7f993085667b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent sine cosine flags.  <a href="namespacegfxmath.html#ac97be114298a04e9db7f993085667b00">More...</a><br /></td></tr>
+<tr class="separator:ac97be114298a04e9db7f993085667b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03f836d004dbed0f2219c54b8e63e3d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3d">BlendOrder</a> { <a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da48d2a91c97bb0e96285fd218fbd098f5">LEFT</a> = 0, 
+<a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da28dcb685e33dd6cc73f168dbf003894e">RIGHT</a> = 1, 
+<a class="el" href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3da631e9eab7013501bd492e4730e793d27">NO_ORDER</a> = 0
+ }</td></tr>
+<tr class="memdesc:ac03f836d004dbed0f2219c54b8e63e3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values that represent blend orders.  <a href="namespacegfxmath.html#ac03f836d004dbed0f2219c54b8e63e3d">More...</a><br /></td></tr>
+<tr class="separator:ac03f836d004dbed0f2219c54b8e63e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de2243e2b8d0fd46d3af5e036423004"><td class="memItemLeft" align="right" valign="top">typedef __m128&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a></td></tr>
 <tr class="memdesc:a0de2243e2b8d0fd46d3af5e036423004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an alias representing the SseVec.  <a href="#a0de2243e2b8d0fd46d3af5e036423004">More...</a><br /></td></tr>
 <tr class="separator:a0de2243e2b8d0fd46d3af5e036423004"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -852,9 +845,15 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 <tr class="memdesc:a968d22c794bb9a46309737cb9a8112d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SseVec of the form &lt;1.0f 1.0f 1.0f 1.0f&gt; <br /></td></tr>
 <tr class="separator:a968d22c794bb9a46309737cb9a8112d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d187e87e07e248aaebb359a772f815"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61d187e87e07e248aaebb359a772f815"></a>
-const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a61d187e87e07e248aaebb359a772f815">EPSILON_1111</a> = <a class="el" href="namespacegfxmath.html#a3b21a4362c6ac781c5f6ab922840ba77">SetSseVec4</a>(<a class="el" href="group___scalar_math_consts.html#gafaec804c6b9d6173f5c1fc07ae7fda13">Epsilon</a>())</td></tr>
+const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a61d187e87e07e248aaebb359a772f815">EPSILON_1111</a> = <a class="el" href="namespacegfxmath.html#a3b21a4362c6ac781c5f6ab922840ba77">SetSseVec4</a>(<a class="el" href="group___scalar_math_consts.html#gac554360386eb65fd9657715e0b12d7d7">F_EPSILON</a>)</td></tr>
 <tr class="memdesc:a61d187e87e07e248aaebb359a772f815"><td class="mdescLeft">&#160;</td><td class="mdescRight">SseVec of the form &lt;%%\epsilon \epsilon \epsilon \epsilon%%&gt; where %%\epsilon%% is the smallest value such that %%1.0f + \epsilon \not= 1.0f%%. <br /></td></tr>
 <tr class="separator:a61d187e87e07e248aaebb359a772f815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3438c32cb667015ef36e073223840f2a"><td class="memItemLeft" align="right" valign="top">const std::array&lt; <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a3438c32cb667015ef36e073223840f2a">SIN_COEFFICIENT_SSEVECS</a></td></tr>
+<tr class="memdesc:a3438c32cb667015ef36e073223840f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">First 16 taylor series sine approximation coefficients loaded into all four components of their respective SseVecs.  <a href="#a3438c32cb667015ef36e073223840f2a">More...</a><br /></td></tr>
+<tr class="separator:a3438c32cb667015ef36e073223840f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499cf8b9541a276eff2bf16760eb3004"><td class="memItemLeft" align="right" valign="top">const std::array&lt; <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a499cf8b9541a276eff2bf16760eb3004">COS_COEFFICIENT_SSEVECS</a></td></tr>
+<tr class="memdesc:a499cf8b9541a276eff2bf16760eb3004"><td class="mdescLeft">&#160;</td><td class="mdescRight">First 16 taylor series cosine approximation coefficients loaded into all four components of their respective SseVecs.  <a href="#a499cf8b9541a276eff2bf16760eb3004">More...</a><br /></td></tr>
+<tr class="separator:a499cf8b9541a276eff2bf16760eb3004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b39fe150660cfec6f39ea5c91e073b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ssevec__math__defs_8h.html#a97454f977a5281455cecacce1e8ba670">SSE_VEC_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a9b39fe150660cfec6f39ea5c91e073b5">SetSseVec2</a> (float x, float y)</td></tr>
 <tr class="memdesc:a9b39fe150660cfec6f39ea5c91e073b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SseVec to represent a 2-component vector, with the given floating point components.  <a href="#a9b39fe150660cfec6f39ea5c91e073b5">More...</a><br /></td></tr>
 <tr class="separator:a9b39fe150660cfec6f39ea5c91e073b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -873,14 +872,6 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 <tr class="memitem:a6afdd3908c46c824484904fc028bac61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ssevec__math__defs_8h.html#a97454f977a5281455cecacce1e8ba670">SSE_VEC_CALL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a6afdd3908c46c824484904fc028bac61">Set1SseVecMask</a> (<a class="el" href="group___scalar_math_consts.html#gad991473bd51363f9743013730e68751a">MaskVal</a> xyzw)</td></tr>
 <tr class="memdesc:a6afdd3908c46c824484904fc028bac61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an SseVec mask with one value, placing said value into each of the four positions in the register.  <a href="#a6afdd3908c46c824484904fc028bac61">More...</a><br /></td></tr>
 <tr class="separator:a6afdd3908c46c824484904fc028bac61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32beb16d72f4724ce3e826acafa705d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32beb16d72f4724ce3e826acafa705d3"></a>
-<a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a32beb16d72f4724ce3e826acafa705d3">SinCoefSseVec</a> (int i)</td></tr>
-<tr class="memdesc:a32beb16d72f4724ce3e826acafa705d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">First 16 taylor series sine approximation coefficients loaded into all four components of their respective SseVecs. <br /></td></tr>
-<tr class="separator:a32beb16d72f4724ce3e826acafa705d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f2aeaccbda129941daa886e40980a92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f2aeaccbda129941daa886e40980a92"></a>
-<a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegfxmath.html#a6f2aeaccbda129941daa886e40980a92">CosCoefSseVec</a> (int i)</td></tr>
-<tr class="memdesc:a6f2aeaccbda129941daa886e40980a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">First 16 taylor series cosine approximation coefficients loaded into all four components of their respective SseVecs. <br /></td></tr>
-<tr class="separator:a6f2aeaccbda129941daa886e40980a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>G of F of X math namespace. </p>
@@ -924,26 +915,26 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ac03f836d004dbed0f2219c54b8e63e3da631e9eab7013501bd492e4730e793d27"></a>NO_ORDER&#160;</td><td class="fielddoc">
 <p>The NO_ORDER option. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This represents a coordinate we "don't care about." <pre class="fragment">           When blending, much like when swizzling or shuffling, there may be times when you must blend in
-           more values than you need, or values that you don't need in certain positions.  Sometimes this is
-           because the values that are needed for those positions are not available in the source vector.
+<dl class="section remark"><dt>Remarks</dt><dd>This represents a coordinate we "don't care about." <pre class="fragment">          When blending, much like when swizzling or shuffling, there may be times when you must blend in
+          more values than you need, or values that you don't need in certain positions.  Sometimes this is
+          because the values that are needed for those positions are not available in the source vector.
 
-           For example, when loading a 3D vector, the final (fourth) value should (ideally) be &lt;B&gt;1.0f&lt;/B&gt;,
-           yielding a vector layout that looks like &lt;CODE&gt;&amp;lt;x y z 1.0f&amp;gt;&lt;/CODE&gt;.
-           This is largely for the sake of mathematical completeness, and to prevent errors during other calculations.
+          For example, when loading a 3D vector, the final (fourth) value should (ideally) be &lt;B&gt;1.0f&lt;/B&gt;,
+          yielding a vector layout that looks like &lt;CODE&gt;&amp;lt;x y z 1.0f&amp;gt;&lt;/CODE&gt;.
+          This is largely for the sake of mathematical completeness, and to prevent errors during other calculations.
 
-           It is likely more convenient for other calculations, and for readability, to simply ignore what
-           values are pushed into the fourth position of the vector until the end of the calculations, at
-           which time one might use a VecBlend call or a similar method to force a value of 1.0f in that
-           space.
+          It is likely more convenient for other calculations, and for readability, to simply ignore what
+          values are pushed into the fourth position of the vector until the end of the calculations, at
+          which time one might use a VecBlend call or a similar method to force a value of 1.0f in that
+          space.
 
-           The NO_ORDER value is designated for any such situations where the value in the given SseVec position
-           is not important to the calculations, and is &lt;EM&gt;purely&lt;/EM&gt; intended to be used for purposes of
-           readability.
+          The NO_ORDER value is designated for any such situations where the value in the given SseVec position
+          is not important to the calculations, and is &lt;EM&gt;purely&lt;/EM&gt; intended to be used for purposes of
+          readability.
 
-           &lt;B&gt;Note:&lt;/B&gt; It is &lt;EM&gt;strongly&lt;/EM&gt; discouraged that one use the NO_ORDER for its numerical value during calculations,
-           as its use implies that the numerical value of the index in that position, as well as the value the index points
-           to, &lt;B&gt;do not matter to the calculations&lt;/B&gt;.</pre> </dd></dl>
+          &lt;B&gt;Note:&lt;/B&gt; It is &lt;EM&gt;strongly&lt;/EM&gt; discouraged that one use the NO_ORDER for its numerical value during calculations,
+          as its use implies that the numerical value of the index in that position, as well as the value the index points 
+          to, &lt;B&gt;do not matter to the calculations&lt;/B&gt;.</pre> </dd></dl>
 </td></tr>
 </table>
 
@@ -1024,6 +1015,50 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ac420c9cd578ebe0b21c9db7757bc4c2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> LookAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>eye</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the standard lookat matrix for the camera, given the camera's position, the target's position, and a given "up" vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eye</td><td>The position of the camera, in world space. </td></tr>
+    <tr><td class="paramname">target</td><td>The position of the target that the camera is facing. </td></tr>
+    <tr><td class="paramname">up</td><td>The camera's relative "up" direction - should always be &lt;0 1 0&gt; unless the camera has a roll/bank rotation that isn't 0, or the camera has its pitch value at %%\pm\frac{\pi}{2}%% radians (\pm %%90^{\circ}%%%).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated view matrix. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abc7554e34178f4e36a906a12ea469c64"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1060,6 +1095,50 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
   <table class="params">
     <tr><td class="paramname">eye</td><td>The position of the camera, in world space. </td></tr>
     <tr><td class="paramname">target</td><td>The position of the target that the camera is facing. </td></tr>
+    <tr><td class="paramname">up</td><td>The camera's relative "up" direction - should always be &lt;0 1 0&gt; unless the camera has a roll/bank rotation that isn't 0, or the camera has its pitch value at %%\pm\frac{\pi}{2}%% radians (\pm %%90^{\circ}%%%).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated view matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d0cf66e3877d2be1e104bbacec0c917"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> LookDir </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>eye</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>up</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the view matrix given the forward direction vector, rather than a target position. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eye</td><td>The position of the camera, in world space. </td></tr>
+    <tr><td class="paramname">dir</td><td>The direction the camera is facing. </td></tr>
     <tr><td class="paramname">up</td><td>The camera's relative "up" direction - should always be &lt;0 1 0&gt; unless the camera has a roll/bank rotation that isn't 0, or the camera has its pitch value at %%\pm\frac{\pi}{2}%% radians (\pm %%90^{\circ}%%%).</td></tr>
   </table>
   </dd>
@@ -1112,6 +1191,41 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a285829d964b38ad14730e85c325e775c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MatrixDeterminant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the determinant of the given 4x4 matrix. </p>
+<p>Calculates the determinant of the given <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>.</p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to find the determinant of.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A float.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix for which to calculate the determinant.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the determinant of the given matrix. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a6709364ddedc83299a1d6a58607a87aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1146,6 +1260,32 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a38c661c8ad19528520d36fabca7d555f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixInverse </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the inverse of the given 4x4 matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to invert.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the given matrix. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7d63a634b20c220ad6047dc4633bf70f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1169,6 +1309,43 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The inverse of the given matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4439d3f4590c372ada775196d1576f81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixMultiply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the product (post-multiplication) of the two given 4x4 matrices. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>The left matrix. </td></tr>
+    <tr><td class="paramname">second</td><td>The right matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The post-multiplied product of the two matrices. </dd></dl>
 
 </div>
 </div>
@@ -1243,6 +1420,32 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a626e52b58fb763a90ba6e9d46966ee75"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> MatrixTranspose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the transpose of the given 4x4 matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix to transpose.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transpose matrix of the given matrix. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8c2545c52a86496bdf8917a1158f6f24"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1266,6 +1469,73 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The transpose matrix of the given matrix. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8aa599fb24b0a8ce16acf8092ee29478"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PerspectiveProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>near</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>far</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fov</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>aspect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the right-handed perspective projection matrix. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">near</td><td>The distance to the near clip plane. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">far</td><td>The distance to the far clip plane. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">fov</td><td>The vertical field of view angle. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">aspect</td><td>The aspect ratio (width / height). </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">result</td><td>The result matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This form of the perspective projection matrix takes on the following format:</dd></dl>
+<p class="formulaDsp">
+\[ P_{m,n} = \begin{pmatrix} \cot(\theta) &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cot(\theta) * a &amp; -f/(f-n) &amp; -1 \\ 0 &amp; 0 &amp; -fn/(f-n) &amp; 0 \end{pmatrix} \]
+</p>
+<p>Where:</p><ul>
+<li>\(\theta\) is the fov (field of view) angle.</li>
+<li>\(f\) is the distance to the far clipping plane.</li>
+<li>\(n\) is the distance to the near clipping plane.</li>
+<li>\(a\) is the aspect ratio of the viewport. </li>
+</ul>
 
 </div>
 </div>
@@ -1328,8 +1598,34 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 <li>\(a\) is the aspect ratio of the viewport.</li>
 </ul>
 <p>This is the <a class="el" href="classgfxmath_1_1_sse_mat44.html" title="A 4x4 column-major matrix that uses four SseVecs for column vectors. ">SseMat44</a> equivalent of the <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a> version of this function:<br />
- <a class="el" href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478" title="Calculates the right-handed perspective projection matrix. ">PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44&amp; result)</a></p>
-<dl class="section see"><dt>See also</dt><dd>void <a class="el" href="group___s_i_s_d_mat_math.html#ga8aa599fb24b0a8ce16acf8092ee29478" title="Calculates the right-handed perspective projection matrix. ">PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44&amp; result)</a> </dd></dl>
+ <a class="el" href="namespacegfxmath.html#a8aa599fb24b0a8ce16acf8092ee29478" title="Calculates the right-handed perspective projection matrix. ">PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44&amp; result)</a></p>
+<dl class="section see"><dt>See also</dt><dd>void <a class="el" href="namespacegfxmath.html#a8aa599fb24b0a8ce16acf8092ee29478" title="Calculates the right-handed perspective projection matrix. ">PerspectiveProjectionMatrix(float near, float far, float fov, float aspect, Mat44&amp; result)</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a206e53fa5ea77b54765946af3d04ca0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> RotationMatrixFromEuler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>angles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 rotation matrix represented by the given euler angle rotation. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angles</td><td>The euler angles to use for generating the 4x4 matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The 4x4 rotation matrix represented by the given euler angle rotation. </dd></dl>
 
 </div>
 </div>
@@ -1359,6 +1655,32 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="ad7198c521a4d93e82694f39f0be736c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> RotationMatrixFromQuaternion </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>quat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 rotation matrix represented by the given quaternion rotation. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">quat</td><td>The quaternion rotation to transform into a 4x4 matrix.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classgfxmath_1_1_mat44.html" title="4x4 Column Matrix. ">Mat44</a>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a786ee918eca59978387d6fce4dab5122"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1382,6 +1704,32 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classgfxmath_1_1_sse_mat44.html" title="A 4x4 column-major matrix that uses four SseVecs for column vectors. ">SseMat44</a> with values representing the rotation that was given by. the passed SseVec quaternion. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ec877a1635b6a682a15195b47e1f21d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> ScaleMatrixFromVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 scale matrix represented by the given 3D scale vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The given 3D scale vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scale matrix represented by the given 3D position vector. </dd></dl>
 
 </div>
 </div>
@@ -1656,6 +2004,43 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a503b30792d41234b29089176be81cf6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> TransformVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms the given 3D vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>The matrix that will be multiplied against the 3D vector. </td></tr>
+    <tr><td class="paramname">vec</td><td>The 3D vector to transform.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transformed 3D vector. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7f0f017f89ae1ba6cf642fba6ce8e4cd"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1701,6 +2086,32 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a2d82d58bdc14d1f1644b05a7419ea05e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgfxmath_1_1_mat44.html">Mat44</a> TranslationMatrixFromVec3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgfxmath_1_1_vec3.html">Vec3</a> &amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the 4x4 translation matrix represented by the given 3D position vector. </p>
+<dl class="section date"><dt>Date</dt><dd>2/21/2015</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The given 3D position vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The translation matrix represented by the given 3D position vector. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2b08e7c142f14df78883494d9c2f66e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1728,6 +2139,41 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a499cf8b9541a276eff2bf16760eb3004"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;<a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a>&gt; gfxmath::COS_COEFFICIENT_SSEVECS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= </div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[0]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[1]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[2]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[3]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[4]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[5]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[6]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[7]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[8]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[9]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[10]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[11]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[12]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[13]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[14]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">COS_COEFS</a>[15]), </div>
+<div class="line">    }</div>
+<div class="ttc" id="group___scalar_math_consts_html_ga3cff608c650433d8c7a42212ba6296aa"><div class="ttname"><a href="group___scalar_math_consts.html#ga3cff608c650433d8c7a42212ba6296aa">gfxmath::COS_COEFS</a></div><div class="ttdeci">const std::array&lt; float, NUM_TRIG_COEFS &gt; COS_COEFS</div><div class="ttdoc">The cosine coefficients. </div></div>
+<div class="ttc" id="namespacegfxmath_html_a8ceb1c8310eb6cbeec062c9a2d73322e"><div class="ttname"><a href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">gfxmath::SetSseVec4</a></div><div class="ttdeci">SSE_VEC_CALL SetSseVec4(float xyzw)</div><div class="ttdoc">Sets the SseVec to represent a 4-component vector, with the given floating point components. </div><div class="ttdef"><b>Definition:</b> ssevec_math_defs.h:141</div></div>
+</div><!-- fragment -->
+<p>First 16 taylor series cosine approximation coefficients loaded into all four components of their respective SseVecs. </p>
+
+</div>
+</div>
 <a class="anchor" id="a509609b50e3dc6f09c54ef9d02f48f2c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1938,11 +2384,45 @@ const <a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e03642300
 
 </div>
 </div>
+<a class="anchor" id="a3438c32cb667015ef36e073223840f2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::array&lt;<a class="el" href="namespacegfxmath.html#a0de2243e2b8d0fd46d3af5e036423004">SseVec</a>, <a class="el" href="group___scalar_math_consts.html#ga090f5a34fbed01148a6f72dc1abb00e9">NUM_TRIG_COEFS</a>&gt; gfxmath::SIN_COEFFICIENT_SSEVECS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= </div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[0]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[1]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[2]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[3]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[4]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[5]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[6]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[7]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[8]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[9]),  </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[10]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[11]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[12]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[13]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[14]), </div>
+<div class="line">        <a class="code" href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">SetSseVec4</a>(<a class="code" href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">SIN_COEFS</a>[15]), </div>
+<div class="line">    }</div>
+<div class="ttc" id="namespacegfxmath_html_a8ceb1c8310eb6cbeec062c9a2d73322e"><div class="ttname"><a href="namespacegfxmath.html#a8ceb1c8310eb6cbeec062c9a2d73322e">gfxmath::SetSseVec4</a></div><div class="ttdeci">SSE_VEC_CALL SetSseVec4(float xyzw)</div><div class="ttdoc">Sets the SseVec to represent a 4-component vector, with the given floating point components. </div><div class="ttdef"><b>Definition:</b> ssevec_math_defs.h:141</div></div>
+<div class="ttc" id="group___scalar_math_consts_html_gaf9ed3a0307a3da747c8515d9719f28eb"><div class="ttname"><a href="group___scalar_math_consts.html#gaf9ed3a0307a3da747c8515d9719f28eb">gfxmath::SIN_COEFS</a></div><div class="ttdeci">const std::array&lt; float, NUM_TRIG_COEFS &gt; SIN_COEFS</div><div class="ttdoc">The sine coefficients. </div></div>
+</div><!-- fragment -->
+<p>First 16 taylor series sine approximation coefficients loaded into all four components of their respective SseVecs. </p>
+
+</div>
+</div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 16:19:15 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 27 2015 08:03:47 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

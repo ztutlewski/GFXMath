@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gfxmath',['gfxmath',['../namespacegfxmath.html',1,'']]]
+  ['gofxmath',['gofxmath',['../namespacegofxmath.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['w',['w',['../classgfxmath_1_1_vec4.html#adf2769a47b464dfee8d04e191f21701e',1,'gfxmath::Vec4']]]
+  ['w',['w',['../classgofxmath_1_1_vec4.html#aeda815ed6e7a8febdffcdfa6cc8a2d04',1,'gofxmath::Vec4']]]
 ];

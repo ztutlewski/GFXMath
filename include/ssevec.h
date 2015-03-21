@@ -336,7 +336,7 @@ namespace gofxmath
 	 */
 	SSE_VEC_CALL LoadSseVec2(const Vec2& vec)
 	{
-		return _mm_load_ps(((Vec4)vec).vals);
+		return _mm_load_ps(vec.ToColVec().vals);
 	}
 
 	/*!
@@ -361,7 +361,7 @@ namespace gofxmath
 	 */
 	SSE_VEC_CALL LoadSseVec3(const Vec3& vec)
 	{
-		return _mm_load_ps(((Vec4)vec).vals);
+		return _mm_load_ps(vec.ToColVec().vals);
 	}
 
 	/*!
@@ -1369,34 +1369,36 @@ namespace gofxmath
 	 *
 	 * \return	The product unit quaternion of the two given unit quaternions.
 	 */
-	SSE_VEC_CALL QuaternionMultiply(const SseVec& quat0, const SseVec& quat1)
+	inline SseVec QuaternionMultiply(const SseVec& quat0, const SseVec& quat1)
 	{
 		SseVec tmp0, tmp1, tmp2, tmp3;
-		tmp0 = VecSplat<VecCoord::W>(quat0);
-		tmp0 = VecMul(tmp0, quat1);
 
-		tmp1 = VecSwizzle<VecCoord::X, VecCoord::Y, VecCoord::Z, VecCoord::X>(quat0);
+		//w0x1 + x0w1 + y0z1 - z0y1
+		//w0y1 + y0w1 + x0z1 - z0x1
+		//w0z1 + z0w1 + x0y1 - y0x1
+		//w0w1 - x0x1 - y0y1 - z0z1
 
-		tmp2 = VecSwizzle<VecCoord::W, VecCoord::W, VecCoord::W, VecCoord::X>(quat1);
-		tmp1 = VecMul(tmp1, tmp2);// xw yw zw xx
+		tmp0 = VecSplat<VecCoord::W>(quat0);// w0 w0 w0 w0
+		tmp0 = VecMul(tmp0, quat1);// w0x1 w0y1 w0z1 w0w1
 
-		tmp2 = VecSwizzle<VecCoord::Y, VecCoord::Z, VecCoord::X, VecCoord::Y>(quat0);
+		tmp1 = VecSwizzle<VecCoord::X, VecCoord::Y, VecCoord::Z, VecCoord::X>(quat0);// x0 y0 z0 x0
+		tmp2 = VecSwizzle<VecCoord::W, VecCoord::W, VecCoord::W, VecCoord::X>(quat1);// w1 w1 w1 x1
+		tmp1 = VecMul(tmp1, tmp2);// x0w1 y0w1 z0w1 x0x1
 
-		tmp3 = VecSwizzle<VecCoord::Z, VecCoord::X, VecCoord::Y, VecCoord::Y>(quat1);
-		tmp2 = VecMul(tmp2, tmp3);// yz xz xy yy
+		tmp2 = VecSwizzle<VecCoord::Y, VecCoord::X, VecCoord::X, VecCoord::Y>(quat0);// y0 x0 x0 y0
+		tmp3 = VecSwizzle<VecCoord::Z, VecCoord::Z, VecCoord::Y, VecCoord::Y>(quat1);// z1 z1 y1 y1
+		tmp2 = VecMul(tmp2, tmp3);// y0z1 x0z1 x0y1 y0y1
 
-		tmp1 = VecAdd(tmp1, tmp2);// (xw + yz) (yw + xz) (zw + xy) (xx + yy)
-		tmp1 = Vec4Negate<false, false, false, true>(tmp1);// (xw + yz) (yw + xz) (zw + xy) -(xx + yy) 
+		tmp1 = VecAdd(tmp1, tmp2);// (x0w1 + y0z1) (y0w1 + x0z1) (z0w1 + x0y1) (x0x1 + y0y1)
+		tmp1 = Vec4Negate<false, false, false, true>(tmp1);// (x0w1 + y0z1) (y0w1 + x0z1) (z0w1 + x0y1) -(x0x1 + y0y1)
 
-		tmp0 = VecAdd(tmp0, tmp1);
+		tmp0 = VecAdd(tmp0, tmp1);// (w0x1 + x0w1 + y0z1) (w0y1 + y0w1 + x0z1) (w0z1 + z0w1 + x0y1) (w0w1 - x0x1 - y0y1)
 
-		tmp1 = VecSwizzle<VecCoord::Z, VecCoord::X, VecCoord::Y, VecCoord::Z>(quat0);
+		tmp1 = VecSwizzle<VecCoord::Z, VecCoord::Z, VecCoord::Y, VecCoord::Z>(quat0);// z0 z0 y0 z0
+		tmp2 = VecSwizzle<VecCoord::Y, VecCoord::X, VecCoord::X, VecCoord::Z>(quat1);// y1 x1 x1 z1
+		tmp1 = VecMul(tmp1, tmp2);// z0y1 z0x1 y0x1 z0z1
 
-		tmp2 = VecSwizzle<VecCoord::Y, VecCoord::Z, VecCoord::X, VecCoord::Z>(quat1);
-		tmp1 = VecMul(tmp1, tmp2);
-		tmp1 = Vec4Negate(tmp1);
-
-		return VecAdd(tmp0, tmp1);
+		return VecSub(tmp0, tmp1);// (w0x1 + x0w1 + y0z1 - z0y1) (w0y1 + y0w1 + x0z1 - z0x1) (w0z1 + z0w1 + x0y1 - y0x1) (w0w1 - x0x1 - y0y1 - z0z1)
 	}
 
 	/*!
@@ -1527,24 +1529,43 @@ namespace gofxmath
 		tmp0 = VecMul(HALF, angles);// x/2 y/2 z/2 w/2
 		tmp1 = CosSseVec<precisionLevel>(tmp0);// cx cy cz cw
 		tmp0 = SinSseVec<precisionLevel>(tmp0);// sx sy sz sw
-		sinCosZW = VecShuffle<VecCoord::Z,VecCoord::W,VecCoord::Z,VecCoord::W>(tmp0, tmp1);// sz sw cz cw
-		sinCosXY = VecShuffle<VecCoord::X,VecCoord::Y,VecCoord::X,VecCoord::Y>(tmp0, tmp1);// sx sy cx cy
 
-		tmp0 = VecSwizzle<VecCoord::Z,VecCoord::Z,VecCoord::X,VecCoord::Z>(sinCosZW);// cz cz sz cz
-		tmp1 = VecSwizzle<VecCoord::W,VecCoord::Y,VecCoord::W,VecCoord::W>(sinCosXY);// cy sy cy cy
-		tmp2 = VecSwizzle<VecCoord::X,VecCoord::Z,VecCoord::Z,VecCoord::Z>(sinCosXY);// sx cx cx cx
+		tmp1 = VecSwizzle<VecCoord::NA, VecCoord::Z, VecCoord::Y, VecCoord::X>(tmp1);// na cz cy cx
+		tmp2 = VecBlend<BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::RIGHT>(tmp0, tmp1);// sx sy sz cx
 
-		tmp3 = VecSwizzle<VecCoord::X,VecCoord::X,VecCoord::Z,VecCoord::X>(sinCosZW);// sz sz cz sz
-		tmp4 = VecSwizzle<VecCoord::Y,VecCoord::W,VecCoord::Y,VecCoord::Y>(sinCosXY);// sy cy sy sy
-		tmp5 = VecSwizzle<VecCoord::Z,VecCoord::X,VecCoord::X,VecCoord::X>(sinCosXY);// cx sx sx sx
+		tmp1 = VecSwizzle<VecCoord::NA, VecCoord::Y, VecCoord::W, VecCoord::Z>(tmp1);// na cz cx cy
+		tmp3 = VecBlend<BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::RIGHT>(tmp0, tmp1);// sx sy sz cy
 
-		tmp0 = VecMul(tmp0, tmp1);// czcy czsy szcy czcy
-		tmp3 = VecMul(tmp3, tmp4);// szsy szcy czsy szsy
-		tmp0 = VecMul(tmp0, tmp2);// czcysx czsycx szcycx czcycx
-		tmp3 = VecMul(tmp3, tmp5);// szsycx szcysx czsysx szsysx
-		result = VecAddSub(tmp0, tmp3);// (czcysx-szsycx) (czsycx+szcysx) (szcycx-czsysx) (czcycx+szsysx)
+		tmp1 = VecSwizzle<VecCoord::NA, VecCoord::Z, VecCoord::W, VecCoord::Y>(tmp1);// na cx cy cz
+		tmp4 = VecBlend<BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::LEFT, BlendOrder::RIGHT>(tmp0, tmp1);// sx sy sz cz
+
+		tmp2 = VecAnd(tmp2, MASK_1001);// sx 0  0  cx
+		tmp3 = VecAnd(tmp3, MASK_0101);// 0  sy 0  cy
+		tmp4 = VecAnd(tmp4, MASK_0011);// 0  0  sz cz
+
+		result = QuaternionMultiply(tmp3, tmp2);
+		result = QuaternionMultiply(result, tmp4);
 
 		return result;
+	}
+
+	/*!
+	* \brief	Converts the given euler angles to a quaternion.
+	*
+	* \date	2/21/2015
+	*
+	* \tparam	precisionLevel	Type of the precision level.
+	* 
+	* \param	pitch	The angle (in radians) to rotate along the x-axis.
+	* \param   yaw		The angle (in radians) to rotate along the y-axis.
+	* \param	roll	The angle (in radians) to rotate along the z-axis.
+	*
+	* \return	A quaternion representing the given euler angles.
+	*/
+	template<FloatPrecision precisionLevel = FloatPrecision::HIGH>
+	SSE_VEC_CALL SseQuaternionFromEuler(float pitch, float yaw, float roll)
+	{
+		return QuaternionFromEuler<precisionLevel>(SetSseVec3(pitch, yaw, roll));
 	}
 
 	/*! @} */

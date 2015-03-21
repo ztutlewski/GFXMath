@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sincosflag',['SinCosFlag',['../namespacegfxmath.html#ac97be114298a04e9db7f993085667b00',1,'gfxmath']]]
+  ['sincosflag',['SinCosFlag',['../namespacegofxmath.html#a67a56526fdca522579dadeb59e2cedaa',1,'gofxmath']]]
 ];

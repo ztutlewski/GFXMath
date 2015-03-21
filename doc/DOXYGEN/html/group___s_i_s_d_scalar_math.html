@@ -1,11 +1,10 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.9.1"/>
-<title>GFXMath Docs</title>
+<title>%%(G \circ F)(\vec{X})%%: SISD Scalar Math</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,17 +24,10 @@ MathJax.Hub.Config(
 		displayAlign: "left", 
 		tex2jax: {inlineMath: [['%%','%%']]}
 	});
-MathJax.Hub.Queue(
-    function () {
-    var x = document.getElementsByTagName("body")[0];
-	x.style.visibility = "";
-    }
-  );
 </script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
-<link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
-<body style="visibility:hidden">
+<body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -57,6 +49,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -104,51 +97,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga9ae15ff8e8601f2ed5381a5bce08d289">gfxmath::NormalizeAngle</a> (float angle)</td></tr>
-<tr class="memdesc:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize the angle to the range of [-PI,PI).  <a href="#ga9ae15ff8e8601f2ed5381a5bce08d289">More...</a><br /></td></tr>
-<tr class="separator:ga9ae15ff8e8601f2ed5381a5bce08d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb36256c1573aa72d03c3567f955bd83"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gafb36256c1573aa72d03c3567f955bd83">gfxmath::FastSinApprox</a> (float angle)</td></tr>
-<tr class="memdesc:gafb36256c1573aa72d03c3567f955bd83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast sine approximation.  <a href="#gafb36256c1573aa72d03c3567f955bd83">More...</a><br /></td></tr>
-<tr class="separator:gafb36256c1573aa72d03c3567f955bd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c9038d14fbd579ef9860351b41fbf95"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga5c9038d14fbd579ef9860351b41fbf95">gfxmath::FastCosApprox</a> (float angle)</td></tr>
-<tr class="memdesc:ga5c9038d14fbd579ef9860351b41fbf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast cosine approximation.  <a href="#ga5c9038d14fbd579ef9860351b41fbf95">More...</a><br /></td></tr>
-<tr class="separator:ga5c9038d14fbd579ef9860351b41fbf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae63b81e8a10d131334205c50b9b2166d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gae63b81e8a10d131334205c50b9b2166d">gfxmath::FastTanApprox</a> (float angle)</td></tr>
-<tr class="memdesc:gae63b81e8a10d131334205c50b9b2166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast tangent approximation.  <a href="#gae63b81e8a10d131334205c50b9b2166d">More...</a><br /></td></tr>
-<tr class="separator:gae63b81e8a10d131334205c50b9b2166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab16e2d48a3790c9f448feefe7192dbe1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gab16e2d48a3790c9f448feefe7192dbe1">gfxmath::FastCotApprox</a> (float angle)</td></tr>
-<tr class="memdesc:gab16e2d48a3790c9f448feefe7192dbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast cotangent approximation.  <a href="#gab16e2d48a3790c9f448feefe7192dbe1">More...</a><br /></td></tr>
-<tr class="separator:gab16e2d48a3790c9f448feefe7192dbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf3bf50cb40374d40ffd25e382ca53c8"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
-<tr class="memitem:gacf3bf50cb40374d40ffd25e382ca53c8"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gacf3bf50cb40374d40ffd25e382ca53c8">gfxmath::SinApprox</a> (float angle)</td></tr>
-<tr class="memdesc:gacf3bf50cb40374d40ffd25e382ca53c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sine Approximation.  <a href="#gacf3bf50cb40374d40ffd25e382ca53c8">More...</a><br /></td></tr>
-<tr class="separator:gacf3bf50cb40374d40ffd25e382ca53c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c7f22bb5c746703d834991b074e2721"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
-<tr class="memitem:ga4c7f22bb5c746703d834991b074e2721"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga4c7f22bb5c746703d834991b074e2721">gfxmath::CosApprox</a> (float angle)</td></tr>
-<tr class="memdesc:ga4c7f22bb5c746703d834991b074e2721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cosine approximation.  <a href="#ga4c7f22bb5c746703d834991b074e2721">More...</a><br /></td></tr>
-<tr class="separator:ga4c7f22bb5c746703d834991b074e2721"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac117306c04c7d0b931c3b2b4eb4fd6ae"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
-<tr class="memitem:gac117306c04c7d0b931c3b2b4eb4fd6ae"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gac117306c04c7d0b931c3b2b4eb4fd6ae">gfxmath::TanApprox</a> (float angle)</td></tr>
-<tr class="memdesc:gac117306c04c7d0b931c3b2b4eb4fd6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tangent approximation.  <a href="#gac117306c04c7d0b931c3b2b4eb4fd6ae">More...</a><br /></td></tr>
-<tr class="separator:gac117306c04c7d0b931c3b2b4eb4fd6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6914719e1538a2c1d58828197bc76041"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
-<tr class="memitem:ga6914719e1538a2c1d58828197bc76041"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga6914719e1538a2c1d58828197bc76041">gfxmath::CotApprox</a> (float angle)</td></tr>
-<tr class="memdesc:ga6914719e1538a2c1d58828197bc76041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cotangent Approximation.  <a href="#ga6914719e1538a2c1d58828197bc76041">More...</a><br /></td></tr>
-<tr class="separator:ga6914719e1538a2c1d58828197bc76041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga384f6df082ace9bc432bac8fac5b6686"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precision = FloatPrecision::HIGH&gt; </td></tr>
-<tr class="memitem:ga384f6df082ace9bc432bac8fac5b6686"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga384f6df082ace9bc432bac8fac5b6686">gfxmath::ApproxEqual</a> (float left, float right)</td></tr>
-<tr class="memdesc:ga384f6df082ace9bc432bac8fac5b6686"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for approximate equality of two floating point numbers.  <a href="#ga384f6df082ace9bc432bac8fac5b6686">More...</a><br /></td></tr>
-<tr class="separator:ga384f6df082ace9bc432bac8fac5b6686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga894ca122cd6d482ed5608f3410bc2bb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga894ca122cd6d482ed5608f3410bc2bb4">gfxmath::IsNaN</a> (float val)</td></tr>
-<tr class="memdesc:ga894ca122cd6d482ed5608f3410bc2bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given float value is NaN.  <a href="#ga894ca122cd6d482ed5608f3410bc2bb4">More...</a><br /></td></tr>
-<tr class="separator:ga894ca122cd6d482ed5608f3410bc2bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29ffc432e0aaaa5201bfca15247fa648"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga29ffc432e0aaaa5201bfca15247fa648">gfxmath::IsInfinity</a> (float val)</td></tr>
-<tr class="memdesc:ga29ffc432e0aaaa5201bfca15247fa648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given float value is positive or negative infinity.  <a href="#ga29ffc432e0aaaa5201bfca15247fa648">More...</a><br /></td></tr>
-<tr class="separator:ga29ffc432e0aaaa5201bfca15247fa648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53debb59a36f436520d9f8696fb5af17"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga53debb59a36f436520d9f8696fb5af17">gofxmath::NormalizeAngle</a> (float angle)</td></tr>
+<tr class="memdesc:ga53debb59a36f436520d9f8696fb5af17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize the angle to the range of [-PI,PI).  <a href="#ga53debb59a36f436520d9f8696fb5af17">More...</a><br /></td></tr>
+<tr class="separator:ga53debb59a36f436520d9f8696fb5af17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacda965689f172d535fcea8ca52a28358"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gacda965689f172d535fcea8ca52a28358">gofxmath::FastSinApprox</a> (float angle)</td></tr>
+<tr class="memdesc:gacda965689f172d535fcea8ca52a28358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast sine approximation.  <a href="#gacda965689f172d535fcea8ca52a28358">More...</a><br /></td></tr>
+<tr class="separator:gacda965689f172d535fcea8ca52a28358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga225f52235ddb3aac0be7405e966df40e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga225f52235ddb3aac0be7405e966df40e">gofxmath::FastCosApprox</a> (float angle)</td></tr>
+<tr class="memdesc:ga225f52235ddb3aac0be7405e966df40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast cosine approximation.  <a href="#ga225f52235ddb3aac0be7405e966df40e">More...</a><br /></td></tr>
+<tr class="separator:ga225f52235ddb3aac0be7405e966df40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29cc2127c4bb018c147006a618baf5f3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga29cc2127c4bb018c147006a618baf5f3">gofxmath::FastTanApprox</a> (float angle)</td></tr>
+<tr class="memdesc:ga29cc2127c4bb018c147006a618baf5f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast tangent approximation.  <a href="#ga29cc2127c4bb018c147006a618baf5f3">More...</a><br /></td></tr>
+<tr class="separator:ga29cc2127c4bb018c147006a618baf5f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd664af8218cb91dc9b74786a054f45a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gabd664af8218cb91dc9b74786a054f45a">gofxmath::FastCotApprox</a> (float angle)</td></tr>
+<tr class="memdesc:gabd664af8218cb91dc9b74786a054f45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast cotangent approximation.  <a href="#gabd664af8218cb91dc9b74786a054f45a">More...</a><br /></td></tr>
+<tr class="separator:gabd664af8218cb91dc9b74786a054f45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaece3a06431141a5c010de32ea23bedcf"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
+<tr class="memitem:gaece3a06431141a5c010de32ea23bedcf"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gaece3a06431141a5c010de32ea23bedcf">gofxmath::SinApprox</a> (float angle)</td></tr>
+<tr class="memdesc:gaece3a06431141a5c010de32ea23bedcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sine Approximation.  <a href="#gaece3a06431141a5c010de32ea23bedcf">More...</a><br /></td></tr>
+<tr class="separator:gaece3a06431141a5c010de32ea23bedcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f84a45d1d98a6be758df9fc78615000"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
+<tr class="memitem:ga6f84a45d1d98a6be758df9fc78615000"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga6f84a45d1d98a6be758df9fc78615000">gofxmath::CosApprox</a> (float angle)</td></tr>
+<tr class="memdesc:ga6f84a45d1d98a6be758df9fc78615000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cosine approximation.  <a href="#ga6f84a45d1d98a6be758df9fc78615000">More...</a><br /></td></tr>
+<tr class="separator:ga6f84a45d1d98a6be758df9fc78615000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38631bdf076826ca766dc35f3b150897"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
+<tr class="memitem:ga38631bdf076826ca766dc35f3b150897"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga38631bdf076826ca766dc35f3b150897">gofxmath::TanApprox</a> (float angle)</td></tr>
+<tr class="memdesc:ga38631bdf076826ca766dc35f3b150897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tangent approximation.  <a href="#ga38631bdf076826ca766dc35f3b150897">More...</a><br /></td></tr>
+<tr class="separator:ga38631bdf076826ca766dc35f3b150897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1c6ea5bb8f4958158ccb1a33123d64b"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </td></tr>
+<tr class="memitem:gac1c6ea5bb8f4958158ccb1a33123d64b"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gac1c6ea5bb8f4958158ccb1a33123d64b">gofxmath::CotApprox</a> (float angle)</td></tr>
+<tr class="memdesc:gac1c6ea5bb8f4958158ccb1a33123d64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cotangent Approximation.  <a href="#gac1c6ea5bb8f4958158ccb1a33123d64b">More...</a><br /></td></tr>
+<tr class="separator:gac1c6ea5bb8f4958158ccb1a33123d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac302f56236758d08c1923095e381e53b"><td class="memTemplParams" colspan="2">template&lt;FloatPrecision precision = FloatPrecision::HIGH&gt; </td></tr>
+<tr class="memitem:gac302f56236758d08c1923095e381e53b"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gac302f56236758d08c1923095e381e53b">gofxmath::ApproxEqual</a> (float left, float right)</td></tr>
+<tr class="memdesc:gac302f56236758d08c1923095e381e53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check for approximate equality of two floating point numbers.  <a href="#gac302f56236758d08c1923095e381e53b">More...</a><br /></td></tr>
+<tr class="separator:gac302f56236758d08c1923095e381e53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa30a49468e40679f196b2bc791849e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#gafa30a49468e40679f196b2bc791849e5">gofxmath::IsNaN</a> (float val)</td></tr>
+<tr class="memdesc:gafa30a49468e40679f196b2bc791849e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given float value is NaN.  <a href="#gafa30a49468e40679f196b2bc791849e5">More...</a><br /></td></tr>
+<tr class="separator:gafa30a49468e40679f196b2bc791849e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56a70269c92df99f699e0456613e4a52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_i_s_d_scalar_math.html#ga56a70269c92df99f699e0456613e4a52">gofxmath::IsInfinity</a> (float val)</td></tr>
+<tr class="memdesc:ga56a70269c92df99f699e0456613e4a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given float value is positive or negative infinity.  <a href="#ga56a70269c92df99f699e0456613e4a52">More...</a><br /></td></tr>
+<tr class="separator:ga56a70269c92df99f699e0456613e4a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga384f6df082ace9bc432bac8fac5b6686"></a>
+<a class="anchor" id="gac302f56236758d08c1923095e381e53b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -158,7 +151,7 @@ template&lt;FloatPrecision precision = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool gfxmath::ApproxEqual </td>
+          <td class="memname">bool gofxmath::ApproxEqual </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>left</em>, </td>
@@ -198,11 +191,11 @@ template&lt;FloatPrecision precision = FloatPrecision::HIGH&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the two floats are within the given precision epsilon of one another, otherwise false.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#gae1c17f54b4cd35725ae7e4d54d5e8b8f" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#ga4b1c9ff152a66c5d35b4767a57782f63" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga4c7f22bb5c746703d834991b074e2721"></a>
+<a class="anchor" id="ga6f84a45d1d98a6be758df9fc78615000"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -212,7 +205,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::CosApprox </td>
+          <td class="memname">float gofxmath::CosApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -241,11 +234,11 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The approximation of the cosine of the given angle.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#gae1c17f54b4cd35725ae7e4d54d5e8b8f" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#ga4b1c9ff152a66c5d35b4767a57782f63" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga6914719e1538a2c1d58828197bc76041"></a>
+<a class="anchor" id="gac1c6ea5bb8f4958158ccb1a33123d64b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -255,7 +248,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::CotApprox </td>
+          <td class="memname">float gofxmath::CotApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -284,11 +277,11 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The approximation of the cotangent of the given angle.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#gae1c17f54b4cd35725ae7e4d54d5e8b8f" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#ga4b1c9ff152a66c5d35b4767a57782f63" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga5c9038d14fbd579ef9860351b41fbf95"></a>
+<a class="anchor" id="ga225f52235ddb3aac0be7405e966df40e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -296,7 +289,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::FastCosApprox </td>
+          <td class="memname">float gofxmath::FastCosApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -322,7 +315,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gab16e2d48a3790c9f448feefe7192dbe1"></a>
+<a class="anchor" id="gabd664af8218cb91dc9b74786a054f45a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -330,7 +323,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::FastCotApprox </td>
+          <td class="memname">float gofxmath::FastCotApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -356,7 +349,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gafb36256c1573aa72d03c3567f955bd83"></a>
+<a class="anchor" id="gacda965689f172d535fcea8ca52a28358"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -364,7 +357,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::FastSinApprox </td>
+          <td class="memname">float gofxmath::FastSinApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -390,7 +383,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gae63b81e8a10d131334205c50b9b2166d"></a>
+<a class="anchor" id="ga29cc2127c4bb018c147006a618baf5f3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -398,7 +391,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::FastTanApprox </td>
+          <td class="memname">float gofxmath::FastTanApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -424,7 +417,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga29ffc432e0aaaa5201bfca15247fa648"></a>
+<a class="anchor" id="ga56a70269c92df99f699e0456613e4a52"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -432,7 +425,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool gfxmath::IsInfinity </td>
+          <td class="memname">bool gofxmath::IsInfinity </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
@@ -459,7 +452,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga894ca122cd6d482ed5608f3410bc2bb4"></a>
+<a class="anchor" id="gafa30a49468e40679f196b2bc791849e5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -467,7 +460,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool gfxmath::IsNaN </td>
+          <td class="memname">bool gofxmath::IsNaN </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
@@ -494,7 +487,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga9ae15ff8e8601f2ed5381a5bce08d289"></a>
+<a class="anchor" id="ga53debb59a36f436520d9f8696fb5af17"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -502,7 +495,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::NormalizeAngle </td>
+          <td class="memname">float gofxmath::NormalizeAngle </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -529,7 +522,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gacf3bf50cb40374d40ffd25e382ca53c8"></a>
+<a class="anchor" id="gaece3a06431141a5c010de32ea23bedcf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -539,7 +532,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::SinApprox </td>
+          <td class="memname">float gofxmath::SinApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -568,11 +561,11 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The approximation of the sine of the given angle.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#gae1c17f54b4cd35725ae7e4d54d5e8b8f" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#ga4b1c9ff152a66c5d35b4767a57782f63" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gac117306c04c7d0b931c3b2b4eb4fd6ae"></a>
+<a class="anchor" id="ga38631bdf076826ca766dc35f3b150897"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -582,7 +575,7 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float gfxmath::TanApprox </td>
+          <td class="memname">float gofxmath::TanApprox </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>angle</em></td><td>)</td>
@@ -611,15 +604,14 @@ template&lt;FloatPrecision precisionLevel = FloatPrecision::HIGH&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The approximation of the tangent of the given angle.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#gae1c17f54b4cd35725ae7e4d54d5e8b8f" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___scalar_math_consts.html#ga4b1c9ff152a66c5d35b4767a57782f63" title="Values that represent float precisions. ">FloatPrecision</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
-<!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 7 2015 16:19:14 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 20 2015 16:05:06 for %%(G \circ F)(\vec{X})%% by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

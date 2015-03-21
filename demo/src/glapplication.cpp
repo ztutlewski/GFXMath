@@ -44,11 +44,8 @@ namespace gofxengine
 		yaw -= input.mouseDeltaX * SENSITIVITY;
 		yaw = yaw > 0 ? (fmodf(yaw + F_PI, F_2PI) - F_PI) : (fmodf(yaw - F_PI, F_2PI) + F_PI);
 
-		SseVec yawRot = QuaternionFromAxisAngle(SetSseVec3(0.0f, 1.0f, 0.0f), yaw);
-		SseVec pitchRot = QuaternionFromAxisAngle(SetSseVec3(1.0f, 0.0f, 0.0f), pitch);
-
 		// Generate the rotation matrix for the view, and update the camera's relative forward, right, and up directions
-		SseMat44 rotationMat = RotationMatrixFromEuler(SetSseVec3(pitch, yaw, 0.0f));
+		SseMat44 rotationMat = RotationMatrixFromQuaternion(SseQuaternionFromEuler(pitch, yaw, 0.0f));//RotationMatrixFromEuler(SetSseVec3(pitch, yaw, 0.0f));
 		camFwd = TransformVec3(rotationMat, SetSseVec3(0.0f, 0.0f, 1.0f));
 		camFwd = Vec3Normalize(camFwd);
 		camRt = Vec3Cross(worldUp, camFwd);
@@ -224,50 +221,159 @@ namespace gofxengine
 		// tell GL to only draw onto a pixel if the shape is closer to the viewer
 		glEnable(GL_DEPTH_TEST);// enable depth-testing
 		glDepthFunc(GL_LESS); // depth-testing interprets a smaller value as "closer"
-		glEnable(GL_CULL_FACE); // cull face
-		glCullFace(GL_BACK); // cull back face
+		//glEnable(GL_CULL_FACE); // cull face
+		//glCullFace(GL_BACK); // cull back face
 		glFrontFace(GL_CW); // GL_CCW for counter clock-wise
 
 		UseInput(&input, *this);
 	}
 
-	int GLApplication::StartGameLoop()
+	int GLApplication::PerformanceTestGameLoop()
 	{
 		array<float, 16> mvpData;
 		GLuint shaderProgram = LoadShaders();
 		GLuint vao = LoadMeshes();
 		projection = PerspectiveProjectionMatrix(0.1f, 1000.0f, 90.0f * DEG_TO_RAD, (float)screenWidth / (float)screenHeight);
 
-		SseVec rotationQuat = QuaternionFromAxisAngle(SetSseVec3(0.0f, 1.0f, 0.0f), F_2PI_3 * 0.5f);
-		SseVec tmpRotQuat = rotationQuat;
-		SseVec translationVec = SetSseVec3(0.0f, 0.0f, 2.0f);
+		SseVec rotationQuat = QuaternionFromAxisAngle(SetSseVec3(0.0f, 1.0f, 0.0f), F_2PI_3 * 0.25f);
+		SseVec staggerRotationQuat = QuaternionFromAxisAngle(SetSseVec3(0.0f, 1.0f, 0.0f), F_2PI_3 * 0.125f);
+		SseVec translationVecBase = SetSseVec3(0.0f, 0.0f, 2.0f);
+		SseVec localRotationQuat = QuaternionFromEuler(SetSseVec3(0.0f, 0.0f, 0.0f));
 
-		SseMat44 translation = TranslationMatrixFromVec3(translationVec);
+		const int MODEL_COUNT = 6000;
 
-		SseMat44 models[12];
+		SseMat44 models[MODEL_COUNT];
 
-		models[0] = translation;
-
-		for (size_t i = 1; i < 12; i++)
-		{
-			SseMat44 rotation = RotationMatrixFromQuaternion(tmpRotQuat);
-			models[i] = MatrixMultiply(rotation, translation);
-			tmpRotQuat = QuaternionMultiply(tmpRotQuat, rotationQuat);
-		}
+		SseMat44 translation;
 
 		view = LookDir(camPos, camFwd, camUp);
 
-		GLuint MatrixID = glGetUniformLocation(shaderProgram, "MVP");
 		glUseProgram(shaderProgram);
 		glBindVertexArray(vao);
+
+		while (!glfwWindowShouldClose(window))
+		{
+			for (size_t k = 0; k < 110; k++)
+			{
+				SseVec translationVec = SetSseVec3(0.0f, 0.0f, 0.0f);
+				SseVec tmpRotQuat = rotationQuat;
+
+				for (size_t i = 0; i < 500; i++)
+				{
+					translationVec = Vec3Add(translationVec, translationVecBase);
+					translation = TranslationMatrixFromVec3(translationVec);
+
+					for (size_t j = 0; j < 12; j++)
+					{
+						SseMat44 rotation = RotationMatrixFromQuaternion(tmpRotQuat);
+						SseMat44 localRotation = RotationMatrixFromQuaternion(localRotationQuat);
+						models[i * 12 + j] = MatrixMultiply(MatrixMultiply(rotation, translation), localRotation);
+						tmpRotQuat = QuaternionMultiply(tmpRotQuat, rotationQuat);
+					}
+
+					tmpRotQuat = QuaternionMultiply(tmpRotQuat, staggerRotationQuat);
+				}
+			}
+
+			localRotationQuat = QuaternionMultiply(localRotationQuat, SseQuaternionFromEuler(0.0f, F_PI_4 * 0.05f, 0.0f));
+
+
+			UpdateFPSCounter(window);
+			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+			GLuint MatrixID = glGetUniformLocation(shaderProgram, "MVP");
+
+			for (size_t i = 0; i < MODEL_COUNT; i++)
+			{
+				mv = MatrixMultiply(view, models[i]);
+				mvp = MatrixMultiply(projection, mv);
+				mvpData = MatrixToArray(mvp);
+
+				glUniformMatrix4fv(MatrixID, 1, GL_FALSE, mvpData.data());
+				glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, BUFFER_OFFSET(0));
+			}
+
+			glfwPollEvents();
+			HandleControls();
+			input.ConsumeEvents();
+			glfwSwapBuffers(window);
+
+			if (glfwGetKey(window, GLFW_KEY_ESCAPE))
+			{
+				glfwSetWindowShouldClose(window, 1);
+			}
+			else if (glfwGetKey(window, GLFW_KEY_P))
+			{
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+
+				while (!glfwGetKey(window, GLFW_KEY_U) && !glfwWindowShouldClose(window))
+				{
+					glfwPollEvents();
+					if (glfwGetKey(window, GLFW_KEY_ESCAPE))
+					{
+						glfwSetWindowShouldClose(window, 1);
+					}
+				}
+
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+			}
+		}
+
+		glfwTerminate();
+
+		return 0;
+	}
+
+	int GLApplication::StartGameLoop(bool performanceTest)
+	{
+		if (performanceTest)
+			return PerformanceTestGameLoop();
+
+		array<float, 16> mvpData;
+		GLuint shaderProgram = LoadShaders();
+		GLuint vao = LoadMeshes();
+		projection = PerspectiveProjectionMatrix(0.1f, 1000.0f, 90.0f * DEG_TO_RAD, (float)screenWidth / (float)screenHeight);
+
+		SseVec rotationQuat = QuaternionFromAxisAngle(SetSseVec3(0.0f, 1.0f, 0.0f), F_2PI_3 * 0.25f);
+		SseVec translationVecBase = SetSseVec3(0.0f, 0.0f, 2.0f);
+
+		const int MODEL_COUNT = 6000;
+
+		SseMat44 models[MODEL_COUNT];
+
+		SseMat44 translation;
+
+		view = LookDir(camPos, camFwd, camUp);
+
+		glUseProgram(shaderProgram);
+		glBindVertexArray(vao);
+
+		SseVec translationVec = SetSseVec3(0.0f, 0.0f, 0.0f);
+		SseVec tmpRotQuat = rotationQuat;
+
+		for (size_t i = 0; i < 500; i++)
+		{
+			translationVec = Vec3Add(translationVec, translationVecBase);
+			translation = TranslationMatrixFromVec3(translationVec);
+
+			for (size_t j = 0; j < 12; j++)
+			{
+				SseMat44 rotation = RotationMatrixFromQuaternion(tmpRotQuat);
+				models[i * 12 + j] = MatrixMultiply(MatrixMultiply(rotation, translation), rotation);
+				tmpRotQuat = QuaternionMultiply(tmpRotQuat, rotationQuat);
+			}
+
+			tmpRotQuat = QuaternionMultiply(tmpRotQuat, rotationQuat);
+		}
 
 		while (!glfwWindowShouldClose(window))
 		{
 			UpdateFPSCounter(window);
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 			
+			GLuint MatrixID = glGetUniformLocation(shaderProgram, "MVP");
 
-			for (size_t i = 0; i < 12; i++)
+			for (size_t i = 0; i < MODEL_COUNT; i++)
 			{
 				mv = MatrixMultiply(view, models[i]);
 				mvp = MatrixMultiply(projection, mv);

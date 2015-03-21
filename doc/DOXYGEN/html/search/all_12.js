@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['unit_5f0001',['UNIT_0001',['../namespacegfxmath.html#a6994d7f14c150c61f588662f00d0c8ff',1,'gfxmath']]],
-  ['unit_5f0010',['UNIT_0010',['../namespacegfxmath.html#a48ad75a66b328acc4e138ca986a012d8',1,'gfxmath']]],
-  ['unit_5f0100',['UNIT_0100',['../namespacegfxmath.html#a99e3cab2ce1fc776b17352e8c6e71a23',1,'gfxmath']]],
-  ['unit_5f1000',['UNIT_1000',['../namespacegfxmath.html#aca328652c569754fc01b923aa3be0531',1,'gfxmath']]],
-  ['up',['Up',['../classgfxmath_1_1_vec2.html#a549d974b639ee8362cf8de80e59090ab',1,'gfxmath::Vec2::Up()'],['../classgfxmath_1_1_vec3.html#a13e8fda938979d369a1f58aaf94c838a',1,'gfxmath::Vec3::Up()']]]
+  ['unit_5f0001',['UNIT_0001',['../namespacegofxmath.html#abb9f5b43ffde326d3e63609f1d89d7d1',1,'gofxmath']]],
+  ['unit_5f0010',['UNIT_0010',['../namespacegofxmath.html#ae79bb596adccb91d5513cf2f89846b3b',1,'gofxmath']]],
+  ['unit_5f0100',['UNIT_0100',['../namespacegofxmath.html#a921f81169d9261065e1e594e9f45227d',1,'gofxmath']]],
+  ['unit_5f1000',['UNIT_1000',['../namespacegofxmath.html#ace43a689818ce606ddea62e3466dfd9d',1,'gofxmath']]],
+  ['up',['Up',['../classgofxmath_1_1_vec2.html#aa092215329d9058bc940557300fb3011',1,'gofxmath::Vec2::Up()'],['../classgofxmath_1_1_vec3.html#a577a89d8bc72f925851bc5c3e5e4700e',1,'gofxmath::Vec3::Up()']]]
 ];

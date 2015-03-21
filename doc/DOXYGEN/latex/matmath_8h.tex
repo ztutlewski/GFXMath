@@ -1,39 +1,36 @@
-\hypertarget{matmath_8h}{}\section{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/matmath.h File Reference}
-\label{matmath_8h}\index{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/matmath.\+h@{D\+:/\+G\+F\+X\+Math/\+G\+F\+X\+Math/include/matmath.\+h}}
-{\ttfamily \#include \char`\"{}gfxmath\+\_\+config.\+h\char`\"{}}\\*
+\hypertarget{matmath_8h}{}\section{matmath.\+h File Reference}
+\label{matmath_8h}\index{matmath.\+h@{matmath.\+h}}
 {\ttfamily \#include $<$array$>$}\\*
 {\ttfamily \#include \char`\"{}mat44.\+h\char`\"{}}\\*
 \subsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
- \hyperlink{namespacegfxmath}{gfxmath}
+ \hyperlink{namespacegofxmath}{gofxmath}
 \begin{DoxyCompactList}\small\item\em G of F of X math namespace. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
-{\bf }\par
 \begin{DoxyCompactItemize}
 \item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga4439d3f4590c372ada775196d1576f81}{gfxmath\+::\+Matrix\+Multiply} (const Mat44 \&first, const Mat44 \&second)
+Mat44 \hyperlink{namespacegofxmath_a4439d3f4590c372ada775196d1576f81}{gofxmath\+::\+Matrix\+Multiply} (const Mat44 \&first, const Mat44 \&second)
 \begin{DoxyCompactList}\small\item\em Calculates the product (post-\/multiplication) of the two given 4x4 matrices. \end{DoxyCompactList}\item 
-float \hyperlink{group___s_i_s_d_mat_math_ga285829d964b38ad14730e85c325e775c}{gfxmath\+::\+Matrix\+Determinant} (const Mat44 \&mat)
+float \hyperlink{namespacegofxmath_a285829d964b38ad14730e85c325e775c}{gofxmath\+::\+Matrix\+Determinant} (const Mat44 \&mat)
 \begin{DoxyCompactList}\small\item\em Calculates the determinant of the given 4x4 matrix. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga38c661c8ad19528520d36fabca7d555f}{gfxmath\+::\+Matrix\+Inverse} (const Mat44 \&mat)
+Mat44 \hyperlink{namespacegofxmath_a38c661c8ad19528520d36fabca7d555f}{gofxmath\+::\+Matrix\+Inverse} (const Mat44 \&mat)
 \begin{DoxyCompactList}\small\item\em Calculates the inverse of the given 4x4 matrix. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga626e52b58fb763a90ba6e9d46966ee75}{gfxmath\+::\+Matrix\+Transpose} (const Mat44 \&mat)
+Mat44 \hyperlink{namespacegofxmath_a626e52b58fb763a90ba6e9d46966ee75}{gofxmath\+::\+Matrix\+Transpose} (const Mat44 \&mat)
 \begin{DoxyCompactList}\small\item\em Calculates the transpose of the given 4x4 matrix. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_gad7198c521a4d93e82694f39f0be736c9}{gfxmath\+::\+Rotation\+Matrix\+From\+Quaternion} (const Quaternion \&quat)
+Mat44 \hyperlink{namespacegofxmath_ad7198c521a4d93e82694f39f0be736c9}{gofxmath\+::\+Rotation\+Matrix\+From\+Quaternion} (const Quaternion \&quat)
 \begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given quaternion rotation. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga206e53fa5ea77b54765946af3d04ca0e}{gfxmath\+::\+Rotation\+Matrix\+From\+Euler} (const Vec3 \&angles)
+Mat44 \hyperlink{namespacegofxmath_a206e53fa5ea77b54765946af3d04ca0e}{gofxmath\+::\+Rotation\+Matrix\+From\+Euler} (const Vec3 \&angles)
 \begin{DoxyCompactList}\small\item\em Calculates the 4x4 rotation matrix represented by the given euler angle rotation. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga2d82d58bdc14d1f1644b05a7419ea05e}{gfxmath\+::\+Translation\+Matrix\+From\+Vec3} (const Vec3 \&vec)
+Mat44 \hyperlink{namespacegofxmath_a2d82d58bdc14d1f1644b05a7419ea05e}{gofxmath\+::\+Translation\+Matrix\+From\+Vec3} (const Vec3 \&vec)
 \begin{DoxyCompactList}\small\item\em Calculates the 4x4 translation matrix represented by the given 3\+D position vector. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga8ec877a1635b6a682a15195b47e1f21d}{gfxmath\+::\+Scale\+Matrix\+From\+Vec3} (const Vec3 \&vec)
+Mat44 \hyperlink{namespacegofxmath_a8ec877a1635b6a682a15195b47e1f21d}{gofxmath\+::\+Scale\+Matrix\+From\+Vec3} (const Vec3 \&vec)
 \begin{DoxyCompactList}\small\item\em Calculates the 4x4 scale matrix represented by the given 3\+D scale vector. \end{DoxyCompactList}\item 
-void \hyperlink{group___s_i_s_d_mat_math_ga8aa599fb24b0a8ce16acf8092ee29478}{gfxmath\+::\+Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect, Mat44 \&result)
+void \hyperlink{namespacegofxmath_a8aa599fb24b0a8ce16acf8092ee29478}{gofxmath\+::\+Perspective\+Projection\+Matrix} (float near, float far, float fov, float aspect, Mat44 \&result)
 \begin{DoxyCompactList}\small\item\em Calculates the right-\/handed perspective projection matrix. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_ga1d0cf66e3877d2be1e104bbacec0c917}{gfxmath\+::\+Look\+Dir} (const Vec3 \&eye, const Vec3 \&dir, const Vec3 \&up)
+Mat44 \hyperlink{namespacegofxmath_a1d0cf66e3877d2be1e104bbacec0c917}{gofxmath\+::\+Look\+Dir} (const Vec3 \&eye, const Vec3 \&dir, const Vec3 \&up)
 \begin{DoxyCompactList}\small\item\em Calculates the view matrix given the forward direction vector, rather than a target position. \end{DoxyCompactList}\item 
-Mat44 \hyperlink{group___s_i_s_d_mat_math_gac420c9cd578ebe0b21c9db7757bc4c2d}{gfxmath\+::\+Look\+At} (const Vec3 \&eye, const Vec3 \&target, const Vec3 \&up)
+Mat44 \hyperlink{namespacegofxmath_ac420c9cd578ebe0b21c9db7757bc4c2d}{gofxmath\+::\+Look\+At} (const Vec3 \&eye, const Vec3 \&target, const Vec3 \&up)
 \begin{DoxyCompactList}\small\item\em Calculates the standard lookat matrix for the camera, given the camera\textquotesingle{}s position, the target\textquotesingle{}s position, and a given \char`\"{}up\char`\"{} vector. \end{DoxyCompactList}\item 
-Vec3 \hyperlink{group___s_i_s_d_mat_math_ga503b30792d41234b29089176be81cf6c}{gfxmath\+::\+Transform\+Vec3} (const Mat44 \&mat, const Vec3 \&vec)
+Vec3 \hyperlink{namespacegofxmath_a503b30792d41234b29089176be81cf6c}{gofxmath\+::\+Transform\+Vec3} (const Mat44 \&mat, const Vec3 \&vec)
 \begin{DoxyCompactList}\small\item\em Transforms the given 3\+D vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
-

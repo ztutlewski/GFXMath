@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['epsilon_5f1111',['EPSILON_1111',['../namespacegfxmath.html#a61d187e87e07e248aaebb359a772f815',1,'gfxmath']]]
+  ['epsilon_5f1111',['EPSILON_1111',['../namespacegofxmath.html#ae3f018845f0d6aa6071757caea3246af',1,'gofxmath']]]
 ];

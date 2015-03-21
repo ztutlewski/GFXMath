@@ -1,0 +1,131 @@
+\hypertarget{structgfxmath_1_1_quaternion}{}\section{gfxmath\+:\+:Quaternion Struct Reference}
+\label{structgfxmath_1_1_quaternion}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+
+
+The quaternion class.  
+
+
+
+
+{\ttfamily \#include $<$quaternion.\+h$>$}
+
+Inheritance diagram for gfxmath\+:\+:Quaternion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structgfxmath_1_1_quaternion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}{Quaternion} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}{Quaternion} (float \hyperlink{structgfxmath_1_1_vec4_a273598aff75406f0e7a47121b8b06037}{x}, float \hyperlink{structgfxmath_1_1_vec4_a95e0ca27d66d7e0223606c20d326b595}{y}, float \hyperlink{structgfxmath_1_1_vec4_acd626b757468a5ea39f98812a36c4419}{z}, float \hyperlink{structgfxmath_1_1_vec4_adf2769a47b464dfee8d04e191f21701e}{w})
+\begin{DoxyCompactList}\small\item\em Full argument load constructor. \end{DoxyCompactList}\item 
+\hyperlink{structgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}{Quaternion} (float xyzw)
+\begin{DoxyCompactList}\small\item\em Single argument load constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structgfxmath_1_1_quaternion_a077623f1e442ee4a48340cc966282a1e}{}static const \hyperlink{structgfxmath_1_1_quaternion}{Quaternion} \hyperlink{structgfxmath_1_1_quaternion_a077623f1e442ee4a48340cc966282a1e}{I\+D\+E\+N\+T}\label{structgfxmath_1_1_quaternion_a077623f1e442ee4a48340cc966282a1e}
+
+\begin{DoxyCompactList}\small\item\em The identity quaternion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The quaternion class. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+A specialized \hyperlink{structgfxmath_1_1_vec4}{Vec4} used to contain quaternion-\/based rotation data.
+\end{DoxyRemark}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{structgfxmath_1_1_vec4}{Vec4} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_quaternion_a46f549f23e8bd1032697e3febcff7fe5}
+
+
+Default constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+\begin{DoxyRemark}{Remarks}
+Initializes all the component values to 0.\+0f. 
+\end{DoxyRemark}
+\hypertarget{structgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z, }
+\item[{float}]{w}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_quaternion_a8b19546f4e4a48a3784b80b0fd8208d9}
+
+
+Full argument load constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coordinate. \\
+\hline
+{\em y} & The y coordinate. \\
+\hline
+{\em z} & The z coordinate. \\
+\hline
+{\em w} & The w coordinate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{structgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}{}\index{gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}!Quaternion@{Quaternion}}
+\index{Quaternion@{Quaternion}!gfxmath\+::\+Quaternion@{gfxmath\+::\+Quaternion}}
+\subsubsection[{Quaternion}]{\setlength{\rightskip}{0pt plus 5cm}gfxmath\+::\+Quaternion\+::\+Quaternion (
+\begin{DoxyParamCaption}
+\item[{float}]{xyzw}
+\end{DoxyParamCaption}
+)}\label{structgfxmath_1_1_quaternion_ac8a094f33b02273387afa1beeabb9034}
+
+
+Single argument load constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zachary Tutlewski 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2/21/2015
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em xyzw} & The float value to place in all four components. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+quaternion.\+h\end{DoxyCompactItemize}
