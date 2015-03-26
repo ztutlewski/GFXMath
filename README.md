@@ -4,11 +4,11 @@
 
 ##Introduction
 
-The (GoF)(X) Math library (abbreviated GoFXMath) is a lightweight, powerful, cross-platform, data-oriented math library focused on the development of graphics-oriented applications in C++.  
+The (GoF)(X) Math library (abbreviated GoFXMath) is a lightweight, powerful, cross-platform math library focused on the development of graphics-oriented applications in C++.  
 
 ##Design
 
-Given that the GoFXMath library is designed with data in mind, much of its functionality is overloaded between two major sections: SISD code and SIMD code.
+Given that the GoFXMath library is designed with data-dflexibility in mind, much of its functionality is overloaded between two major sections: SISD code and SIMD code.
 
 ####SISD
 
