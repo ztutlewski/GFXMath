@@ -14,7 +14,7 @@ Given that the GoFXMath library is designed with data flexibility in mind, much 
 
 ---
 
-The SISD code is all standard C++, and generally does not leverage the hardware or compiler for optimizations more than is absolutely necessary, keeping the code relatively fast without sacrificing too much readability.  Given that the compiler will typically optimize standard C++ operations far better than most programmers ever could anyway, this doesn't affect the performance of the SISD code much.
+The SISD code is all standard C++, and generally does not leverage the hardware or compiler for optimizations more than is absolutely necessary, keeping the code relatively fast without sacrificing too much readability.  Given that the compiler will typically optimize the types of standard C++ operations used here far better than most programmers ever could anyway, this doesn't affect the performance of the SISD code much.
 
 ####SIMD
 
