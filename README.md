@@ -1,22 +1,22 @@
 
-#(G○F)(X) Math
+# (G○F)(X) Math
 
 
-##Introduction
+## Introduction
 
 The (GoF)(X) Math library (abbreviated GoFXMath) is a lightweight, powerful, cross-platform math library focused on the development of graphics-oriented applications in C++.  
 
-##Design
+## Design
 
 Given that the GoFXMath library is designed with data flexibility in mind, much of its functionality is overloaded between two major sections: SISD code and SIMD code.
 
-####SISD
+#### SISD
 
 ---
 
 The SISD code is all standard C++, and generally does not leverage the hardware or compiler for optimizations more than is absolutely necessary, keeping the code relatively fast without sacrificing too much readability.  Given that the compiler will typically optimize the types of standard C++ operations used here far better than most programmers ever could anyway, this doesn't affect the performance of the SISD code much.
 
-####SIMD
+#### SIMD
 
 ---
 
@@ -42,7 +42,7 @@ Additionally, as mentioned in the **SIMD** section, the GoFXMath library makes h
 
 The prepackaged distribution files, in addition to the binaries and documentation, also contain the compiled test projects and a demo project written for OpenGL (using [GLEW](http://glew.sourceforge.net/) and [GLFW](http://www.glfw.org/)).
 
-####Tests
+#### Tests
 
 ---
 
@@ -50,7 +50,7 @@ The tests should build and run on any Windows 7 or higher machine, as well as an
 
 More information on how to run (or even add to) the tests can be found on the [Catch Testing Framework github page](https://github.com/philsquared/Catch).
 
-####Demo
+#### Demo
 
 ---
 
